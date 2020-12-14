@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <path id="kb3h6ulzaa" d="M0 0.417L42.264 0.417 42.264 39.245 0 39.245z"/>
+        <path id="jxr9l832uc" d="M1.22.655C-.072.657-.07 2.813 1.223 2.811h2.202s.014 6.006.003 7.415c.003 1.03 2.29 1.022 2.287-.007l.01-7.405h2.193c1.369.001 1.37-2.159 0-2.159H1.22"/>
+        <path id="urxh0nlk2f" d="M3.6 1.315C3.056 2.51 1.098 8.147.45 9.642c-.47 1.08 1.556 1.962 2.026.881l.44-1.542h4.03s-.138.064.397 1.476c.434 1.144 2.526.35 2.092-.793-.618-1.633-2.759-7.515-3.148-8.349C6.106.93 5.46.655 4.835.655c-.517 0-1.021.188-1.236.66zm1.372 1.8l1.226 3.84H3.643l1.33-3.84z"/>
+        <path id="yvahbcyyui" d="M.395 1.669C.4 3.585.406 9.757.406 9.757s-.176 1.23.876 1.23 3.387-.013 4.422-.013c1.035 0 1.03-2.201-.006-2.201-1.035 0-2.924-.012-2.924-.012s.01-5.71.006-7.098C2.778.992 2.183.657 1.589.657.992.657.394.995.395 1.67"/>
+        <path id="zmmmyp7qnl" d="M.223 1.364c.023.84-.028 8.436-.027 8.999.001.888 2.262.887 2.261-.001V7.374l.665-.532 2.904 3.96c.587.775 2.433-.624 1.846-1.398L4.79 5.343s2.093-2.264 2.918-3.084C8.19 1.78 6.7.28 6.217.759c-.468.463-3.745 3.744-3.745 3.744s.03-2.06-.001-3.2C2.46.871 1.928.662 1.386.662.805.662.21.902.223 1.364"/>
+        <linearGradient id="5vzasatled" x1=".001%" x2="99.999%" y1="49.998%" y2="49.998%">
+            <stop offset="0%" stop-color="#E4D433"/>
+            <stop offset="100%" stop-color="#E4DD49"/>
+        </linearGradient>
+        <linearGradient id="0vxw0248ug" x1=".001%" x2="100.005%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#E4D433"/>
+            <stop offset="100%" stop-color="#E4DD49"/>
+        </linearGradient>
+        <linearGradient id="8la9cr8c1j" x1=".007%" x2="100.001%" y1="49.995%" y2="49.995%">
+            <stop offset="0%" stop-color="#E4D433"/>
+            <stop offset="100%" stop-color="#E4DD49"/>
+        </linearGradient>
+        <linearGradient id="l4erc65tqm" x1=".001%" x2="100.001%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#E4D433"/>
+            <stop offset="100%" stop-color="#E4DD49"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path d="M0 0H48V48H0z" transform="translate(-768 -534) translate(660 398) translate(92 120) translate(16 16)"/>
+                        <g>
+                            <g transform="translate(-768 -534) translate(660 398) translate(92 120) translate(16 16) translate(3 4) translate(0 .337)">
+                                <mask id="00mbvtr7tb" fill="#fff">
+                                    <use xlink:href="#kb3h6ulzaa"/>
+                                </mask>
+                                <path fill="#381E1F" d="M21.132.417C9.462.417 0 7.897 0 17.124c0 6.004 4.01 11.27 10.025 14.213-.442 1.65-1.6 5.978-1.831 6.904-.287 1.149.42 1.135.883.825.364-.242 5.79-3.932 8.133-5.525 1.271.189 2.582.288 3.922.288 11.671 0 21.132-7.479 21.132-16.705 0-9.227-9.46-16.707-21.132-16.707" mask="url(#00mbvtr7tb)"/>
+                            </g>
+                            <g transform="translate(-768 -534) translate(660 398) translate(92 120) translate(16 16) translate(3 4) translate(5.283 12.413)">
+                                <mask id="bt6qwh8y4e" fill="#fff">
+                                    <use xlink:href="#jxr9l832uc"/>
+                                </mask>
+                                <path fill="url(#5vzasatled)" d="M1.22.655C-.072.657-.07 2.813 1.223 2.811h2.202s.014 6.006.003 7.415c.003 1.03 2.29 1.022 2.287-.007l.01-7.405h2.193c1.369.001 1.37-2.159 0-2.159H1.22" mask="url(#bt6qwh8y4e)"/>
+                            </g>
+                            <g transform="translate(-768 -534) translate(660 398) translate(92 120) translate(16 16) translate(3 4) translate(12.075 12.413)">
+                                <mask id="luq0udpe7h" fill="#fff">
+                                    <use xlink:href="#urxh0nlk2f"/>
+                                </mask>
+                                <path fill="url(#0vxw0248ug)" d="M3.6 1.315C3.056 2.51 1.098 8.147.45 9.642c-.47 1.08 1.556 1.962 2.026.881l.44-1.542h4.03s-.138.064.397 1.476c.434 1.144 2.526.35 2.092-.793-.618-1.633-2.759-7.515-3.148-8.349C6.106.93 5.46.655 4.835.655c-.517 0-1.021.188-1.236.66zm1.372 1.8l1.226 3.84H3.643l1.33-3.84z" mask="url(#luq0udpe7h)"/>
+                            </g>
+                            <g transform="translate(-768 -534) translate(660 398) translate(92 120) translate(16 16) translate(3 4) translate(21.887 12.413)">
+                                <mask id="akg8m8caik" fill="#fff">
+                                    <use xlink:href="#yvahbcyyui"/>
+                                </mask>
+                                <path fill="url(#8la9cr8c1j)" d="M.395 1.669C.4 3.585.406 9.757.406 9.757s-.176 1.23.876 1.23 3.387-.013 4.422-.013c1.035 0 1.03-2.201-.006-2.201-1.035 0-2.924-.012-2.924-.012s.01-5.71.006-7.098C2.778.992 2.183.657 1.589.657.992.657.394.995.395 1.67" mask="url(#akg8m8caik)"/>
+                            </g>
+                            <g transform="translate(-768 -534) translate(660 398) translate(92 120) translate(16 16) translate(3 4) translate(28.68 12.413)">
+                                <mask id="lv9vyx2j7n" fill="#fff">
+                                    <use xlink:href="#zmmmyp7qnl"/>
+                                </mask>
+                                <path fill="url(#l4erc65tqm)" d="M.223 1.364c.023.84-.028 8.436-.027 8.999.001.888 2.262.887 2.261-.001V7.374l.665-.532 2.904 3.96c.587.775 2.433-.624 1.846-1.398L4.79 5.343s2.093-2.264 2.918-3.084C8.19 1.78 6.7.28 6.217.759c-.468.463-3.745 3.744-3.745 3.744s.03-2.06-.001-3.2C2.46.871 1.928.662 1.386.662.805.662.21.902.223 1.364" mask="url(#lv9vyx2j7n)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

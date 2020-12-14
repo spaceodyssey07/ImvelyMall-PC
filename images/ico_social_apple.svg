@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <path id="tbti42p2ea" d="M0 0.029L13.593 0.029 13.593 12.7 0 12.7z"/>
+        <path id="g614mciiwc" d="M0.053 0.008L3.437 0.008 3.437 3.862 0.053 3.862z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-675 -418) translate(675 418)">
+                <circle cx="18" cy="18" r="18" fill="#282828"/>
+                <g>
+                    <g transform="translate(11 9) translate(0 4.092)">
+                        <mask id="m1cr2iiohb" fill="#fff">
+                            <use xlink:href="#tbti42p2ea"/>
+                        </mask>
+                        <path fill="#FFF" d="M11.353 4.874c-.02-2.112 1.725-3.126 1.801-3.173-.98-1.435-2.508-1.635-3.05-1.659-1.3-.13-2.539.767-3.196.767-.66 0-1.678-.745-2.755-.724C2.733.105 1.43.91.7 2.175-.773 4.73.32 8.516 1.759 10.588c.7 1.014 1.534 2.153 2.63 2.112 1.06-.04 1.46-.683 2.738-.683 1.276 0 1.637.683 2.756.666 1.137-.024 1.859-1.038 2.553-2.052.803-1.177 1.137-2.316 1.157-2.376-.025-.009-2.219-.851-2.24-3.38" mask="url(#m1cr2iiohb)"/>
+                    </g>
+                    <g transform="translate(11 9) translate(6.7 .092)">
+                        <mask id="b13irvk0kd" fill="#fff">
+                            <use xlink:href="#g614mciiwc"/>
+                        </mask>
+                        <path fill="#FFF" d="M2.55 2.672c.584-.705.977-1.687.869-2.664C2.579.04 1.562.568.962 1.27.42 1.898-.054 2.899.075 3.856c.934.07 1.893-.477 2.475-1.184" mask="url(#b13irvk0kd)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

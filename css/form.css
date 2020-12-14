@@ -1,0 +1,844 @@
+@charset "utf-8";
+
+
+/* button */
+/* =================================*/
+
+button {
+  cursor: pointer;
+}
+.d-flex{
+  display: flex;
+  align-items: center;
+}
+.d-flex-side{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* large 버튼 */
+.btn-large{
+  width: 100%;
+  height: 13.3333vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-large.bk {
+  color: #fff;
+  background-color: #262627;
+}
+.btn-large.wh {
+  color: #262627;
+  border: 1px solid #262627;
+  background-color: #fff;
+}
+.btn-large.wh:disabled{
+  color: #bcb3ac;
+  border-color: #f0eeeb;
+  background-color: #fff;
+}
+.btn-large.gr {
+  color: #fff;
+  background-color: #8c8581;
+}
+
+.btn-large:disabled{
+  color: #bcb3ac;
+  background-color: #f0eeeb
+}
+
+/* mirage 버튼 */
+.btn-mirage{
+  width: 55.5556vw;
+  height: 13.3333vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-mirage.bk{ 
+  color: #fff;
+  background: #262627;
+}
+.btn-mirage.wh{
+  color: #262627;
+  border: 1px solid #262627;
+}
+.btn-mirage.gr{
+  color: #fff;
+  background: #8c8581;
+}
+.btn-mirage:disabled{
+  color: #bcb3ac;
+  background-color: #f0eeeb;
+}
+
+/* medium 버튼 */
+.btn-medium{
+  width: 44.4444vw;
+  height: 13.3333vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-medium.bk {
+  color: #fff;
+  background-color: #262627;
+}
+
+.btn-medium.wh {
+  color: #262627;
+  border: 1px solid #262627;
+  background-color: #fff;
+}
+.btn-medium.wh:disabled{
+  color: #bcb3ac;
+  border-color: #f0eeeb;
+  background-color: #fff;
+}
+
+.btn-medium.gr {
+  color: #fff;
+  background-color: #8c8581;
+}
+.btn-medium:disabled{
+  color: #bcb3ac;
+  background-color: #f0eeeb;
+}
+
+/* small 버튼 */
+.btn-small{
+  width: 26.6667vw;
+  height: 13.3333vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-small.bk {
+  color: #fff;
+  background: #262627;
+}
+
+.btn-small.wh {
+  color: #262627;
+  background: #fff;
+  border: 1px solid #262627;
+}
+.btn-small.gr {
+  color: #fff;
+  background-color: #8c8581;
+}
+.btn-small:disabled {
+  color: #bcb3ac;
+  background-color: #f0eeeb;
+}
+
+/* btn-bottom */
+.btn-fixed-bottom{
+  position: fixed;
+  bottom: 8.0556vw;
+  left: 0;
+  right: 0;
+}
+
+/* tiny 버튼 */
+
+/* 2020-11-17(황운하) 추가 tiny btn */
+.btn-tiny{
+  width: 20vw;
+  height: 13.3333vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-tiny.bk{
+  color: #fff;
+  background-color: #262627;
+}
+
+.btn-tiny.wh{
+  color: #262627;
+  border: 1px solid #262627;
+  background-color: #ffffff;
+}
+
+.btn-tiny.gr{
+  color: #ffff;
+  background-color: #8c8581;
+}
+.btn-tiny.disabled{
+  color: #bcb3ac;
+  background-color: #f0eeeb;
+}
+
+.btn-basic-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-basic{
+  width: 44.4444vw;
+  height: 15.5556vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-basic.wh{
+  color: #262627;
+  border: 1px solid #262627;
+  background-color: #fff;
+}
+
+.btn-basic.bk{
+  color: #fff;
+  background-color: #262627;
+}
+
+/* btn height 40 */
+
+/* large-40 */
+.btn-large-40{
+  width: 100%;
+  height: 11.1111vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-large-40.bk {
+  color: #fff;
+  background-color: #262627;
+}
+.btn-large-40.wh {
+  color: #262627;
+  border: 1px solid #262627;
+  background-color: #fff;
+}
+.btn-large-40.wh:disabled{
+  color: #bcb3ac;
+  border-color: #f0eeeb;
+}
+.btn-large-40.gr {
+  color: #fff;
+  background-color: #8c8581;
+}
+
+.btn-large-40:disabled{
+  color: #bcb3ac;
+  background-color: #f0eeeb
+}
+
+/* mirage-40 */
+.btn-mirage-40{
+  width: 55.5556vw;
+  height: 11.1111vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-mirage-40.bk{ 
+  color: #fff;
+  background: #262627;
+}
+.btn-mirage-40.wh{
+  color: #262627;
+  border: 1px solid #262627;
+}
+.btn-mirage-40.gr{
+  color: #fff;
+  background: #8c8581;
+}
+.btn-mirage-40:disabled{
+  color: #bcb3ac;
+  background-color: #f0eeeb;
+}
+
+/* medium-40 */
+.btn-mediumd-40{
+  width: 44.4444vw;
+  height: 11.1111vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-mediumd-40.bk {
+  color: #fff;
+  background-color: #262627;
+}
+
+.btn-mediumd-40.wh {
+  color: #262627;
+  border: 1px solid #262627;
+  background-color: #fff;
+}
+
+.btn-mediumd-40.gr {
+  color: #fff;
+  background-color: #8c8581;
+}
+.btn-mediumd-40:disabled{
+  color: #bcb3ac;
+  background-color: #f0eeeb;
+}
+
+/* small-40 */
+.btn-smalld-40{
+  width: 26.6667vw;
+  height: 11.1111vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-smalld-40.bk {
+  color: #fff;
+  background: #262627;
+}
+
+.btn-smalld-40.wh {
+  color: #262627;
+  background: #fff;
+  border: 1px solid #262627;
+}
+.btn-smalld-40.gr {
+  color: #fff;
+  background-color: #8c8581;
+}
+.btn-smalld-40:disabled {
+  color: #bcb3ac;
+  background-color: #f0eeeb;
+}
+
+/* tiny 40 */
+.btn-tiny-40{
+  width: 20vw;
+  height: 11.1111vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-tiny-40.bk{
+  color: #fff;
+  background-color: #262627;
+}
+
+.btn-tiny-40.wh{
+  color: #262627;
+  border: 1px solid #262627;
+  background-color: #ffffff;
+}
+
+.btn-tiny-40.gr{
+  color: #ffff;
+  background-color: #8c8581;
+}
+.btn-tiny-40.disabled{
+  color: #bcb3ac;
+  background-color: #f0eeeb;
+}
+
+.btn-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* btn height 56 */
+.btn-basic{
+  width: 44.4444vw;
+  height: 15.5556vw;
+  text-align: center;
+  font-size: 4.4444vw;
+  font-weight: bold;
+  border-radius: 1.1111vw;
+}
+.btn-basic.wh{
+  color: #262627;
+  border: 1px solid #262627;
+  background-color: #fff;
+}
+
+.btn-basic.bk{
+  color: #fff;
+  background-color: #262627;
+}
+
+/* button group */
+/* =================================*/
+.btn-medium-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* textarea  */
+/* =================================*/
+textarea{
+  resize:none;
+  width: 100%;
+  height: 44.4444vw;
+  padding: 3.3333vw;
+  border: 1px solid #bcb3ac;
+  border-radius: 0.5556vw    
+    
+}
+
+textarea::placeholder {
+  font-size: 3.8889vw;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: -0.2px;
+  color: #262627;
+}
+
+
+/* input box */
+/* =================================*/
+
+/* input[type="radio"], */
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"] {
+  display: none;
+}
+
+
+/* 2020/11/19 (신민하) 체크박스, 라디오 변경 */
+/* 구조
+  <label for="">
+    <input type="radio" id="" checked >
+    <i></i>
+  </label>
+*/
+/* check box ----*/
+label > input[type="checkbox"] + i {
+  display: inline-block;
+  width: 5.5556vw;
+  height: 5.5556vw;
+  vertical-align: middle;
+  margin-right: 2.2222vw;
+  background: url(../images/ico_checkbox_off.svg) no-repeat left center;
+  cursor: pointer;
+}
+
+label > input[type="checkbox"]:checked + i {
+  background: url(../images/ico_checkbox_on.svg) no-repeat left center;
+}
+
+
+/* rario button  ----*/
+label > input[type="radio"] + i {
+  display: inline-block;
+  width: 5.5556vw;
+  height: 5.5556vw;
+  vertical-align: middle;
+  margin-right: 2.2222vw;
+  background: url(../images/ico_radio_off.svg) no-repeat center;
+}
+
+label > input[type="radio"]:checked + i {
+  background: url(../images/ico_radio_on.svg) no-repeat center;
+}
+
+/* toggle button ----*/
+.btn-toggle {
+  position: relative;
+  width: 12.7778vw;
+  height: 7.2222vw;
+  border-radius: 4.1667vw;
+  border:1px solid #e7e0da;
+  background-color: #e7e0da;
+}
+
+.btn-toggle span {
+  position: absolute;
+  top: 50%;
+  left: 0.8333vw;
+  transform: translateY(-50%);
+  display: block;
+  width: 5.5556vw;
+  height: 5.2778vw;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-toggle.on {
+  border:1px solid #524e4c;
+  background-color: #524e4c;
+}
+
+.btn-toggle.on span {
+  left: auto;
+  right: 0.8333vw;
+  transition: all 0.3s ease;
+}
+
+
+/* 2020/11/17(황운하) input태그 재조정 했습니다. -재플린 기준-
+    input.disabled 태그 비활성화
+    input.name-disabled 비활성화 된 이름 박스 지정 css
+
+    input.normal 태그 노말
+    input.on 태그 활성화
+    input.suc 입력값 옳을 때 
+    input.error 입력값 오류일 때
+
+    2020/11/18(황운하) 제플린 기준으로 재정렬
+*/
+
+input.normal{
+  position: relative;
+  width: 100%;
+  height: 13.3333vw;
+  font-size: 3.8889vw;
+  padding-left: 4.4444vw;
+  padding-right: 6.6667vw;
+  color: #8c8581;
+  border: 1px solid #bcb3ac;
+  border-radius: 0.5556vw;
+}
+
+input.normal + button {
+  position: absolute;
+  right: 2.2222vw;
+}
+input.normal+ button > .ico-del{
+  width: 6.6667vw;
+  height: 6.6667vw;
+  background: url(../images/btn_delete.svg)no-repeat center;
+}
+
+input.normal::placeholder{
+  color: #8c8581;
+}
+
+input:disabled {
+  color: #cdc7c1;
+  background-color: #fcf9f7;
+}
+
+input:disabled::placeholder{
+  color: #cdc7c1;
+}
+
+
+
+input.on:focus{
+  border: 1px solid #56a0c4;
+}
+input::placeholder{
+  color: #262627;
+}
+input.suc{
+  border: 1px solid #bcb3ac;
+}
+
+input.error{
+  border:1px solid #c94b4b;
+}
+
+.inp-line-wrap{
+  position: relative;
+ 
+}
+
+input.line-normal{
+  position: relative;
+  width: 100%;
+  height: 13.3333vw;
+  font-size: 3.8889vw;
+  padding-right: 8.8889vw;
+  border: none;
+  border-bottom: 1px solid #bcb3ac;
+}
+
+input.line-normal + button {
+  position: absolute;
+  right: 2.2222vw;
+}
+input.line-normal + button > .ico-del{
+  width: 6.6667vw;
+  height: 6.6667vw;
+  background: url(../images/btn_delete.svg)no-repeat center;
+}
+
+input.line-normal::placeholder{
+  color: #8c8581;
+}
+
+input.line-normal:disabled{
+  background: transparent;
+}
+input.line-normal:disabled::placeholder{
+  color: #cdc7c1;
+}
+
+input.line-on:focus{
+  border-bottom: 1px solid #56a0ca;
+}
+
+
+input.line-suc{
+  border-bottom: 1px solid #bcb3ac;
+}
+
+
+input.line-error{
+  border-bottom: 1px solid #c94b4b;
+}
+
+/* input-text */
+input,
+select {
+  font-family: 'Apple SD Gothic Neo', 'Noto Sans KR';
+}
+
+/* Safari autocomplete off or Icon */
+input[autocomplete="off"]::-webkit-contacts-auto-fill-button, 
+input[autocomplete="off"]::-webkit-credentials-auto-fill-button { 
+  visibility: hidden; 
+  display: none !important; 
+  pointer-events: none; 
+  height: 0;
+  width: 0; 
+  margin: 0; 
+}
+
+/* selectbox */
+
+/* 2020/11/18(황운하) 추가 select box css */
+
+/* 2020/11/19(황운하) 수정 버튼 화살표 select 와 버튼 삼각형 select 구분 */
+
+/* select arrow */
+.select.arrow-large{
+  width: 100%;
+  height: 13.3333vw;
+  font-size: 3.8889vw;
+  padding-left: 3.3333vw;
+  border-radius: 1.1111vw;
+}
+.select.arrow-small{
+  width: 28.8889vw;
+  height: 13.3333vw;
+  font-size: 3.8889vw;
+  padding-left: 4.4444vw;
+  border-radius: 0.5556vw;
+}
+.select.off{
+  color: #262627;
+  border: 2px solid #e7e0da;
+  background: url(../images/btn_arrow_up_small.svg)no-repeat 95% 50%;
+}
+
+.select.on{
+  border: 1px solid  #bcb3ac;
+  background: url(../images/btn_arrow_down_small.svg)no-repeat 95% 50%;
+}
+
+select.on:disabled, select.off:disabled{
+  color: #cdc7c1;
+  border-color:#bcb3ac;
+  background-color: #fcf9f7;
+}
+
+/* select btn */
+
+/* select btn large */
+.select.btn-triangle-large{
+  width: 100%;
+  height: 13.3333vw;
+  font-size: 3.8889vw;
+  padding-left: 3.3333vw;
+  color: #cdc7c1;
+  border: 1px solid #e7e0da;
+  border-radius: 0.5556vw;
+  background: url(../images/btn_triangle.svg)no-repeat 95% 50%;
+}
+.select.btn-triangle-large.on{
+  color: #262627;
+  border: 1px solid #bcb3ac; 
+  background: url(../images/btn_triangle_on.svg)no-repeat 95% 50%;
+}
+
+
+
+/* select btn medium */
+.select.btn-triangle-medium{
+  width: 31.1111vw;
+  height: 8.8889vw;
+  font-size: 3.6111vw;
+  color: #cdc7c1;
+  border: none;
+  background: url(../images/btn_triangle.svg)no-repeat 95% 50%;
+}
+.select.btn-triangle-medium.on{
+  color: #262627;
+  background: url(../images/btn_triangle_on.svg)no-repeat 95% 50%;
+}
+
+/* select btn small */
+.select.btn-small{
+  width: 22.2222vw;
+  height: 8.8889vw;
+  font-size: 3.6111vw;
+  font-weight: normal;
+  border: none;
+}
+.select.btn-small.on{
+  color: #262627;
+  background: url(../images/btn_triangle_on.svg)no-repeat 95% 50%;
+}
+.select.btn-small.off{
+  color: #cdc7c1;
+  background: url(../images/btn_triangle.svg)no-repeat 95% 50%;
+}
+
+/* 커스텀 셀렉트박스 */
+.custom-select {
+  padding-bottom: 3.3333vw;
+}
+.custom-select > p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13.3333vw;
+  padding-right: 3.3333vw;
+  font-size: 3.8889vw;
+  line-height: 13.3333vw;
+  text-indent: 3.3333vw;
+  border: 2px solid #e7e0da;
+  border-radius: 1.1111vw;
+}
+.custom-select > p i {
+  width: 4.444vw;
+  height: 4.444vw;
+  background: url(../images/btn_arrow_down_small.svg) no-repeat left center / 4.444vw 4.444vw;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.custom-select > ul {
+  display: none;
+}
+
+.custom-select > ul > li {
+  height: 11.1111vw;
+  font-size: 3.8889vw;
+  line-height: 11.1111vw;
+  text-indent: 3.3333vw;
+  border-bottom: 1px solid #e7e0da;
+}
+
+.custom-select > ul > li:last-child {
+  border-bottom: none;
+}
+
+.custom-select.on p + ul {
+  display: block;
+}
+.custom-select.on p > i {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+
+/* 플레이스홀더 필수작성요소 */
+.placeholder_box {
+  position: relative;
+}
+.placeholder_box label {
+  color: #c8c8c8;
+  position: absolute;
+  top: 25%;
+  left: 3.6111vw;
+  font-size: 3.3333vw;
+  font-weight: 400;
+  cursor: text;
+}
+
+/* 2020/11/17(황운하) 스타일가이드 추가요소 (텍스트 언더바, 비활성화 버튼, 노멀 버튼)*/
+
+.link-black{
+  font-size: 3.8889vw;
+  color: #262627;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;
+}
+.link-gray{
+  font-size: 3.8889vw;
+  color: #8c8581;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+/* 2020/11/18 추가 devide css */
+
+.divider-section-high{
+  display: block;
+  width: 100%;
+  height: 2.2222vw;
+  border-top: 1px solid #e7e0da;
+  background: #f0eeeb;
+}
+
+.divider-section-large{
+  display: block;
+  width: 100%;
+  height: 0.2778vw;
+  background: #f0eeeb;
+}
+.divider-section-medium{
+  display: block;
+  width: 93.3333vw;
+  height: 0.2778vw;
+  margin: 0 auto;
+  background: #f0eeeb;
+}
+
+.divider-title-contents{
+  display: block;
+  width: 100%;
+  height: 0.2778vw;
+  background: #262627;
+}
+
+.divider-title-grey{
+  display: block;
+  width: 100%;
+  height: 0.2778vw;
+  background: #524e4c;
+}
+
+/* 2020/11/24 황운하 라벨 관련 css */
+.circle-after{
+  position: relative;
+}
+.circle-after::after{
+  position: absolute;
+  left: 36px;
+  top: 5px;
+  display: block;
+  content: "";
+  width: 1.1111vw;
+  height: 1.1111vw;
+  background:#df9cdf;
+  border-radius: 50%;
+}
+
+.d-flex label input[type="checkbox"] + i,
+.d-flex label input[type="radio"] + i{
+  margin-right: 4.4444vw;
+}

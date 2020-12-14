@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <path id="5mau2zftka" d="M0 0.036L16.659 0.036 16.659 15.565 0 15.565z"/>
+        <path id="gujzaasfqc" d="M0.065 0.009L4.212 0.009 4.212 4.733 0.065 4.733z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path d="M0 0H32V32H0z" transform="translate(-1028 -614) translate(1028 614)"/>
+                <g>
+                    <g transform="translate(-1028 -614) translate(1028 614) translate(7 5) translate(0 5.015)">
+                        <mask id="0whg2rozzb" fill="#fff">
+                            <use xlink:href="#5mau2zftka"/>
+                        </mask>
+                        <path fill="#FFF" d="M13.914 5.974c-.024-2.589 2.114-3.831 2.208-3.89C14.92.327 13.047.082 12.384.053c-1.594-.16-3.112.94-3.918.94C7.658.992 6.41.078 5.09.105 3.35.128 1.752 1.115.856 2.667c-1.803 3.13-.463 7.77 1.299 10.308.858 1.243 1.88 2.638 3.225 2.588 1.298-.05 1.788-.837 3.355-.837 1.563 0 2.006.837 3.378.816 1.393-.029 2.277-1.272 3.128-2.514.984-1.443 1.394-2.839 1.418-2.912-.03-.011-2.719-1.043-2.745-4.142" mask="url(#0whg2rozzb)"/>
+                    </g>
+                    <g transform="translate(-1028 -614) translate(1028 614) translate(7 5) translate(8.211 .113)">
+                        <mask id="zyyoe91dpd" fill="#fff">
+                            <use xlink:href="#gujzaasfqc"/>
+                        </mask>
+                        <path fill="#FFF" d="M3.125 3.274C3.84 2.411 4.323 1.207 4.19.01 3.162.05 1.915.697 1.179 1.558.515 2.327-.067 3.553.09 4.725c1.146.087 2.321-.584 3.034-1.45" mask="url(#zyyoe91dpd)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

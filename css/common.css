@@ -1,0 +1,1884 @@
+@charset "utf-8";
+
+/* font */
+/* =================================*/
+/* Noto Sans KR */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/* Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* font 초기화 */
+/* =================================*/
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Apple SD Gothic Neo",
+    "Noto Sans KR", "맑은 고딕", Dotum, "돋움", sans-serif;
+  /* -apple-system Safari에서 SF 한글/영문 폰트. Firefox에서 SF 영문 폰트 */
+  /* BlinkMacSystemFont Chrome 계열에서 SF 한글/영문 폰트 */
+  font-size: 3.3333vw;
+  font-weight: 400;
+  color: #262627;
+  letter-spacing: -0.0556vw;
+}
+
+i {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* font-size */
+/* =================================*/
+.fz-10 {
+  font-size: 2.7778vw;
+}
+
+.fz-11 {
+  font-size: 3.0556vw;
+}
+
+.fz-12 {
+  font-size: 3.3333vw;
+}
+
+.fz-13 {
+  font-size: 3.6111vw;
+}
+
+.fz-14 {
+  font-size: 3.8889vw;
+}
+
+.fz-16 {
+  font-size: 4.4444vw;
+}
+
+.fz-18 {
+  font-size: 5vw;
+}
+
+.fz-20 {
+  font-size: 5.5556vw;
+}
+
+.fz-24 {
+  font-size: 6.6667vw;
+}
+
+/* font-weight */
+/* =================================*/
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-mid {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+/* text-align */
+/* =================================*/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* font-color */
+/* =================================*/
+.fc-wh {
+  color: #fcf9f7;
+}
+
+.fc-gr {
+  color: #f0eeeb;
+}
+
+.fc-light-gr {
+  color: #e7e0da;
+}
+
+.fc-mid-gr {
+  color: #bcb3ac;
+}
+
+.fc-dark-gr {
+  color: #8c8581;
+}
+
+.fc-deep-gr {
+  color: #524e4c;
+}
+
+.fc-bk {
+  color: #262627;
+}
+/* 2020/11/20 황운하 추가 폰트 색 빨강(c94b4b), 초록(6cae7e) */
+.fc-rd {
+  color: #c94b4b;
+}
+.fc-gn {
+  color: #6cae7e;
+}
+.fc-or {
+  color: #f9b66c;
+}
+.fc-pk {
+  color: #df9cdf;
+}
+/* TYPOGRAPHY */
+/* =================================*/
+/* eng */
+.tit1-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 5.5556vw;
+  color: #262627;
+  line-height: 7.7778vw;
+}
+
+.tit2-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 5vw;
+  color: #262627;
+  line-height: 7.2222vw;
+}
+
+.tit3-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 4.4444vw;
+  color: #262627;
+  line-height: 5.5556vw;
+}
+
+.tit4-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 3.8889vw;
+  color: #262627;
+  line-height: 5.5556vw;
+}
+
+.body1-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3.6111vw;
+  color: #262627;
+  line-height: 4.4444vw;
+}
+
+.body2-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3.3333vw;
+  color: #262627;
+  line-height: 4.4444vw;
+}
+
+.body2-2-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 3.3333vw;
+  color: #df9cdf;
+  line-height: 4.4444vw;
+}
+
+.body3-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3.0556vw;
+  color: #262627;
+  line-height: 3.8889vw;
+}
+
+.body3-1-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3.0556vw;
+  color: #8d8580;
+  line-height: 3.8889vw;
+}
+
+.body3-2-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3.0556vw;
+  color: #6cae7e;
+  line-height: 3.8889vw;
+}
+
+.body3-3-eng {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3.0556vw;
+  color: #bcb3ac;
+  line-height: 3.8889vw;
+}
+
+/* kor */
+.tit1-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 700;
+  font-size: 5.5556vw;
+  color: #262627;
+  line-height: 7.7778vw;
+}
+
+.tit2-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 700;
+  font-size: 5vw;
+  color: #262627;
+  line-height: 7.2222vw;
+}
+
+.tit3-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 400;
+  font-size: 4.4444vw;
+  color: #262627;
+  line-height: 6.6667vw;
+}
+
+.tit4-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 700;
+  font-size: 3.8889vw;
+  color: #262627;
+  line-height: 5.5556vw;
+}
+
+.body1-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 400;
+  font-size: 3.6111vw;
+  color: #262627;
+  line-height: 4.4444vw;
+}
+
+.body2-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 400;
+  font-size: 3.3333vw;
+  color: #262627;
+  line-height: 4.4444vw;
+}
+
+.body3-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 400;
+  font-size: 3.0556vw;
+  color: #262627;
+  line-height: 4.4444vw;
+}
+
+.body3-1-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 400;
+  font-size: 3.0556vw;
+  color: #8d8580;
+  line-height: 4.4444vw;
+}
+
+.body3-2-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 400;
+  font-size: 3.0556vw;
+  color: #6cae7e;
+  line-height: 4.4444vw;
+}
+
+.body3-3-ko {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR";
+  font-weight: 400;
+  font-size: 3.0556vw;
+  color: #bcb3ac;
+  line-height: 4.4444vw;
+}
+
+/* bg-color */
+/* =================================*/
+.bg-bk {
+  background-color: black;
+}
+.bg-wh {
+  background-color: #fff;
+}
+.bg-gr-footer {
+  background-color: #f1efec;
+}
+
+/* 2020-11-04 추가(이준재) */
+.bg-lgr {
+  background-color: #fafafa;
+}
+.bg-wh {
+  background-color: #fff;
+}
+
+.bg-pink {
+  background-color: #df9cdf;
+}
+
+/* margin 360기준으로 변경 완료*/
+/* =================================*/
+.mg-height-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0;
+}
+
+.mt--20 {
+  margin-top: -5.5556vw;
+}
+.mt-2 {
+  margin-top: 0.5556vw;
+}
+.mt-4 {
+  margin-top: 1.1111vw;
+}
+.mt-8 {
+  margin-top: 2.2222vw;
+}
+.mt-10 {
+  margin-top: 2.7778vw;
+}
+.mt-12 {
+  margin-top: 3.3333vw;
+}
+.mt-13 {
+  margin-top: 3.6111vw;
+}
+
+.mt-16 {
+  margin-top: 4.4444vw;
+}
+.mt-18 {
+  margin-top: 5vw;
+}
+.mt-20 {
+  margin-top: 5.5556vw;
+}
+.mt-23 {
+  margin-top: 6.3889vw;
+}
+.mt-24 {
+  margin-top: 6.6667vw;
+}
+.mt-25 {
+  margin-top: 6.9444vw;
+}
+.mt-28 {
+  margin-top: 7.7778vw;
+}
+.mt-39 {
+  margin-top: 10.8333vw;
+}
+.mt-40 {
+  margin-top: 11.1111vw;
+}
+
+.mt-48 {
+  margin-top: 13.3333vw;
+}
+
+.mt-50 {
+  margin-top: 13.8889vw;
+}
+.mt-54 {
+  margin-top: 15vw;
+}
+.mt-55 {
+  margin-top: 15.2778vw;
+}
+.mt-60 {
+  margin-top: 16.6667vw;
+}
+.mt-67 {
+  margin-top: 18.6111vw;
+}
+.mt-70 {
+  margin-top: 19.4444vw;
+}
+.mt-80 {
+  margin-top: 22.2222vw;
+}
+.mt-88 {
+  margin-top: 24.4444vw;
+}
+.mt-100 {
+  margin-top: 27.7778vw;
+}
+
+.mb-4 {
+  margin-bottom: 1.1111vw;
+}
+.mb-8 {
+  margin-bottom: 2.2222vw;
+}
+.mb-10 {
+  margin-bottom: 2.7778vw;
+}
+.mb-16 {
+  margin-bottom: 4.4444vw;
+}
+
+.mb-16 {
+  margin-bottom: 4.4444vw;
+}
+.mb-20 {
+  margin-bottom: 5.5556vw;
+}
+.mb-24 {
+  margin-bottom: 6.6667vw;
+}
+.mb-30 {
+  margin-bottom: 8.3333vw;
+}
+.mb-34 {
+  margin-bottom: 9.4444vw;
+}
+.mb-40 {
+  margin-bottom: 11.1111vw;
+}
+.mb-48 {
+  margin-bottom: 13.3333vw;
+}
+.mb-50 {
+  margin-bottom: 13.8889vw;
+}
+.mb-60 {
+  margin-bottom: 16.6667vw;
+}
+.mb-100 {
+  margin-bottom: 27.7778vw;
+}
+.mb-122 {
+  margin-bottom: 33.8889vw;
+}
+.mb-202 {
+  margin-bottom: 56.1111vw;
+}
+
+.ml-4 {
+  margin-left: 1.1111vw;
+}
+.ml-10 {
+  margin-left: 2.7778vw;
+}
+.ml-16 {
+  margin-left: 4.4444vw;
+}
+.ml-20 {
+  margin-left: 5.5556vw;
+}
+.ml-24 {
+  margin-left: 6.6667vw;
+}
+
+.mr-4 {
+  margin-right: 1.1111vw;
+}
+.mr-6 {
+  margin-right: 1.6667vw;
+}
+.mr-8 {
+  margin-right: 2.2222vw;
+}
+.mr-16 {
+  margin-right: 4.4444vw;
+}
+.mr-20 {
+  margin-right: 5.5556vw;
+}
+.mr-24 {
+  margin-right: 6.6667vw;
+}
+.mr-30 {
+  margin-right: 8.3333vw;
+}
+.mr-80 {
+  margin-right: 22.2222vw;
+}
+
+.negative-margin {
+  margin-left: -4.1667vw;
+  margin-right: -4.1667vw;
+}
+/* padding 360기준으로 변경 완료*/
+/* =================================*/
+.p0 {
+  padding: 0;
+}
+.pt-20 {
+  padding-top: 5.5556vw;
+}
+.pt-40 {
+  padding-top: 11.1111vw;
+}
+.pt-80 {
+  padding-top: 22.2222vw;
+}
+.pt-88 {
+  padding-top: 24.4444vw;
+}
+
+.pb-14 {
+  padding-bottom: 3.8889vw;
+}
+.pb-24 {
+  padding-bottom: 6.6667vw;
+}
+.pb-30 {
+  padding-bottom: 8.3333vw;
+}
+.pb-32 {
+  padding-bottom: 8.8889vw;
+}
+.pb-40 {
+  padding-bottom: 11.1111vw;
+}
+.pb-60 {
+  padding-bottom: 16.6667vw;
+}
+.pb-106 {
+  padding-bottom: 29.4445vw;
+}
+
+.pl-24 {
+  padding-left: 6.6667vw;
+}
+
+/* .container */
+/* =================================*/
+.container {
+  padding-left: 4.1667vw;
+  padding-right: 4.1667vw;
+  width: 100%;
+}
+
+.container-10 {
+  padding-left: 2.7778vw;
+  padding-right: 2.7778vw;
+  width: 100%;
+}
+
+.container-30 {
+  padding-left: 4.1667vw;
+  padding-right: 4.1667vw;
+  width: 100%;
+}
+
+.container-50 {
+  padding-left: 6.9444vw;
+  padding-right: 6.9444vw;
+  width: 100%;
+}
+
+/* 360기준 새로운 container  */
+
+.container-12 {
+  padding-left: 3.3333vw;
+  padding-right: 3.3333vw;
+  width: 100%;
+}
+
+.container-16 {
+  padding-left: 4.4444vw;
+  padding-right: 4.4444vw;
+  width: 100%;
+}
+
+.container-24 {
+  padding-left: 6.6667vw;
+  padding-right: 6.6667vw;
+  width: 100%;
+}
+
+/* flex */
+/* =================================*/
+
+/* flext-justify */
+.fx-center {
+  justify-content: center;
+}
+
+.fx-around {
+  justify-content: space-around;
+}
+
+.fx-between {
+  justify-content: space-between;
+}
+
+.fx-evenly {
+  justify-content: space-evenly;
+}
+
+.fx-flexstart {
+  justify-content: flex-start;
+}
+.fx-flexend {
+  justify-content: flex-end;
+}
+
+/* flext-align */
+
+.fx-start {
+  align-items: flex-start;
+}
+
+.fx-middle {
+  align-items: center;
+}
+
+.fx-end {
+  align-items: flex-end;
+}
+
+/* .title-sub-format */
+/* =================================*/
+/* 2020/11/20 황운하 css 수정 */
+.title-sub-format {
+  padding-top: 11.1111vw;
+  padding-bottom: 6.9444vw;
+  font-size: 5vw;
+  font-weight: 800;
+  text-align: center;
+}
+.product-list-title {
+  padding-top: 6.6667vw;
+  padding-bottom: 6.6667vw;
+  font-size: 4.4444vw;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -0.27px;
+}
+
+/* product type */
+/* =================================*/
+
+/* product-72 */
+
+.product-64 .product-wrap .img-area .img-box {
+  width: 17.7778vw;
+  overflow: hidden;
+  border-radius: 1.1111vw;
+}
+
+/* product-72 */
+
+.product-72 .product-wrap .img-area .img-box {
+  width: 20vw;
+  overflow: hidden;
+  border-radius: 1.1111vw;
+}
+
+/* product-79 */
+
+.product-79 .product-wrap .img-area .img-box {
+  width: 21.9444vw;
+  overflow: hidden;
+  border-radius: 1.1111vw;
+}
+
+/* product-96 */
+
+.product-96 .product-wrap .img-area .img-box {
+  width: 26.6667vw;
+  overflow: hidden;
+  border-radius: 1.1111vw;
+}
+
+/* product-98 */
+
+.product-98 .product-wrap .img-area .img-box {
+  width: 27.2222vw;
+  overflow: hidden;
+  border-radius: 1.1111vw;
+}
+
+/* product-140 */
+.product-140 .product-wrap .img-area .img-box {
+  width: 38.8889vw;
+  border-radius: 1.1111vw;
+}
+
+.product-140 .product-wrap {
+  padding-right: 2.2222vw;
+}
+.product-140 .product:last-child .product-wrap {
+  padding-right: 4.4444vw;
+}
+
+/* product-160 */
+.product-160 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-160 .product-wrap .img-area .img-box {
+  width: 44.4444vw;
+  border-radius: 1.1111vw;
+}
+
+/* product-100% */
+.product-full .product-wrap .img-area .img-box {
+  width: 100%;
+}
+.product-full .product-wrap .img-area .img-box img {
+  border-radius: 2.2222vw;
+}
+/* time-promotion */
+.time-promotion .product-wrap .img-area .img-box {
+  width: 100%;
+  border-radius: 2.2222vw;
+}
+
+/* steady-seller */
+.product-seller .product-wrap .img-area .img-box {
+  width: 65.5556vw;
+  margin: 0 auto;
+  border-radius: 2.2222vw;
+}
+
+/* influencer circle type */
+
+.circle-64 .product-wrap .img-area .img-box {
+  overflow: hidden;
+  width: 17.7778vw;
+  height: 17.7778vw;
+  border-radius: 50%;
+}
+
+.circle-80 .product-wrap .img-area .img-box {
+  width: 22.2222vw;
+  height: 22.2222vw;
+}
+.circle-80 .product-wrap .img-area .img-box img {
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* brand-mall-circle */
+.brand-mall-circle .product-wrap .img-area .img-box {
+  width: 17.7778vw;
+}
+.brand-mall-circle .product-wrap .img-area .img-box img {
+  border: 1px solid #f0eeeb;
+  border-radius: 50%;
+}
+.brand-mall-circle .product-wrap {
+  margin-right: 4.4444vw;
+}
+
+/* view type */
+/* ============================== */
+/* .horizontal  */
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* two-column */
+.twocols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* vertical */
+.vertical .product .product-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 6.6667vw;
+}
+
+.vertical .product .product-wrap .text-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 3.3333vw;
+}
+
+.vertical .product .product-wrap .text-area .product-title {
+  padding-top: 1.1111vw;
+  font-size: 3.6111vw;
+}
+
+.vertical .product .product-wrap .text-area .price-list {
+  font-size: 3.6111vw;
+  font-weight: 700;
+}
+
+.vertical .product .product-wrap .text-area .price-list .price-del {
+  padding-left: 2.2222vw;
+  font-size: 3.3333vw;
+  color: #bcb3ac;
+  font-weight: 400;
+}
+
+.vertical .product .product-wrap .text-area .price-list .sale {
+  padding-left: 2.2222vw;
+  color: #df9cdf;
+}
+
+.vertical .product .product-wrap .text-area .public-info span i {
+  text-align: center;
+}
+
+.vertical .product .product-wrap .text-area .option-list {
+  font-size: 3.6111vw;
+  color: #8c8581;
+}
+
+.vertical .product .product-wrap .text-area .public-info .divide {
+  display: inline-block;
+  width: 0.2778vw;
+  height: 2.2222vw;
+  margin: 0.8333vw 1.1111vw 1.6667vw;
+  background-color: #dedcd9;
+  vertical-align: middle;
+}
+
+.vertical .product .product-wrap .text-area .public-info .view .ico-view {
+  z-index: 100;
+  display: inline-block;
+  width: 2.7778vw;
+  height: 2.7778vw;
+  margin-right: 1.1111vw;
+  vertical-align: middle;
+  background: url(../images/ico_view.svg) no-repeat center left;
+}
+
+.vertical .product .product-wrap .text-area .product-tag {
+  font-size: 3.0556vw;
+  letter-spacing: -0.0861vw;
+  color: #54b079;
+}
+
+.vertical .product .product-wrap .text-area .product-tag span {
+  padding-right: 4.1667vw;
+}
+
+.vertical .product .product-wrap .text-area .product-restock {
+  padding-top: 1.1111vw;
+  font-size: 3.0556vw;
+  letter-spacing: -0.0861vw;
+  color: #54b079;
+}
+
+.vertical .product .product-wrap .text-area .live-price {
+  display: inline-block;
+  width: 12.7778vw;
+  height: 4.4444vw;
+  margin-left: 2.2222vw;
+  line-height: 4.4444vw;
+  font-size: 2.7778vw;
+  text-align: center;
+  color: #6cae7e;
+  border-radius: 2.5vw;
+  background: #def0e3;
+}
+
+.vertical .product.sold-out .product-wrap .text-area {
+  color: #bcb3ac;
+}
+
+/* vertical-live */ /* 2020-12-01(이준재) 추가 */
+.vertical-live {
+  margin-top: 6.6667vw;
+}
+.vertical-live .product .product-wrap {
+  display: flex;
+  margin-bottom: 6.6667vw;
+}
+
+.vertical-live .product .text-area {
+  position: relative;
+  width: 100%;
+  padding-left: 4.4444vw;
+  font-size: 3.8889vw;
+}
+
+.vertical-live .product .text-area .preview-time {
+  padding-bottom: 4.4444vw;
+  font-weight: 700;
+}
+.vertical-live .product .text-area .creator-title {
+  padding-bottom: 1.1111vw;
+  font-size: 3.3333vw;
+}
+
+.vertical-live .product .text-area .brand-title {
+  color: #8c8581;
+}
+.vertical-live .text-area .divider-section-large {
+  flex-grow: 0;
+  margin: 2.2222vw 0;
+}
+
+/* .influencer-vertical */
+/* .influencer-vertical .product .product-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 5.5556vw;
+  padding-bottom: 5.5556vw;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.influencer-vertical .product .product-wrap .text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  padding-top: 4.1667vw;
+} */
+
+/* cart-count */
+.cart-count {
+  display: flex;
+  align-items: center;
+}
+.cart-count button {
+  display: block;
+  width: 4.444vw;
+  height: 4.444vw;
+  border-radius: 50%;
+}
+.cart-count .add {
+  background: #e7e0da url(../images/ico_components_add.svg) no-repeat center /
+    4.444vw 4.444vw;
+}
+.cart-count .subtract {
+  background: #e7e0da url(../images/ico_components_remove.svg) no-repeat center /
+    4.444vw 4.444vw;
+}
+.cart-count span {
+  width: 8.8888vw;
+  height: 5.5556vw;
+  margin: 0 2.2222vw;
+  line-height: 5.5556vw;
+  text-align: center;
+  border: 1px solid #f0eeeb;
+  border-radius: 1.1111vw;
+}
+
+/* vertical-cart */
+.vertical-cart .product .product-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 3.3333vw;
+}
+.vertical-cart .product .product-wrap .cart-count-wrap .cart-count {
+  padding-top: 3.3333vw;
+}
+.vertical-cart .product .product-wrap .text-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 3.3333vw;
+}
+
+.vertical-cart .product .product-wrap .text-area .product-title {
+  padding-top: 1.1111vw;
+  font-size: 3.6111vw;
+}
+
+.vertical-cart .product .product-wrap .text-area .price-list {
+  padding-bottom: 1.3889vw;
+  font-size: 3.6111vw;
+  line-height: 4.4444vw;
+  font-weight: 700;
+  text-align: right;
+}
+
+.vertical-cart .product .product-wrap .text-area .option-list {
+  padding-top: 2.2222vw;
+  font-size: 3.6111vw;
+  color: #8c8581;
+}
+
+.vertical-cart .product.sold-out .product-wrap .text-area {
+  color: #bcb3ac;
+}
+
+/* vertical-cart */
+/* .vertical-cart .product .product-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 5.5556vw; 2020/11/20 황운하 주석
+  margin-bottom: 5.5556vw;
+}
+
+.vertical-cart .product .product-wrap .text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  padding-top: 1.6667vw;
+} */
+
+/* 2020/11/20 황운하 수정 css */
+/* .vertical-cart .product .product-wrap .text-area .price-list {
+  margin-top: 4.4444vw;
+} */
+
+/* common-icon */
+/* =================================*/
+/* 2020/11/26 황운하 pin 아이콘 추가 */
+
+.ico-close-circle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 6.6667vw;
+  height: 6.6667vw;
+  transform: translateY(-50%);
+  background: url(../images/btn_delete.svg) no-repeat center;
+}
+
+.ico-pin {
+  position: absolute;
+  top: 50%;
+  right: 10vw;
+  display: block;
+  width: 6.6667vw;
+  height: 6.6667vw;
+  transform: translateY(-50%);
+  background: url(../images/ico_pin_off.svg) no-repeat center;
+}
+
+.ico-pin.on {
+  background: url(../images/ico_pin_on.svg) no-repeat center;
+}
+
+.filter-icon-area .icon-triangle {
+  content: "";
+  position: absolute;
+  left: 100%;
+  width: 4.4444vw;
+  height: 4.4444vw;
+  background: url(../images/btn_arrow_select_on.svg) no-repeat center center;
+  transition: all 0.3s ease;
+}
+
+.filter-icon-area .icon-triangle {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+.ico-video-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(../images/ico_play_small.svg) no-repeat center;
+}
+
+.ico-close-gr {
+  width: 4.4444vw;
+  height: 4.4444vw;
+  background: url(../images/ico_close_gr.svg) no-repeat center;
+}
+.btn-arrow-up-dk {
+  width: 6.6667vw;
+  height: 6.6667vw;
+  background: url(../images/btn_arrow_up_dk.svg) no-repeat center;
+}
+.btn-arrow-right-dk {
+  width: 3.8889vw;
+  height: 3.8889vw;
+  vertical-align: middle;
+  background: url(../images/btn_arrow_right_dk.svg) no-repeat center;
+}
+
+.badge-notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.2222vw;
+  height: 7.7778vw;
+  border: 1px solid #6cae7e;
+  border-radius: 3.8889vw;
+}
+.badge-notice i {
+  width: 4.444vw;
+  height: 4.444vw;
+  margin-right: 1.1111vw;
+  background: url(../images/btn_badge_alarm_off.svg) no-repeat center;
+}
+.badge-notice span {
+  font-size: 3.0556vw;
+  white-space: nowrap;
+  letter-spacing: -0.18px;
+  color: #6cae7e;
+}
+
+/* overlay-blur */
+/* =================================*/
+.overlay-blur {
+  z-index: 10;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.1111vw;
+}
+
+/* badge */
+/* =================================*/
+/* badge relative declaration */
+.img-area {
+  position: relative;
+}
+
+.img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.badge-area img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-area img {
+  width: 100%;
+  height: 100%;
+}
+
+.badge-wish {
+  position: absolute;
+  right: 2.2222vw;
+  bottom: 2.2222vw;
+  width: 4.4444vw;
+  height: 4.4444vw;
+  background: url(../images/ico_heart_off.svg) no-repeat center;
+}
+
+.badge-wish.on {
+  background: url(../images/ico_heart_on.svg) no-repeat center;
+}
+
+.badge-wish-textarea {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 5.5556vw;
+  height: 5.5556vw;
+  background: url(../images/ico_heart_off.svg) no-repeat center;
+}
+
+.badge-wish-textarea.on {
+  background: url(../images/ico_heart_on.svg) no-repeat center;
+}
+
+.badge-bookmark-textarea {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 7.7778vw;
+  height: 7.7778vw;
+  background: url(../images/btn_bookmark_off.svg) no-repeat center;
+}
+
+.badge-bookmark-textarea.on {
+  background: url(../images/btn_bookmark_on.svg) no-repeat center;
+}
+
+.badge-soldout {
+  z-index: 10;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.1111vw;
+}
+
+.badge-soldout:before {
+  content: "SOLD OUT";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.4444vw;
+  color: #ffff;
+  white-space: nowrap;
+}
+
+.badge-cart-textarea {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 6.6667vw;
+  height: 6.6667vw;
+  background: url(../images/ico_cart_off.svg) no-repeat center;
+}
+
+.badge-cart-textarea.on {
+  background: url(../images/ico_cart_on.svg) no-repeat center;
+}
+
+.badge-selec {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 5.5556vw;
+  height: 5.5556vw;
+}
+
+.indicator-more {
+  z-index: 1;
+  position: absolute;
+  right: 3.0556vw;
+  left: initial;
+  bottom: 5vw;
+  align-items: center;
+  width: 15.5556vw;
+  height: 6.6667vw;
+  line-height: 6.6667vw;
+  padding-left: 2.2222vw;
+  font-size: 3.0556vw;
+  letter-spacing: -0.0444vw;
+  color: #fff;
+  background: rgba(38, 38, 39, 0.5) url(../images/ico_plus_8.svg) no-repeat
+    11.1111vw center / 2.2222vw 2.2222vw;
+  border-radius: 4.4444vw;
+}
+.indicator-more:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  display: block;
+  width: 1px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-color: rgb(38, 38, 39);
+}
+
+.badge-timer {
+  z-index: 10;
+  position: absolute;
+  top: 13.8889vw;
+  left: 0;
+  width: 37.5vw;
+  height: 9.7222vw;
+  line-height: 9.7222vw;
+  font-size: 3.3333vw;
+  font-weight: 400;
+  color: #fff;
+  text-indent: 12.5vw;
+  /* background: url(../images/timer-badge.png) no-repeat; */
+  background-size: 37.5vw 9.7222vw;
+}
+
+.badge-close {
+  position: absolute;
+  top: 1.6667vw;
+  right: 0;
+  width: 8.3333vw;
+  height: 8.3333vw;
+  /* background: url(../images/ICON_close_BK.png) no-repeat; */
+  background-size: 8.3333vw 8.3333vw;
+}
+
+.badge-close-white {
+  position: absolute;
+  top: 2.2222vw;
+  right: 4.1667vw;
+  width: 8.3333vw;
+  height: 8.3333vw;
+  /* background: url(../images/ICON_close-white.png) no-repeat; */
+  background-size: 8.3333vw 8.3333vw;
+}
+
+.badge-link {
+  position: absolute;
+  bottom: 1.6667vw;
+  right: 0;
+  width: 8.8889vw;
+  height: 8.8889vw;
+  /* background: url(../images/ICON_link_circle.png) no-repeat; */
+  background-size: 8.8889vw 8.8889vw;
+}
+
+.badge-small-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.7222vw;
+  height: 4.7222vw;
+  background: url(../images/ico_close_bk.svg) no-repeat;
+  background-size: 4.7222vw 4.7222vw;
+}
+
+.badge-restock {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28.3333vw;
+  height: 8.8889vw;
+  /* background: url(../images/btn_restock.png) no-repeat; */
+  background-size: 28.3333vw 8.8889vw;
+}
+
+.badge-live-notice {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 16.25vw;
+  height: 5.5556vw;
+  font-size: 2.7778vw;
+  color: #fff;
+  text-align: center;
+  line-height: 5.5556vw;
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+/* badge shape */
+.badge-position {
+  position: absolute;
+  display: flex;
+  top: 1.1111vw;
+  left: 1.1111vw;
+}
+
+.badge-square {
+  width: 10.5556vw;
+  height: 3.8889vw;
+  line-height: 3.8889vw;
+  margin-right: 1.1111vw;
+  font-size: 2.5vw;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -0.09px;
+  border-radius: 0.2778vw;
+}
+
+.badge-circle {
+  position: absolute;
+  width: 11.1111vw;
+  height: 11.1111vw;
+  font-size: 2.7778vw;
+  text-align: center;
+  color: #fff;
+  line-height: 11.1111vw;
+  border-radius: 50%;
+}
+
+/* bage-color */
+.badge-pink {
+  background-color: rgb(223, 156, 223);
+}
+
+.badge-blue {
+  background-color: rgb(86, 160, 196);
+}
+
+.badge-orange {
+  background-color: rgb(249, 161, 96);
+}
+
+.badge-Viridian {
+  background-color: rgb(108, 174, 126);
+}
+.badge-l-orange {
+  background-color: rgb(249, 182, 108);
+}
+.badge-red {
+  background-color: rgb(201, 75, 75);
+}
+
+/* 2020/11/22 황운하 뱃지 추가 css */
+.badge-violet {
+  background: #d28ed2;
+}
+.badge-orange {
+  background: #efb878;
+}
+.badge-leafGreen {
+  background: #7ba89b;
+}
+
+/* tab-menu-nav */
+.tab-menu-nav ul {
+  display: flex;
+  align-items: center;
+  height: 13.3333vw; /* 2020/11/22 황운하 css 수정 height값 변경*/
+  line-height: 13.3333vw;
+}
+
+/* 2020/11/23 황운하 css 수정 width 50% -> 27.7778vw margin 값 생성 */
+.tab-menu-nav ul li {
+  display: block;
+  line-height: 13.3333vw;
+  text-align: center;
+  padding: 0 3.3333vw;
+  font-size: 3.8889vw;
+  color: #262627;
+  position: relative;
+}
+
+.tab-menu-nav ul li a {
+  display: block;
+}
+
+/* 2020/11/20 황운하 주석 처리 후 하단 선 추가 */
+
+.tab-menu-nav ul li.on {
+  font-weight: 700;
+  color: #262627;
+  /* border-bottom: 2px solid #000; */ /* 2020/11/20 황운하 주석 */
+  outline: none;
+  /* transition: all 0.3s ease; */ /* 2020/11/20 황운하 주석 */
+}
+
+.tab-menu-nav ul li.on::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  width: 22.2222vw;
+  height: 0.5556vw;
+  margin: 0 auto;
+  background: #6cae7e;
+}
+
+.tab-menu-nav.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+/* star-rating-bar */
+/* =================================*/
+.star-rating-bar {
+  display: flex;
+}
+
+.star-rating-bar .bar {
+  position: relative;
+  width: 27.7778vw;
+  height: 5.5556vw;
+  background: url(../images/star_rate_gl.svg) no-repeat;
+  background-size: 27.7778vw 5.5556vw;
+}
+
+.star-rating-bar .bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 5.5556vw;
+  background: url(../images/star_rate_bk.svg) no-repeat;
+  background-size: 27.7778vw 5.5556vw;
+}
+
+/* 상품상세 별점 스몰사이즈 */
+
+.review-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.review-info .star-rating {
+  position: relative;
+  width: 19.4444vw;
+  height: 3.8889vw;
+  background: url(../images/star_rate_gl.svg) no-repeat left;
+}
+.review-info .star-rating > .rate {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3.8889vw;
+  overflow: hidden;
+  background: url(../images/star_rate_bk.svg) no-repeat left;
+}
+/* popup */
+/* =================================*/
+/* 2020/11/25 황운하 팝업 틀 공통 css 추가 */
+.bottom-popup-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  overflow: hidden;
+  border-radius: 2.7778vw 2.7778vw 0 0;
+  background: #ffffff;
+}
+.bottom-popup-wrap.square {
+  border-radius: 0;
+}
+
+.popup-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 2020/11/25 황운하 팝업 탭 영역 닫기 이미지 */
+.btn-popup-close {
+  position: absolute;
+  right: 4.1667vw;
+  top: 3.3333vw;
+  width: 6.6667vw;
+  height: 6.6667vw;
+}
+.btn-popup-close > .ico-close {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/ico_close_bk.svg) no-repeat center;
+}
+
+/* 2020/11/26 황운하 작은 팝업 css */
+.small-popup {
+  width: 73.3333vw;
+  height: 32.5vw;
+  margin: 0 auto;
+  border-radius: 2.2222vw;
+  background-color: #ffffff;
+}
+.small-popup-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6.6667vw 0;
+}
+.small-popup-btn-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #f0eeeb;
+}
+.small-popup-btn-wrap button {
+  width: 50%;
+  height: 13.3333vw;
+  text-align: center;
+}
+.small-popup-btn-wrap > button:first-child {
+  border-right: 1px solid #f0eeeb;
+}
+/* 2020/12/01 황운하 medium(264px) 팝업 */
+.medium-popup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 73.3333vw;
+  height: 66.6667vw;
+  border-radius: 2.2222vw;
+  background-color: #fff;
+}
+
+.medium-popup-content {
+  padding: 6.6667vw 0;
+  line-height: 5.5555vw;
+}
+
+.medium-popup button:first-child {
+  border-right: 1px solid #f0eeeb;
+}
+.medium-popup .horizontal {
+  width: 100%;
+  border-top: 1px solid #f0eeeb;
+}
+.medium-popup .horizontal button {
+  width: 100%;
+  height: 13.3333vw;
+  line-height: 13.3333vw;
+}
+
+/* 2020/12/01 황운하 large(320px) 팝업 */
+.large-popup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 88.8889vw;
+  height: 81.3889vw;
+  padding: 4.4444vw;
+  border-radius: 2.2222vw;
+  background-color: #fff;
+}
+
+.large-popup-content {
+  width: 100%;
+}
+
+.large-popup .large-popup-benefit {
+  width: 80vw;
+  height: 30.8333vw;
+  padding: 4.4444vw;
+  border: 1px solid #df9cdf;
+  border-radius: 2.2222vw;
+  background-color: #fff2ff;
+}
+
+.large-popup .badge-small-close {
+  top: 4.4444vw;
+  right: 4.444vw;
+  width: 6.6667vw;
+  height: 6.6667vw;
+}
+.large-popup.benefit-popup {
+  padding: 6.6667vw 4.4444vw;
+}
+
+.popup-confirm,
+.full-layer-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 86.1111vw;
+  height: 102.7778vw;
+  background-color: #fff;
+  border-radius: 2.7778vw;
+}
+
+.popup-wrap.popup-small {
+  height: 83.3333vw;
+}
+
+.popup-wrap.popup-full {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 2.7778vw;
+}
+
+.popup-wrap .popup-img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ebebeb;
+  background-size: cover;
+  text-align: center;
+}
+
+.popup-wrap.popup-small .popup-img-box {
+  background-size: cover;
+}
+
+.popup-wrap.popup-full .popup-img-box {
+  background-size: cover;
+}
+
+.popup-wrap .popup-img-box h2 {
+  padding-bottom: 2.7778vw;
+  font-size: 8.3333vw;
+  font-weight: 700;
+  color: #fff;
+}
+
+.popup-wrap .popup-img-box h3 {
+  font-size: 4.1667vw;
+  color: #fff;
+}
+
+.popup-wrap .btn-popup-close {
+  position: absolute;
+  top: 2.7778vw;
+  right: 2.7778vw;
+  width: 8.3333vw;
+}
+
+.popup-wrap .btn-popup-close img {
+  width: 100%;
+}
+
+.popup-wrap .popup-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 13.8889vw;
+}
+
+.popup-wrap .popup-button button {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-wrap .popup-button button:nth-of-type(1) {
+  font-weight: 400;
+  color: #414141;
+}
+
+.popup-wrap .popup-button button:nth-of-type(2) {
+  font-weight: 500;
+  border-left: 1px solid #ebebeb;
+}
+
+.popup-confirm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cart-popup-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 86.1111vw;
+  height: 50vw;
+  background-color: #fff;
+  border-radius: 2.7778vw;
+}
+
+.cart-popup-wrap .popup-text-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+}
+
+.cart-popup-wrap .popup-text {
+  width: 58.8889vw;
+}
+
+.cart-popup-wrap .popup-text p {
+  line-height: 5.2778vw;
+}
+
+.cart-popup-wrap .popup-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 13.8889vw;
+}
+
+.cart-popup-wrap .popup-button button {
+  width: 100%;
+  height: 100%;
+}
+
+.cart-popup-wrap .popup-button button:nth-of-type(2) {
+  border-left: 1px solid #ebebeb;
+}
+
+/* 2020/11/30 황운하 메뉴리스트 관련 css */
+.list-header-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13.3333vw;
+}
+
+.list-section {
+  height: 100%;
+  background-color: #f0eeeb;
+}
+.list-header-title > button {
+  position: absolute;
+  left: 4.4444vw;
+}
+.list-header-title > button i {
+  display: block;
+  width: 6.6667vw;
+  height: 6.6667vw;
+  background: url(../images/btn_arrow_back.svg) no-repeat;
+}
+
+.menu-title {
+  height: 12.2222vw;
+  line-height: 12.2222vw;
+  padding: 0 4.4444vw;
+}
+
+.menu-list {
+  background-color: #ffffff;
+}
+.menu-list > ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15.5556vw;
+  line-height: 15.5556vw;
+  font-size: 4.4444vw;
+  color: #262627;
+  border-bottom: 1px solid #e7e0da;
+  background: url(../images/btn_arrow_right.svg) no-repeat 90vw center;
+}
+
+.menu-list > ul > li > a {
+  display: block;
+  width: 100%;
+  padding: 0 4.4444vw;
+}
