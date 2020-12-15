@@ -4,12 +4,4 @@
 @import url("form.css");
 @import url("common.css");
 @import url("style.css");
-@import url("livecommerce.css");
-@import url("product-list.css");
-@import url("product-detail.css");
-@import url("popup.css");
-@import url("wish-list.css");
-@import url("review-write.css");
-@import url("orderpay.css");
-@import url("orderpay-oh.css");
-@import url("basket.css")
+@import url("login.css");
