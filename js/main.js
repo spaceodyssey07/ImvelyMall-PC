@@ -26,3 +26,41 @@ var swiper = new Swiper(".js-live-commerce", {
   spaceBetween: 320,
   slideToClickedSlide: true,
 })
+
+// js-influencer
+// var swiper = new Swiper(".js-influencer", {
+//   slidesPerView: 4,
+//   slidesPerColumn: 2,
+//   spaceBetween: 30,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// })
+// js-influencer
+var swiper = new Swiper(".js-influencer", {
+  slidesPerView: 5,
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: true,
+  spaceBetween: 32,
+  slideToClickedSlide: true,
+})
+
+var swiper = new Swiper(".js-best-brand", {
+  slidesPerView: 4,
+  spaceBetween: 0,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+})
+
+// event-banner
+new Swiper(".js-evenet-banner", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: true,
+  slideToClickedSlide: true,
+})
