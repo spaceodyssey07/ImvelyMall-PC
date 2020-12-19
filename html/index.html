@@ -1,819 +1,929 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../swiper/css/swiper.min.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <!-- script -->
-    <script defer src="../swiper/js/swiper.min.js"></script>
-    <script defer src="../js/main.js"></script>
 
-    <title>ImvelyMall</title>
-    <style>
-      .bullet-color .swiper-pagination-bullet {
-        background: #fff;
-        opacity: 1;
-      }
-      .bullet-color .swiper-pagination-bullet-active {
-        background: #262627;
-      }
-      .swiper-button {
-        color: #777777;
-      }
-      /* .swiper-button-prev,
-      .swiper-button-next {
-        background-image: url(../images/ico_arrow_right_imgpopup.svg);
-      } */
-    </style>
-  </head>
-  <body>
-    <div id="wrap">
-      <!-- 헤더영역 -->
-      <header class="header-wrap">
-        <div class="header">
-          <article class="header-left">
-            <!-- .main-logo-image -->
-            <h1 class="main-logo">
-              <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span class="hide">임블리몰</span></a>
-            </h1>
-            <!-- .main-logo-image -->
-            <nav class="gnb">
-              <ul>
-                <li><a href="">신상품</a></li>
-                <li><a href="">베스트</a></li>
-                <li><a href="">브랜드</a></li>
-                <li><a href="">기획전</a></li>
-                <li><a href="">컬렉션</a></li>
-                <li><a href="">콜라보</a></li>
-                <li><a href="">이벤트</a></li>
-              </ul>
-            </nav>
-          </article>
-          <article class="header-right">
-            <nav class="lnb">
-              <ul>
-                <li><a href="">로그인</a></li>
-                <li><a href="">회원가입</a></li>
-                <li>
-                  <a href="product-search.html"><i class="ico-search"> </i></a>
-                </li>
-                <li>
-                  <a href="shopping-cart.html"
-                    ><i class="ico-cart"> <span class="alram"></span> </i
-                  ></a>
-                </li>
-              </ul>
-            </nav>
-          </article>
-          <article class="header-right" style="display: none">
-            <nav>
-              <ul>
-                <li><a href="">로그아웃</a></li>
-                <li>
-                  <a href="product-search.html"><i class="ico-search"> </i></a>
-                </li>
-                <li>
-                  <a href="shopping-cart.html"
-                    ><i class="ico-cart">
-                      <span class="alram">3</span>
-                    </i></a
-                  >
-                </li>
-                <li>
-                  <a href=""><i class="icon-my"></i></a>
-                </li>
-              </ul>
-            </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../swiper/css/swiper.min.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <!-- script -->
+  <script defer src="../swiper/js/swiper.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+  <title>ImvelyMall</title>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- 헤더영역 -->
+    <header class="header-wrap">
+      <div class="header">
+        <article class="header-left">
+          <!-- .main-logo-image -->
+          <h1 class="main-logo">
+            <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span
+                class="hide">임블리몰</span></a>
+          </h1>
+          <!-- .main-logo-image -->
+          <nav class="gnb">
+            <ul>
+              <li><a href="">신상품</a></li>
+              <li><a href="">베스트</a></li>
+              <li><a href="">브랜드</a></li>
+              <li><a href="">기획전</a></li>
+              <li><a href="">컬렉션</a></li>
+              <li><a href="">콜라보</a></li>
+              <li><a href="">이벤트</a></li>
+            </ul>
+          </nav>
+        </article>
+        <article class="header-right">
+          <nav class="lnb">
+            <ul>
+              <li><a href="">로그인</a></li>
+              <li><a href="">회원가입</a></li>
+              <li>
+                <a href="product-search.html"><i class="ico-search"> </i></a>
+              </li>
+              <li>
+                <a href="shopping-cart.html"><i class="ico-cart"> <span class="alram"></span> </i></a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+        <article class="header-right" style="display: none">
+          <nav>
+            <ul>
+              <li><a href="">로그아웃</a></li>
+              <li>
+                <a href="product-search.html"><i class="ico-search"> </i></a>
+              </li>
+              <li>
+                <a href="shopping-cart.html"><i class="ico-cart">
+                    <span class="alram">3</span>
+                  </i></a>
+              </li>
+              <li>
+                <a href=""><i class="icon-my"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+      </div>
+    </header>
+    <!-- 헤더영역 -->
+    <!-- 컨텐츠 영역 -->
+    <div class="content">
+      <!-- 메인비주얼 영역-->
+      <section class="main-visual">
+        <div class="product-list">
+          <article class="product">
+            <a href="">
+              <div class="main-visual-wrap js-main-visual swiper-container">
+                <div class="img-area swiper-wrapper">
+                  <div class="img-box swiper-slide">
+                    <img src="../preview/img_main_visual_banner.png" alt="" />
+                  </div>
+                  <div class="img-box swiper-slide">
+                    <img src="../preview/img_main_visual_banner.png" alt="" />
+                  </div>
+                  <div class="img-box swiper-slide">
+                    <img src="../preview/img_main_visual_banner.png" alt="" />
+                  </div>
+                  <div class="img-box swiper-slide">
+                    <img src="../preview/img_main_visual_banner.png" alt="" />
+                  </div>
+                  <div class="img-box swiper-slide">
+                    <img src="../preview/img_main_visual_banner.png" alt="" />
+                  </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button swiper-button-next"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="bullet-color swiper-pagination"></div>
+              </div>
+            </a>
           </article>
         </div>
-      </header>
-      <!-- 헤더영역 -->
-      <!-- 컨텐츠 영역 -->
-      <div class="content">
-        <!-- 메인비주얼 영역-->
-        <section class="main-visual">
-          <div class="product-list">
-            <article class="product">
-              <a href="">
-                <div class="main-visual-wrap js-main-visual swiper-container">
-                  <div class="img-area swiper-wrapper">
-                    <div class="img-box swiper-slide">
-                      <img src="../preview/img_main_visual_banner.png" alt="" />
+      </section>
+      <!-- 메인비주얼 영역-->
+      <!-- 띠배너 영역 -->
+      <section class="band-banner">
+        <a href="#">
+          <article class="banner-box">
+            <h3 class="fc-wh">2020 F/W Collection</h3>
+          </article>
+        </a>
+      </section>
+      <!-- 띠배너 영역 -->
+      <!-- 라이브커머스 영역 -->
+      <section class="live-commerce">
+        <article class="title-center-format container-1180">
+          <div>
+            <h2 class="">Live Commerce</h2>
+            <p>라이브로 만나는 쇼핑</p>
+          </div>
+          <span>VIEW MORE ></span>
+        </article>
+        <div class="product-list product-780 js-live-commerce swiper-slide-container">
+          <div class="swiper-wrapper">
+            <article class="product swiper-slide">
+              <a href="live-user-screen.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_live_commerce_slide_001.png" alt="" />
                     </div>
-                    <div class="img-box swiper-slide">
-                      <img src="../preview/img_main_visual_banner.png" alt="" />
-                    </div>
-                    <div class="img-box swiper-slide">
-                      <img src="../preview/img_main_visual_banner.png" alt="" />
-                    </div>
-                    <div class="img-box swiper-slide">
-                      <img src="../preview/img_main_visual_banner.png" alt="" />
-                    </div>
+                    <div class="badge-area"></div>
                   </div>
-                  <!-- Add Arrows -->
-                  <div class="swiper-button swiper-button-next"></div>
-                  <div class="swiper-button swiper-button-prev"></div>
-                  <!-- Add Pagination -->
-                  <div class="bullet-color swiper-pagination"></div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="live-user-screen.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_live_commerce_slide_001.png" alt="" />
+                    </div>
+                    <div class="badge-area"></div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="live-user-screen.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_live_commerce_slide_001.png" alt="" />
+                    </div>
+                    <div class="badge-area"></div>
+                  </div>
                 </div>
               </a>
             </article>
           </div>
-        </section>
-        <!-- 메인비주얼 영역-->
-        <!-- 띠배너 영역 -->
-        <section class="band-banner">
-          <a href="#">
-            <article class="banner-box">
-              <h3 class="fc-wh">2020 F/W Collection</h3>
-            </article>
-          </a>
-        </section>
-        <!-- 띠배너 영역 -->
-        <!-- 라이브커머스 영역 -->
-        <section class="live-commerce">
-          <article class="title-center-format container-1180">
-            <div>
-              <h2 class="">Live Commerce</h2>
-              <p>라이브로 만나는 쇼핑</p>
-            </div>
-            <span>VIEW MORE ></span>
-          </article>
-          <div class="product-list product-780 js-live-commerce swiper-slide-container">
-            <div class="swiper-wrapper">
-              <article class="product swiper-slide">
-                <a href="live-user-screen.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_live_commerce_slide_001.png" alt="" />
-                      </div>
-                      <div class="badge-area"></div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="product swiper-slide">
-                <a href="live-user-screen.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_live_commerce_slide_001.png" alt="" />
-                      </div>
-                      <div class="badge-area"></div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="product swiper-slide">
-                <a href="live-user-screen.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_live_commerce_slide_001.png" alt="" />
-                      </div>
-                      <div class="badge-area"></div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-            </div>
+        </div>
+      </section>
+      <!-- 라이브커머스 영역 -->
+      <!-- 신상품 영역 -->
+      <section class="product-new">
+        <article class="title-center-format container-1180">
+          <div>
+            <h2 class="">WHAT's NEW</h2>
+            <p>오전 10시에는 신상품 쇼핑타임!</p>
           </div>
-        </section>
-        <!-- 라이브커머스 영역 -->
-        <!-- 신상품 영역 -->
-        <section class="product-new">
-          <article class="title-center-format container-1180">
-            <div>
-              <h2 class="">WHAT's NEW</h2>
-              <p>오전 10시에는 신상품 쇼핑타임!</p>
-            </div>
-            <span>VIEW MORE ></span>
+          <span>VIEW MORE ></span>
+        </article>
+        <div class="product-list product-280 horizontal  js-product-best">
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_001.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view fc-pink"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i> 1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">털러가득 머플러</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">18,050원</span>
+                      <span class="price-del"><del>19,000원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
           </article>
-          <div class="product-list product-280 horizontal  js-product-best">
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_001.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_002.png" alt="" />
                   </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view fc-pink"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i> 1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">털러가득 머플러</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">18,050원</span>
-                        <span class="price-del"><del>19,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-soldout"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_002.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-soldout"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>100</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,320</span>
                   </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>100</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,320</span>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">미니폼폼 라운드울가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">49,400원</span>
+                      <span class="price-del"><del>52,000원</del></span>
                     </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">미니폼폼 라운드울가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">49,400원</span>
-                        <span class="price-del"><del>52,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
+                    <span class="sale">5%</span>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_003.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_003.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
 
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">워너비핏 골지니트가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">55,100원</span>
-                        <span class="price-del"><del>58,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_004.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,201</span>
                   </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>98</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,520</span>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">워너비핏 골지니트가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">55,100원</span>
+                      <span class="price-del"><del>58,000원</del></span>
                     </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">3구스다운 히든스트링 경량베스트</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">12,160원</span>
-                        <span class="price-del"><del>12,800원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_005.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish on"></div>
-                      <div class="badge-soldout"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>114</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>3,254</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">3D라인쉐이퍼 스타킹(110D)</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">42,750원</span>
-                        <span class="price-del"><del>45,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_006.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view fc-pink"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i> 150,000</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">플레인베이직 롤폴라니트</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">64,000원</span>
-                        <span class="price-del"><del>45,000원</del></span>
-                      </div>
-                      <span class="sale">20%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-        </section>
-        <!-- 신상품 영역 -->
-        <!-- 인플루언서 영역 -->
-        <section class="influencer">
-          <article class="title-center-format">
-            <div>
-              <h2 class="">Influencer</h2>
-              <p>임블리와 함께하는 인플루언서</p>
-            </div>
-            <span>VIEW MORE ></span>
-          </article>
-          <div class="product-list circle-160 js-influencer horizontal swiper-container">
-            <div class="swiper-wrapper">
-              <article class="product swiper-slide">
-                <a href="influencer-mall.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_influencer_001.png" alt="" />
-                      </div>
-                      <div class="badge-area"></div>
-                    </div>
-                    <div class="text-area">
-                      <h2 class="brand-title text-center">라라봉</h2>
-                      <div class="brand-tag fz-11 text-center">
-                        <span>#데일리룩</span>
-                        <span>#거울샷</span>
-                        <span>#20대</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="product swiper-slide">
-                <a href="influencer-mall.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_influencer_002.png" alt="" />
-                      </div>
-                      <div class="badge-area">
-                        <span class="badge-influencer"></span>
-                      </div>
-                    </div>
-                    <div class="text-area">
-                      <h2 class="brand-title text-center">허니제이</h2>
-                      <div class="brand-tag fz-11 text-center">
-                        <span>#데일리룩</span>
-                        <span>#거울샷</span>
-                        <span>#20대</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="product swiper-slide">
-                <a href="influencer-mall.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_influencer_003.png" alt="" />
-                      </div>
-                      <div class="badge-area">
-                        <span class="badge-influencer"></span>
-                      </div>
-                    </div>
-                    <div class="text-area">
-                      <h2 class="brand-title text-center">메이드랑</h2>
-                      <div class="brand-tag fz-11 text-center">
-                        <span>#데일리룩</span>
-                        <span>#거울샷</span>
-                        <span>#20대</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="product swiper-slide">
-                <a href="influencer-mall.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_influencer_004.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="text-area">
-                      <h2 class="brand-title text-center">데이빈</h2>
-                      <div class="brand-tag fz-11 text-center">
-                        <span>#데일리룩</span>
-                        <span>#거울샷</span>
-                        <span>#20대</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="product swiper-slide">
-                <a href="influencer-mall.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_influencer_005.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="text-area">
-                      <h2 class="brand-title text-center">캐츠우먼</h2>
-                      <div class="brand-tag fz-11 text-center">
-                        <span>#데일리룩</span>
-                        <span>#거울샷</span>
-                        <span>#20대</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="product swiper-slide">
-                <a href="influencer-mall.html">
-                  <div class="product-wrap">
-                    <div class="img-area">
-                      <div class="img-box">
-                        <img src="../preview/img_main_influencer_006.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="text-area">
-                      <h2 class="brand-title text-center">라라봉</h2>
-                      <div class="brand-tag fz-11 text-center">
-                        <span>#데일리룩</span>
-                        <span>#거울샷</span>
-                        <span>#20대</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- 인플루언서 영역 -->
-        <!-- 베스트셀러 영역 -->
-        <section class="product-best container-1180">
-          <article class="title-center-format">
-            <div>
-              <h2 class="">BEST SELLER</h2>
-              <p>임블리에서 가장 인기가 많은 상품들</p>
-            </div>
-            <span>VIEW MORE ></span>
-          </article>
-          <article class="product-sub-category">
-            <ul>
-              <li class="on"><a href="">ALL</a></li>
-              <li><a href="">VELYVELY</a></li>
-              <li><a href="">ONEPIECE</a></li>
-              <li><a href="">TOP</a></li>
-              <li><a href="">BLOUSE</a></li>
-              <li><a href="">PANTS</a></li>
-            </ul>
-          </article>
-          <div class="product-list product-380 horizontal">
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_001.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">1</div>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view fc-pink"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i> 1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">털러가득 머플러</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">18,050원</span>
-                        <span class="price-del"><del>19,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_002.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">2</div>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>100</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,320</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">미니폼폼 라운드울가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">49,400원</span>
-                        <span class="price-del"><del>52,000원</del></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_003.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">3</div>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">워너비핏 골지니트가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">55,100원</span>
-                        <span class="price-del"><del>58,000원</del></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-          <div class="product-list product-280 horizontal">
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_001.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">4</div>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view fc-pink"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i> 1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">털러가득 머플러</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">18,050원</span>
-                        <span class="price-del"><del>19,000원</del></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_002.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">5</div>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>100</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,320</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">미니폼폼 라운드울가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">49,400원</span>
-                        <span class="price-del"><del>52,000원</del></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_003.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">6</div>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">워너비핏 골지니트가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">55,100원</span>
-                        <span class="price-del"><del>58,000원</del></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_003.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">7</div>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">워너비핏 골지니트가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">55,100원</span>
-                        <span class="price-del"><del>58,000원</del></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-        </section>
-        <!-- 베스트셀러 영역 -->
-        <!-- 타임딜 영역 -->
-        <section class="time-deal">
-          <article class="time-deal-area">
-            <div class="img-area">
-              <img src="../preview/img_main_time_deal.png" alt="" />
-            </div>
-            <div class="time-area">
-              <div class="title-center-format">
-                <h2 class="">TIME DEAL</h2>
-                <p>기회를 잡을 이 시간!</p>
-              </div>
-              <div class="countdown">
-                <p class="title">COUNT DOWN</p>
-                <h3 class="time"><span class="days">00</span>:<span class="hours">20</span>:<span class="minutes">36</span>:<span class="seconds">54</span></h3>
-                <div class="progress-wrap">
-                  <div class="progress">
-                    <span class="bar"></span>
+                    <span class="sale">5%</span>
                   </div>
                 </div>
               </div>
-              <div class="brand">
-                <h2>아디다스</h2>
-                <p>단 하루, </br> 액세서리 up to 50% 할인</p>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_004.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>98</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,520</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">3구스다운 히든스트링 경량베스트</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">12,160원</span>
+                      <span class="price-del"><del>12,800원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_005.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish on"></div>
+                    <div class="badge-soldout"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>114</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>3,254</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">3D라인쉐이퍼 스타킹(110D)</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">42,750원</span>
+                      <span class="price-del"><del>45,000원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_006.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view fc-pink"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i> 150,000</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">플레인베이직 롤폴라니트</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">64,000원</span>
+                      <span class="price-del"><del>45,000원</del></span>
+                    </div>
+                    <span class="sale">20%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- 신상품 영역 -->
+      <!-- 인플루언서 영역 -->
+      <section class="influencer">
+        <article class="title-center-format">
+          <div>
+            <h2 class="">Influencer</h2>
+            <p>임블리와 함께하는 인플루언서</p>
+          </div>
+          <span>VIEW MORE ></span>
+        </article>
+        <div class="product-list circle-160 js-influencer  swiper-container">
+          <div class="swiper-wrapper">
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_001.png" alt="" />
+                    </div>
+                    <div class="badge-area"></div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">라라봉</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_002.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <span class="badge-influencer"></span>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">허니제이</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_003.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <span class="badge-influencer"></span>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">메이드랑</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_004.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">데이빈</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_005.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">캐츠우먼</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_006.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">라라봉</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_001.png" alt="" />
+                    </div>
+                    <div class="badge-area"></div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">라라봉</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_002.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <span class="badge-influencer"></span>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">허니제이</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_003.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <span class="badge-influencer"></span>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">메이드랑</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_004.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">데이빈</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_005.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">캐츠우먼</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product swiper-slide">
+              <a href="influencer-mall.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_influencer_006.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h2 class="brand-title text-center">라라봉</h2>
+                    <div class="brand-tag fz-11 text-center">
+                      <span>#데일리룩</span>
+                      <span>#거울샷</span>
+                      <span>#20대</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- 인플루언서 영역 -->
+      <!-- 베스트셀러 영역 -->
+      <section class="product-best container-1180">
+        <article class="title-center-format">
+          <div>
+            <h2 class="">BEST SELLER</h2>
+            <p>임블리에서 가장 인기가 많은 상품들</p>
+          </div>
+          <span>VIEW MORE ></span>
+        </article>
+        <article class="product-sub-category">
+          <ul>
+            <li class="on"><a href="">ALL</a></li>
+            <li><a href="">VELYVELY</a></li>
+            <li><a href="">ONEPIECE</a></li>
+            <li><a href="">TOP</a></li>
+            <li><a href="">BLOUSE</a></li>
+            <li><a href="">PANTS</a></li>
+          </ul>
+        </article>
+        <div class="product-list product-380 horizontal">
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_001.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">1</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view fc-pink"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i> 1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">털러가득 머플러</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">18,050원</span>
+                      <span class="price-del"><del>19,000원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_002.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">2</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>100</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,320</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">미니폼폼 라운드울가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">49,400원</span>
+                      <span class="price-del"><del>52,000원</del></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_003.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">3</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">워너비핏 골지니트가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">55,100원</span>
+                      <span class="price-del"><del>58,000원</del></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="product-list product-280 horizontal">
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_001.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">4</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view fc-pink"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i> 1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">털러가득 머플러</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">18,050원</span>
+                      <span class="price-del"><del>19,000원</del></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_002.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">5</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>100</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,320</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">미니폼폼 라운드울가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">49,400원</span>
+                      <span class="price-del"><del>52,000원</del></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_003.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">6</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">워너비핏 골지니트가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">55,100원</span>
+                      <span class="price-del"><del>58,000원</del></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_003.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">7</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">워너비핏 골지니트가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">55,100원</span>
+                      <span class="price-del"><del>58,000원</del></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- 베스트셀러 영역 -->
+      <!-- 타임딜 영역 -->
+      <section class="time-deal">
+        <article class="time-deal-area">
+          <div class="img-area">
+            <img src="../preview/img_main_time_deal.png" alt="" />
+          </div>
+          <div class="time-area">
+            <div class="title-center-format">
+              <h2 class="">TIME DEAL</h2>
+              <p>기회를 잡을 이 시간!</p>
+            </div>
+            <div class="countdown">
+              <p class="title">COUNT DOWN</p>
+              <h3 class="time"><span class="days">00</span>:<span class="hours">20</span>:<span
+                  class="minutes">36</span>:<span class="seconds">54</span></h3>
+              <div class="progress-wrap">
+                <div class="progress">
+                  <span class="bar"></span>
+                </div>
               </div>
             </div>
-          </article>
-        </section>
-        <!-- 타임딜 영역 -->
-        <!-- 공동구매 영역 -->
-        <section class="group-buying container-1180">
-          <article class="title-center-format">
-            <div>
-              <h2 class="">group purchase</h2>
-              <p>함께하면 더 혜택이 많아지는 공동구매</p>
+            <div class="brand">
+              <h2>아디다스</h2>
+              <p>단 하루, </br> 액세서리 up to 50% 할인</p>
             </div>
-            <span>VIEW MORE ></span>
-          </article>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-             <article class="group-buying-wrap swiper-slide">
+          </div>
+        </article>
+      </section>
+      <!-- 타임딜 영역 -->
+      <!-- 공동구매 영역 -->
+      <section class="group-buying container-1180">
+        <article class="title-center-format">
+          <div>
+            <h2 class="">group purchase</h2>
+            <p>함께하면 더 혜택이 많아지는 공동구매</p>
+          </div>
+          <span>VIEW MORE ></span>
+        </article>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <article class="group-buying-wrap swiper-slide">
               <div class="img-area">
                 <img src="../preview/img_main_group_purchase_big.png" alt="">
               </div>
               <div class="time-area">
                 <div class="countdown">
-                  <h3 class="time"><span class="days">00</span>:<span class="hours">20</span>:<span class="minutes">36</span>:<span class="seconds">54</span></h3>
+                  <h3 class="time"><span class="days">00</span>:<span class="hours">20</span>:<span
+                      class="minutes">36</span>:<span class="seconds">54</span></h3>
                   <div class="progress-wrap">
                     <div class="progress">
                       <span class="bar"></span>
@@ -829,117 +939,117 @@
                 </div>
               </div>
             </article>
-               <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
-        </section>
-        <!-- 공동구매 영역 -->
-        <!-- 브랜드몰 영역 -->
-        <section class="brand-mall">
-          <article class="title-center-format container-1180">
-            <div>
-              <h2 class="">Together Brand</h2>
-              <p>임블리와 함께하는 입점몰</p>
-            </div>
-            <span>VIEW MORE ></span>
-          </article>
-          <div class="product-list brand-mall-237 horizontal js-brand-mall">
-            <article class="product">
-              <a href="#">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_mall_001.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="#">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_mall_002.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="#">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_mall_003.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="#">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_mall_004.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="#">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_mall_005.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="#">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_mall_006.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="#">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_mall_007.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
+      </section>
+      <!-- 공동구매 영역 -->
+      <!-- 브랜드몰 영역 -->
+      <section class="brand-mall">
+        <article class="title-center-format container-1180">
+          <div>
+            <h2 class="">Together Brand</h2>
+            <p>임블리와 함께하는 입점몰</p>
           </div>
-        </section>
-        <!-- 브랜드몰 영역 -->
-        <!-- 베스트 브랜드 영역 -->
-        <section class="best-brand">
-          <article class="title-center-format container-1180">
-            <div>
-              <h2 class="">BEST Brand</h2>
-              <p>잘나가는 브랜드 잘나가는 이유</p>
-            </div>
-            <span>VIEW MORE ></span>
+          <span>VIEW MORE ></span>
+        </article>
+        <div class="product-list brand-mall-237 horizontal js-brand-mall">
+          <article class="product">
+            <a href="#">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_mall_001.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
           </article>
-          <article class="best-brand-bg">
-            <img src="../preview/img_best_brand_bg.png" alt="">
+          <article class="product">
+            <a href="#">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_mall_002.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
           </article>
-          <div class="product-list product-280 horizontal container-1180 best-brand-wrap js-best-brand swiper-container">
-            <div class="swiper-wrapper">
+          <article class="product">
+            <a href="#">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_mall_003.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="#">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_mall_004.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="#">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_mall_005.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="#">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_mall_006.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="#">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_mall_007.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- 브랜드몰 영역 -->
+      <!-- 베스트 브랜드 영역 -->
+      <section class="best-brand">
+        <article class="title-center-format container-1180">
+          <div>
+            <h2 class="">BEST Brand</h2>
+            <p>잘나가는 브랜드 잘나가는 이유</p>
+          </div>
+          <span>VIEW MORE ></span>
+        </article>
+        <article class="best-brand-bg">
+          <img src="../preview/img_best_brand_bg.png" alt="">
+        </article>
+        <div class="product-list product-280 horizontal container-1180 best-brand-wrap js-best-brand swiper-container">
+          <div class="swiper-wrapper">
             <article class="product swiper-slide">
               <a href="../html/product-detail.html">
                 <div class="product-wrap">
@@ -980,19 +1090,19 @@
                     </div>
                   </div>
                   <div class="text-area">
-                  <div class="public-info">
-                    <span class="view fc-pink"><i>REVEIW</i>84</span>
-                    <span class="divide"></span>
-                    <span class="review"><i>LIKE</i> 1,201</span>
-                  </div>
-                  <h2 class="brand-title">러브미모어</h2>
-                  <h3 class="product-title">러브미모어 베이직 후디집업 (FRESH+)</h3>
-                  <div class="price-list">
-                    <div>
-                      <span class="price">45,000원</span>
+                    <div class="public-info">
+                      <span class="view fc-pink"><i>REVEIW</i>84</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i> 1,201</span>
+                    </div>
+                    <h2 class="brand-title">러브미모어</h2>
+                    <h3 class="product-title">러브미모어 베이직 후디집업 (FRESH+)</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">45,000원</span>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </div>
               </a>
             </article>
@@ -1059,749 +1169,754 @@
               </a>
             </article>
           </div>
-            <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        </section>
-        <!-- 베스트 브랜드 영역 -->
-        <!-- 이벤트 배녀 영역 -->
-        <section class="event-banner">
-          <div class="banner-list js-evenet-banner swiper-container">
-            <div class="swiper-wrapper">
-              <article class="main-evnet-banner swiper-slide">
-                <a href="#">
-                  <div class="banner-img">
-                    <img src="../preview/img_main_mid_banner.png" alt="" />
-                  </div>
-                </a>
-              </article>
-              <article class="main-evnet-banner swiper-slide">
-                <a href="">
-                  <div class="banner-img">
-                    <img src="../preview/img_main_mid_banner.png" alt="" />
-                  </div>
-                </a>
-              </article>
-              <article class="main-evnet-banner swiper-slide">
-                <a href="#">
-                  <div class="banner-img">
-                    <img src="../preview/img_main_mid_banner.png" alt="" />
-                  </div>
-                </a>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- 이벤트 배녀 영역 -->
-        <!-- 블리픽 영역 -->
-        <section class="product-velypick container-1180">
-          <div>
-            <article class="title-format">
-              <div>
-                <h2 class="">VELY's PICK</h2>
-                <p>블리님들이 선택하고 추천하는 스테디셀러 상품</p>
-              </div>
-              <span>VIEW MORE ></span>
-            </article>
-            <article>
-              <ul>
-                <li><a href=""></a>#스테디셀러</li>
-                <li><a href=""></a>#꾸준한인기</li>
-                <li><a href=""></a>#꾸안꾸템</li>
-                <li><a href=""></a>#야너두?야나두!</li>
-              </ul>
-            </article>
-          </div>
-          <div class="product-list product-280 ">
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_001.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view fc-pink"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i> 1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">털러가득 머플러</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">18,050원</span>
-                        <span class="price-del"><del>19,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
+      </section>
+      <!-- 베스트 브랜드 영역 -->
+      <!-- 이벤트 배녀 영역 -->
+      <section class="event-banner">
+        <div class="banner-list js-evenet-banner swiper-container">
+          <div class="swiper-wrapper">
+            <article class="main-evnet-banner swiper-slide">
+              <a href="#">
+                <div class="banner-img">
+                  <img src="../preview/img_main_mid_banner.png" alt="" />
                 </div>
               </a>
             </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_002.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-soldout"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>100</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,320</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">미니폼폼 라운드울가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">49,400원</span>
-                        <span class="price-del"><del>52,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
+            <article class="main-evnet-banner swiper-slide">
+              <a href="">
+                <div class="banner-img">
+                  <img src="../preview/img_main_mid_banner.png" alt="" />
                 </div>
               </a>
             </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_003.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">워너비핏 골지니트가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">55,100원</span>
-                        <span class="price-del"><del>58,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_004.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>98</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,520</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">3구스다운 히든스트링 경량베스트</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">12,160원</span>
-                        <span class="price-del"><del>12,800원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_005.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish on"></div>
-                      <div class="badge-soldout"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>114</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>3,254</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">3D라인쉐이퍼 스타킹(110D)</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">42,750원</span>
-                        <span class="price-del"><del>45,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_006.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view fc-pink"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i> 150,000</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">플레인베이직 롤폴라니트</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">64,000원</span>
-                        <span class="price-del"><del>45,000원</del></span>
-                      </div>
-                      <span class="sale">20%</span>
-                    </div>
-                  </div>
+            <article class="main-evnet-banner swiper-slide">
+              <a href="#">
+                <div class="banner-img">
+                  <img src="../preview/img_main_mid_banner.png" alt="" />
                 </div>
               </a>
             </article>
           </div>
-        </section>
-        <!-- 블리픽 영역 -->
-        <!-- 오늘의 딜 영역 -->
-        <section class="today-deal container-1180">
-          <div class="info">
-            <img src="../preview/img_main_today_deal_big.png" alt="">
-            <article class="title-sub-format">
-              <div>
-                <h2 class="">#TODAY_DEAL</h2>
-                <p>오늘 단하루! 하루뿐인 특가</p>
-              </div>
-              <span>VIEW MORE ></span>
-            </article>
-          </div>
-          <div class="product-list product-280 ">
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_001.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view fc-pink"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i> 1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">털러가득 머플러</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">18,050원</span>
-                        <span class="price-del"><del>19,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_002.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-soldout"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>100</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,320</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">미니폼폼 라운드울가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">49,400원</span>
-                        <span class="price-del"><del>52,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_003.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">워너비핏 골지니트가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">55,100원</span>
-                        <span class="price-del"><del>58,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_004.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <ul class="badge-position">
-                        <li class="badge-square badge-green">NEW</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>98</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,520</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">3구스다운 히든스트링 경량베스트</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">12,160원</span>
-                        <span class="price-del"><del>12,800원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-        </section>
-        <!-- 오늘의 딜 영역 -->
-        <!-- 리뷰 아이템 영역 -->
-        <section class="review-item container-1180">
-          <article class="title-center-format">
+        </div>
+      </section>
+      <!-- 이벤트 배녀 영역 -->
+      <!-- 블리픽 영역 -->
+      <section class="product-velypick container-1180">
+        <div>
+          <article class="title-format">
             <div>
-              <h2 class="">REVIEW ITEM</h2>
-              <p>많은 리뷰가 바로 인기템</p>
+              <h2 class="">VELY's PICK</h2>
+              <p>블리님들이 선택하고 추천하는 스테디셀러 상품</p>
             </div>
             <span>VIEW MORE ></span>
           </article>
-          <article class="product-sub-category">
+          <article>
             <ul>
-              <li class="on"><a href="">ALL</a></li>
-              <li><a href="">VELYVELY</a></li>
-              <li><a href="">ONEPIECE</a></li>
-              <li><a href="">TOP</a></li>
-              <li><a href="">BLOUSE</a></li>
-              <li><a href="">PANTS</a></li>
+              <li><a href=""></a>#스테디셀러</li>
+              <li><a href=""></a>#꾸준한인기</li>
+              <li><a href=""></a>#꾸안꾸템</li>
+              <li><a href=""></a>#야너두?야나두!</li>
             </ul>
           </article>
-          <div class="product-list product-380 horizontal">
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_001.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">1</div>
-                    </div>
+        </div>
+        <div class="product-list product-280 ">
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_001.png" alt="" />
                   </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view fc-pink"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i> 1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">털러가득 머플러</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">18,050원</span>
-                        <span class="price-del"><del>19,000원</del></span>
-                      </div>
-                      <span class="sale">5%</span>
-                    </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_002.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">2</div>
-                    </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view fc-pink"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i> 1,201</span>
                   </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>100</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,320</span>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">털러가득 머플러</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">18,050원</span>
+                      <span class="price-del"><del>19,000원</del></span>
                     </div>
-                    <h2 class="brand-title">임블리콜렉트</h2>
-                    <h3 class="product-title">미니폼폼 라운드울가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">49,400원</span>
-                        <span class="price-del"><del>52,000원</del></span>
-                      </div>
-                    </div>
+                    <span class="sale">5%</span>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_new_003.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                      <div class="badge-wish"></div>
-                      <div class="badge-rank">3</div>
-                    </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_002.png" alt="" />
                   </div>
-                  <div class="text-area">
-                    <div class="public-info">
-                      <span class="view"><i>REVEIW</i>84</span>
-                      <span class="divide"></span>
-                      <span class="review"><i>LIKE</i>1,201</span>
-                    </div>
-                    <h2 class="brand-title">임블리메이드</h2>
-                    <h3 class="product-title">워너비핏 골지니트가디건</h3>
-                    <div class="price-list">
-                      <div>
-                        <span class="price">55,100원</span>
-                        <span class="price-del"><del>58,000원</del></span>
-                      </div>
-                    </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-soldout"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
                   </div>
                 </div>
-              </a>
-            </article>
-          </div>
-        </section>
-        <!-- 리뷰 아이템 영역 -->
-        <!-- 베스트 리뷰 영역 -->
-        <section class="best-review">
-          <article class="title-center-format container-1180">
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>100</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,320</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">미니폼폼 라운드울가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">49,400원</span>
+                      <span class="price-del"><del>52,000원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_003.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">워너비핏 골지니트가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">55,100원</span>
+                      <span class="price-del"><del>58,000원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_004.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>98</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,520</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">3구스다운 히든스트링 경량베스트</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">12,160원</span>
+                      <span class="price-del"><del>12,800원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_005.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish on"></div>
+                    <div class="badge-soldout"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>114</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>3,254</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">3D라인쉐이퍼 스타킹(110D)</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">42,750원</span>
+                      <span class="price-del"><del>45,000원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_006.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view fc-pink"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i> 150,000</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">플레인베이직 롤폴라니트</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">64,000원</span>
+                      <span class="price-del"><del>45,000원</del></span>
+                    </div>
+                    <span class="sale">20%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- 블리픽 영역 -->
+      <!-- 오늘의 딜 영역 -->
+      <section class="today-deal container-1180">
+        <div class="info">
+          <img src="../preview/img_main_today_deal_big.png" alt="">
+          <article class="title-sub-format">
             <div>
-              <h2 class="">Real review</h2>
-              <p>블리님들의 내돈내산 찐후기</p>
+              <h2 class="">#TODAY_DEAL</h2>
+              <p>오늘 단하루! 하루뿐인 특가</p>
             </div>
             <span>VIEW MORE ></span>
           </article>
-          <article class="product-sub-category">
-            <ul>
-              <li class="on"><a href="">ALL</a></li>
-              <li><a href="">VELYVELY</a></li>
-              <li><a href="">ONEPIECE</a></li>
-              <li><a href="">TOP</a></li>
-              <li><a href="">BLOUSE</a></li>
-              <li><a href="">PANTS</a></li>
-            </ul>
+        </div>
+        <div class="product-list product-280 ">
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_001.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view fc-pink"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i> 1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">털러가득 머플러</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">18,050원</span>
+                      <span class="price-del"><del>19,000원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
           </article>
-          <div class="product-list review-223 container-1180">
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_001.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                    </div>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_002.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-soldout"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_002.png" alt="" />
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>100</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,320</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">미니폼폼 라운드울가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">49,400원</span>
+                      <span class="price-del"><del>52,000원</del></span>
                     </div>
-                    <div class="badge-area">
-                    </div>
+                    <span class="sale">5%</span>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_003.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                    </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_003.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_004.png" alt="" />
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">워너비핏 골지니트가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">55,100원</span>
+                      <span class="price-del"><del>58,000원</del></span>
                     </div>
-                    <div class="badge-area">
-                    </div>
+                    <span class="sale">5%</span>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_005.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                    </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_004.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <ul class="badge-position">
+                      <li class="badge-square badge-green">NEW</li>
+                    </ul>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_006.png" alt="" />
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>98</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,520</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">3구스다운 히든스트링 경량베스트</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">12,160원</span>
+                      <span class="price-del"><del>12,800원</del></span>
                     </div>
-                    <div class="badge-area">
-                    </div>
+                    <span class="sale">5%</span>
                   </div>
                 </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_007.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_008.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_009.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="product">
-              <a href="../html/product-detail.html">
-                <div class="product-wrap">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <img src="../preview/img_main_review_0010.png" alt="" />
-                    </div>
-                    <div class="badge-area">
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-        </section>
-        <!-- 베스트 리뷰 영역 -->
-        <!-- 멤버 혜택 배너 -->
-        <section class="meber-benefit">
-          <div>
-            <i></i>
-            <p>회원가입+앱다운시 <strong>혜택이 2배</strong></p>
-            <span>가입하기 ></span>
-          </div>
-          <div>
-            <i></i>
-            <p>매주 리뷰퀸 <strong>할인쿠폰</strong></p>
-            <span>자세히보기 ></span>
-          </div>
-          <div>
-            <i></i>
-            <p>등급별 최대 <strong>10%할인</strong></p>
-            <span>자세히보기 ></span>
-          </div>
-          <div>
-            <i></i>
-            <p>5만원이상 <strong>무료배송</strong></p>
-            <span>자세히보기 ></span>
-          </div>
-        </section>
-        <!-- 멤버 혜택 배너 -->
-      </div>
-      <!-- 컨텐츠 영역 -->
-      <!-- 푸터 영역 -->
-      <footer class="footer">
-        <div class="fnb">
-          <ul>
-            <li><a href="">이용안내</a></li>
-            <li>
-              <a href=""><strong>개인정보처리방침</strong></a>
-            </li>
-            <li><a href="">이용약관</a></li>
-            <li><a href="">입점문의</a></li>
-            <li><a href="">브랜드스토리</a></li>
-            <li><a href="">매장안내</a></li>
-            <li><a href="">채용안내</a></li>
-          </ul>
-          <div>
-            <ul>
-              <li><a href="">KOR</a></li>
-              <li><a href="">KOR</a></li>
-              <li><a href="">KOR</a></li>
-            </ul>
-            <ul>
-              <li><a href="">FAMILY SITE</a></li>
-              <li><a href="">FAMILY SITE</a></li>
-              <li><a href="">FAMILY SITE</a></li>
-            </ul>
-          </div>
+              </div>
+            </a>
+          </article>
         </div>
-        <div class="adress">
+      </section>
+      <!-- 오늘의 딜 영역 -->
+      <!-- 리뷰 아이템 영역 -->
+      <section class="review-item container-1180">
+        <article class="title-center-format">
+          <div>
+            <h2 class="">REVIEW ITEM</h2>
+            <p>많은 리뷰가 바로 인기템</p>
+          </div>
+          <span>VIEW MORE ></span>
+        </article>
+        <article class="product-sub-category">
           <ul>
-            <li><span>부건에프엔씨(주)</span> <span>사업자등록번호 : 204-86-18595</span><span>대표이사 : 박준성</span></li>
-            <li><span>(우) 06173 서울특별시 강남구 영동대로96길 8-8, 3층~5층 </span><span>전화번호 : 1688-6745</span><span>통신판매업신고 : 제 2020-서울강남-02943 호(서울 강남구청)</span></li>
-            <li><span>개인정보 보호책임자 : 현기환</span><span>개인정보 보호책임자 : 현기환</span><span>이메일 : help@bugunfnc.com </span><span>제휴문의 : biz@bugunfnc.com</span></li>
+            <li class="on"><a href="">ALL</a></li>
+            <li><a href="">VELYVELY</a></li>
+            <li><a href="">ONEPIECE</a></li>
+            <li><a href="">TOP</a></li>
+            <li><a href="">BLOUSE</a></li>
+            <li><a href="">PANTS</a></li>
           </ul>
-          <ul>
-            <li>* 이 콘텐츠는 산업 진흥법에 따라 최초 제작일로부터 5년간 보호되며, 이를 무단으로 복제, 도용 또는 전송하는 경우 법적 처벌의 대상이 됩니다. * 고객님은 안전한 거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 이니시스 구매안전서비스를 이용하실 수 있습니다.</li>
-            <li>* 이 콘텐츠는 산업 진흥법에 따라 최초 제작일로부터 5년간 보호되며, 이를 무단으로 복제, 도용 또는 전송하는 경우 법적 처벌의 대상이 됩니다. * 고객님은 안전한 거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 이니시스 구매안전서비스를 이용하실 수 있습니다.</li>
-          </ul>
+        </article>
+        <div class="product-list product-380 horizontal">
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_001.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">1</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view fc-pink"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i> 1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">털러가득 머플러</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">18,050원</span>
+                      <span class="price-del"><del>19,000원</del></span>
+                    </div>
+                    <span class="sale">5%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_002.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">2</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>100</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,320</span>
+                  </div>
+                  <h2 class="brand-title">임블리콜렉트</h2>
+                  <h3 class="product-title">미니폼폼 라운드울가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">49,400원</span>
+                      <span class="price-del"><del>52,000원</del></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_new_003.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                    <div class="badge-wish"></div>
+                    <div class="badge-rank">3</div>
+                  </div>
+                </div>
+                <div class="text-area">
+                  <div class="public-info">
+                    <span class="view"><i>REVEIW</i>84</span>
+                    <span class="divide"></span>
+                    <span class="review"><i>LIKE</i>1,201</span>
+                  </div>
+                  <h2 class="brand-title">임블리메이드</h2>
+                  <h3 class="product-title">워너비핏 골지니트가디건</h3>
+                  <div class="price-list">
+                    <div>
+                      <span class="price">55,100원</span>
+                      <span class="price-del"><del>58,000원</del></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
-        <p class="copyright">COPYRIGHT ⒞ BY IMVELY.COM. ALL RIGHTS RESERVED.</p>
-      </footer>
-      <!-- 푸터 영역 -->
+      </section>
+      <!-- 리뷰 아이템 영역 -->
+      <!-- 베스트 리뷰 영역 -->
+      <section class="best-review">
+        <article class="title-center-format container-1180">
+          <div>
+            <h2 class="">Real review</h2>
+            <p>블리님들의 내돈내산 찐후기</p>
+          </div>
+          <span>VIEW MORE ></span>
+        </article>
+        <article class="product-sub-category">
+          <ul>
+            <li class="on"><a href="">ALL</a></li>
+            <li><a href="">VELYVELY</a></li>
+            <li><a href="">ONEPIECE</a></li>
+            <li><a href="">TOP</a></li>
+            <li><a href="">BLOUSE</a></li>
+            <li><a href="">PANTS</a></li>
+          </ul>
+        </article>
+        <div class="product-list review-223 container-1180">
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_001.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_002.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_003.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_004.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_005.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_006.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_007.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_008.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_009.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="product">
+            <a href="../html/product-detail.html">
+              <div class="product-wrap">
+                <div class="img-area">
+                  <div class="img-box">
+                    <img src="../preview/img_main_review_0010.png" alt="" />
+                  </div>
+                  <div class="badge-area">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- 베스트 리뷰 영역 -->
+      <!-- 멤버 혜택 배너 -->
+      <section class="meber-benefit">
+        <div>
+          <i></i>
+          <p>회원가입+앱다운시 <strong>혜택이 2배</strong></p>
+          <span>가입하기 ></span>
+        </div>
+        <div>
+          <i></i>
+          <p>매주 리뷰퀸 <strong>할인쿠폰</strong></p>
+          <span>자세히보기 ></span>
+        </div>
+        <div>
+          <i></i>
+          <p>등급별 최대 <strong>10%할인</strong></p>
+          <span>자세히보기 ></span>
+        </div>
+        <div>
+          <i></i>
+          <p>5만원이상 <strong>무료배송</strong></p>
+          <span>자세히보기 ></span>
+        </div>
+      </section>
+      <!-- 멤버 혜택 배너 -->
     </div>
-  </body>
+    <!-- 컨텐츠 영역 -->
+    <!-- 푸터 영역 -->
+    <footer class="footer">
+      <div class="fnb">
+        <ul>
+          <li><a href="">이용안내</a></li>
+          <li>
+            <a href=""><strong>개인정보처리방침</strong></a>
+          </li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">입점문의</a></li>
+          <li><a href="">브랜드스토리</a></li>
+          <li><a href="">매장안내</a></li>
+          <li><a href="">채용안내</a></li>
+        </ul>
+        <div>
+          <ul>
+            <li><a href="">KOR</a></li>
+            <li><a href="">KOR</a></li>
+            <li><a href="">KOR</a></li>
+          </ul>
+          <ul>
+            <li><a href="">FAMILY SITE</a></li>
+            <li><a href="">FAMILY SITE</a></li>
+            <li><a href="">FAMILY SITE</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="adress">
+        <ul>
+          <li><span>부건에프엔씨(주)</span> <span>사업자등록번호 : 204-86-18595</span><span>대표이사 : 박준성</span></li>
+          <li><span>(우) 06173 서울특별시 강남구 영동대로96길 8-8, 3층~5층 </span><span>전화번호 : 1688-6745</span><span>통신판매업신고 : 제
+              2020-서울강남-02943 호(서울 강남구청)</span></li>
+          <li><span>개인정보 보호책임자 : 현기환</span><span>개인정보 보호책임자 : 현기환</span><span>이메일 : help@bugunfnc.com </span><span>제휴문의
+              : biz@bugunfnc.com</span></li>
+        </ul>
+        <ul>
+          <li>* 이 콘텐츠는 산업 진흥법에 따라 최초 제작일로부터 5년간 보호되며, 이를 무단으로 복제, 도용 또는 전송하는 경우 법적 처벌의 대상이 됩니다. * 고객님은 안전한 거래를 위해 현금 등으로
+            결제 시 저희 쇼핑몰에서 가입한 이니시스 구매안전서비스를 이용하실 수 있습니다.</li>
+          <li>* 이 콘텐츠는 산업 진흥법에 따라 최초 제작일로부터 5년간 보호되며, 이를 무단으로 복제, 도용 또는 전송하는 경우 법적 처벌의 대상이 됩니다. * 고객님은 안전한 거래를 위해 현금 등으로
+            결제 시 저희 쇼핑몰에서 가입한 이니시스 구매안전서비스를 이용하실 수 있습니다.</li>
+        </ul>
+      </div>
+      <p class="copyright">COPYRIGHT ⒞ BY IMVELY.COM. ALL RIGHTS RESERVED.</p>
+    </footer>
+    <!-- 푸터 영역 -->
+  </div>
+</body>
+
 </html>
