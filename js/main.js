@@ -1,7 +1,7 @@
 // js-main-visual
 var swiper = new Swiper(".js-main-visual", {
   slidesPerView: 1.2,
-  spaceBetween: 200,
+  spaceBetween: 160,
   slidesOffsetBefore: 0,
   slidesOffsetAfter: 0,
   centeredSlides: true,
@@ -11,7 +11,7 @@ var swiper = new Swiper(".js-main-visual", {
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: '.swiper-pagination'
+    el: '.main-visual .swiper-pagination'
   },
   keyboard: true,
 })
@@ -26,23 +26,34 @@ var swiper = new Swiper(".js-live-commerce", {
 })
 
 // js-influencer
-var swiper = new Swiper(".js-influencer", {
+var influenceSwiper = new Swiper(".js-influencer", {
   slidesPerView: 4,
   slidesPerColumn: 2,
-  spaceBetween: 30,
+  spaceBetween: 32,
+  slidesPerColumnFill:'row',
+  paginationClickable: true,
+  loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".js-influencer .swiper-pagination",
     clickable: true,
-  },
+  }
 })
 
-
+// group-buying
+var swiper = new Swiper(".js-group-buying", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+})
 // js-best-brand
 var swiper = new Swiper(".js-best-brand", {
   slidesPerView: 4,
   spaceBetween: 0,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".js-best-brand .swiper-pagination",
     clickable: true,
   },
 })
