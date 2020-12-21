@@ -5,13 +5,13 @@ var swiper = new Swiper(".js-main-visual", {
   slidesOffsetBefore: 0,
   slidesOffsetAfter: 0,
   centeredSlides: true,
-  loop:true,
-    navigation: {
+  loop: true,
+  navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: '.main-visual .swiper-pagination'
+    el: ".main-visual .swiper-pagination",
   },
   keyboard: true,
 })
@@ -29,14 +29,15 @@ var swiper = new Swiper(".js-live-commerce", {
 var influenceSwiper = new Swiper(".js-influencer", {
   slidesPerView: 4,
   slidesPerColumn: 2,
-  spaceBetween: 32,
-  slidesPerColumnFill:'row',
+  spaceBetween: 40,
+  slidesPerColumnFill: "row",
+  slidesPerGroup: 8,
   paginationClickable: true,
-  loop: true,
+  // loop: true,
   pagination: {
     el: ".js-influencer .swiper-pagination",
     clickable: true,
-  }
+  },
 })
 
 // group-buying
