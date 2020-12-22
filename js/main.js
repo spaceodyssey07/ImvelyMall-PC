@@ -44,6 +44,9 @@ var influenceSwiper = new Swiper(".js-influencer", {
 var swiper = new Swiper(".js-group-buying", {
   slidesPerView: 1,
   spaceBetween: 0,
+  slideToClickedSlide: true,
+  paginationClickable: true,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -51,11 +54,14 @@ var swiper = new Swiper(".js-group-buying", {
 })
 // js-best-brand
 var swiper = new Swiper(".js-best-brand", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 0,
-  pagination: {
-    el: ".js-best-brand .swiper-pagination",
-    clickable: true,
+  slideToClickedSlide: true,
+  paginationClickable: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 })
 
