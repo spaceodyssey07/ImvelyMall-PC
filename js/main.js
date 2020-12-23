@@ -1,9 +1,7 @@
 // js-main-visual
 var swiper = new Swiper(".js-main-visual", {
-  slidesPerView: 1.2,
-  spaceBetween: 160,
-  slidesOffsetBefore: 0,
-  slidesOffsetAfter: 0,
+  slidesPerView: 1.12,
+  spaceBetween: 0,
   centeredSlides: true,
   loop: true,
   navigation: {
@@ -18,24 +16,25 @@ var swiper = new Swiper(".js-main-visual", {
 
 // live-commerce
 var swiper = new Swiper(".js-live-commerce", {
-  slidesPerView: 3,
+  slidesPerView: 2.5,
   centeredSlides: true,
   loop: true,
-  spaceBetween: 320,
+  spaceBetween: 0,
   slideToClickedSlide: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 })
 
-// js-influencer
-var influenceSwiper = new Swiper(".js-influencer", {
-  slidesPerView: 4,
-  slidesPerColumn: 2,
-  spaceBetween: 40,
-  slidesPerColumnFill: "row",
-  slidesPerGroup: 8,
+// js - influencer
+var swiper = new Swiper(".js-influencer", {
+  slidesPerView: 1,
   paginationClickable: true,
-  // loop: true,
+  loopFillGroupWithBlank: true,
+  loop: true,
   pagination: {
-    el: ".js-influencer .swiper-pagination",
+    el: ".influencer-bUtton.swiper-pagination",
     clickable: true,
   },
 })
@@ -72,4 +71,14 @@ var swiper = new Swiper(".js-evenet-banner", {
   paginationClickable: true,
   loop: true,
   slideToClickedSlide: true,
+})
+
+var swiper = new Swiper(".js-velypic", {
+  slidesPerView: 1,
+  paginationClickable: true,
+  loopFillGroupWithBlank: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+  },
 })
