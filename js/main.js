@@ -1,9 +1,29 @@
+// 메인 네비게이션
+var mainNav = document.querySelector(".main-nav")
+var hoverGnb = document.querySelector(".header .header-left .gnb")
+var whiteHeader = document.querySelector(".header-wrap")
+var navFlag = false
+hoverGnb.addEventListener("mouseover", () => mainNav.classList.add("on"))
+hoverGnb.addEventListener("mouseover", () => whiteHeader.classList.add("on"))
+mainNav.addEventListener("mouseover", () => (navFlag = true))
+mainNav.addEventListener("mouseleave", () => {
+  if (navFlag) {
+    navFlag = false
+    mainNav.classList.remove("on")
+    whiteHeader.classList.remove("on")
+  }
+})
+
 // js-main-visual
 var swiper = new Swiper(".js-main-visual", {
   slidesPerView: 1.12,
-  spaceBetween: 0,
+  spaceBetween: 16,
   centeredSlides: true,
+  slideToClickedSlide: true,
   loop: true,
+  autoplay: {
+    delay: 3000,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -21,6 +41,9 @@ var swiper = new Swiper(".js-live-commerce", {
   loop: true,
   spaceBetween: 0,
   slideToClickedSlide: true,
+  autoplay: {
+    delay: 4000,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
