@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="92" viewBox="0 0 92 92">
+    <defs>
+        <path id="j3xy70k3ha" d="M35.156.517H3.013C1.35.517 0 1.866 0 3.53v4.018h38.17V3.53c0-1.664-1.35-3.013-3.014-3.013z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-686 -774) translate(686 774)">
+                <circle cx="46" cy="46" r="46"/>
+                <g>
+                    <g transform="translate(24 14) translate(3.013 4.505)">
+                        <mask id="zywkh9thyb" fill="#fff">
+                            <use xlink:href="#j3xy70k3ha"/>
+                        </mask>
+                        <use fill="#E576E5" fill-rule="nonzero" xlink:href="#j3xy70k3ha"/>
+                        <g fill="#FFF" fill-opacity=".613" mask="url(#zywkh9thyb)">
+                            <g transform="rotate(130 18.682 11.597)">
+                                <circle cx="11.036" cy="12.107" r="1"/>
+                                <circle cx="2.375" cy="6.786" r="1"/>
+                                <circle cx="4.211" cy="5.433" r="1"/>
+                                <circle cx="19.607" cy="24.964" r="1"/>
+                                <circle cx="12.107" cy="8.893" r="1"/>
+                                <circle cx="3.112" cy="9.634" r="1"/>
+                                <circle cx="20.679" cy="21.75" r="1"/>
+                                <circle cx="13.179" cy="13.179" r="1"/>
+                                <circle cx="6.089" cy="9.523" r="1"/>
+                                <circle cx="21.75" cy="26.036" r="1"/>
+                                <circle cx="11.036" cy="14.25" r="1"/>
+                                <circle cx="19.607" cy="27.107" r="1"/>
+                                <circle cx="8.893" cy="16.393" r="1"/>
+                                <circle cx="9.304" cy="9.523" r="1"/>
+                                <circle cx="11.036" cy="17.464" r="1"/>
+                                <circle cx="2.068" cy="1.147" r="1"/>
+                                <circle cx="8.295" cy="11.84" r="1"/>
+                                <circle cx=".413" cy="4.089" r="1"/>
+                                <circle cx="6.353" cy="6.504" r="1"/>
+                                <circle cx="6.353" cy="4.362" r="1"/>
+                                <circle cx="11.036" cy="19.607" r="1"/>
+                                <circle cx="17.716" cy="17.377" r="1"/>
+                                <circle cx="17.464" cy="23.893" r="1"/>
+                                <circle cx="14.25" cy="16.393" r="1"/>
+                                <circle cx="7.161" cy="12.738" r="1"/>
+                                <circle cx="2.556" cy="5.161" r="1"/>
+                                <circle cx="22.821" cy="29.25" r="1"/>
+                                <circle cx="14.25" cy="20.679" r="1"/>
+                                <circle cx="26.036" cy="29.25" r="1"/>
+                                <circle cx="17.464" cy="20.679" r="1"/>
+                                <circle cx="13.179" cy="19.607" r="1"/>
+                                <circle cx="4.211" cy="3.29" r="1"/>
+                                <circle cx="16.393" cy="26.036" r="1"/>
+                                <circle cx="7.425" cy="9.719" r="1"/>
+                                <circle cx="23.893" cy="26.036" r="1"/>
+                            </g>
+                        </g>
+                    </g>
+                    <path fill="#DF9CDF" fill-rule="nonzero" d="M40.179 63.281H4.018C1.798 63.281 0 61.482 0 59.263V16.071c0-2.219 1.799-4.017 4.018-4.017h36.16c2.22 0 4.018 1.798 4.018 4.017v43.192c0 2.22-1.798 4.018-4.017 4.018z" transform="translate(24 14)"/>
+                    <path fill="#282828" fill-rule="nonzero" d="M14.006 50.694V30.135c0-.78.852-1.263 1.521-.86L32.66 39.553c.65.39.65 1.332 0 1.722l-17.133 10.28c-.67.402-1.521-.08-1.521-.862z" transform="translate(24 14)"/>
+                    <path fill="#283246" fill-rule="nonzero" d="M34.152 17.249v-5.195C34.152 5.407 28.745 0 22.098 0c-6.646 0-12.053 5.407-12.053 12.054v5.195c-1.17.414-2.01 1.53-2.01 2.84 0 1.662 1.352 3.014 3.014 3.014 1.662 0 3.014-1.352 3.014-3.014 0-1.31-.84-2.426-2.01-2.84v-5.195c0-5.539 4.507-10.045 10.045-10.045 5.539 0 10.045 4.506 10.045 10.045v5.195c-1.17.414-2.01 1.53-2.01 2.84 0 1.662 1.353 3.014 3.014 3.014 1.662 0 3.014-1.352 3.014-3.014 0-1.31-.84-2.426-2.01-2.84z" transform="translate(24 14)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

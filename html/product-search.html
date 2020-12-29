@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- script -->
+    <script defer src="../js/search.js"></script>
+    <title>상품검색</title>
+  </head>
+  <body>
+    <div>
+      <!-- 헤더영역 -->
+      <header class="header-wrap">
+        <div class="header">
+          <article class="header-left">
+            <!-- .main-logo-image -->
+            <h1 class="main-logo">
+              <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span class="hide">임블리몰</span></a>
+            </h1>
+            <!-- .main-logo-image -->
+            <nav class="gnb">
+              <ul>
+                <li><a href="">신상품</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">브랜드</a></li>
+                <li><a href="">기획전</a></li>
+                <li><a href="">컬렉션</a></li>
+                <li><a href="">콜라보</a></li>
+                <li><a href="">이벤트</a></li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right">
+            <nav class="lnb">
+              <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li>
+                  <i class="ico-search"> </i>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right" style="display: none">
+            <nav>
+              <ul>
+                <li><a href="">로그아웃</a></li>
+                <li>
+                  <a href="product-search.html"><i class="ico-search"></i></a>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="icon-my"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </header>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+      <section class="main-nav-wrap">
+        <div class="main-nav">
+          <article class="exhibit-nav">
+            <ul>
+              <li><a href="">신상품</a></li>
+              <li><a href="">베스트</a></li>
+              <li><a href="">신상품 캘린더</a></li>
+              <li><a href="">입고 일정안내</a></li>
+              <li><a href="">고객행복센터</a></li>
+              <li><a href="">이벤트</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>패션</p>
+            <ul>
+              <li><a href="">원피스</a></li>
+              <li><a href="">상의</a></li>
+              <li><a href="">팬츠</a></li>
+              <li><a href="">스커트</a></li>
+              <li><a href="">아우터</a></li>
+              <li><a href="">슈즈•백</a></li>
+              <li><a href="">악세사리</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>브랜드</p>
+            <ul>
+              <li><a href="">IMVELY MADE</a></li>
+              <li><a href="">IMVELY COLLECT</a></li>
+              <li><a href="">LOVE ME MORE</a></li>
+              <li><a href="">VELY VELY</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>컬렉션</p>
+            <ul>
+              <li><a href="">임절미</a></li>
+              <li><a href="">주구장창</a></li>
+              <li><a href="">VERSE</a></li>
+              <li><a href="">THV.X</a></li>
+              <li><a href="">VELYSOME</a></li>
+              <li><a href="">V,COLLECT</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>기획전</p>
+            <ul>
+              <li><a href="">블리픽</a></li>
+              <li><a href="">다다익선</a></li>
+              <li><a href="">플러스사이즈+</a></li>
+              <li><a href="">라스트피스</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>콜라보</p>
+            <ul>
+              <li><a href="">DISNEY</a></li>
+              <li><a href="">JULIET</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+
+      <section class="search-header container-1180">
+        <article class="search-area">
+          <div class="">
+            <div class="search">
+              <input type="search" class="" placeholder="임블리" />
+              <button>
+                <i></i>
+              </button>
+            </div>
+            <div class="checkbox">
+              <label for="check1">
+                <input type="checkbox" id="check1" />
+                <i class=""></i>
+                <span>아이디 저장</span>
+              </label>
+            </div>
+          </div>
+          <p class="search-result"><span class="fw-bold">‘임블리’</span>에 대한 <span class="fc-red">3,230</span>개의 검색결과 입니다.</p>
+        </article>
+        <article class="recommend">
+          <p>추천 검색어</p>
+          <ul>
+            <li>무스탕</li>
+            <li>위셔블니트</li>
+            <li>패딩</li>
+            <li>교복패딩</li>
+            <li>선인장토너</li>
+            <li>미친바지</li>
+            <li>홈웨어</li>
+            <li>초유</li>
+            <li>단백질</li>
+          </ul>
+        </article>
+      </section>
+      <section class="container-1180">
+        <article class="filter-header">
+          <div class="flter-title">
+            <p>FILTER</p>
+            <button>상세 검색닫기</button>
+          </div>
+          <ul class="filter-list">
+            <li class="on">카테고리</li>
+            <li>가격</li>
+            <li>연령</li>
+            <li>색상</li>
+            <li>스타일</li>
+          </ul>
+        </article>
+        <div class="filter-wrap">
+          <article class="category">
+            <div class="outer">
+              <p>
+                <label for="check10">
+                  <input type="checkbox" name="check10" class="check" id="check10" />
+                  <i class=""></i>
+                  <span>아우터</span>
+                </label>
+              </p>
+              <ul>
+                <li>
+                  <label for="check101">
+                    <input type="checkbox" name="check101" class="check" id="check101" />
+                    <i class=""></i>
+                    <span>코트</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check102">
+                    <input type="checkbox" name="check102" class="check" id="check102" />
+                    <i class=""></i>
+                    <span>패딩</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check103">
+                    <input type="checkbox" name="check103" class="check" id="check103" />
+                    <i class=""></i>
+                    <span>자켓</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check104">
+                    <input type="checkbox" name="check104" class="check" id="check104" />
+                    <i class=""></i>
+                    <span>점퍼</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check105">
+                    <input type="checkbox" name="check105" class="check" id="check105" />
+                    <i class=""></i>
+                    <span>무스탕</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check106">
+                    <input type="checkbox" name="check106" class="check" id="check016" />
+                    <i class=""></i>
+                    <span>가디건</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="onepiece">
+              <p>
+                <label for="check20">
+                  <input type="checkbox" name="check20" class="check" id="check20" />
+                  <i class=""></i>
+                  <span>원피스</span>
+                </label>
+              </p>
+              <ul>
+                <li>
+                  <label for="check201">
+                    <input type="checkbox" name="check201" class="check" id="check201" />
+                    <i class=""></i>
+                    <span>니트 원피스</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check202">
+                    <input type="checkbox" name="check202" class="check" id="check202" />
+                    <i class=""></i>
+                    <span>롱 원피스</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check203">
+                    <input type="checkbox" name="check203" class="check" id="check203" />
+                    <i class=""></i>
+                    <span>미니 원피스</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check204">
+                    <input type="checkbox" name="check204" class="check" id="check204" />
+                    <i class=""></i>
+                    <span>플라워∙패턴</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check205">
+                    <input type="checkbox" name="check205" class="check" id="check205" />
+                    <i class=""></i>
+                    <span>투피스∙세트</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="top">
+              <p>
+                <label for="check30">
+                  <input type="checkbox" name="check30" class="check" id="check30" />
+                  <i class=""></i>
+                  <span>상의</span>
+                </label>
+              </p>
+              <ul>
+                <li>
+                  <label for="check301">
+                    <input type="checkbox" name="check301" class="check" id="check301" />
+                    <i class=""></i>
+                    <span>니트</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check302">
+                    <input type="checkbox" name="check302" class="check" id="check302" />
+                    <i class=""></i>
+                    <span>기모</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check303">
+                    <input type="checkbox" name="check303" class="check" id="check303" />
+                    <i class=""></i>
+                    <span>후드∙맨투맨</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check304">
+                    <input type="checkbox" name="check304" class="check" id="check304" />
+                    <i class=""></i>
+                    <span>긴팔티</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check305">
+                    <input type="checkbox" name="check305" class="check" id="check305" />
+                    <i class=""></i>
+                    <span>반팔티</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check306">
+                    <input type="checkbox" name="check306" class="check" id="check306" />
+                    <i class=""></i>
+                    <span>슬리브리스</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check307">
+                    <input type="checkbox" name="check307" class="check" id="check307" />
+                    <i class=""></i>
+                    <span>셔츠</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check308">
+                    <input type="checkbox" name="check308" class="check" id="check308" />
+                    <i class=""></i>
+                    <span>블라우스</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check309">
+                    <input type="checkbox" name="check309" class="check" id="check309" />
+                    <i class=""></i>
+                    <span>베이직</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check310">
+                    <input type="checkbox" name="check310" class="check" id="check310" />
+                    <i class=""></i>
+                    <span>스트라이프</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check311">
+                    <input type="checkbox" name="check311" class="check" id="check311" />
+                    <i class=""></i>
+                    <span>프린팅</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check312">
+                    <input type="checkbox" name="check312" class="check" id="check312" />
+                    <i class=""></i>
+                    <span>이너웨어</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="pants">
+              <p>
+                <label for="check40">
+                  <input type="checkbox" name="check40" class="check" id="check40" />
+                  <i class=""></i>
+                  <span>상의</span>
+                </label>
+              </p>
+              <ul>
+                <li>
+                  <label for="check401">
+                    <input type="checkbox" name="check401" class="check" id="check401" />
+                    <i class=""></i>
+                    <span>기모</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check402">
+                    <input type="checkbox" name="check402" class="check" id="check402" />
+                    <i class=""></i>
+                    <span>일자핏</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check403">
+                    <input type="checkbox" name="check403" class="check" id="check403" />
+                    <i class=""></i>
+                    <span>스키니</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check404">
+                    <input type="checkbox" name="check404" class="check" id="check404" />
+                    <i class=""></i>
+                    <span>부츠컷</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check405">
+                    <input type="checkbox" name="check405" class="check" id="check405" />
+                    <i class=""></i>
+                    <span>와이드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check406">
+                    <input type="checkbox" name="check406" class="check" id="check406" />
+                    <i class=""></i>
+                    <span>데님</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check407">
+                    <input type="checkbox" name="check407" class="check" id="check407" />
+                    <i class=""></i>
+                    <span>슬랙스</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check408">
+                    <input type="checkbox" name="check408" class="check" id="check408" />
+                    <i class=""></i>
+                    <span>점프수트∙오버롤</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check409">
+                    <input type="checkbox" name="check409" class="check" id="check409" />
+                    <i class=""></i>
+                    <span>반바지∙치마바지</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check410">
+                    <input type="checkbox" name="check410" class="check" id="check410" />
+                    <i class=""></i>
+                    <span>레깅스</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="skirt">
+              <p>
+                <label for="check50">
+                  <input type="checkbox" name="check50" class="check" id="check50" />
+                  <i class=""></i>
+                  <span>스커트</span>
+                </label>
+              </p>
+              <ul>
+                <li>
+                  <label for="check501">
+                    <input type="checkbox" name="check501" class="check" id="check501" />
+                    <i class=""></i>
+                    <span>미니 스커트</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check502">
+                    <input type="checkbox" name="check502" class="check" id="check502" />
+                    <i class=""></i>
+                    <span>미디 스커트</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check503">
+                    <input type="checkbox" name="check503" class="check" id="check503" />
+                    <i class=""></i>
+                    <span>롱 스커트</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="shoes">
+              <p>
+                <label for="check60">
+                  <input type="checkbox" name="check60" class="check" id="check60" />
+                  <i class=""></i>
+                  <span>슈즈∙백</span>
+                </label>
+              </p>
+              <ul>
+                <li>
+                  <label for="check601">
+                    <input type="checkbox" name="check601" class="check" id="check601" />
+                    <i class=""></i>
+                    <span>슈즈</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check602">
+                    <input type="checkbox" name="check602" class="check" id="check602" />
+                    <i class=""></i>
+                    <span>백</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="accessories">
+              <p>
+                <label for="check70">
+                  <input type="checkbox" name="check70" class="check" id="check70" />
+                  <i class=""></i>
+                  <span>악세서리</span>
+                </label>
+              </p>
+              <ul>
+                <li>
+                  <label for="check701">
+                    <input type="checkbox" name="check701" class="check" id="check701" />
+                    <i class=""></i>
+                    <span>귀걸이</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check702">
+                    <input type="checkbox" name="check702" class="check" id="check702" />
+                    <i class=""></i>
+                    <span>목걸이</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check703">
+                    <input type="checkbox" name="check703" class="check" id="check703" />
+                    <i class=""></i>
+                    <span>반지</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check704">
+                    <input type="checkbox" name="check704" class="check" id="check704" />
+                    <i class=""></i>
+                    <span>팔찌∙시계</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check705">
+                    <input type="checkbox" name="check705" class="check" id="check705" />
+                    <i class=""></i>
+                    <span>양말∙스타킹</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check706">
+                    <input type="checkbox" name="check706" class="check" id="check706" />
+                    <i class=""></i>
+                    <span>안경∙선글라스</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check707">
+                    <input type="checkbox" name="check707" class="check" id="check707" />
+                    <i class=""></i>
+                    <span>머플러∙스…</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check708">
+                    <input type="checkbox" name="check708" class="check" id="check708" />
+                    <i class=""></i>
+                    <span>기타</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="price filter-contents">
+            <p>가격</p>
+            <ul>
+              <li>5만원 이하</li>
+              <li class="on">5만원 ~ 10만원</li>
+              <li>5만원 ~ 10만원</li>
+              <li>20만원 ~ 30만원</li>
+              <li>30만원 ~ 40만원</li>
+              <li>100만원 이상</li>
+            </ul>
+          </article>
+          <article class="age filter-contents">
+            <p>연령</p>
+            <ul>
+              <li>전체</li>
+              <li>10대</li>
+              <li class="on">20대</li>
+              <li>30대</li>
+              <li>40대</li>
+              <li>40대 이상</li>
+            </ul>
+          </article>
+          <article class="color filter-contents">
+            <p>색상</p>
+            <ul>
+              <li class="on"><i></i><span>WHITE</span></li>
+              <li class="on"><i></i><span>BLACK</span></li>
+              <li><i></i><span>RED</span></li>
+              <li><i></i><span>ORANGE</span></li>
+              <li class="on"><i></i><span>YELLOW</span></li>
+              <li><i></i><span>GREEN</span></li>
+              <li><i></i><span>SKY</span></li>
+              <li><i></i><span>BLUE</span></li>
+              <li><i></i><span>NAVY</span></li>
+              <li class="on"><i></i><span>PURPLE</span></li>
+              <li><i></i><span>PINK</span></li>
+              <li><i></i><span>BROWN</span></li>
+              <li><i></i><span>GRAY</span></li>
+              <li><i></i><span>SILVER</span></li>
+              <li><i></i><span>GOLD</span></li>
+            </ul>
+          </article>
+          <article class="style filter-contents">
+            <p>스타일</p>
+            <ul>
+              <li>전체</li>
+              <li>심플</li>
+              <li>모던</li>
+              <li class="on">러블리</li>
+              <li>섹시</li>
+              <li class="on">캐주얼</li>
+            </ul>
+          </article>
+          <article class="choice">
+            <ul>
+              <p>선택</p>
+              <li>
+                <button>5만원 ~ 10만원<i></i></button>
+              </li>
+              <li>
+                <button>20대<i></i></button>
+              </li>
+              <li>
+                <button>YELLOW<i></i></button>
+              </li>
+            </ul>
+          </article>
+          <article class="btn-group">
+            <button class="btn-180 wh">초기화</button>
+            <button class="btn-180 bk">필터 적용</button>
+          </article>
+        </div>
+        <div class="filter-result">
+          <div class="filter-array">
+            <p>총<span>8</span>개</p>
+            <ul>
+              <li>최신순</li>
+              <li class="on">추천순</li>
+              <li>인기순</li>
+              <li>리뷰순</li>
+              <li>낮은 가격순</li>
+              <li>높은 가격순</li>
+            </ul>
+          </div>
+          <div class="product-list product-272 four-column">
+            <article class="product">
+              <a href="../html/product-detail.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img-01-searchpage.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <div class="badge-wish"></div>
+                      <ul class="badge-position">
+                        <li class="badge-square badge-pink">SALE</li>
+                        <li class="badge-square badge-black">무료배송</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="public-info">
+                      <span class="view fc-pink"><i>REVEIW</i>84</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i> 1,201</span>
+                    </div>
+                    <h2 class="brand-title">임블리콜렉트</h2>
+                    <h3 class="product-title">털러가득 머플러</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">18,050원</span>
+                        <span class="price-del"><del>19,000원</del></span>
+                      </div>
+                      <span class="sale">5%</span>
+                    </div>
+                    <div class="product-tag">
+                      <span>#20%할인</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product">
+              <a href="../html/product-detail.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img-02-searchpage.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <div class="badge-wish"></div>
+                      <ul class="badge-position">
+                        <li class="badge-square badge-green">1:1</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="public-info">
+                      <span class="view"><i>REVEIW</i>100</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i>1,320</span>
+                    </div>
+                    <h2 class="brand-title">임블리콜렉트</h2>
+                    <h3 class="product-title">미니폼폼 라운드울가디건</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">49,400원</span>
+                        <span class="price-del"><del>52,000원</del></span>
+                      </div>
+                      <span class="sale">5%</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product">
+              <a href="../html/product-detail.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img-03-searchpage.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <div class="badge-wish"></div>
+                      <ul class="badge-position">
+                        <li class="badge-square badge-gray">단독입고</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="public-info">
+                      <span class="view"><i>REVEIW</i>84</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i>1,201</span>
+                    </div>
+                    <h2 class="brand-title">임블리메이드</h2>
+                    <h3 class="product-title">워너비핏 골지니트가디건</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">55,100원</span>
+                        <span class="price-del"><del>58,000원</del></span>
+                      </div>
+                      <span class="sale">5%</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product">
+              <a href="../html/product-detail.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img-04-searchpage.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <div class="badge-wish"></div>
+                      <ul class="badge-position">
+                        <li class="badge-square badge-black">무료배송</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="public-info">
+                      <span class="view"><i>REVEIW</i>98</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i>1,520</span>
+                    </div>
+                    <h2 class="brand-title">임블리메이드</h2>
+                    <h3 class="product-title">3구스다운 히든스트링 경량베스트</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">12,160원</span>
+                        <span class="price-del"><del>12,800원</del></span>
+                      </div>
+                      <span class="sale">5%</span>
+                    </div>
+                    <div class="product-tag">
+                      <span>#가을무드</span>
+                      <span>#너만없어이옷</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product">
+              <a href="../html/product-detail.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img-05-searchpage.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <div class="badge-wish on"></div>
+                      <ul class="badge-position">
+                        <li class="badge-square badge-green">1:1</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="public-info">
+                      <span class="view"><i>REVEIW</i>114</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i>3,254</span>
+                    </div>
+                    <h2 class="brand-title">임블리메이드</h2>
+                    <h3 class="product-title">3D라인쉐이퍼 스타킹(110D)</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">42,750원</span>
+                        <span class="price-del"><del>45,000원</del></span>
+                      </div>
+                      <span class="sale">5%</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product">
+              <a href="../html/product-detail.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img-06-searchpage.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <div class="badge-wish"></div>
+                      <ul class="badge-position">
+                        <li class="badge-square badge-pink">SALE</li>
+                        <li class="badge-square badge-gray">단독입고</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="public-info">
+                      <span class="view fc-pink"><i>REVEIW</i>84</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i> 150,000</span>
+                    </div>
+                    <h2 class="brand-title">임블리메이드</h2>
+                    <h3 class="product-title">플레인베이직 롤폴라니트</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">64,000원</span>
+                        <span class="price-del"><del>45,000원</del></span>
+                      </div>
+                      <span class="sale">20%</span>
+                    </div>
+                    <div class="product-tag">
+                      <span>#20%할인</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product">
+              <a href="../html/product-detail.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img-07-searchpage.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <div class="badge-wish"></div>
+                      <ul class="badge-position">
+                        <li class="badge-square badge-green">NEW</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="public-info">
+                      <span class="view fc-pink"><i>REVEIW</i>84</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i> 150,000</span>
+                    </div>
+                    <h2 class="brand-title">임블리메이드</h2>
+                    <h3 class="product-title">플레인베이직 롤폴라니트</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">64,000원</span>
+                        <span class="price-del"><del>45,000원</del></span>
+                      </div>
+                      <span class="sale">20%</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product">
+              <a href="../html/product-detail.html">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img-08-searchpage.png" alt="" />
+                    </div>
+                    <div class="badge-area">
+                      <div class="badge-wish"></div>
+                      <ul class="badge-position">
+                        <li class="badge-square badge-green">NEW</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="public-info">
+                      <span class="view fc-pink"><i>REVEIW</i>84</span>
+                      <span class="divide"></span>
+                      <span class="review"><i>LIKE</i> 150,000</span>
+                    </div>
+                    <h2 class="brand-title">임블리메이드</h2>
+                    <h3 class="product-title">플레인베이직 롤폴라니트</h3>
+                    <div class="price-list">
+                      <div>
+                        <span class="price">64,000원</span>
+                        <span class="price-del"><del>45,000원</del></span>
+                      </div>
+                      <span class="sale">20%</span>
+                    </div>
+                    <div class="product-tag">
+                      <span>#가을무드</span>
+                      <span>#너만없어이옷</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+          <div class="result-empty">
+            <article>
+              <p>검색결과가 없습니다</p>
+              <span>검색어 또는 검색 조건을 다시 설정해 주세요.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -12,6 +12,19 @@ mainNav.addEventListener("mouseleave", () => {
   }
 })
 
+// 메인 검색팝업
+var searchPopup = document.querySelector(".search-popup-wrap")
+var searchIcon = document.querySelector(".header-right .ico-search")
+var searchFlag = false
+searchIcon.addEventListener("mouseover", () => searchPopup.classList.add("on"))
+searchPopup.addEventListener("mouseover", () => (searchFlag = true))
+searchPopup.addEventListener("mouseleave", () => {
+  if (searchFlag) {
+    searchFlag = false
+    searchPopup.classList.remove("on")
+  }
+})
+
 // js-main-visual
 var swiper = new Swiper(".js-main-visual", {
   slidesPerView: 1.12,
@@ -72,6 +85,7 @@ var swiper = new Swiper(".js-group-buying", {
     prevEl: ".swiper-button-prev",
   },
 })
+
 // js-best-brand
 var swiper = new Swiper(".js-best-brand", {
   slidesPerView: 1,

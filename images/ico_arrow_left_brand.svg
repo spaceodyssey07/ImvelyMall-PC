@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="64" viewBox="0 0 37 64">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path d="M0 0H37V64H0z" transform="translate(-1501 -506) translate(0 315) matrix(-1 0 0 1 1538 191)"/>
+                    <path stroke="#A49D95" stroke-width="1.2" d="M31 7L6 32 31 57" transform="translate(-1501 -506) translate(0 315) matrix(-1 0 0 1 1538 191) matrix(-1 0 0 1 37 0)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
