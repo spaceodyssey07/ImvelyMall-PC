@@ -2335,57 +2335,63 @@ background-color: #bbb3ab;
   text-align: center;
 }
 
-.shopping-cart-wrap .progress ul {
+
+/* step 진행  */
+.progress-step ul {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 176px;
   background-color: #f4f4f4;
+  color: #909090;
 }
-.shopping-cart-wrap .progress ul li {
+.progress-step ul li {
   display: flex;
   align-items: center;
 }
-
-.shopping-cart-wrap .progress ul li i {
+.progress-step ul li.on {
+  color: #282828;
+}
+.progress-step ul li i {
   width: 76px;
   height: 76px;
   margin-right: 18px;
 }
 
-.shopping-cart-wrap .progress ul .step-1 i {
+.progress-step ul .step-1 i {
   background: url(../images/ico_shoppingcart_step_1.svg);
 }
-.shopping-cart-wrap .progress ul .step-2 i {
+.progress-step ul .step-2 i {
   background: url(../images/ico_shoppingcart_step_2.svg);
 }
-.shopping-cart-wrap .progress ul .step-3 i {
+.progress-step ul .step-3 i {
   background: url(../images/ico_shoppingcart_step_3.svg);
 }
 
-.shopping-cart-wrap .progress ul li div {
+.progress-step ul li div {
   display: flex;
   flex-direction: column;
 }
 
-.shopping-cart-wrap .progress ul li div p{
+.progress-step ul li div p{
   padding-bottom: 8px;
   font-size: 26px;
   font-weight: bold;
   }
 
-.shopping-cart-wrap .progress ul li div span {
+.progress-step ul li div span {
   font-size: 18px;
-  color: #909090;
 }
 
-.shopping-cart-wrap .progress ul .arrow i{
+.progress-step ul .arrow i{
   display: block;
   width: 35px;
   height: 35px;
   padding: 0 50px 0 70px;
   background: url(../images/icon_shoppingcart.svg) no-repeat center ;
 }
+
+
 
 .shopping-cart-wrap .btn-del {
   display: flex;
@@ -2402,36 +2408,36 @@ background-color: #bbb3ab;
   border: solid 1px #282828;
 }
 
-.order-table {
+.product-table {
   width: 100%;
   border-top: 1px solid #282828;
 }
 
-.order-table th,
-.order-table td {
+.product-table th,
+.product-table td {
   text-align: center;
   vertical-align: middle;
 }
 
-.order-table thead tr {
+.product-table thead tr {
   height: 73px;
   font-size: 18px;
   font-weight: bold;
   color: #282828;
 }
 
-.order-table tr {
+.product-table tr {
   height: 165px;
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* btn-count */
-.btn-count {
+/* .product-table btn-count */
+.product-table .btn-count {
   display: flex;
   justify-content: center;
 }
 
-.btn-count ul {
+.product-table .btn-count ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2439,7 +2445,7 @@ background-color: #bbb3ab;
   border: 1px solid #d2d2d2;
 }
 
-.btn-count ul li {
+.product-table .btn-count ul li {
   position: relative;
   display: flex;
   justify-content: center;
@@ -2451,12 +2457,12 @@ background-color: #bbb3ab;
 }
 
 
-.btn-count ul li:last-child {
+.product-table .btn-count ul li:last-child {
   border-right: none;
 }
 
-.btn-count ul .subtract::before,
-.btn-count ul .add::before {
+.product-table .btn-count ul .subtract::before,
+.product-table .btn-count ul .add::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -2464,31 +2470,31 @@ background-color: #bbb3ab;
   background-color: #898989;
 }
 
-.btn-count ul .add::after {
+.product-table .btn-count ul .add::after {
   content: "";
   width: 2px;
   height: 12px;
   background-color: #898989;
 }
 
-.btn-count ul .number span {
+.product-table .btn-count ul .number span {
   font-size: 15px;
   font-weight: bold;
 }
 
 
-.order-price > span {
+.product-table .order-price > span {
   font-size: 14px;
   color: #858585;
 }
 
-.order-price > p {
+.product-table .order-price > p {
   padding-top: 8px;
 }
 
 
 
-.soldout-box {
+.product-table .soldout-box {
   display: none;
   width: 84px;
   height: 26px;
@@ -2502,46 +2508,47 @@ background-color: #bbb3ab;
 
 }
 
-.shipping-charge-wrap {
+.product-table .shipping-charge-wrap {
   background-color: #f9f9f9;
 }
 
-.shipping-charge {
+.product-table .shipping-charge {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.shipping-charge span {
+.product-table .shipping-charge span {
   font-size: 15px;
   color: #262628;
 }
 
-.shipping-charge i {
+.product-table .shipping-charge i {
   width: 17px;
   height: 17px;
   background: url(../images/ico_productdetail_share_comment.svg) no-repeat;
 }
 
 
-.btn-order {
+.product-table .btn-order {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.btn-order button {
+.product-table .btn-order button {
   width: 80px;
   height: 30px;
+  margin-bottom: 7px;
 }
-
-.btn-order button.wh {
-  margin-bottom: 4px;
+.product-table .btn-order button:last-child {
+  margin-bottom: 0;
+}
+.product-table .btn-order button.wh {
   color: #424242;
   border: 1px solid #c7c7c7;
 }
 
-.btn-order button.bk {
-  margin-top: 4px;
+.product-table .btn-order button.bk {
   color: #fff;
   background-color: #000;
 }
@@ -2618,12 +2625,7 @@ background-color: #bbb3ab;
 }
 
 .btn-group-cart {
-  display: flex;
-  justify-content: center;
   margin: 80px auto 107px;
-}
-.btn-group-cart button {
-  margin: 0 10px;
 }
 
 
@@ -2659,4 +2661,188 @@ background-color: #bbb3ab;
 }
 .order-table tbody tr.soldout .btn-order button.bk{
   background-color: #bbb3ab;
+}
+
+
+
+/* common element */
+
+
+/* section-title */
+/* =================================== */
+.section-title-wrap {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.section-title {
+  padding-top: 67px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #282828;
+}
+.section-title P {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #262628;
+}
+
+.section-title-wrap > span {
+  display: block;
+  padding-top: 36px;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  color: #353231;
+}
+
+/* article-title */
+/* =================================== */
+
+.article-title {
+  display: flex;
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 36px;
+  border-top: 1px solid #000;
+}
+.article-title p {
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #353231;
+}
+
+.article-title span {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #424242;
+  padding: 7px 14px 6px 13px;
+  border: solid 0.8px #c7c7c7;
+}
+.article-title em {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+| color: #909090;
+}
+
+/* article-list */
+/* =================================== */
+
+.article-list li {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  line-height: 41px;
+}
+
+.article-list.list-mb-18 li {
+  margin-bottom: 18px;
+}
+.article-list.list-mb-26 li {
+  margin-bottom: 26px;
+}
+
+.article-list li:last-child {
+  padding-bottom: 0;
+}
+
+.article-list li p {
+  width: 150px;
+  margin-right: 26px;
+  font-size: 16px;
+  color: #262628;
+}
+
+.article-list li div {
+  font-size: 15px;
+  color: #262628;
+}
+
+
+
+/* 아코디언 */
+.accordion-list > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid #f0eeeb;
+}
+
+.accordion-list > .title > i {
+  width: 34px;
+  height: 34px;
+  background: url(../images/ico_dropdown_off.svg) no-repeat center ;
+  transition: all 0.3s ease;
+}
+
+.accordion-list .accordion {
+  display: none;
+  height: 0;
+}
+.accordion-list.on .accordion {
+  display: block;
+  height: 100%;
+}
+.accordion-list.on .title i {
+  background: url(../images/ico_dropdown_on.svg) no-repeat center ;
+  transition: all 0.3s ease;
+}
+
+
+/* 커스텀 셀렉트박스 */
+.cs-selectbox {
+  position: relative;
+  margin: 200px;
+}
+
+.cs-selectbox button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 41px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.47;
+  text-indent: 14px;
+  border: 1px solid #beb0a8;
+}
+.cs-selectbox button i {
+  width: 26px;
+  height: 26px;
+  margin-right: 14px;
+  background: url(../images/ico_main_bot_arrow_down.svg) no-repeat center / 26px 26px;
+}
+
+.cs-selectbox > ul {
+  display: none;
+  position: absolute;
+  top: 41px;
+  font-weight: normal;
+  text-indent: 14px;
+  border: 1px solid #beb0a8;
+  border-top: none;
+}
+
+.cs-selectbox ul > li {
+  height: 41px;
+  line-height: 41px;
+}
+
+.cs-selectbox button.on + ul {
+  display: block;
+}
+
+/* 커스텀 셀렉트박스 넓이값 Class 지정 */
+.cs-selectbox.csb-192 button,
+.cs-selectbox.csb-192 ul{
+  width: 192px;
+}
+
+.cs-selectbox.csb-220 button,
+.cs-selectbox.csb-220 ul{
+  width: 220px;
 }

@@ -13,6 +13,7 @@
     <div>
       <!-- 헤더영역 -->
       <header class="header-wrap fixed">
+        <!-- fixed class 추가 시 상단고정되고 흰색배경 추가됨 -->
         <div class="header">
           <article class="header-left">
             <!-- .main-logo-image -->
@@ -135,9 +136,9 @@
 
       <section class="shopping-cart-wrap container-1180">
         <h2>장바구니</h2>
-        <article class="progress">
+        <article class="progress-step">
           <ul>
-            <li class="step-1">
+            <li class="step-1 on">
               <i></i>
               <div>
                 <p>STEP 01</p>
@@ -145,7 +146,7 @@
               </div>
             </li>
             <li class="arrow"><i></i></li>
-            <li class="step-2 fc-gr">
+            <li class="step-2">
               <i></i>
               <div>
                 <p>STEP 02</p>
@@ -153,7 +154,7 @@
               </div>
             </li>
             <li class="arrow"><i></i></li>
-            <li class="step-3 fc-gr">
+            <li class="step-3">
               <i></i>
               <div>
                 <p>STEP 03</p>
@@ -166,7 +167,7 @@
           <button>선택상품 삭제</button>
         </article>
         <article class="order-list container-1180">
-          <table class="order-table">
+          <table class="product-table">
             <colgroup>
               <col width="48px" />
               <col width="391px" />
@@ -183,7 +184,7 @@
                     <i class=""></i>
                   </label>
                 </th>
-                <th>상품명</th>
+                <th>상품정보</th>
                 <th>수량</th>
                 <th>상품금액</th>
                 <th>배송비</th>
@@ -331,7 +332,7 @@
             </tbody>
           </table>
         </article>
-        <article class="btn-group-cart">
+        <article class="btn-wrap btn-group-cart">
           <button class="btn-280 wh">선택상품 주문하기</button>
           <button class="btn-280 bk">전체상품 주문하기</button>
         </article>

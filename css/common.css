@@ -17,7 +17,7 @@ body {
   /* BlinkMacSystemFont Chrome 계열에서 SF 한글/영문 폰트 */
   font-size: 16px;
   font-weight: 400;
-  color: #262628;
+  color: #000000;
 }
 
 i {
@@ -145,7 +145,7 @@ i {
   color: #c74c4c;
 }
 .fc-green{
-  color: #6cae7e;
+  color: #6bae7e;
 }
 .fc-orange{
   color: #f1a261;
@@ -216,6 +216,9 @@ i {
 .mt-30{
   margin-top: 30px;
 }
+.mt-36 {
+  margin-top: 36px;
+}
 .mt-39 {
   margin-top: 39px;
 }
@@ -251,6 +254,9 @@ i {
 .mt-88 {
   margin-top: 88px;
 }
+.mt-90 {
+  margin-top: 90px;
+}
 .mt-100 {
   margin-top: 100px;
 }
@@ -260,6 +266,9 @@ i {
 }
 .mb-8 {
   margin-bottom: 8px;
+}
+.mb-12 {
+  margin-bottom: 12px;
 }
 .mb-10 {
   margin-bottom: 10px;
@@ -272,6 +281,9 @@ i {
 }
 .mb-24 {
   margin-bottom: 24px;
+}
+.mb-26 {
+  margin-bottom: 26px;
 }
 .mb-30 {
   margin-bottom: 30px;
@@ -290,6 +302,9 @@ i {
 }
 .mb-60 {
   margin-bottom: 60px;
+}
+.mb-75 {
+  margin-bottom: 75px;
 }
 .mb-100 {
   margin-bottom: 100px;
@@ -365,6 +380,9 @@ i {
 .pt-40 {
   padding-top: 40px;
 }
+.pt-50 {
+  padding-top: 50px;
+}
 .pt-80 {
   padding-top: 80px;
 }
@@ -411,7 +429,16 @@ i {
   height: auto;
   margin: 0 auto;
 }
-
+.container-844 {
+  width: 844px;
+  height: auto;
+  margin: 0 auto;
+}
+.container-740 {
+  width: 740px;
+  height: auto;
+  margin: 0 auto;
+}
 .container-620 {
   width: 620px;
   height: auto;
@@ -468,6 +495,11 @@ i {
   width: 130px;
   height: 35px;
   background: url(../images/ico_kakaopay.png)no-repeat center;
+}
+.ico-kakaotalk-single{
+  width: 32px;
+  height: 32px;
+  background: url(../images/ico_kakao_signin_big.svg)no-repeat center;
 }
 .ico-kakaotalk{
   width: 36px;
@@ -601,7 +633,17 @@ i {
 }
 .ico-alert.bk {
   background: url(../images/ico_alert_bk.svg)no-repeat center;
-} 
+}
+.ico-expiration {
+  width: 110px;
+  height: 110px;
+  background: url(../images/ico-alert-error.svg)no-repeat center;
+}
+.ico-check-gn {
+  width: 41px;
+  height: 41px;
+  background: url(../images/ico_check_gn.svg)no-repeat center;
+}
 
 /* 2020/12/15 황운하 추가 탭 메뉴 (2단) */
 .nav-tab-menu > ul {
@@ -666,4 +708,95 @@ i {
   position: absolute;
   top: 30px;
   right: 30px;
+}
+
+/* common element */
+/* section-title */
+/* =================================== */
+.section-title-wrap {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.section-title {
+  padding-top: 67px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #282828;
+}
+.section-title P {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #262628;
+}
+
+.section-title-wrap > span {
+  display: block;
+  padding-top: 36px;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  color: #353231;
+}
+
+/* article-title */
+/* =================================== */
+
+.article-title {
+  display: flex;
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 36px;
+  border-top: 1px solid #000;
+}
+.article-title p {
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #353231;
+}
+
+.article-title span {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #424242;
+  padding: 7px 14px 6px 13px;
+  border: solid 0.8px #c7c7c7;
+}
+
+/* article-list */
+/* =================================== */
+
+.article-list li {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  line-height: 41px;
+}
+
+.article-list.list-mb-18 li {
+  margin-bottom: 18px;
+}
+.article-list.list-mb-26 li {
+  margin-bottom: 26px;
+}
+
+.article-list li:last-child {
+  padding-bottom: 0;
+}
+
+.article-list li > p {
+  width: 150px;
+  margin-right: 26px;
+  font-size: 16px;
+  color: #262628;
+}
+
+.article-list li div {
+  font-size: 15px;
+  color: #262628;
+}
+.article-list li > div {
+  width: 100%;
 }
