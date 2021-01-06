@@ -1,0 +1,424 @@
+@charset 'utf-8';
+
+/* 2021/01/04 황운하 orderpay-main */
+.orderpay-main {
+  padding-top: 120px;
+  padding-bottom: 167px;
+}
+.orderpay-main .information-wrap {
+  width: 844px;
+}
+.orderpay-main h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.orderpay-main .customer-info .article-list li span {
+  margin: 0 12px;
+  color: #c0c0c0;
+}
+.orderpay-main .divider-h2 {
+  margin-bottom: 36px;
+}
+.orderpay-main .destination-info .title-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderpay-main .destination-info .title-wrap button {
+  width: 120px;
+  height: 43px;
+  font-weight: bold;
+  border: 1px solid #282828;
+}
+.orderpay-main .destination-info .marker-list {
+  padding: 0;
+}
+.orderpay-main .destination-info .marker-list li {
+  line-height: 21px;
+  font-size: 15px;
+  color: #909090;
+}
+.orderpay-main .destination-info textarea {
+  width: 668px;
+  min-height: 60px;
+  margin-top: 14px;
+  padding: 11px 18px;
+  border: 1px solid #e0e0e0;
+}
+.orderpay-main .destination-info textarea::placeholder {
+  color: #c6c6c6;
+}
+.orderpay-main .destination-info .article-list li.note {
+  height: auto;
+  margin-bottom: 14px;
+}
+.orderpay-main .customer-info .article-list li.order-password {
+  height: auto;
+  margin-bottom: 14px;
+}
+.orderpay-main .customer-info .marker-list li {
+  line-height: 21px;
+  color: #909090;
+}
+.orderpay-main .customer-info .article-list > li > p {
+  font-size: 15px;
+}
+.orderpay-main select {
+  width: 394px;
+  height: 41px;
+  margin-left: 20px;
+}
+li.email input.normal {
+  width: 180px;
+  height: 41px;
+}
+li.email span {
+  margin: 0 10px;
+}
+li.email select {
+  width: 268px;
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+}
+li.address {
+  align-items: flex-start;
+  height: 175px;
+}
+li.address label {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+li.address button {
+  height: 41px;
+  font-size: 15px;
+  padding: 0 18px;
+  color: #f5f5f5;
+  background-color: #bfbfbf;
+}
+
+li.address .d-flex {
+  width: auto;
+  margin-bottom: 20px;
+}
+li.address .d-flex input {
+  width: 197px;
+  margin-right: 20px;
+}
+li.address input:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.orderpay-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.orderpay-main .product-table {
+  border-top: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 90px;
+}
+.orderpay-main td.shipping-charge-wrap .shipping-charge {
+  display: block;
+}
+.orderpay-main .shipping-charge span.fc-gr {
+  line-height: 21px;
+  color: #909090;
+}
+.orderpay-main .shipping-charge span + p {
+  margin-top: 7px;
+}
+.orderpay-main .gift-info h3 span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #909090;
+  margin-left: 10px;
+  font-weight: normal;
+}
+.orderpay-main .gift-info .option-list .color {
+  padding-right: 32px;
+}
+.orderpay-main .coupon-info button {
+  width: 118px;
+  height: 41px;
+  color: #f5f5f5;
+  margin: 0 20px;
+  background-color: #bfbfbf;
+}
+.orderpay-main .input-area label {
+  width: inherit;
+}
+.orderpay-main .input-area input.normal {
+  height: 41px;
+}
+.orderpay-main .input-area:first-child input{
+  width: 197px;
+}
+.orderpay-main .coupon-wrap p {
+  font-size: 15px;
+  line-height: 22px;
+}
+.orderpay-main .coupon-wrap b {
+  font-size: 15px;
+  font-weight: bold;
+}
+.orderpay-main .coupon-wrap span {
+  color: #909090;
+}
+.orderpay-main .coupon-wrap > span {
+  line-height: 22px;
+  margin: 0 12px;
+}
+.orderpay-main .input-area:nth-child(2) input.normal {
+  position: relative;
+  width: 394px;
+  padding-right: 80px;
+  margin-right: 20px;
+}
+.orderpay-main .input-area:nth-child(3) input.normal {
+  position: relative;
+  width: 394px;
+  padding-right: 80px;
+  margin-right: 20px;
+}
+
+.orderpay-main .input-area label p {
+  position: absolute;
+  font-weight: bold;
+  right: 30px;
+}
+.orderpay-main .sale-coupon p {
+  line-height: 22px;
+  font-size: 16px;
+}
+.total-pay-info {
+  width: 286px;
+  min-height: 474px;
+  padding: 36px 18px 30px;
+  border: 1px solid #e0e0e0;
+}
+
+input.normal.w394 {
+  width: 394px;
+}
+.total-pay-info > h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.total-pay-info > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-pay-info ul p {
+  line-height: 21px;
+  font-size: 15px;
+  color: #909090;
+}
+.total-pay-info li {
+  min-height: 34px;
+}
+.total-pay-info .accordion {
+  padding: 12px 10px;
+  background-color: #f4f4f4;
+}
+.total-pay-info .accordion span {
+  font-size: 14px;
+  color: #909090;
+}
+.total-pay-info .accordion li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-pay-info .accordion-list .title {
+  border-bottom: none;
+}
+
+.total-pay-info .total-result li {
+  display: flex;
+  justify-content: space-between;
+}
+.total-pay-info .total-result b {
+  font-size: 30px;
+}
+
+.right-info-wrap .conditions {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+}
+.right-info-wrap .conditions-item {
+  padding: 29px 16px 21px;
+}
+.right-info-wrap .conditions-item > h2 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.right-info-wrap .conditions > button {
+  width: 100%;
+  height: 61px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f5f5f5;
+  background-color: #c74c4c; 
+}
+.right-info-wrap label > input[type="checkbox"].circle + i {
+  width: 20px;
+  height: 20px;
+  margin-right: 0;
+  background-size: 20px 20px;
+}
+.right-info-wrap .conditions-item li {
+  display: flex;
+  align-items: flex-start;
+}
+.right-info-wrap .conditions-item li div {
+  line-height: 22px;
+  font-size: 15px;
+  margin-left: 12px;
+}
+.right-info-wrap .conditions-item li div button {
+  display: flex;
+  align-items: center;
+  color: #909090;
+  margin-top: 4px;
+}
+.right-info-wrap .conditions-item li:not(:nth-child(1)){
+  margin-bottom: 14px
+}
+.right-info-wrap .conditions-item li:last-child {
+  margin-bottom: 0;
+}
+
+/* 2021/01/05 황운하 orderpay-success */
+.orderpay-success {
+  padding-bottom: 143px;
+}
+.orderpay-success .success-area {
+  text-align: center;
+  padding: 90px 0;
+}
+.orderpay-success .success-area h3 {
+  line-height: 29px;
+  font-size: 22px;
+}
+.orderpay-success .success-area p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.orderpay-success .success-area span {
+  margin-left: 8px;
+}
+.total-pay-area {
+  display: flex;
+  margin-top: 40px;
+}
+.total-pay-area ul {
+  width: 50%;
+}
+.total-pay-area ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.total-pay-area ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.total-pay-area ul li p {
+  line-height: 22px;
+  font-size: 16px;
+}
+.total-pay-area ul li span {
+  font-size: 18px;
+}
+.total-pay-area > span {
+  display: block;
+  width: 1px;
+  height: 93px;
+  margin: 0 46px;
+  background-color: #d4d4d4;
+}
+.total-pay-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 92px;
+  padding: 0 30px;
+  background-color: #f5f5f5;
+}
+.total-pay-result p {
+  font-size: 26px;
+  font-weight: bold;
+}
+.total-pay-result span {
+  font-size: 14px;
+  font-weight: normal;
+  text-indent: 4px;
+}
+
+/* 2021/01/05 황운하 order-detail-search */
+.orderpay-detail-search {
+  padding-bottom: 94px;
+}
+.orderpay-detail-search .order-product-info > h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 36px 0 30px;
+}
+.orderpay-detail-search .order-product-info ul {
+  display: flex;
+  padding: 24px 0;
+}
+.orderpay-detail-search .order-product-info ul li {
+  display: flex;
+  align-items: center;
+}
+.orderpay-detail-search .order-product-info ul li:first-child {
+  margin-right: 50px;
+}
+.orderpay-detail-search .order-product-info ul li p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.orderpay-detail-search .order-product-info ul li span {
+  line-height: 24px;
+  font-size: 18px;
+}
+.order-progress p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.order-progress button{
+  display: block;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+.order-progress button.bk {
+  color: #ffffff;
+  background-color: #000000;
+  margin-bottom: 7px;
+}
+.order-progress button.wh {
+  border: 1px solid #c7c7c7;
+}
+.orderpay-detail-search .product-table {
+  margin-bottom: 90px;
+}
+.orderpay-detail-search .article-title-wrap {
+  margin-top: 90px;
+}
+.orderpay-detail-search .article-list {
+  margin-top: 40px;
+}
+.orderpay-detail-search .article-list li {
+  line-height: 22px;
+}
+.orderpay-detail-search .btn-wrap {
+  margin-top: 110px;
+}

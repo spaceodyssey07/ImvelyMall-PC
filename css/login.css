@@ -12,29 +12,12 @@
 .login-section .login-item {
   margin-top: 50px;
 }
-.login-section .login-item > div {
-  display: flex;
-  align-items: center;
-}
 
 .login-section .login-item > .login-item-area:first-child{
   margin-bottom: 12px;
 }
-.login-section .login-item > .login-item-area > div {
-  display: block;
-  width: 100px;
-  height: 19px;
-  font-size: 16px;
-  margin-right: 20px;
-}
-.login-section .login-item > .login-item-area > label {
-}
 
-.login-section .login-item > .login-item-area > input.normal {
-  width: 500px;
-  height: 56px;
-  padding-left: 10px;
-}
+
 .login-section .login-item > .login-item-area > div > input::placeholder{
   font-size: 15px;
 }
@@ -60,11 +43,19 @@
 .login-social-area{
   margin-top: 30px;
 }
-
+.single-btn.kakao {
+  background-color: #f6e24b;
+}
+.single-btn.kakao button {
+  color: #000000;
+}
+.single-btn i {
+  margin-right: 10px;
+}
 .login-section .login-social-area > span{
   width: 1px;
   height: 18px;
-  margin: 0 34px;
+  margin: 0 54px;
   background-color: #e0e0e0;
 }
 
@@ -88,13 +79,14 @@
 
 /* 로그인 페이지 하단 - 회원가입 */
 .login-section .register-item > h3{
+  line-height: 26px;
   font-size: 18px;
-  margin-top: 29px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
 .login-section .register-item > p{
-  line-height: 21px;
+  line-height: 22px;
   font-size: 15px;
   color: #909090;
 }
@@ -114,6 +106,7 @@
 }
 
 .login-section .register-benefit li > span{
+  line-height: 18px;
   display: block;
   font-size: 14px;
   margin-bottom: 4px;
@@ -299,17 +292,20 @@
   display: flex;
   align-items: center;
 }
-.register-section .condition-item-wrap{
+.condition-item-wrap{
   flex-wrap: wrap;
 }
-.register-section .condition-item > div {
+.condition-item > div {
   display: flex;
 }
-.register-section .condition-item label {
+.condition-item label {
   display: flex;
   align-items: center;
 }
-.register-section .condition-item textarea{
+.condition-item label i {
+  margin-right: 10px;
+}
+.condition-item textarea{
   display: block;
   width: 569px;
   height: 288px;
@@ -415,8 +411,8 @@
   color: #909090;
 }
 .register-info-write ul.receive span {
-  line-height: 24px;
-  font-size: 18px;
+  line-height: 22px;
+  font-size: 15px;
 }
 
 /* 2020/12/29 황운하 info-renwal-success */
@@ -431,7 +427,10 @@
 }
 
 .info-renewal-success .success-wrap {
+  position: relative;
   display: flex;
+  height: 146px;
+  margin-top: 50px;
   background-color: #f9f9f9;
 }
 .info-renewal-success .success-wrap > div {
@@ -440,4 +439,397 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.info-renewal-success .success-wrap > div:first-child::after {
+  position: absolute;
+  right: 50%;
+  content: "";
+  width: 1px;
+  height: 70px;
+  background-color: #e0e0e0;
+}
+.info-renewal-success .success-wrap h3 {
+  line-height: 29px;
+  font-size: 22px;
+  margin-bottom: 23px;
+}
+.info-renewal-success .success-wrap p {
+  font-size: 16px;
+  color: #909090;
+}
+
+/* 2020/12/29 황운하 main-password-change */
+.change-password-section .password-wrap > h2 {
+  line-height: normal;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.change-password-section .password-wrap > p {
+  line-height: 22px;
+  font-size: 15px;
+  color: #909090;
+}
+.change-password-section .password-wrap ul {
+  line-height: 22px;
+  font-size: 15px;
+  padding-left: 8px;
+  color: #909090;
+}
+.change-password-section .password-wrap ul > li::marker {
+  content: "· ";
+}
+.change-password-section .password-area > div > p {
+  width: 150px;
+}
+.change-password-section .password-area p + * {
+  width: 100%;
+}
+.change-password-section  .password-area > div:first-child {
+  margin-bottom: 12px;
+}
+.change-password-section .btn-wrap {
+  margin-top: 90px;
+}
+
+/* 2020/12/30 황운하 main-register-guide */
+.register-guide-section {
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 224px;
+  background-color: #f9f9f9;
+}
+.register-guide-section > div {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.register-guide-section h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.register-guide-section h3 {
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+}
+.register-guide-section .btn-area {
+  margin-top: 90px;
+  text-align: center;
+}
+button.kakao {
+  background: url(../images/ico_kakao_signin_big.svg)no-repeat #f6e24b;
+  background-position:  27px center;
+}
+button.naver {
+  color: #f5f5f5;
+  background: url(../images/ico_naver_signin_big.svg)no-repeat #2db400;
+  background-position: 54px center;
+}
+button.facebook {
+  color: #f5f5f5;
+  background: url(../images/ico_facebook_signin_big.svg)no-repeat #3c5a99;
+  background-position: 44px center;
+}
+button.apple {
+  color: #f5f5f5;
+  background: url(../images/ico_apple_signin_big.svg)no-repeat #909090;
+  background-position: 58px center;
+}
+.register-guide-section > div >  .btn-wrap {
+  margin-top: 90px;
+}
+
+/* 2020/12/30 황운하 main-combine-register */
+.combine-register {
+  padding: 147px 0 107px;
+}
+section > .container-1180 > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.combine-register h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.combine-register .input-area label {
+  width: 610px;
+}
+
+.combine-register select {
+  width: 90px;
+  margin-right: 14px;
+}
+.combine-register select.year {
+  width: 120px;
+}
+.combine-register ul {
+  margin-bottom: 26px;
+}
+.combine-register ul.mb-16 {
+  margin-bottom: 16px;
+}
+.combine-register ul.mb-20{
+  margin-bottom: 20px;
+}
+.combine-register .register-conditions {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.combine-register .register-conditions i {
+  margin-right: 10px;
+}
+.combine-register textarea {
+  font-size: 14px;
+  line-height: normal;
+  color: #909090;
+}
+.combine-register select {
+  font-size: 15px;
+  color: #c6c6c6;
+}
+textarea::-webkit-scrollbar {
+  width: 6px;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #909090;
+}
+textarea::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+.check-area .check-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+.check-area label {
+  margin: 0 25px;
+}
+.check-area i {
+  margin-right: 10px;
+}
+.check-area span {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* 2020/12/30 황운하 main-combine-success */
+.combine-success {
+  padding-top: 147px;
+  padding-bottom: 171px;
+}
+.combine-success-wrap {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.combine-success-wrap h3 {
+  line-height: 29px;
+  font-size: 22px;
+  margin-bottom: 19px;
+}
+.combine-success-wrap p {
+  font-size: 16px;
+  color: #909090;
+}
+.combine-coupon-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1180px;
+  height:240px;
+  background-color: #f9f9f9;
+}
+.combine-coupon-area > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.combine-coupon-area > ul > li {
+  text-align: center;
+}
+.combine-coupon-area > ul > li > p {
+  font-size: 15px;
+  margin-top: 19px;
+  line-height: normal;
+}
+.combine-coupon-area .coupon-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:170px;
+  height: 100px;
+  color: #fff;
+  background: url(../images/img_rank_coupon_bk.svg)no-repeat center;
+}
+.combine-coupon-area li:not(:last-child) {
+  margin-right: 42px;
+}
+.combine-coupon-area .coupon-area b {
+  line-height: normal;
+  font-size: 22px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* 2020/12/30 황운하 main-find-id */
+.find-info-wrap{
+  padding: 50px 0 249px;
+  background-color: #f9f9f9;
+}
+.find-area {
+  padding: 70px 0 170px;
+}
+.radio-area {
+  height: 41px;
+}
+.radio-area label input[type=radio] + i {
+  margin-right: 6px;
+}
+.radio-area label input[type=radio] + i + span {
+  line-height: 22px;
+  font-size: 15px
+}
+.radio-area label:first-child {
+  margin-right: 36px;
+}
+.find-info-wrap .container-620 > p {
+  line-height: 22px;
+  font-size: 15px;
+  color: #909090;
+}
+.find-info-wrap .container-620 .d-flex > p {
+  width: 100px;
+  white-space: nowrap;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+/* 2021/01/04 황운하 find-id-result */
+.find-id-result {
+  padding: 50px 0 293px;
+}
+.find-area > div > p {
+  line-height: 22px;
+  font-size: 15px;
+}
+.result-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 136px;
+  margin-bottom: 50px;
+}
+.result-area p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 3px;
+}
+.result-area span {
+  line-height: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.find-id-result nav {
+  margin: 75px 0 50px;
+}
+
+/* 2020/01/04 황운하 change-password */
+.member-password-section {
+  padding: 50px 0 180px;
+}
+.member-password-section .change-note p {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 6px;
+}
+
+.member-password-section .change-note ul li {
+  line-height: 22px;
+  font-size: 15px;
+  color: #656565;
+}
+
+.member-password-section .article-list-wrap {
+  margin-top: 30px;
+}
+.member-password-section .article-list input + button {
+  bottom: 0;
+}
+.member-password-section .btn-wrap{
+  margin-top: 50px;
+}
+
+/* 2021/01/04 황운하 member-reset-password */
+.reset-password-section .change-area {
+  margin-top: 50px;
+}
+.reset-password-section .change-area > p {
+  line-height: 30px;
+  font-size: 22px;
+}
+.reset-password-section .article-list-wrap {
+  margin-top: 48px;
+}
+
+/* 2020/01/04 황운하 change-password-expiration */
+.password-expiration-section .center-align {
+  flex-direction: column;
+}
+.password-expiration-section .text-area {
+  text-align: center;
+  margin: 50px 0 75px;
+}
+.password-expiration-section .text-area p {
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.input-area label {
+  width: 100%;
+}
+.input-area.check-area label {
+  width: inherit;
+}
+.input-area input.normal {
+  height: 56px;
+}
+.input-area > p {
+  max-width: 150px;
+  width: 100%;
+  margin-right: 20px;
+}
+.input-area label div {
+  width: 150px;
+  margin-left: 20px;
+  text-align: center;
+}
+.input-area.mb-0 {
+  margin-bottom: 0;
+}
+
+.input-area label div button {
+  width: 100%;
+  font-weight: bold;
+  color: #f5f5f5;
+  padding: 11px 0;
+  background-color: #bfbfbf;
+}
+.input-area span {
+  white-space: nowrap;
 }

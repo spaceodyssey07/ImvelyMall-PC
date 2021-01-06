@@ -1,0 +1,146 @@
+
+/* 결제수단 */
+.payment-method-wrap {
+  margin-top: 41px;
+}
+.payment-method-wrap p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #262628;
+}
+.payment-method {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.payment-method > li {
+  width: 202px;
+  height: 60px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #909090;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.payment-method > li:nth-of-type(4n) {
+  margin-right: 0;
+}
+.payment-method > li.payco {
+  background: url(../images/icon_payco_unselect.svg) no-repeat center / 130px
+    35px;
+}
+.payment-method > li.kakaopay {
+  background: url(../images/ico_kakaopay_unselect.svg) no-repeat center / 130px
+    35px;
+}
+
+/* 이미지없음 */
+/* .payment-method > li.npay {
+  background: url(../images/ico-npay-unselect.svg) no-repeat center / 130px 35px;
+} */
+
+.payment-method > li.on {
+  color: #c74c4c;
+}
+.payment-method > .payco.on {
+  background: url(../images/icon_payco_select.svg) no-repeat center / 130px 35px;
+}
+.payment-method > .kakaopay.on {
+  background: url(../images/ico_kakaopay_select.svg) no-repeat center / 130px
+    35px;
+}
+/* 이미지 없음  */
+/* .payment-method > li.npay.on {
+  background: url(../images/ico-napy-select.svg) no-repeat center / 130px 35px;
+} */
+
+/* 간편결제 이용정보 */
+.payment-method-info {
+  margin-top: 14px;
+}
+
+.payment-method-info > div {
+  display: flex;
+}
+
+.payment-method-info > div {
+  border: 1px solid #e0e0e0;
+}
+.payment-method-info > div:nth-of-type(2n) {
+  border-top: none;
+}
+
+.payment-method-info > div > p {
+  display: flex;
+  flex-basis: 180px;
+  flex-shrink: 0;
+  padding-top: 20px;
+  line-height: 1.38;
+  text-indent: 14px;
+  background-color: #f4f4f4;
+}
+
+.payment-method-info > div > ul {
+  padding: 20px 24px;
+}
+
+.payment-method-info > div > ul > li {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #909090;
+}
+.card-pay-wrap select {
+  width: 230px;
+  margin-right: 14px;
+}
+.payco-pay-wrap > li > p {
+  font-weight: 600;
+}
+.payco-pay-wrap > li > ul {
+  padding: 12px 0 16px 0;
+}
+
+.mobile-pay-wrap .input-area {
+  margin-bottom: 0;
+}
+
+.n-pay-wrap label > span {
+  white-space: nowrap;
+}
+
+.payment-method-info {
+  display: none;
+}
+.payment-method-info.on {
+  display: block;
+}
+.payment-method-info > .precaution-pay {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+.payment-method-info > .precaution-pay > ul {
+  padding: 20px 0 30px;
+}
+.check-payment {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.check-payment > p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #262628;
+}
+
+.check-payment > ul > li {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #909090;
+}

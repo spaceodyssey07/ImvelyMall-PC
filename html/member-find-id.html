@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>임블리몰 - 아이디 찾기</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <section class="find-info-wrap">
+    <div class="container-1180 bg-wh find-area">
+      <div class="container-620">
+        <h2 class="text-center fz-30 fw-bold mb-75">아이디 찾기</h2>
+
+        <!-- 라디오 영역 -->
+        <article class="radio-area">
+          <div class="d-flex mt-50">
+            <label for="phone">
+              <input type="radio" checked="checked" name="radio" id="phone" />
+              <i></i>
+              <span>휴대폰 인증</span>
+            </label>
+            
+            <label for="email">
+              <input type="radio" name="radio" id="email" />
+              <i></i>
+              <span>이메일</span>
+            </label>
+          </div>
+        </article>
+        <!-- 라디오 영역 끝 -->
+
+        <p class="mt-20 mb-30">회원 정보에 등록된 휴대폰 번호를 입력해 주세요.</p>
+
+        <!-- 입력 영역 -->
+        <article class="input-area-wrap">
+          <div class="input-area mb-12">
+            <p>휴대폰 번호</p>
+            <label for="">
+              <input type="text" class="normal" placeholder="휴대폰 번호 (숫자만 입력)">
+              <div>
+                <button type="button">인증번호</button>
+              </div>
+            </label>
+          </div>
+  
+          <div class="input-area">
+            <p>인증번호 입력</p>
+            <label for="">
+              <input type="number" class="normal" placeholder="인증번호 입력" />
+              <div>
+                <p class="fc-red">남은시간 <span>02:57</span></p>
+              </div>
+            </label>
+          </div>
+        </article>
+        <!-- 입력 영역 끝 -->
+
+        <!-- 이메일 입력 영역 -->
+        <article class="input-area-wrap" style="display: none;">
+          <div class="input-area mb-12">
+            <p>이름</p>
+            <input type="text" placeholder="이름 입력" class="normal" />
+          </div>
+          <div class="input-area">
+            <p>이메일 주소</p>
+            <input type="email" placeholder="이메일 주소 입력" class="normal" />
+          </div>
+        </article>
+        <!-- 이메일 입력 영역 끝 -->
+
+        <!-- 확인버튼 -->
+        <button type="button" class="btn-620 bk mt-36">아이디 찾기</button>
+        <!-- 확인버튼 끝 -->
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

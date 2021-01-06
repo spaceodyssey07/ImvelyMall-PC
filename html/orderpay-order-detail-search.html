@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주문완료</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script defer src="../js/accordion.js"></script>
+</head>
+
+<body>
+
+  <section class="orderpay-detail-search">
+    <div class="container-1180">
+
+      <!-- 타이틀 -->
+      <article class="section-title-wrap">
+        <div class="section-title">
+          <p>주문 상세조회</p>
+        </div>
+      </article>
+      <!-- 타이틀 -->
+
+      <!-- 주문일 / 주문번호 -->
+      <article class="order-product-info">
+        <h3>주문상품 정보</h3>
+        <div class="divider"></div>
+        <ul>
+          <li>
+            <p>주문일</p>
+            <span>2020.11.21</span>
+          </li>
+          <li>
+            <p>주문번호</p>
+            <span>12345678abc</span>
+          </li>
+        </ul>
+      </article>
+      <!-- 주문일 / 주문번호 -->
+
+      <!-- 상세 테이블 -->
+      <table class="product-table">
+        <colgroup>
+          <col width="440px" />
+          <col width="186px" />
+          <col width="186px" />
+          <col width="178px" />
+          <col width="190px" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>상품 정보</th>
+            <th>상품금액</th>
+            <th>수량</th>
+            <th>배송비</th>
+            <th>진행상황</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td>
+              <article class="product-order product">
+                <div class="product-wrap">
+                  <div class="img-area">
+                    <div class="img-box">
+                      <img src="../preview/img_main_best_seller_005.png" alt="w72_img" />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="text-area-wrap">
+                      <h2 class="brand-title">IMVELY MADE</h2>
+                      <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                      <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span></p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </td>
+            <td>
+              <article class="order-price">
+                <span class="fz-14 fc-dark-beige"><del>42,000원</del></span>
+                <p>38,000원</p>
+                <div class="soldout-box">옵션품절</div>
+              </article>
+            </td>
+            <td>
+              <article class="order-count">
+                <p>1 개</p>
+              </article>
+            </td>
+            <td class="">
+              <article class="shipping-charge">
+                <span>2,500원</span><i></i>
+              </article>
+            </td>
+            <td class="order-progress">
+              <p>배송완료</p>
+              <button type="button" class="bk">배송조회</button>
+              <button type="button" class="wh">상품평</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- 상세테이블 -->
+
+      <!-- 결제 정보 -->
+      <article class="article-title-wrap">
+        <div class="article-title">
+          <p>결제 정보</p>
+        </div>
+        <div class="total-pay-area">
+          <ul>
+            <li>
+              <p>총 상품금액</p>
+              <span>10,000,000원</span>
+            </li>
+            <li>
+              <p>총 배송비</p>
+              <span>2,500원</span>
+            </li>
+          </ul>
+          <span></span>
+          <ul>
+            <li>
+              <p>쿠폰 할인</p>
+              <span>20,000원</span>
+            </li>
+            <li>
+              <p>포인트 할인</p>
+              <span>2,500원</span>
+            </li>
+            <li>
+              <p>적립 예정 포인트</p>
+              <span>12,500원</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- 결제 정보 -->
+
+      <!-- 총 결제 금액 -->
+      <article class="total-pay-result mt-90">
+        <h3>총 결제금액</h3>
+        <div class="d-flex">
+          <p class="fc-red">78,000</p>
+          <span class="fc-red">원</span>
+        </div>
+      </article>
+      <!-- 총 결제 금액 -->
+
+      <!-- 배송지 정보 -->
+      <article class="article-title-wrap">
+        <div class="article-title">
+          <p>배송지 정보</p>
+        </div>
+        <div class="article-list-wrap">
+          <ul class="article-list list-mb-18">
+            <li>
+              <p>수령인</p>
+              <div>
+                <p>홍길동</p>
+              </div>
+            </li>
+            <li>
+              <p>휴대폰</p>
+              <div>
+                <p>010-1234-5678</p>
+              </div>
+            </li>
+            <li>
+              <p>우편번호</p>
+              <div>
+                <p>071823</p>
+              </div>
+            </li>
+            <li>
+              <p>주소</p>
+              <div>
+                <p>서울시 강서구 동촌로1가길 45</p>
+              </div>
+            </li>
+            <li>
+              <p>나머지 주소</p>
+              <div>
+                <p>101동 103호</p>
+              </div>
+            </li>
+            <li>
+              <p>배송 요청사항</p>
+              <div>
+                <p>문앞에 놓아주세요</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- 배송지 정보 -->
+
+      <!-- 주문자 정보 -->
+      <article class="article-title-wrap">
+        <div class="article-title">
+          <p>주문자 정보</p>
+        </div>
+        <div class="article-list-wrap">
+          <ul class="article-list list-mb-18">
+            <li>
+              <p>주문하시는 분</p>
+              <div>
+                <p>홍길동</p>
+              </div>
+            </li>
+            <li>
+              <p>이메일</p>
+              <div>
+                <p>imvely@naver.com</p>
+              </div>
+            </li>
+            <li>
+              <p>휴대폰</p>
+              <div>
+                <p>010-1234-5678</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- 주문자 정보 -->
+
+      <!-- 결제방법 -->
+      <article class="article-title-wrap">
+        <div class="article-title">
+          <p>결제방법</p>
+        </div>
+        <div class="article-list-wrap">
+          <ul class="article-list list-mb-18">
+            <li>
+              <p>카드결제</p>
+              <div>
+                <p>25,000원 [삼성카드 / 일시불]</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- 결제방법 -->
+
+      <!-- 버튼 영역 -->
+      <div class="btn-wrap">
+        <button type="button" class="btn-620 bk">목록</button>
+      </div>
+      <!-- 버튼 영역 끝 -->
+    </div>
+  </section>
+
+</body>
+
+</html>

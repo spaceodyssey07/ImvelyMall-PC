@@ -131,6 +131,16 @@
         </ul>
         <!-- 성별 -->
 
+        <!-- 인증 한 경우 -->
+        <ul style="display: none;">
+          <li>성별</li>
+          <li>
+            <label for="">
+              <input type="text" value="남자" class="normal" />
+            </label>
+          </li>
+        </ul>
+
         <!-- 아이디 -->
         <ul>
           <li>아이디</li>
@@ -206,14 +216,14 @@
             <div class="d-flex">
               <div class="d-flex mr-50">
                 <label for="email">
-                  <input type="checkbox" class="circle" id="email" checked="checked" />
+                  <input type="checkbox" id="email" checked="checked" />
                   <i></i>
                   <span>이메일 수신동의</span>
                 </label>
               </div>
               <div class="d-flex">
                 <label for="sms">
-                  <input type="checkbox" class="circle" id="sms" />
+                  <input type="checkbox" id="sms" />
                   <i></i>
                   <span>SMS 수신동의</span>
                 </label>

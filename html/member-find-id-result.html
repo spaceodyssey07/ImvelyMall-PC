@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>임블리몰 - 정보입력</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <section class="find-id-result bg-gr">
+    <article class="container-1180 find-area bg-wh">
+      <!-- title -->
+      <h2>아이디 찾기</h2>
+      <!-- title -->
+      <div class="container-620">
+
+        <p class="mt-60 mb-20">개인정보 보호를 위해 뒷자리는 ***으로 표시했습니다.</p>
+
+        <article class="result-area bg-gr">
+          <p>아이디 찾기 결과입니다</p>
+          <span>abce1234**</span>
+        </article>
+
+        <!-- SNS 이메일 찾기일 경우 -->
+        <article class="result-area bg-gr" style="display: none;">
+          <p>SNS(카카오톡) 이메일 찾기 결과입니다</p>
+          <span>abce12388@naver.com</span>
+        </article>
+
+        <!-- 정보가 없을 경우 -->
+        <article class="result-area text-center bg-gr" style="display: none;">
+          <p>입력하신 정보에 해당하는 계정이 존재하지 않습니다<br />입력하신 정보를 다시 확인해주시기 바랍니다</p>
+        </article>
+
+        <!-- 버튼 영역 -->
+        <div class="btn-wrap">
+          <button type="button" class="btn-280 wh">비밀번호 찾기</button>
+          <button type="button" class="btn-280 bk">로그인</button>
+        </div>
+
+        <!-- 정보가 없을 경우 -->
+        <div class="btn-wrap" style="display: none;">
+          <button type="button" class="btn-620 bk">확인</button>
+        </div>
+        <!-- 버튼 영역 끝 -->
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>

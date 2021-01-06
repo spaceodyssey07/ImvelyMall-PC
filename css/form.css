@@ -18,7 +18,7 @@ button {
   justify-content: space-between;
 }
 
-/* large 버튼 */
+/* btn-620 버튼 */
 .btn-620{
   width: 620px;
   height: 56px;
@@ -38,6 +38,15 @@ button {
 .btn-620.dk-pink{
   color: #df9cdf;
   background-color: #282828;
+}
+
+/* btn-300 버튼 */
+.btn-300 {
+  width: 300px;
+  height: 56px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* medium 버튼 */
@@ -64,6 +73,10 @@ button {
 .btn-280.wh:disabled{
   color: #909090;
   border-color: #e0e0e0;
+}
+.btn-280.gr {
+  color: #f5f5f5;
+  background-color: #bbb3ab;
 }
 
 
@@ -140,13 +153,6 @@ input[type="file"] {
 }
 
 
-/* 2020/11/19 (신민하) 체크박스, 라디오 변경 */
-/* 구조
-  <label for="">
-    <input type="radio" id="" checked >
-    <i></i>
-  </label>
-*/
 /* check box ----*/
 label {
   position: relative;
@@ -155,8 +161,9 @@ label {
 }
 label > input[type="checkbox"] + i {
   display: inline-block;
-  width: 34px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
   background: url(../images/ico_check_off.svg) no-repeat center;
   cursor: pointer;
 }
@@ -278,20 +285,43 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   width: 0; 
   margin: 0; 
 }
-
+select.triangle {
+  padding: 11px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  background: url(../images/btn_triangle.jpg)no-repeat;
+  background-position: 95% center;
+  background-size: 26px 26px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select.arrow {
+  padding: 11px 18px;
+  border: 1px solid #e0e0e0;
+  background: url(../images/ico_dropdown_off.svg)no-repeat;
+  background-position: 95% center;
+  background-size: 28px 28px;
+}
+option:disabled {
+  color: #c6c6c6;
+}
 /* divider */
 .divider{
   width: 100%;
   height: 1px;
   margin: 0 auto;
+  background-color: #282828;
 }
 .divider.gr {
   background-color: #e0e0e0;
 }
-
-.divider.bk{
-  height: 2px;
-  background-color: #282828;
+.divider.dark-gr {
+  background-color: #d5d5d5;
+}
+.divider.light-gr {
+  background-color: #eeeef2;
 }
 
-
+.divider-h2 {
+  height: 2px;
+}

@@ -47,7 +47,7 @@ i {
   font-size: 14px;
 }
 
-.fz-15{
+.fz-15 {
   font-size: 15px;
 }
 
@@ -62,13 +62,13 @@ i {
 .fz-20 {
   font-size: 20px;
 }
-.fz-22{
+.fz-22 {
   font-size: 22px;
 }
 .fz-24 {
   font-size: 24px;
 }
-.fz-30{
+.fz-30 {
   font-size: 30px;
 }
 
@@ -109,10 +109,10 @@ i {
 .fc-wh {
   color: #f9f9f9;
 }
-.fc-dark-wh{
+.fc-dark-wh {
   color: #f4f4f4;
 }
-.fc-light-gr{
+.fc-light-gr {
   color: #e0e0e0;
 }
 .fc-gr {
@@ -122,44 +122,44 @@ i {
   color: #262628;
 }
 
-.fc-light-beige{
+.fc-light-beige {
   color: #efeeea;
 }
-.fc-beige{
+.fc-beige {
   color: #e7e0da;
 }
-.fc-deep-beige{
+.fc-deep-beige {
   color: #bbb3ab;
 }
-.fc-dark-beige{
+.fc-dark-beige {
   color: #8d8682;
 }
-.fc-ultra-beige{
+.fc-ultra-beige {
   color: #524e4b;
 }
 
-.fc-pink{
+.fc-pink {
   color: #de9cde;
 }
-.fc-red{
+.fc-red {
   color: #c74c4c;
 }
-.fc-green{
+.fc-green {
   color: #6bae7e;
 }
-.fc-orange{
+.fc-orange {
   color: #f1a261;
 }
-.fc-cyan{
+.fc-cyan {
   color: #57a0c4;
 }
 
 /* bg-color */
 /* =================================*/
-.bg-wh{
+.bg-wh {
   background-color: #ffffff;
 }
-.bg-gr{
+.bg-gr {
   background-color: #f9f9f9;
 }
 
@@ -213,7 +213,7 @@ i {
 .mt-28 {
   margin-top: 28px;
 }
-.mt-30{
+.mt-30 {
   margin-top: 30px;
 }
 .mt-36 {
@@ -273,6 +273,9 @@ i {
 .mb-10 {
   margin-bottom: 10px;
 }
+.mb-14 {
+  margin-bottom: 14px;
+}
 .mb-16 {
   margin-bottom: 16px;
 }
@@ -290,6 +293,9 @@ i {
 }
 .mb-34 {
   margin-bottom: 34px;
+}
+.mb-36 {
+  margin-bottom: 36px;
 }
 .mb-40 {
   margin-bottom: 40px;
@@ -486,163 +492,168 @@ i {
   align-items: flex-end;
 }
 /* icon pc */
-.ico-payco{
+.ico-payco {
   width: 130px;
   height: 35px;
-  background: url(../images/ico_payco.svg)no-repeat center;
+  background: url(../images/ico_payco.svg) no-repeat center;
 }
-.ico-kakaopay{
+.ico-kakaopay {
   width: 130px;
   height: 35px;
-  background: url(../images/ico_kakaopay.png)no-repeat center;
+  background: url(../images/ico_kakaopay.png) no-repeat center;
 }
-.ico-kakaotalk-single{
+.ico-kakaotalk-single {
   width: 32px;
   height: 32px;
-  background: url(../images/ico_kakao_signin_big.svg)no-repeat center;
+  background: url(../images/ico_kakao_signin_big.svg) no-repeat center;
 }
-.ico-kakaotalk{
+.ico-kakaotalk {
   width: 36px;
   height: 36px;
-  background: url(../images/ico_social_kakao.svg)no-repeat center;
+  background: url(../images/ico_social_kakao.svg) no-repeat center;
 }
-.ico-naver{
+.ico-naver {
   width: 36px;
   height: 36px;
-  background: url(../images/ico_social_naver.svg)no-repeat center;
+  background: url(../images/ico_social_naver.svg) no-repeat center;
 }
-.ico-apple{
+.ico-apple {
   width: 36px;
   height: 36px;
-  background: url(../images/ico_social_apple.svg)no-repeat center;
+  background: url(../images/ico_social_apple.svg) no-repeat center;
 }
-.ico-facebook{
+.ico-facebook {
   width: 36px;
   height: 36px;
-  background: url(../images/ico_social_facebook.svg)no-repeat center;
+  background: url(../images/ico_social_facebook.svg) no-repeat center;
 }
 
 /* mypage icon */
-.ico-discount{
+.ico-discount {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_mypage_coupon.svg)no-repeat center;
+  background: url(../images/ico_mypage_coupon.svg) no-repeat center;
 }
-.ico-point{
+.ico-point {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_mypage_point.svg)no-repeat center;
+  background: url(../images/ico_mypage_point.svg) no-repeat center;
 }
-.ico-money{
+.ico-money {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_mypage_money.svg)no-repeat center;
+  background: url(../images/ico_mypage_money.svg) no-repeat center;
 }
-.ico-calender{
+.ico-calender {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_mypage_calender.svg)no-repeat center;
+  background: url(../images/ico_mypage_calender.svg) no-repeat center;
 }
-.ico-confirm{
+.ico-confirm {
   width: 42px;
   height: 42px;
-  background: url(../images/ico_mypage_confirm.svg)no-repeat center;
+  background: url(../images/ico_mypage_confirm.svg) no-repeat center;
 }
-.ico-card{
+.ico-card {
   width: 42px;
   height: 42px;
-  background: url(../images/ico_mypage_card.svg)no-repeat center;
+  background: url(../images/ico_mypage_card.svg) no-repeat center;
 }
-.ico-ongoing{
+.ico-ongoing {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_mypage_ongoing.svg)no-repeat center;
+  background: url(../images/ico_mypage_ongoing.svg) no-repeat center;
 }
-.ico-delivery{
+.ico-delivery {
   width: 42px;
   height: 42px;
-  background: url(../images/ico_mypage_delivery.svg)no-repeat center;
+  background: url(../images/ico_mypage_delivery.svg) no-repeat center;
 }
-.ico-complete{
+.ico-complete {
   width: 42px;
   height: 42px;
-  background: url(../images/ico_mypage_complete.svg)no-repeat center;
+  background: url(../images/ico_mypage_complete.svg) no-repeat center;
 }
-.ico-payback{
+.ico-payback {
   width: 42px;
   height: 42px;
-  background: url(../images/ico_mypage_payback.svg)no-repeat center;
+  background: url(../images/ico_mypage_payback.svg) no-repeat center;
 }
-.ico-sign-step1{
+.ico-sign-step1 {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_signin_step1_bk.svg)no-repeat center;
+  background: url(../images/ico_signin_step1_bk.svg) no-repeat center;
 }
-.ico-sign-step1.on{
-  background: url(../images/ico_signin_step1_wh.svg)no-repeat center;
+.ico-sign-step1.on {
+  background: url(../images/ico_signin_step1_wh.svg) no-repeat center;
 }
-.ico-sign-step2{
+.ico-sign-step2 {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_signin_step2_bk.svg)no-repeat center;
+  background: url(../images/ico_signin_step2_bk.svg) no-repeat center;
 }
-.ico-sign-step2.on{
-  background: url(../images/ico_signin_step2_wh.svg)no-repeat center;
+.ico-sign-step2.on {
+  background: url(../images/ico_signin_step2_wh.svg) no-repeat center;
 }
-.ico-sign-step3{
+.ico-sign-step3 {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_signin_step3_bk.svg)no-repeat center;
+  background: url(../images/ico_signin_step3_bk.svg) no-repeat center;
 }
-.ico-sign-step3.on{
-  background: url(../images/ico_signin_step3_wh.svg)no-repeat center;
+.ico-sign-step3.on {
+  background: url(../images/ico_signin_step3_wh.svg) no-repeat center;
 }
-.ico-arrow-small{
+.ico-arrow-small {
   width: 22px;
   height: 22px;
-  background: url(../images/ico_arrow_small.svg)no-repeat center;
+  background: url(../images/ico_arrow_small.svg) no-repeat center;
 }
-.ico-close{
+.ico-close {
   width: 35px;
   height: 35px;
-  background: url(../images/ico_popup_productdetail_close.svg)no-repeat center;
+  background: url(../images/ico_popup_productdetail_close.svg) no-repeat center;
 }
 .ico-view {
   width: 23px;
   height: 23px;
-  background: url(../images/ico_view_off.svg)no-repeat center;
+  background: url(../images/ico_view_off.svg) no-repeat center;
 }
 .ico-view.on {
-  background: url(../images/ico_view_on.svg)no-repeat center;
+  background: url(../images/ico_view_on.svg) no-repeat center;
 }
 .ico-bookmark {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_bookmark_off.svg)no-repeat center;
+  background: url(../images/ico_bookmark_off.svg) no-repeat center;
 }
 .ico-bookmark.on {
-  background: url(../images/ico_bookmark_on.svg)no-repeat center;
+  background: url(../images/ico_bookmark_on.svg) no-repeat center;
 }
-.ico-alert{
+.ico-alert {
   width: 34px;
   height: 34px;
-  background: url(../images/ico_alert.svg)no-repeat center;
+  background: url(../images/ico_alert.svg) no-repeat center;
 }
 .ico-alert.rd {
-  background: url(../images/ico_alert_red.svg)no-repeat center;
+  background: url(../images/ico_alert_red.svg) no-repeat center;
 }
 .ico-alert.bk {
-  background: url(../images/ico_alert_bk.svg)no-repeat center;
+  background: url(../images/ico_alert_bk.svg) no-repeat center;
 }
 .ico-expiration {
   width: 110px;
   height: 110px;
-  background: url(../images/ico-alert-error.svg)no-repeat center;
+  background: url(../images/ico-alert-error.svg) no-repeat center;
 }
 .ico-check-gn {
   width: 41px;
   height: 41px;
-  background: url(../images/ico_check_gn.svg)no-repeat center;
+  background: url(../images/ico_check_gn.svg) no-repeat center;
+}
+.ico-right-arrow-small {
+  width: 26px;
+  height: 26px;
+  background: url(../images/ico_arrow_right_payment.svg) no-repeat center;
 }
 
 /* 2020/12/15 황운하 추가 탭 메뉴 (2단) */
@@ -673,16 +684,16 @@ i {
 }
 
 /* 2020/12/15 황운하 추가 하단 버튼 영역 */
-.btn-wrap{
+.btn-wrap {
   display: flex;
   justify-content: center;
 }
-.btn-wrap button{
+.btn-wrap button {
   margin: 0 10px;
 }
 
 /* 2020/12/15 황운하 추가 팝업 */
-.popup-bg{
+.popup-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -691,7 +702,7 @@ i {
   display: block;
   background-color: #f5f5f5;
 }
-.popup{
+.popup {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -704,7 +715,7 @@ i {
   background-color: #ffffff;
 }
 
-.popup > .popup-close{
+.popup > .popup-close {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -714,7 +725,7 @@ i {
 /* section-title */
 /* =================================== */
 .section-title-wrap {
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -723,7 +734,7 @@ i {
   padding-bottom: 50px;
   border-bottom: 2px solid #282828;
 }
-.section-title P {
+.section-title > P {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -744,19 +755,19 @@ i {
 
 .article-title {
   display: flex;
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 36px;
   border-top: 1px solid #000;
 }
-.article-title p {
+.article-title > p {
   margin-right: 20px;
   font-size: 22px;
   font-weight: bold;
   color: #353231;
 }
 
-.article-title span {
+.article-title > span {
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -764,21 +775,27 @@ i {
   padding: 7px 14px 6px 13px;
   border: solid 0.8px #c7c7c7;
 }
+.article-title > em {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #909090;
+}
 
 /* article-list */
 /* =================================== */
 
-.article-list li {
+.article-list > li {
   display: flex;
   align-items: center;
-  height: 41px;
+  /* height: 41px; */
   line-height: 41px;
 }
 
-.article-list.list-mb-18 li {
+.article-list.list-mb-18 > li {
   margin-bottom: 18px;
 }
-.article-list.list-mb-26 li {
+.article-list.list-mb-26 > li {
   margin-bottom: 26px;
 }
 
@@ -786,17 +803,107 @@ i {
   padding-bottom: 0;
 }
 
-.article-list li > p {
+.article-list > li > p {
   width: 150px;
   margin-right: 26px;
   font-size: 16px;
   color: #262628;
 }
 
-.article-list li div {
+.article-list > li > div {
+  width: 100%;
   font-size: 15px;
   color: #262628;
 }
-.article-list li > div {
-  width: 100%;
+
+/* 아코디언 */
+.accordion-list > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid #f0eeeb;
+}
+
+.accordion-list > .title i {
+  width: 34px;
+  height: 34px;
+  background: url(../images/ico_dropdown_off.svg) no-repeat center;
+  transition: all 0.3s ease;
+}
+
+.accordion-list > .accordion {
+  display: none;
+  height: 0;
+}
+.accordion-list.on > .accordion {
+  display: block;
+  height: 100%;
+}
+.accordion-list.on > .title i {
+  background: url(../images/ico_dropdown_on.svg) no-repeat center;
+  transition: all 0.3s ease;
+}
+
+/* 커스텀 셀렉트박스 */
+.cs-selectbox {
+  position: relative;
+  margin: 200px;
+}
+
+.cs-selectbox > button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 41px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.47;
+  text-indent: 14px;
+  border: 1px solid #beb0a8;
+}
+.cs-selectbox > button > i {
+  width: 26px;
+  height: 26px;
+  margin-right: 14px;
+  background: url(../images/ico_main_bot_arrow_down.svg) no-repeat center / 26px
+    26px;
+}
+
+.cs-selectbox > ul {
+  display: none;
+  position: absolute;
+  top: 41px;
+  font-weight: normal;
+  text-indent: 14px;
+  border: 1px solid #beb0a8;
+  border-top: none;
+}
+
+.cs-selectbox ul > li {
+  height: 41px;
+  line-height: 41px;
+}
+
+.cs-selectbox button.on + ul {
+  display: block;
+}
+
+/* 커스텀 셀렉트박스 넓이값 Class 지정 */
+.cs-selectbox.csb-192 > button,
+.cs-selectbox.csb-192 > ul {
+  width: 192px;
+}
+
+.cs-selectbox.csb-220 > button,
+.cs-selectbox.csb-220 > ul {
+  width: 220px;
+}
+
+/* marker-list */
+.marker-list{
+  margin-left: 10px;
+}
+.marker-list li::marker {
+  content: "· ";
 }

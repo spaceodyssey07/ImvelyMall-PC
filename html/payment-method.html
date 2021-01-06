@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/main.css" />
-  <title>Document</title>
+  <script defer src="../js/payment-method.js"></script>
+  <title>결제수단</title>
 </head>
 
 <body>
@@ -25,16 +26,16 @@
     <article class="payment-method-wrap">
       <p>결제 수단</p>
       <ul class="payment-method">
-        <li class=""><span>계좌 간편결제</span></li>
-        <li><span>신용/체크카드</span></li>
+        <li class="on">계좌 간편결제<span class="hide">계좌 간편결제</span></li>
+        <li>신용/체크카드<span class="hide">신용/체크카드</span></li>
         <li class="payco"><span class="hide">페이코</span></li>
         <li class="kakaopay"><span class="hide">카카오페이</span></li>
-        <li><span>휴대폰 결제</span></li>
-        <li><span>가상계좌</span></li>
-        <li class="npay"><span>N pay</span></li>
+        <li>휴대폰 결제<span class="hide">휴대폰 결제</span></li>
+        <li>가상계좌<span class="hide">가상계좌</span></li>
+        <li class="npay">N pay<span class="hide">네이버페이</span></li>
       </ul>
     </article>
-    <article class="payment-method-info simple-pay">
+    <article class="payment-method-info on simple-pay">
       <div>
         <p>결제안내</p>
         <ul class="marker-list">
@@ -214,37 +215,6 @@
     </article>
   </section>
 
-  <script>
-    let payments = document.querySelectorAll(".payment-method > li")
-
-    let paymentInfo = document.querySelectorAll(".payment-method-info")
-
-    let paymentsArray = [...payments]
-    payments.forEach(element => {
-      element.addEventListener("click", paySelect)
-    });
-
-    function paySelect(event) {
-      event.currentTarget.classList.add("on")
-      payments.forEach(elem => {
-        if (event.currentTarget != elem) {
-          elem.classList.remove("on")
-        }
-      })
-     const index = paymentsArray.indexOf(event.currentTarget)
-      for ( let i=0 ; i < paymentInfo.length ; i++  ) {
-        if (i===index) {
-          paymentInfo[i].classList.add("on")
-        }
-        else {
-          paymentInfo[i].classList.remove("on")
-
-        }
-      }
-    }
-
-
-  </script> 
 </body>
 
 </html>
