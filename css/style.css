@@ -2481,6 +2481,16 @@ header .header-right .lnb ul li {
   color: #282828;
 }
 
+/* 신청일 */
+.product-table .request-date p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #282828;
+}
+
+
+
+
 /* 상품가격 */
 .product-table .order-price > span {
   font-size: 14px;
@@ -2591,8 +2601,19 @@ header .header-right .lnb ul li {
   color: #909090;
 }
 
-/* 주문상태 */
-
+/* 진행상태 */
+.product-table .return-progress > p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.product-table .return-progress > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 11px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #909090;
+}
 
 
 

@@ -19,6 +19,14 @@ button {
 }
 
 /* btn-620 버튼 */
+button.wh {
+  border: 1px solid #282828;
+  color: #262628;
+}
+button.bk {
+  color: #ffffff;
+  background-color: #282828;
+}
 .btn-620{
   width: 620px;
   height: 56px;
@@ -171,7 +179,12 @@ label > input[type="checkbox"] + i {
 label > input[type="checkbox"]:checked + i {
   background: url(../images/ico_check_on.svg) no-repeat center;
 }
-
+label > input[type="checkbox"].product + i {
+  background: url(../images/ico_product_check_off.svg)no-repeat center;
+}
+label > input[type="checkbox"].product:checked + i {
+  background: url(../images/ico_product_check_on.svg)no-repeat center;
+}
 label > input[type="checkbox"].circle + i {
   display: inline-block;
   width: 28px;
@@ -298,6 +311,13 @@ select.triangle {
 select.arrow {
   padding: 11px 18px;
   border: 1px solid #e0e0e0;
+  background: url(../images/ico_dropdown_off.svg)no-repeat;
+  background-position: 95% center;
+  background-size: 28px 28px;
+}
+select.arrow-large {
+  padding: 11px 18px;
+  border-bottom: 1px solid #e0e0e0;
   background: url(../images/ico_dropdown_off.svg)no-repeat;
   background-position: 95% center;
   background-size: 28px 28px;

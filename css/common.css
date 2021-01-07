@@ -613,6 +613,12 @@ i {
   height: 35px;
   background: url(../images/ico_popup_productdetail_close.svg) no-repeat center;
 }
+.ico-close-small {
+  width: 23px;
+  height: 23px;
+  vertical-align: middle;
+  background: url(../images/ico_del_filter_small.svg)no-repeat center;
+}
 .ico-view {
   width: 23px;
   height: 23px;
@@ -620,6 +626,11 @@ i {
 }
 .ico-view.on {
   background: url(../images/ico_view_on.svg) no-repeat center;
+}
+.ico-view-small {
+  width: 12px;
+  height: 12px;
+  background: url(../images/ico_view_off.svg)no-repeat center;
 }
 .ico-bookmark {
   width: 34px;
@@ -655,7 +666,67 @@ i {
   height: 26px;
   background: url(../images/ico_arrow_right_payment.svg) no-repeat center;
 }
-
+.star-rating {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  background: url(../images/star_rate_gl.svg)no-repeat left / 100px 20px;
+}
+.star-rating .rate {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 20px;
+  overflow: hidden;
+  background: url(../images/star_rate_on.svg)no-repeat left / 100px 20px;
+}
+.ico-download.rd {
+  width: 16px;
+  height: 16px;
+  background: url(../images/ico_productdetail_download.svg)no-repeat center;
+}
+.ico-alert.gr {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background: url(../images/ico_productdetail_share_comment.svg)no-repeat center;
+}
+.ico-heart {
+  width: 56px;
+  height: 56px;
+  background: url(../images/ico_productdetail_heart.svg)no-repeat center;
+}
+.ico-share {
+  width: 56px;
+  height: 56px;
+  background: url(../images/ico_productdetail_share.svg)no-repeat center;
+}
+.ico-alarm {
+  width: 27px;
+  height: 27px;
+  background: url(../images/ico_alarm_off.svg)no-repeat center;
+}
+.ico-benefit-point {
+  width: 58px;
+  height: 58px;
+  background: url(../images/ico_productdetail_coin.svg)no-repeat center;
+}
+.ico-benefit-coupon {
+  width: 58px;
+  height: 58px;
+  background: url(../images/ico_productdetail_coupon.svg)no-repeat center;
+}
+.ico-benefit-sale {
+  width: 58px;
+  height: 58px;
+  background: url(../images/ico_productdetail_diamond.svg)no-repeat center;
+}
+.ico-benefit-delivery {
+  width: 58px;
+  height: 58px;
+  background: url(../images/ico_productdetail_delivery.svg)no-repeat center;
+}
 /* 2020/12/15 황운하 추가 탭 메뉴 (2단) */
 .nav-tab-menu > ul {
   display: flex;
@@ -776,6 +847,38 @@ i {
   border: solid 0.8px #c7c7c7;
 }
 .article-title > em {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #909090;
+}
+
+/* article-upper-title */
+/* =================================== */
+
+.article-upper-title {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+.article-upper-title > p {
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #353231;
+}
+
+.article-upper-title > span {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #424242;
+  padding: 7px 14px 6px 13px;
+  border: solid 0.8px #c7c7c7;
+}
+.article-upper-title > em {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
