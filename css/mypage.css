@@ -30,6 +30,11 @@
   cursor: pointer;
 }
 
+.payment-method.mypage-big>li {
+  width: 282px;
+  margin-right: 17px;
+}
+
 .payment-method>li:nth-of-type(4n) {
   margin-right: 0;
 }
@@ -71,9 +76,6 @@
 
 .payment-method-info>div {
   display: flex;
-}
-
-.payment-method-info>div {
   border: 1px solid #e0e0e0;
 }
 
@@ -644,18 +646,6 @@
 
 
 /* 주문/배송 상세 내역 */
-.mypage-order-detail .article-title-wrap {
-  margin-top: 90px;
-}
-
-.mypage-order-detail .article-list-wrap {
-  margin-top: 35px;
-}
-
-.mypage-order-detail .btn-wrap {
-  margin-top: 100px;
-  margin-bottom: 70px;
-}
 
 .my-order-info {
   display: flex;
@@ -706,7 +696,6 @@
 /* 결제 정보 */
 .my-pay-info > .my-pay-info-detail {
   display: flex;
-  margin-top: 30px;
 }
 
 .my-pay-info > .my-pay-info-detail > div {
@@ -809,4 +798,57 @@
 .form-394 > li input,
 .form-394 > li select {
   width: 394px;
+}
+
+
+
+.payment-detail-info {
+  margin-top: 14px;
+}
+.payment-detail-info > h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #262628;
+}
+.payment-detail-info>div {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+}
+
+.payment-detail-info>div:last-child {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.payment-detail-info>div>p {
+  display: flex;
+  flex-basis: 180px;
+  flex-shrink: 0;
+  padding-top: 20px;
+  line-height: 1.38;
+  text-indent: 14px;
+  background-color: #f4f4f4;
+}
+
+.payment-detail-info>div>ul {
+  padding: 20px 24px;
+}
+
+.payment-detail-info>div>ul>li {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #909090;
+}
+
+
+
+.pay-right,
+.pay-deposit {
+  display: none;
+}
+.pay-right.on,
+.pay-deposit.on {
+  display: none;
 }

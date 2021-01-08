@@ -727,6 +727,21 @@ i {
   height: 58px;
   background: url(../images/ico_productdetail_delivery.svg)no-repeat center;
 }
+.ico-arrow-left {
+  width: 34px;
+  height: 34px;
+  background: url(../images/ico_arrow_left.svg)no-repeat center;
+}
+.ico-arrow-right {
+  width: 34px;
+  height: 34px;
+  background: url(../images/ico_arrow_right.svg)no-repeat center;
+}
+.ico-secret {
+  width: 33px;
+  height: 33px;
+  background: url(../images/ico-secret.svg)no-repeat center;
+}
 /* 2020/12/15 황운하 추가 탭 메뉴 (2단) */
 .nav-tab-menu > ul {
   display: flex;
@@ -809,7 +824,6 @@ i {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  color: #262628;
 }
 
 .section-title-wrap > span {
@@ -894,7 +908,9 @@ i {
   /* height: 41px; */
   line-height: 41px;
 }
-
+.article-list > li.fx-start {
+  align-items: flex-start;
+}
 .article-list.list-mb-18 > li {
   margin-bottom: 18px;
 }
@@ -903,22 +919,32 @@ i {
 }
 
 .article-list li:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .article-list > li > p {
   width: 150px;
   margin-right: 26px;
   font-size: 16px;
-  color: #262628;
 }
 
 .article-list > li > div {
   width: 100%;
   font-size: 15px;
-  color: #262628;
 }
 
+
+.article-list .radio-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.article-list .radio-wrap > label {
+  margin-right: 36px;
+}
+.article-list .radio-wrap > label > span {
+  padding-left: 6px;
+}
 /* 아코디언 */
 .accordion-list > .title {
   display: flex;
@@ -928,7 +954,7 @@ i {
   border-bottom: 1px solid #f0eeeb;
 }
 
-.accordion-list > .title i {
+.accordion-list > .title > i {
   width: 34px;
   height: 34px;
   background: url(../images/ico_dropdown_off.svg) no-repeat center;
@@ -946,6 +972,15 @@ i {
 .accordion-list.on > .title i {
   background: url(../images/ico_dropdown_on.svg) no-repeat center;
   transition: all 0.3s ease;
+}
+
+.article-title > button {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #424242;
+  padding: 7px 14px 6px 13px;
+  border: solid 0.8px #c7c7c7;
 }
 
 /* 커스텀 셀렉트박스 */
