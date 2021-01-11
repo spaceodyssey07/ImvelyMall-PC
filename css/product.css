@@ -582,7 +582,6 @@ button.soldout {
 }
 .model {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin-top: 30px;
 }
@@ -946,8 +945,9 @@ select.arrow-large {
 .product-qa .accordion-list-wrap {
   margin-top: 40px;
 }
+
 .product-qa .accordion-list .title {
-  padding: 0 10px;
+  padding: 20px 10px;
 }
 .product-qa .accordion-list .condition {
   width: 80px;
@@ -974,4 +974,12 @@ select.arrow-large {
 }
 .product-qa .accordion-list .email {
   margin-right: 30px;
+}
+.product-qa .accordion-list .accordion {
+  padding: 26px 20px;
+  background-color: #f9f9f9;
+}
+.product-qa .accordion-list .accordion p {
+  font-size: 15px;
+  line-height: 22px;
 }

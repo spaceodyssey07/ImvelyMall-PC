@@ -388,3 +388,11 @@ option:disabled {
 .input-area span {
   white-space: nowrap;
 }
+
+/* 2021/01/11 input.normal 관련 추가 */
+input.w394 {
+  width: 394px;
+}
+input.w610 {
+  width: 610px
+}

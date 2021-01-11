@@ -514,8 +514,12 @@
   text-align: center;
 }
 .register-guide-section .btn-area {
+  display: block;
   margin-top: 90px;
   text-align: center;
+}
+.register-guide-section .btn-area button:first-child {
+  margin: 0;
 }
 button.kakao {
   background: url(../images/ico_kakao_signin_big.svg)no-repeat #f6e24b;

@@ -309,6 +309,10 @@ i {
 .mb-60 {
   margin-bottom: 60px;
 }
+.mb-70 {
+  margin-bottom: 70px;
+
+}
 .mb-75 {
   margin-bottom: 75px;
 }
@@ -933,11 +937,25 @@ i {
   font-size: 15px;
 }
 
+.article-list > li > div ul > li {
+  line-height: 1.4;
+}
+
+.article-title > button {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #424242;
+  padding: 7px 14px 6px 13px;
+  border: solid 0.8px #c7c7c7;
+}
+
 
 .article-list .radio-wrap {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .article-list .radio-wrap > label {
   margin-right: 36px;
@@ -969,19 +987,11 @@ i {
   display: block;
   height: 100%;
 }
-.accordion-list.on > .title i {
+.accordion-list.on > .title > i {
   background: url(../images/ico_dropdown_on.svg) no-repeat center;
   transition: all 0.3s ease;
 }
 
-.article-title > button {
-  font-size: 14px;
-  font-weight: normal;
-  text-align: center;
-  color: #424242;
-  padding: 7px 14px 6px 13px;
-  border: solid 0.8px #c7c7c7;
-}
 
 /* 커스텀 셀렉트박스 */
 .cs-selectbox {
@@ -1044,4 +1054,11 @@ i {
 }
 .marker-list li::marker {
   content: "· ";
+}
+
+.article-list.w610 {
+  width: 610px;
+}
+.article-list.w500 {
+  width: 500px;
 }

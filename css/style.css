@@ -476,8 +476,6 @@ header .header-right .lnb ul li {
 }
 .product-order .product-wrap .text-area .price-list {
   font-size: 18px;
-  font-weight: bold;
-  color: #282828;
 }
 
 /* product-272 */
@@ -590,7 +588,11 @@ header .header-right .lnb ul li {
   font-weight: 700;
   text-overflow: ellipsis;
 }
-
+.product-wrap .text-area .price-list em {
+  font-size: 16px;
+  font-weight: normal;
+  color: #262628;
+}
 .product-wrap .text-area .price-list .price-del {
   margin-left: 8px;
   font-size: 12px;
@@ -644,6 +646,18 @@ header .header-right .lnb ul li {
   color: #6bae7e;
 }
 
+.product-wrap .text-area .btn-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  margin-top: 38px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #8d8682;
+}
 /* view type */
 /* ============================== */
 /* .horizontal  */
@@ -2405,9 +2419,14 @@ header .header-right .lnb ul li {
   text-align: center;
   vertical-align: middle;
 }
+.product-table th.align-left,
+.product-table td.align-left {
+  text-align: left;
+  padding-left: 10px;
+}
 .product-table thead tr > .pd-info-title {
   text-align: left;
-  text-indent: 110px;
+  padding-left: 110px;
 }
 .product-table thead tr {
   height: 73px;
@@ -2472,23 +2491,24 @@ header .header-right .lnb ul li {
   font-weight: bold;
 }
 
+/* 상품 수량  */
+.product-table .order-number p {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 /* 주문일 */
 .product-table .order-date p {
   padding-top: 7px;
   font-size: 16px;
   font-weight: bold;
-  color: #282828;
 }
 
 /* 신청일 */
 .product-table .request-date p {
   font-size: 16px;
   font-weight: bold;
-  color: #282828;
 }
-
-
 
 
 /* 상품가격 */
@@ -2514,6 +2534,10 @@ header .header-right .lnb ul li {
   background-color: #909090;
 }
 
+
+
+
+
 /* 배송비 */
 .product-table .shipping-charge-wrap {
   background-color: #f9f9f9;
@@ -2526,6 +2550,7 @@ header .header-right .lnb ul li {
 }
 
 .product-table .shipping-charge > p {
+  margin-bottom: 7px;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.4;
@@ -2533,14 +2558,28 @@ header .header-right .lnb ul li {
 }
 .product-table .shipping-charge > div span {
   font-size: 15px;
-  color: #262628;
 }
 
 .product-table .shipping-charge > div i {
+  position: relative;
   width: 17px;
   height: 17px;
+  cursor: pointer;
   background: url(../images/ico_productdetail_share_comment.svg) no-repeat;
 }
+
+.product-table .shipping-charge > div i:after {
+  content: "";
+  position: asolute;
+}
+
+/* 교환옵션 */
+.product-table .exchage-option > p {
+  padding-bottom: 8px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
 
 
 /* 배송여부 */
@@ -2556,7 +2595,6 @@ header .header-right .lnb ul li {
 .product-table .shipping-check > p {
   font-size: 16px;
   font-weight: bold;
-  color: #262628;
 }
 
 .product-table .shipping-check > div {
@@ -2572,11 +2610,12 @@ header .header-right .lnb ul li {
 
 /* 주문여부 버튼 */
 .product-table .btn-order {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 .product-table .btn-order button {
+  font-size: 14px;
   width: 80px;
   height: 30px;
   margin-bottom: 7px;
@@ -2596,7 +2635,6 @@ header .header-right .lnb ul li {
 
 .product-table .btn-order > p {
   padding-bottom: 7px;
-  font-weight: bold;
 }
 .product-table .btn-order > p.orderfix {
   font-weight: bold;
@@ -2726,4 +2764,45 @@ header .header-right .lnb ul li {
 .order-table tbody tr.soldout .btn-order button.bk {
   background-color: #bbb3ab;
 }
+
+/* 마이페이지 게시판 */
+
+.notice-table {
+  width: 100%;
+  border-top: 1px solid #282828;
+}
+
+.notice-table th,
+.notice-table td {
+  vertical-align: middle;
+  text-align: center;
+}
+.notice-table th.align-left,
+.notice-table td.align-left {
+  padding-left: 10px;
+  text-align: left;
+}
+.notice-table thead > tr {
+  height: 73px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #282828;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.notice-table tbody > tr {
+  height: 72px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.notice-table td {
+  font-size: 16px;
+  line-height: 1.38;
+}
+.notice-table td.left {
+  text-align: left;
+  padding-left: 10px;
+}
+
+
 

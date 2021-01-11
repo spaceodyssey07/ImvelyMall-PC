@@ -347,11 +347,11 @@
 }
 
 /* 마이페이지 on/off */
-.mypage-contents {
+.mypage-content {
   display: none;
 }
 
-.mypage-contents.on {
+.mypage-content.on {
   display: block;
 }
 
@@ -506,7 +506,8 @@
 }
 
 .mypage-tab-menu>ul>li {
-  width: 50%;
+  flex-grow: 1;
+  width: 100%;
   height: 58px;
   line-height: 58px;
   font-size: 18px;
@@ -531,7 +532,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 
 .mypage-inquiry>div {
@@ -636,14 +637,22 @@
 
 .bottom-pagination>ul>li.prev {
   padding-right: 8px;
-  background: url(../images/ico_arrow_left_imgpopup.svg) no-repeat center / 34px 34px;
+  background: url(../images/ico_arrow_prev.svg) no-repeat center / 34px 34px;
 }
 
 .bottom-pagination>ul>li.next {
   padding-left: 8px;
-  background: url(../images/ico_arrow_right_imgpopup.svg) no-repeat center / 34px 34px;
+  background: url(../images/ico_arrow_next.svg) no-repeat center / 34px 34px;
+}
+.bottom-pagination>ul>li.most-prev {
+  padding-right: 8px;
+  background: url(../images/ico_double_arrow_left.svg) no-repeat center / 34px 34px;
 }
 
+.bottom-pagination>ul>li.most-next {
+  padding-left: 8px;
+  background: url(../images/ico_double_arrow_right.svg) no-repeat center / 34px 34px;
+}
 
 /* 주문/배송 상세 내역 */
 
@@ -841,6 +850,478 @@
   line-height: 1.4;
   color: #909090;
 }
+
+/* 마이페이지 취소/반품/교환 상세내역 */
+.my-order-info-title {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.my-order-info-title h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #353231;
+}
+.my-order-info-title > div{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 82px;
+  padding-left: 20px;
+  background-color: #f4f4f4;
+}
+.my-order-info-title > div > div {
+  display: flex;
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.my-order-info-title > div > div > p {
+  margin-right: 8px;
+}
+
+/* 마이페이지 혜택 요약 정보 */
+
+
+.mypage-benefit-summary {
+  margin-top: 70px;
+}
+.mypage-benefit-summary > h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #353231;
+}
+.mypage-benefit-summary > div {
+  display: flex;
+  width: 100%;
+}
+.mypage-benefit-summary > div > div {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.mypage-benefit-summary > div > div > p {
+  margin-right: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #353231;
+}
+.mypage-benefit-summary > div > div > span {
+  font-weight: bold;
+  color: #c74c4c;
+}
+
+.mypage-benefit-summary > .top {
+  align-items: center;
+  height: 81px;
+  background-color: #f4f4f4;
+}
+
+.mypage-benefit-summary > .top > div {
+  padding: 0 30px;
+}
+
+
+.mypage-benefit-summary > .bottom {
+  flex-grow: 1;
+  height: 138px;
+  border: 3px solid #f4f4f4;
+
+}
+.mypage-benefit-summary > .bottom > div {
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+.mypage-benefit-summary > div > .border:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  transform: translateY(-50%);
+  background-color: #b5b5b5;
+}
+.mypage-benefit-summary > .top > .border:after {
+  height: 27px;
+}
+.mypage-benefit-summary > .bottom > .border:after {
+  height: 77px;
+}
+
+.mypage-benefit-summary > .bottom > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mypage-benefit-summary > .bottom > div > div h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #353231;
+}
+.mypage-benefit-summary > .bottom > div > div p {
+  font-size: 26px;
+  font-weight: normal;
+}
+.mypage-benefit-summary > .bottom > div > div span {
+  padding-left: 4px;
+  font-size: 22px;
+}
+
+.mypage-benefit-summary > .bottom > div > .icon-benefit {
+  align-self: flex-end;
+}
+
+
+/* 포인트 아이콘 */
+.mypage-benefit-summary > .bottom > div > .icon-use-point > i {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  border: 1px solid #524e4b;
+  border-radius: 50%;
+}
+
+.mypage-benefit-summary > .bottom > div > .icon-use-point > i::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #e7e0da;
+}
+.mypage-benefit-summary > .bottom > div > .icon-available-point i {
+  z-index: -2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  border: 1px solid #524e4b;
+  border-radius: 50%;
+  background-color: #e7e0da;
+}
+.mypage-benefit-summary > .bottom > div > .icon-available-point > i::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* 쿠폰 아이콘 */
+
+.mypage-benefit-summary > .bottom > div > div > i {
+  display: block;
+  width: 54px;
+  height: 54px;
+
+}
+.mypage-benefit-summary > .bottom > div:nth-of-type(1) i {
+  background-image: url(../images/ico_mypage_receipt.svg);
+}
+.mypage-benefit-summary > .bottom > div:nth-child(2) i {
+  background-image: url(../images/ico_mypage_product.svg);
+}
+.mypage-benefit-summary > .bottom > div:nth-child(3) i {
+  background-image: url(../images/ico_mypage_delivery_point.svg);
+}
+
+
+
+
+/* 예치금 신청 영역 */
+.deposit-request-form > li > div {
+  display: flex;
+
+}
+.deposit-request-form > li > div > label {
+  width: 394px;
+  margin-right: 20px;
+}
+.deposit-request-form > li > div > button {
+  width: 104px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: center;
+  color: #424242;
+  border: 1px solid #c7c7c7;
+}
+
+/* 마이페이지 활동 내역 */
+/* 마이페이지 1:1 문의 내역 */
+
+.personal-inqury-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+.personal-inqury-subtitle > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #353231;
+}
+
+/* 마이페이지 상품 리뷰 */
+
+.mypage-review-summary > .top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 81px;
+  background-color: #f4f4f4;
+}
+.mypage-review-summary > .top > div {
+  position: relative;
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+}
+.mypage-review-summary > .top> div > p {
+  margin-right: 14px;
+  
+  font-weight: bold;
+  color: #353231;
+}
+.mypage-review-summary > .top> div > span {
+  font-weight: bold;
+  color: #c74c4c;
+}
+
+
+.mypage-review-summary .bottom {
+  display: flex;
+  width: 100%;
+}
+.mypage-review-summary .bottom > .board {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 215px;
+  padding: 18px 16px 28px 18px;
+  border: solid 2px #e0e0e0;
+}
+.mypage-review-summary .bottom > .video,
+.mypage-review-summary .bottom > .image {
+  width: 440px;
+}
+.mypage-review-summary .bottom > .text {
+  width: 262px;
+}
+.mypage-review-summary .bottom > .video,
+.mypage-review-summary .bottom > .image {
+  margin-right: 18px;
+}
+.mypage-review-summary .bottom > .board > .explain {
+  display: flex;
+}
+
+.mypage-review-summary .bottom > .board > .explain > i {
+  width: 68px;
+  height: 68px;
+}
+
+.mypage-review-summary .bottom > .board:nth-of-type(1)  > .explain i {
+  background-image: url(../images/ico_mypage_video.svg);
+}
+.mypage-review-summary .bottom > .board:nth-of-type(2)  > .explain i {
+  background-image: url(../images/ico_mypage_photo.svg);
+}
+.mypage-review-summary .bottom > .board:nth-of-type(3)  > .explain i {
+  background-image: url(../images/ico_mypage_text.svg);
+}
+
+.mypage-review-summary .bottom > .board > .explain > div {
+  padding-top: 12px;
+  padding-left: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.mypage-review-summary .bottom > .board > .explain > div > h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.mypage-review-summary .bottom > .board > .explain > div > p {
+  padding-top: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  color: #909090;
+}
+
+.mypage-review-summary .bottom > .board > .detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mypage-review-summary .bottom > .text > .detail > div {
+  margin: 0 auto;
+}
+
+.mypage-review-summary .bottom > .board > .detail > div > h4 {
+  padding-bottom: 8px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.47;
+}
+.mypage-review-summary .bottom > .board > .detail > div > p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #909090;
+}
+
+
+.mypage-review-tab > ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  background-color: #f4f4f4;
+}
+.mypage-review-tab > ul > li {
+  width: 100px;
+  height: 100%;
+  line-height: 52px;
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  text-align: center;
+  color: #909090;
+}
+.mypage-review-tab > ul > li.on {
+  color: #f5f5f5;
+  background-color: #282828;
+}
+
+
+/* 마이페이지 재입고 알림영역 */
+.product-restock-table > .product-table tbody tr {
+  height: 145px;
+}
+
+/* 마이페이지 회원정보 영역 */
+/* 마이페이지 회원정보 수정 */
+.mypage-info-area > .subtitle > p {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.47;
+  text-align: center;
+  color: #656565;
+}
+
+.mypage-withdrawal-info > article > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #353231;
+}
+.mypage-withdrawal-info > article > p {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.47;
+  color: #262628;
+}
+.mypage-withdrawal-info > .list > ul > li {
+  font-size: 15px;
+  line-height: 1.47;
+}
+.mypage-withdrawal-info >.boxing {
+  padding: 22px 14px;
+  border: solid 1px #e0e0e0;
+  background-color: #f5f5f5;
+}
+.mypage-withdrawal-info >.boxing > ul > li{
+  font-size: 14px;
+  line-height: 1.47;
+  color: #909090;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.withdrawal-complete-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 170px;
+  background-color: #f9f9f9;
+}
+
+.withdrawal-complete-info > p {
+  font-size: 22px;
+  font-weight: normal;
+  color: #353231;
+}
+.withdrawal-complete-info > p >strong {
+  font-weight: 700;
+  color: #282828;
+}
+.withdrawal-complete-info > span {
+  margin-top: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
