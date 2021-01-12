@@ -114,9 +114,9 @@ header .header-right .lnb ul li {
   width: 100%;
   height: 0;
   overflow: hidden;
-  padding-top: 109px;
   background-color: #fff;
   transition: all 0.4s ease;
+  border-bottom: 1px solid #d8d8d8;
   opacity: 0;
 }
 
@@ -128,6 +128,7 @@ header .header-right .lnb ul li {
 
 .main-nav {
   display: flex;
+  margin-top: 109px;
   padding-top: 42px;
   padding-left: 416px;
   border-top: 1px solid #d8d8d8;
@@ -434,6 +435,7 @@ header .header-right .lnb ul li {
 .product-order .product-wrap {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 .product-order .product-wrap .text-area {
   position: relative;
@@ -2610,9 +2612,9 @@ header .header-right .lnb ul li {
 
 /* 주문여부 버튼 */
 .product-table .btn-order {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
 }
 .product-table .btn-order button {
   font-size: 14px;

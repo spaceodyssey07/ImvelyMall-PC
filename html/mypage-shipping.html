@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
     <script defer src="../js/mypage.js"></script>
-    <title>마이페이지 - 배송지 관리</title>
+    <title>마이페이지 - 환불 계좌 관리</title>
   </head>
 
   <body>
@@ -187,112 +187,45 @@
             <li>환불 계좌 관리</li>
           </ul>
         </nav>
-        <!-- 마이페이지 배송지 관리 -->
+        <!-- 마이페이지 환불 계좌 관리 -->
         <div class="mypage-content on">
-          <article class="mypage=-shipping-subtitle">
-            <h3>주문 배송지 관리</h3>
-            <div>
-              <button type="button" class="btn-220 wh">배송지 등록</button>
-            </div>
-          </article>
-          <!-- 마이페이지 배송지 관리 테이블 -->
-          <article>
-            <p>∙ 자주 사용하시는 배송지를 등록해 두시면 더욱 더 편리하게 이용하실 수 있습니다.</p>
-            <table>
-              <colgroup>
-                <col width="" />
-                <col width="" />
-                <col width="" />
-                <col width="" />
-                <col width="" />
-                <col width="" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>배송지명</th>
-                  <th>받는 사람</th>
-                  <th>주소</th>
-                  <th>연락처</th>
-                  <th>수정</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td>회사</td>
-                  <td>홍길동</td>
-                  <td>서울시 강남구 테레란로142 아크플레이스 3층</td>
-                  <td>010-1234-5678</td>
-                  <td>
-                    <article>
-                      <button class="bk">수정</button>
-                      <button class="wh">삭제</button>
-                    </article>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-        </div>
-        <!-- 마이페이지 배송지 등록 -->
-        <div>
-          <article class="article-upper-title-wrap">
+          <article class="article-upper-title-wrap mt-50">
             <div class="article-upper-title">
-              <p>주문 배송지 관리</p>
+              <p>환불 계좌 관리</p>
             </div>
           </article>
-          <article class="article-list-wrap">
+          <article class="article-list-wrap mt-30">
             <ul class="article-list list-mb-26 form-394">
               <li>
-                <p>배송자명</p>
+                <p>은행명</p>
                 <div class="input-area">
                   <label for="">
-                    <input type="text" placeholder="이름 입력" class="normal w394" />
-                    <div>
-                      <label for="check2">
-                        <input type="checkbox" checked id="check2" />
-                        <i class=""></i>
-                        <span>기본 배송지로 설정</span>
-                      </label>
-                    </div>
+                    <select name="" id="" class="arrow-large">
+                      <option value="">은행 선택</option>
+                    </select>
                   </label>
                 </div>
               </li>
               <li class="input-area">
-                <p>휴대폰 번호</p>
+                <p>계좌번호</p>
                 <div>
                   <label for="">
-                    <input type="tel" class="normal" placeholder="휴대폰 번호 (숫자만 입력)" />
+                    <input type="number" class="normal" placeholder="하이픈(-) 없이 입력" />
                   </label>
                 </div>
               </li>
               <li class="input-area">
-                <p>전화번호</p>
+                <p>예금주</p>
                 <div>
                   <label for="">
-                    <input type="tel" class="normal" placeholder="일반 전화 번호 (숫자만 입력)" />
-                  </label>
-                </div>
-              </li>
-              <li class="address">
-                <p>주소</p>
-                <div>
-                  <label for="">
-                    <div class="d-flex">
-                      <input type="text" class="normal" />
-                      <button type="button">우편번호 찾기</button>
-                    </div>
-                    <input type="text" placeholder="도로명 주소" class="normal" />
-                    <input type="text" placeholder="이하 주소" class="normal" />
+                    <input type="text" class="normal" placeholder="홍길동" />
                   </label>
                 </div>
               </li>
             </ul>
           </article>
           <article class="btn-wrap mt-80 mb-122">
-            <button type="button" class="btn-280 wh">취소</button>
-            <button type="button" class="btn-280 bk">확인</button>
+            <button type="button" class="btn-280 bk">저장</button>
           </article>
         </div>
       </section>

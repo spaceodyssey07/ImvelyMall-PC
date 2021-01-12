@@ -746,6 +746,16 @@ i {
   height: 33px;
   background: url(../images/ico-secret.svg)no-repeat center;
 }
+.ico-customer-counselling {
+  width: 72px;
+  height: 72px;
+  background: url(../images/ico_call_counseller.svg)no-repeat center;
+}
+.ico-talk-counselling {
+  width: 72px;
+  height: 72px;
+  background: url(../images/ico_kakao_customer.svg)no-repeat center;
+}
 /* 2020/12/15 황운하 추가 탭 메뉴 (2단) */
 .nav-tab-menu > ul {
   display: flex;
@@ -937,9 +947,16 @@ i {
   font-size: 15px;
 }
 
+.article-list > li > div > div {
+  display: flex;
+  align-items: center;
+}
+
 .article-list > li > div ul > li {
   line-height: 1.4;
 }
+
+
 
 .article-title > button {
   font-size: 14px;
@@ -1054,11 +1071,4 @@ i {
 }
 .marker-list li::marker {
   content: "· ";
-}
-
-.article-list.w610 {
-  width: 610px;
-}
-.article-list.w500 {
-  width: 500px;
 }

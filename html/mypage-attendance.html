@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
     <script defer src="../js/mypage.js"></script>
-    <title>마이페이지 - 마이핏 정보</title>
+    <title>마이페이지 - 출석 체크</title>
   </head>
 
   <body>
@@ -166,10 +166,10 @@
         <article class="mypage-menu container-1180">
           <h3><a href="mypage.html">마이 페이지</a></h3>
           <ul>
-            <li>쇼핑 내역</li>
+            <li class="">쇼핑 내역</li>
             <li>혜택 정보</li>
-            <li>활동 내역</li>
-            <li class="on">회원정보</li>
+            <li class="on">활동 내역</li>
+            <li>회원정보</li>
           </ul>
         </article>
       </section>
@@ -177,109 +177,33 @@
 
       <!-- mypage-content 마이페이지 컨텐츠 영역 -->
       <section class="mypage--wrap container-1180">
-        <!-- 마이페이지 회원정보 탭 메뉴 -->
+        <!-- 마이페이지 활동 내역 탭 메뉴 -->
         <nav class="mypage-tab-menu">
           <ul>
-            <li>회원정보 수정</li>
-            <li>비밀번호 변경</li>
-            <li class="on">마이핏 정보</li>
-            <li>주문 배송지 관리</li>
-            <li>환불 계좌 관리</li>
+            <li>위시리스트</li>
+            <li>1:1 문의</li>
+            <li>상품 문의</li>
+            <li>상품 리뷰</li>
+            <li>재입고 알림</li>
+            <li>이벤트 참여 내역</li>
+            <li class="on">출석 체크</li>
           </ul>
         </nav>
-        <!-- 마이페이지 마이핏 정보 -->
+        <!-- 마이페이지 활동 내역 -->
         <div class="mypage-content on">
-          <article class="article-upper-title-wrap mt-50 mb-50">
-            <div class="article-upper-title">
-              <p>마이핏 정보</p>
-            </div>
-          </article>
-          <!-- 마이페이지 마이핏 정보 수정 -->
-          <article class="article-list-wrap">
-            <ul class="article-list list-mb-26 form-610">
-              <li>
-                <p>관심 연령대</p>
-                <div class="input-area">
-                  <label>
-                    <select name="" id="" class="arrow-large">
-                      <option value="">선택</option>
-                    </select>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <p>성별</p>
-                <div>
-                  <div class="radio-wrap">
-                    <label for="radio001">
-                      <input type="radio" id="radio001" name="radio-001" />
-                      <i></i>
-                      <span>남성</span>
-                    </label>
-                    <label for="radio002">
-                      <input type="radio" id="radio002" name="radio-001" checked />
-                      <i></i>
-                      <span>여성</span>
-                    </label>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <p>몸무게</p>
-                <div class="input-area">
-                  <label>
-                    <select name="" id="" class="arrow-large">
-                      <option value="">선택</option>
-                    </select>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <p>상의</p>
-                <div class="input-area">
-                  <label>
-                    <select name="" id="" class="arrow-large">
-                      <option value="">선택</option>
-                    </select>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <p>하의</p>
-                <div class="input-area">
-                  <label>
-                    <select name="" id="" class="arrow-large">
-                      <option value="">선택</option>
-                    </select>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <p>신발 사이즈</p>
-                <div class="input-area">
-                  <label>
-                    <select name="" id="" class="arrow-large">
-                      <option value="">선택</option>
-                    </select>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="fc-green">・ 입력하신 사이즈 정보는 상품 리뷰 등에서 공개 될 수는 있으나, 개인식별 정보는 절대 공개되지 않습니다.</div>
-              </li>
-            </ul>
-          </article>
-          <article class="mt-50">
-            <label for="check1" class="fx-center">
-              <input type="checkbox" id="check1" />
-              <i class=""></i>
-              <span>정보 제공에 동의합니다</span>
-            </label>
-          </article>
-          <article class="btn-wrap mt-80 mb-122">
-            <button type="button" class="btn-280 wh">취소</button>
-            <button type="button" class="btn-280 bk">저장</button>
-          </article>
+          <!-- 마이페이지 출석 체크 -->
+          <section class="mypage-event mt-50">
+            <article class="attendance-title mt-50">
+              <p>하단의 출석체크 버튼을 클릭하면 오늘 출석체크가 완료됩니다</p>
+              <span>10일 연속 출석체크시<em> 3,000원 할인 쿠폰</em>이 지급됩니다</span>
+            </article>
+
+            <!-- 마이페이지 출석 체크 월 이동  -->
+            <article></article>
+
+            <!-- 마이페이지 출석 체크 달력 테이블 -->
+            <article class="attendance-table"></article>
+          </section>
         </div>
       </section>
       <!-- mypage-content 마이페이지 컨텐츠 영역 -->

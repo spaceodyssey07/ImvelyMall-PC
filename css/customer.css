@@ -1,0 +1,102 @@
+@charset 'utf-8';
+
+/* 2021/01/11 황운하 고개갱복센터 */
+.customer-center-intro {
+  padding: 50px 0 40px;
+}
+.customer-center-intro.bg-gr {
+  background-color: #efeeea;
+}
+.customer-center-intro .intro-title h3 {
+  font-size: 30px;
+  line-height: normal;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+.customer-center-intro .intro-title p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.customer-center .intro-btn-wrap > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.customer-center .intro-btn-wrap > div:not(:last-child) {
+  margin-right: 26px;
+}
+.customer-center .intro-btn-wrap button {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 10px;
+}
+.customer-center .intro-btn-wrap {
+  margin-top: 43px;
+  margin-left: 46px;
+}
+.customer-center .intro-info {
+  text-align: right;
+}
+.customer-cetner .intro-info h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.customer-center .intro-info h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 13px 0 24px;
+}
+.customer-center .intro-info p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.customer-center .customer-center-header {
+  margin-top: 90px;
+}
+.customer-center .customer-center-header h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.quick-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.quick-list li {
+  font-size: 18px; 
+  font-weight: bold;
+  color: #909090;
+}
+.quick-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customer-center .nav-tab-menu li {
+  width: 393px;
+}
+.keyword-search {
+  padding: 22px 11px 22px 44px;
+  background-color: #f4f4f4;
+}
+.keyword-search h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 79px;
+}
+.keyword-search ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.keyword-search ul li {
+  padding: 14px 14px 11px;
+  border: 1px solid #e9e9e9;
+  margin-right: 8px;
+  border-radius: 20.5px;
+  background-color: #ffffff;
+}

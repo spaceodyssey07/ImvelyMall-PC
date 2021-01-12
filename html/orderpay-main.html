@@ -1,660 +1,644 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문결제</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script defer src="../js/accordion.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>주문결제</title>
-  <link rel="stylesheet" href="../css/main.css">
-  <script defer src="../js/accordion.js"></script>
-</head>
-
-<body>
-
-  <section class="orderpay-main">
-    <div class="container-1180">
-      <!-- title -->
-      <div class="section-title-wrap">
-        <div class="section-title mb-36">
-          <p>주문결제</p>
+  <body>
+    <section class="orderpay-main">
+      <div class="container-1180">
+        <!-- title -->
+        <div class="section-title-wrap">
+          <div class="section-title mb-36">
+            <p>주문결제</p>
+          </div>
         </div>
-      </div>
-      <!-- title end -->
+        <!-- title end -->
 
-      <div class="orderpay-main-wrapper">
-        <!-- 좌측 정보 영역 -->
-        <div class="information-wrap">
-
-          <!-- 주문자 정보 인증하기 버튼 -->
-          <article class="customer-info" style="display: none;">
-            <h3>주문자 정보</h3>
-            <div class="article-list-wrap">
-              <ul class="article-list list-mb-26">
-                <li>
-                  <p>주문하시는분</p>
-                  <div>홍길동</div>
-                </li>
-                <li>
-                  <p></p>
-                  <div>
-                    <button type="button" class="btn-280 gr">본인인증 하기</button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </article>
-          <!-- 주문자 정보 인증하기 버튼 끝 -->
-
-          <!-- 주문자 정보 영역 -->
-          <article class="customer-info">
-            <h3>주문자 정보</h3>
-            <div class="article-list-wrap">
-              <ul class="article-list list-mb-26">
-                <li>
-                  <p>주문하시는 분</p>
-                  <div class="d-flex">
-                    <p>홍길동</p>
-                    <span>|</span>
-                    <p>010-1234-5678</p>
-                    <span>|</span>
-                    <p>honggil1234@gmail.com</p>
-                  </div>
-                </li>
-                <!-- 비회원일 (이메일)-->
-                <li class="email" style="display: none">
-                  <p>이메일</p>
-                  <div>
-                    <label for="">
-                      <input type="text" placeholder="이메일 주소 입력" class="normal" />
-                      <span>@</span>
-                      <input type="text" class="normal" />
-                      <select name="" id="" class="arrow">
-                        <option value="v1" selected>직접입력</option>
-                        <option value="v2">네이버</option>
-                      </select>
-                    </label>
-                  </div>
-                </li>
-                <!-- 비회원 (이메일 끝) -->
-
-                <!-- 비회원 (휴대폰번호) -->
-                <li style="display: none;">
-                  <p>휴대폰 번호</p>
-                  <div>
-                    <label for="">
-                      <input type="tel" class="normal w394" placeholder="휴대폰 번호 (숫자만 입력)" />
-                    </label>
-                  </div>
-                </li>
-                <!-- 비회원 (휴대폰 끝) -->
-
-                <!-- 비회원 (전화번호) -->
-                <li style="display: none;">
-                  <p>전화번호</p>
-                  <div>
-                    <label for="">
-                      <input type="tel" class="normal w394" placeholder="전화번호 (숫자만 입력)" />
-                    </label>
-                  </div>
-                </li>
-                <!-- 비회원 (전화번호 끝) -->
-
-                <!-- 비회원 (주문 비밀번호) -->
-                <li class="order-password" style="display: none;">
-                  <p>주문 비밀번호</p>
-                  <div>
-                    <label for="">
-                      <input type="password" class="normal w394" placeholder="주문 비밀번호 설정 (6자리)" />
-                    </label>
-                  </div>
-                </li>
-                <li style="display: none;">
-                  <p></p>
-                  <div>
-                    <ul class="marker-list">
-                      <li>주문비밀번호는 추후 주문내역 조회시 필요한 항목입니다. 꼭 기억해두시기 바랍니다</li>
-                    </ul>
-                  </div>
-                </li>
-                <!-- 비회원 (주문 비밀번호 끝) -->
-
-                <!-- 비회원 (주문 비밀번호 확인) -->
-                <li style="display: none;">
-                  <p>주문 비밀번호 확인</p>
-                  <div>
-                    <label for="">
-                      <input type="password" class="normal" placeholder="주문 비밀번호 확인" />
-                    </label>
-                  </div>
-                </li>
-                <!-- 비회원 (주문 비밀번호 확인 끝) -->
-                <li>
-                  <p>본인인증 여부</p>
-                  <div class="d-flex">
-                    <p class="fc-green">본인인증 완료</p>
-                    <i class="ico-check-gn"></i>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </article>
-          <!-- 주문자 정보 영역 끝 -->
-
-          <!-- 구분선 -->
-          <div class="divider divider-h2 mt-90"></div>
-          <!-- 구분선 끝 -->
-
-          <!-- 배송지 정보 영역 -->
-          <article class="destination-info">
-            <div class="title-wrap">
-              <h3>배송지 정보</h3>
-              <button type="button">변경하기</button>
-            </div>
-            <div class="article-list-wrap">
-              <ul class="article-list list-mb-26">
-                <li>
-                  <p>수령인</p>
-                  <div>
-                    <label for="">
-                      <input type="text" value="홍길동" class="normal w394" />
-                    </label>
-                  </div>
-                </li>
-                
-                <li>
-                  <p>휴대폰 번호</p>
-                  <div>
-                    <label for="">
-                      <input type="tel" placeholder="휴대폰 번호 (숫자만 입력)" class="normal w394" />
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <p>전화번호</p>
-                  <div>
-                    <label for="">
-                      <input type="tel" placeholder="전화번호 (숫자만 입력)" class="normal w394" />
-                    </label>
-                  </div>
-                </li>
-                <li class="address">
-                  <p>주소</p>
-                  <div>
-                    <label for="">
-                      <div class="d-flex">
-                        <input type="text" class="normal" />
-                        <button type="button">우편번호 찾기</button>
-                      </div>
-                      <input type="text" placeholder="도로명 주소" class="normal" />
-                      <input type="text" placeholder="이하 주소" class="normal" />
-                    </label>
-                  </div>
-                </li>
-                <li class="note">
-                  <p>배송 유의사항</p>
-                  <div>
-                    <select name="" id="" class="arrow">
-                      <option value="" disabled="disabled" selected="selected">배송시 유의사항 선택</option>
-                      <option value="v1">부재시 경비실/관리실에 맡겨주세요</option>
-                      <option value="v2">배송 전에 미리 연락주세요</option>
-                      <option value="v3">빠른 배송 부탁드립니다</option>
-                      <option value="v4">파손의 위험이 있으므로, 주의하여 배송해주세요</option>
-                      <option value="v5">메세지 직접입력</option>
-                    </select>
-                    <!-- 메세지 직접입력 시 활성화 -->
-                    <textarea name="" id="" placeholder="최대 60자 이내 입력가능" style="display: none;"></textarea>
-                  </div>
-                </li>
-                <li>
-                  <p></p>
-                  <div>
-                    <ul class="marker-list">
-                      <li>택배기사님께 전달하는 메세지는 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다.</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </article>
-          <!-- 배송지 정보 영역 끝 -->
-
-          <!-- 비회원 시 추가 구분선 -->
-          <div class="divider divider-h2 mt-60" style="display: none;"></div>
-          <!-- 비회원 시 추가 구분선 끝 -->
-
-          <!-- 비회원 쿠폰 알람 -->
-          <article class="sale-coupon" style="display: none;">
-            <h3>할인쿠폰 및 포인트</h3>
-            <p>회원 전용 혜택입니다. <br />회원가입 후 구매하시면 더 많은 혜택을 받으실 수 있습니다.</p>
-          </article>
-          <!-- 비회원 쿠폰 알람 끝 -->
-
-          <!-- 구분선 -->
-          <div class="divider divider-h2 mt-60"></div>
-          <!-- 구분선 끝 -->
-
-          <!-- 주문상품 정보 영역 -->
-          <article>
-            <h3>주문상품 정보</h3>
-            <table class="product-table">
-              <colgroup>
-                <col width="420px" />
-                <col width="141px" />
-                <col width="141px" />
-                <col width="141px" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>상품명</th>
-                  <th>배송비</th>
-                  <th>상품금액</th>
-                  <th>총 결제금액</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="">
-                  <td>
-                    <article class="product-order product">
-                      <div class="product-wrap">
-                        <div class="img-area">
-                          <div class="img-box">
-                            <img src="../preview/img_main_best_seller_005.png" alt="w72_img" />
-                          </div>
-                        </div>
-                        <div class="text-area">
-                          <div class="text-area-wrap">
-                            <h2 class="brand-title">IMVELY MADE</h2>
-                            <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
-                            <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span>
-                              수량<span class="amount">1</span>개</p>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-                  </td>
-                  <td rowspan="2" class="shipping-charge-wrap">
-                    <article class="shipping-charge">
-                      <span class="fc-gr">블리블리 대전</span>
-                      <p>무료배송</p>
-                    </article>
-                  </td>
-                  <td>
-                    <article class="order-price">
-                      <span class="fz-14 fc-dark-beige"><del>42,000원</del></span>
-                      <p>38,000원</p>
-                      <div class="soldout-box">옵션품절</div>
-                    </article>
-                  </td>
-                  <td>
-                    <article class="order-price">
-                      <p>38,000원</p>
-                    </article>
-                  </td>
-                </tr>
-
-                <tr class="">
-                  <td>
-                    <article class="product-order product">
-                      <div class="product-wrap">
-                        <div class="img-area">
-                          <div class="img-box">
-                            <img src="../preview/img_main_best_seller_003.png" alt="" />
-                          </div>
-                        </div>
-                        <div class="text-area">
-                          <div class="text-area-wrap">
-                            <h2 class="brand-title">IMVELY MADE</h2>
-                            <h3 class="product-title">위셔블니트 브이넥 베이직스웨터</h3>
-                            <p class="option-list">옵션 <span class="size">FREE</span>수량<span class="amount">1</span>개</p>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-                  </td>
-                  <td>
-                    <article class="order-price">
-                      <p>26,500원</p>
-                    </article>
-                  </td>
-                  <td>
-                    <article class="order-price">
-                      <p>26,500원</p>
-                    </article>
-                  </td>
-                </tr>
-
-                <tr class="">
-                  <td>
-                    <article class="product-order product">
-                      <div class="product-wrap">
-                        <div class="img-area">
-                          <div class="img-box">
-                            <img src="../preview/img_main_best_brand_003.png" alt="w72_img" />
-                          </div>
-                        </div>
-                        <div class="text-area">
-                          <div class="text-area-wrap">
-                            <h2 class="brand-title">IMVELY MADE</h2>
-                            <h3 class="product-title">러브미모어 베이직 후디집업 (FRESH+)</h3>
-                            <p class="option-list">옵션 <span class="size">FREE</span> 수량<span class="amount">1</span>개
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-                  </td>
-                  <td>
-                    <article class="">
-                      <div class="shipping-charge"><span>2,500원</span><i></i></div>
-                    </article>
-                  </td>
-                  <td>
-                    <article class="order-price">
-                      <p>38,000원</p>
-                      <div class="soldout-box">옵션품절</div>
-                    </article>
-                  </td>
-                  <td>
-                    <article class="order-price">
-                      <p>26,500원</p>
-                    </article>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <!-- 주문상품 정보 영역 끝 -->
-
-          <!-- 구분선 -->
-          <div class="divider divider-h2"></div>
-          <!-- 구분선 끝 -->
-
-          <!-- 사은품 정보 영역 -->
-          <article class="gift-info">
-            <h3>사은품정보<span>*사은품 중 한가지를 선택해주세요.</span></h3>
-            <table class="product-table">
-              <thead>
-                <tr>
-                  <th>상품명</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="d-flex">
-                  <td class="d-flex">
-                    <label for="check02">
-                      <input type="checkbox" id="check02" />
-                      <i class=""></i>
-                    </label>
-                    <article class="product-order product">
-                      <div class="product-wrap">
-                        <div class="img-area">
-                          <div class="img-box">
-                            <img src="../preview/img_main_review_item_004.png" alt="w72_img" />
-                          </div>
-                        </div>
-                        <div class="text-area">
-                          <div class="text-area-wrap">
-                            <h2 class="brand-title">VELY VELY</h2>
-                            <h3 class="product-title">블리블리 엑스트라 씬 롱-라스팅 브러쉬펜 라이너 (제트 블랙)</h3>
-                            <p class="option-list">옵션 <span class="color">Black</span> 수량<span class="amount">1</span>개
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-                  </td>
-                </tr>
-
-                <tr class="d-flex">
-                  <td class="d-flex">
-                    <label for="check03">
-                      <input type="checkbox" id="check03" />
-                      <i class=""></i>
-                    </label>
-                    <article class="product-order product">
-                      <div class="product-wrap">
-                        <div class="img-area">
-                          <div class="img-box">
-                            <img src="../preview/img_main_review_004.png" alt="w72_img" />
-                          </div>
-                        </div>
-                        <div class="text-area">
-                          <div class="text-area-wrap">
-                            <h3 class="product-title">블리블리 컬러 에센스 틴트</h3>
-                            <p class="option-list">옵션 <span class="color">시앤트 텐저린</span> 수량<span
-                                class="amount">1</span>Set</p>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <!-- 사은품 정보 영역 끝 -->
-
-          <!-- 구분선 -->
-          <div class="divider divider-h2"></div>
-          <!-- 구분선 끝 -->
-
-          <!-- 쿠폰 예치금 포인트 정보 -->
-          <article class="coupon-info">
-            <h3>쿠폰, 예치금, 포인트 정보</h3>
-            <div class="input-area-wrap">
-              <div class="input-area">
-                <p>쿠폰 사용</p>
-                <label for="">
-                  <input type="text" class="normal" placeholder="0 원" />
-                  <button type="button">쿠폰 사용</button>
-                </label>
-                <div class="coupon-wrap d-flex">
-                  <p>현재 적용된 쿠폰 <b>2</b><span>장</span></p>
-                  <span>|</span>
-                  <p>사용 가능한 쿠폰 <b>3</b><span>장</span></p>
-                </div>
-              </div>
-              <div class="input-area">
-                <p>예치금 사용</p>
-                <label for="">
-                  <input type="text" placeholder="0 P" class="normal" />
-                  <p>30,000 P</p>
-                </label>
-                <label for="check2">
-                  <input type="checkbox" checke="checked" id="check2" />
-                  <i></i>
-                  <span>모두 사용</span>
-                </label>
-              </div>
-              <div class="input-area">
-                <p>포인트 사용</p>
-                <label for="">
-                  <input type="text" value="1,000 P" class="normal" />
-                  <p>1,000 P</p>
-                </label>
-                <label for="chekc3">
-                  <input type="checkbox" id="check3" />
-                  <i></i>
-                  <span>모두 사용</span>
-                </label>
-              </div>
-              <div class="input-area">
-                <p></p>
-                <ul class="marker-list">
-                  <li class="fc-red">포인트는 2,000P이상 사용 가능하며, 보유 포인트 이내에서 10P 단위로 사용 가능합니다</li>
+        <div class="orderpay-main-wrapper">
+          <!-- 좌측 정보 영역 -->
+          <div class="information-wrap">
+            <!-- 주문자 정보 인증하기 버튼 -->
+            <article class="customer-info" style="display: none">
+              <h3>주문자 정보</h3>
+              <div class="article-list-wrap">
+                <ul class="article-list list-mb-26">
+                  <li>
+                    <p>주문하시는분</p>
+                    <div>홍길동</div>
+                  </li>
+                  <li>
+                    <p></p>
+                    <div>
+                      <button type="button" class="btn-280 gr">본인인증 하기</button>
+                    </div>
+                  </li>
                 </ul>
               </div>
-            </div>
-          </article>
-          <!-- 쿠폰 예치금 포인트 정보 끝 -->
-        </div>
-        <!-- 좌측 정보 영역 끝 -->
-
-        <!-- 우측 정보 영역 -->
-        <div class="right-info-wrap">
-          <div class="total-pay-info">
-            <h2>최종결제 정보</h2>
-  
-            <ul>
-              <li class="mb-30">
-                <p>총 상품금액</p>
-                <span>380,300원</span>
-              </li>
-            </ul>
-            <article class="accordion-list-wrap">
-              <ul>
-                <li class="d-flex fx-between">
-                  <p>배송비</p>
-                  <span>(+) 2,500원</span>
-                </li>
-                <li class="accordion-list">
-                  <div class="title">
-                    <p class="d-flex">
-                      총 할인금액<i></i>
-                    </p>
-                    <span>(-) 10,000원</span>
-                  </div>
-  
-                  <ul class="accordion">
-                    <li>
-                      <p>상품할인</p>
-                      <span>(-) 5,000원</span>
-                    </li>
-                    <li>
-                      <p>회원등급 할인</p>
-                      <span>(-) 2,500원</span>
-                    </li>
-                    <li>
-                      <p>쿠폰할인</p>
-                      <span>(-) 2,500원</span>
-                    </li>
-                    <li>
-                      <p>배송비 쿠폰</p>
-                      <span>(-) 2,000원</span>
-                    </li>
-                  </ul>
-                </li>
-                <li class="accordion-list">
-                  <div class="title">
-                    <p class="d-flex">
-                      예치금/포인트 사용<i></i>
-                    </p>
-                    <span>(-)17,500원</span>
-                  </div>
-                  <ul class="accordion">
-                    <li>
-                      <p>상품할인</p>
-                      <span>(-) 5,000원</span>
-                    </li>
-                    <li>
-                      <p>회원등급 할인</p>
-                      <span>(-) 2,500원</span>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
             </article>
-  
+            <!-- 주문자 정보 인증하기 버튼 끝 -->
+
+            <!-- 주문자 정보 영역 -->
+            <article class="customer-info">
+              <h3>주문자 정보</h3>
+              <div class="article-list-wrap">
+                <ul class="article-list list-mb-26">
+                  <li>
+                    <p>주문하시는 분</p>
+                    <div class="d-flex">
+                      <p>홍길동</p>
+                      <span>|</span>
+                      <p>010-1234-5678</p>
+                      <span>|</span>
+                      <p>honggil1234@gmail.com</p>
+                    </div>
+                  </li>
+                  <!-- 비회원일 (이메일)-->
+                  <li class="email" style="display: none">
+                    <p>이메일</p>
+                    <div>
+                      <label for="">
+                        <input type="text" placeholder="이메일 주소 입력" class="normal" />
+                        <span>@</span>
+                        <input type="text" class="normal" />
+                        <select name="" id="" class="arrow">
+                          <option value="v1" selected>직접입력</option>
+                          <option value="v2">네이버</option>
+                        </select>
+                      </label>
+                    </div>
+                  </li>
+                  <!-- 비회원 (이메일 끝) -->
+
+                  <!-- 비회원 (휴대폰번호) -->
+                  <li style="display: none">
+                    <p>휴대폰 번호</p>
+                    <div>
+                      <label for="">
+                        <input type="tel" class="normal w394" placeholder="휴대폰 번호 (숫자만 입력)" />
+                      </label>
+                    </div>
+                  </li>
+                  <!-- 비회원 (휴대폰 끝) -->
+
+                  <!-- 비회원 (전화번호) -->
+                  <li style="display: none">
+                    <p>전화번호</p>
+                    <div>
+                      <label for="">
+                        <input type="tel" class="normal w394" placeholder="전화번호 (숫자만 입력)" />
+                      </label>
+                    </div>
+                  </li>
+                  <!-- 비회원 (전화번호 끝) -->
+
+                  <!-- 비회원 (주문 비밀번호) -->
+                  <li class="order-password" style="display: none">
+                    <p>주문 비밀번호</p>
+                    <div>
+                      <label for="">
+                        <input type="password" class="normal w394" placeholder="주문 비밀번호 설정 (6자리)" />
+                      </label>
+                    </div>
+                  </li>
+                  <li style="display: none">
+                    <p></p>
+                    <div>
+                      <ul class="marker-list">
+                        <li>주문비밀번호는 추후 주문내역 조회시 필요한 항목입니다. 꼭 기억해두시기 바랍니다</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- 비회원 (주문 비밀번호 끝) -->
+
+                  <!-- 비회원 (주문 비밀번호 확인) -->
+                  <li style="display: none">
+                    <p>주문 비밀번호 확인</p>
+                    <div>
+                      <label for="">
+                        <input type="password" class="normal" placeholder="주문 비밀번호 확인" />
+                      </label>
+                    </div>
+                  </li>
+                  <!-- 비회원 (주문 비밀번호 확인 끝) -->
+                  <li>
+                    <p>본인인증 여부</p>
+                    <div class="d-flex">
+                      <p class="fc-green">본인인증 완료</p>
+                      <i class="ico-check-gn"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <!-- 주문자 정보 영역 끝 -->
+
             <!-- 구분선 -->
-            <div class="divider divider-gr mt-20 mb-20"></div>
+            <div class="divider divider-h2 mt-90"></div>
             <!-- 구분선 끝 -->
-            <article class="total-result">
+
+            <!-- 배송지 정보 영역 -->
+            <article class="destination-info">
+              <div class="title-wrap">
+                <h3>배송지 정보</h3>
+                <button type="button">변경하기</button>
+              </div>
+              <div class="article-list-wrap">
+                <ul class="article-list list-mb-26">
+                  <li>
+                    <p>수령인</p>
+                    <div>
+                      <label for="">
+                        <input type="text" value="홍길동" class="normal w394" />
+                      </label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p>휴대폰 번호</p>
+                    <div>
+                      <label for="">
+                        <input type="tel" placeholder="휴대폰 번호 (숫자만 입력)" class="normal w394" />
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <p>전화번호</p>
+                    <div>
+                      <label for="">
+                        <input type="tel" placeholder="전화번호 (숫자만 입력)" class="normal w394" />
+                      </label>
+                    </div>
+                  </li>
+                  <li class="address">
+                    <p>주소</p>
+                    <div>
+                      <label for="">
+                        <div class="d-flex">
+                          <input type="text" class="normal" />
+                          <button type="button">우편번호 찾기</button>
+                        </div>
+                        <input type="text" placeholder="도로명 주소" class="normal" />
+                        <input type="text" placeholder="이하 주소" class="normal" />
+                      </label>
+                    </div>
+                  </li>
+                  <li class="note">
+                    <p>배송 유의사항</p>
+                    <div>
+                      <select name="" id="" class="arrow">
+                        <option value="" disabled="disabled" selected="selected">배송시 유의사항 선택</option>
+                        <option value="v1">부재시 경비실/관리실에 맡겨주세요</option>
+                        <option value="v2">배송 전에 미리 연락주세요</option>
+                        <option value="v3">빠른 배송 부탁드립니다</option>
+                        <option value="v4">파손의 위험이 있으므로, 주의하여 배송해주세요</option>
+                        <option value="v5">메세지 직접입력</option>
+                      </select>
+                      <!-- 메세지 직접입력 시 활성화 -->
+                      <textarea name="" id="" placeholder="최대 60자 이내 입력가능" style="display: none"></textarea>
+                    </div>
+                  </li>
+                  <li>
+                    <p></p>
+                    <div>
+                      <ul class="marker-list">
+                        <li>택배기사님께 전달하는 메세지는 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다.</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <!-- 배송지 정보 영역 끝 -->
+
+            <!-- 비회원 시 추가 구분선 -->
+            <div class="divider divider-h2 mt-60" style="display: none"></div>
+            <!-- 비회원 시 추가 구분선 끝 -->
+
+            <!-- 비회원 쿠폰 알람 -->
+            <article class="sale-coupon" style="display: none">
+              <h3>할인쿠폰 및 포인트</h3>
+              <p>회원 전용 혜택입니다. <br />회원가입 후 구매하시면 더 많은 혜택을 받으실 수 있습니다.</p>
+            </article>
+            <!-- 비회원 쿠폰 알람 끝 -->
+
+            <!-- 구분선 -->
+            <div class="divider divider-h2 mt-60"></div>
+            <!-- 구분선 끝 -->
+
+            <!-- 주문상품 정보 영역 -->
+            <article>
+              <h3>주문상품 정보</h3>
+              <table class="product-table">
+                <colgroup>
+                  <col width="420px" />
+                  <col width="141px" />
+                  <col width="141px" />
+                  <col width="141px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>상품명</th>
+                    <th>배송비</th>
+                    <th>상품금액</th>
+                    <th>총 결제금액</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="">
+                    <td>
+                      <article class="product-order product">
+                        <div class="product-wrap">
+                          <div class="img-area">
+                            <div class="img-box">
+                              <img src="../preview/img_main_best_seller_005.png" alt="w72_img" />
+                            </div>
+                          </div>
+                          <div class="text-area">
+                            <div class="text-area-wrap">
+                              <h2 class="brand-title">IMVELY MADE</h2>
+                              <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                              <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </td>
+                    <td rowspan="2" class="shipping-charge-wrap">
+                      <article class="shipping-charge">
+                        <span class="fc-gr">블리블리 대전</span>
+                        <p>무료배송</p>
+                      </article>
+                    </td>
+                    <td>
+                      <article class="order-price">
+                        <span class="fz-14 fc-dark-beige"><del>42,000원</del></span>
+                        <p>38,000원</p>
+                        <div class="soldout-box">옵션품절</div>
+                      </article>
+                    </td>
+                    <td>
+                      <article class="order-price">
+                        <p>38,000원</p>
+                      </article>
+                    </td>
+                  </tr>
+
+                  <tr class="">
+                    <td>
+                      <article class="product-order product">
+                        <div class="product-wrap">
+                          <div class="img-area">
+                            <div class="img-box">
+                              <img src="../preview/img_main_best_seller_003.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="text-area">
+                            <div class="text-area-wrap">
+                              <h2 class="brand-title">IMVELY MADE</h2>
+                              <h3 class="product-title">위셔블니트 브이넥 베이직스웨터</h3>
+                              <p class="option-list">옵션 <span class="size">FREE</span>수량<span class="amount">1</span>개</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </td>
+                    <td>
+                      <article class="order-price">
+                        <p>26,500원</p>
+                      </article>
+                    </td>
+                    <td>
+                      <article class="order-price">
+                        <p>26,500원</p>
+                      </article>
+                    </td>
+                  </tr>
+
+                  <tr class="">
+                    <td>
+                      <article class="product-order product">
+                        <div class="product-wrap">
+                          <div class="img-area">
+                            <div class="img-box">
+                              <img src="../preview/img_main_best_brand_003.png" alt="w72_img" />
+                            </div>
+                          </div>
+                          <div class="text-area">
+                            <div class="text-area-wrap">
+                              <h2 class="brand-title">IMVELY MADE</h2>
+                              <h3 class="product-title">러브미모어 베이직 후디집업 (FRESH+)</h3>
+                              <p class="option-list">옵션 <span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </td>
+                    <td>
+                      <article class="">
+                        <div class="shipping-charge"><span>2,500원</span><i></i></div>
+                      </article>
+                    </td>
+                    <td>
+                      <article class="order-price">
+                        <p>38,000원</p>
+                        <div class="soldout-box">옵션품절</div>
+                      </article>
+                    </td>
+                    <td>
+                      <article class="order-price">
+                        <p>26,500원</p>
+                      </article>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <!-- 주문상품 정보 영역 끝 -->
+
+            <!-- 구분선 -->
+            <div class="divider divider-h2"></div>
+            <!-- 구분선 끝 -->
+
+            <!-- 사은품 정보 영역 -->
+            <article class="gift-info">
+              <h3>사은품정보<span>*사은품 중 한가지를 선택해주세요.</span></h3>
+              <table class="product-table">
+                <thead>
+                  <tr>
+                    <th>상품명</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="d-flex">
+                    <td class="d-flex">
+                      <label for="check02" class="fx-center">
+                        <input type="checkbox" id="check02" />
+                        <i class=""></i>
+                      </label>
+                      <article class="product-order product">
+                        <div class="product-wrap">
+                          <div class="img-area">
+                            <div class="img-box">
+                              <img src="../preview/img_main_review_item_004.png" alt="w72_img" />
+                            </div>
+                          </div>
+                          <div class="text-area">
+                            <div class="text-area-wrap">
+                              <h2 class="brand-title">VELY VELY</h2>
+                              <h3 class="product-title">블리블리 엑스트라 씬 롱-라스팅 브러쉬펜 라이너 (제트 블랙)</h3>
+                              <p class="option-list">옵션 <span class="color">Black</span> 수량<span class="amount">1</span>개</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </td>
+                  </tr>
+
+                  <tr class="d-flex">
+                    <td class="d-flex">
+                      <label for="check03" class="fx-center">
+                        <input type="checkbox" id="check03" />
+                        <i class=""></i>
+                      </label>
+                      <article class="product-order product">
+                        <div class="product-wrap">
+                          <div class="img-area">
+                            <div class="img-box">
+                              <img src="../preview/img_main_review_004.png" alt="w72_img" />
+                            </div>
+                          </div>
+                          <div class="text-area">
+                            <div class="text-area-wrap">
+                              <h3 class="product-title">블리블리 컬러 에센스 틴트</h3>
+                              <p class="option-list">옵션 <span class="color">시앤트 텐저린</span> 수량<span class="amount">1</span>Set</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <!-- 사은품 정보 영역 끝 -->
+
+            <!-- 구분선 -->
+            <div class="divider divider-h2"></div>
+            <!-- 구분선 끝 -->
+
+            <!-- 쿠폰 예치금 포인트 정보 -->
+            <article class="coupon-info">
+              <h3>쿠폰, 예치금, 포인트 정보</h3>
+              <div class="input-area-wrap">
+                <div class="input-area">
+                  <p>쿠폰 사용</p>
+                  <label for="">
+                    <input type="text" class="normal" placeholder="0 원" />
+                    <button type="button">쿠폰 사용</button>
+                  </label>
+                  <div class="coupon-wrap d-flex">
+                    <p>현재 적용된 쿠폰 <b>2</b><span>장</span></p>
+                    <span>|</span>
+                    <p>사용 가능한 쿠폰 <b>3</b><span>장</span></p>
+                  </div>
+                </div>
+                <div class="input-area">
+                  <p>예치금 사용</p>
+                  <label for="">
+                    <input type="text" placeholder="0 P" class="normal" />
+                    <p>30,000 P</p>
+                  </label>
+                  <label for="check2">
+                    <input type="checkbox" checke="checked" id="check2" />
+                    <i></i>
+                    <span>모두 사용</span>
+                  </label>
+                </div>
+                <div class="input-area">
+                  <p>포인트 사용</p>
+                  <label for="">
+                    <input type="text" value="1,000 P" class="normal" />
+                    <p>1,000 P</p>
+                  </label>
+                  <label for="chekc3">
+                    <input type="checkbox" id="check3" />
+                    <i></i>
+                    <span>모두 사용</span>
+                  </label>
+                </div>
+                <div class="input-area">
+                  <p></p>
+                  <ul class="marker-list">
+                    <li class="fc-red">포인트는 2,000P이상 사용 가능하며, 보유 포인트 이내에서 10P 단위로 사용 가능합니다</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <!-- 쿠폰 예치금 포인트 정보 끝 -->
+          </div>
+          <!-- 좌측 정보 영역 끝 -->
+
+          <!-- 우측 정보 영역 -->
+          <div class="right-info-wrap">
+            <div class="total-pay-info">
+              <h2>최종결제 정보</h2>
+
               <ul>
-                <li>
-                  <p></p>
-                  <span>총 결제금액</span>
-                </li>
-                <li>
-                  <p></p>
-                  <span class="fz-22"><b class="fc-red">345,300</b>원</span>
-                </li>
-                <div class="divider light-gr mt-20 mb-20"></div>
-                <li>
-                  <p>적립예정 포인트</p>
-                  <span>11,040P</span>
+                <li class="mb-30">
+                  <p>총 상품금액</p>
+                  <span>380,300원</span>
                 </li>
               </ul>
-  
-            </article>
+              <article class="accordion-list-wrap">
+                <ul>
+                  <li class="d-flex fx-between">
+                    <p>배송비</p>
+                    <span>(+) 2,500원</span>
+                  </li>
+                  <li class="accordion-list">
+                    <div class="title">
+                      <p class="d-flex">총 할인금액<i></i></p>
+                      <span>(-) 10,000원</span>
+                    </div>
+
+                    <ul class="accordion">
+                      <li>
+                        <p>상품할인</p>
+                        <span>(-) 5,000원</span>
+                      </li>
+                      <li>
+                        <p>회원등급 할인</p>
+                        <span>(-) 2,500원</span>
+                      </li>
+                      <li>
+                        <p>쿠폰할인</p>
+                        <span>(-) 2,500원</span>
+                      </li>
+                      <li>
+                        <p>배송비 쿠폰</p>
+                        <span>(-) 2,000원</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="accordion-list">
+                    <div class="title">
+                      <p class="d-flex">예치금/포인트 사용<i></i></p>
+                      <span>(-)17,500원</span>
+                    </div>
+                    <ul class="accordion">
+                      <li>
+                        <p>상품할인</p>
+                        <span>(-) 5,000원</span>
+                      </li>
+                      <li>
+                        <p>회원등급 할인</p>
+                        <span>(-) 2,500원</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </article>
+
+              <!-- 구분선 -->
+              <div class="divider divider-gr mt-20 mb-20"></div>
+              <!-- 구분선 끝 -->
+              <article class="total-result">
+                <ul>
+                  <li>
+                    <p></p>
+                    <span>총 결제금액</span>
+                  </li>
+                  <li>
+                    <p></p>
+                    <span class="fz-22"><b class="fc-red">345,300</b>원</span>
+                  </li>
+                  <div class="divider light-gr mt-20 mb-20"></div>
+                  <li>
+                    <p>적립예정 포인트</p>
+                    <span>11,040P</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <div class="conditions">
+              <article class="conditions-item">
+                <h2>약관 동의</h2>
+                <ul>
+                  <li>
+                    <label for="check-all">
+                      <input type="checkbox" class="circle" id="check-all" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>모든 약관에 동의합니다.</p>
+                    </div>
+                  </li>
+                  <!-- 구분선 -->
+                  <div class="divider dark-gr mt-20 mb-20"></div>
+                  <!-- 구분선 끝 -->
+                  <li>
+                    <label for="cond1">
+                      <input type="checkbox" class="circle" name="condition" id="cond1" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]구매 동의</p>
+                      <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="cond2">
+                      <input type="checkbox" class="circle" name="condition" id="cond2" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]전자금융거래 이용약관</p>
+                      <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="cond3">
+                      <input type="checkbox" class="circle" name="condition" id="cond3" checked="checked" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]개인정보 수집 및 이용동의</p>
+                      <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="cond4">
+                      <input type="checkbox" class="circle" name="condition" id="cond4" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]개인정보 판매자 제공동의</p>
+                      <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="cond5">
+                      <input type="checkbox" class="circle" name="condition" id="cond5" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]개인정보 제 3자 제공동의</p>
+                      <button type="button">약관동의<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+              <button type="button" class="">결제하기</button>
+            </div>
           </div>
-          <div class="conditions">
-            
-            <article class="conditions-item">
-              <h2>약관 동의</h2>
-              <ul>
-                <li>
-                  <label for="check-all">
-                    <input type="checkbox" class="circle" id="check-all" />
-                    <i></i>
-                  </label>
-                  <div>
-                    <p>모든 약관에 동의합니다.</p>
-                  </div>
-                </li>
-                <!-- 구분선 -->
-                <div class="divider dark-gr mt-20 mb-20"></div>
-                <!-- 구분선 끝 -->
-                <li>
-                  <label for="cond1">
-                    <input type="checkbox" class="circle" name="condition" id="cond1" />
-                    <i></i>
-                  </label>
-                  <div>
-                    <p>[필수]구매 동의</p>
-                    <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
-                  </div>
-                </li>
-                <li>
-                  <label for="cond2">
-                    <input type="checkbox" class="circle" name="condition" id="cond2" />
-                    <i></i>
-                  </label>
-                  <div>
-                    <p>[필수]전자금융거래 이용약관</p>
-                    <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
-                  </div>
-                </li>
-                <li>
-                  <label for="cond3">
-                    <input type="checkbox" class="circle" name="condition" id="cond3" checked="checked" />
-                    <i></i>
-                  </label>
-                  <div>
-                    <p>[필수]개인정보 수집 및 이용동의</p>
-                    <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
-                  </div>
-                </li>
-                <li>
-                  <label for="cond4">
-                    <input type="checkbox" class="circle" name="condition" id="cond4" />
-                    <i></i>
-                  </label>
-                  <div>
-                    <p>[필수]개인정보 판매자 제공동의</p>
-                    <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
-                  </div>
-                </li>
-                <li>
-                  <label for="cond5">
-                    <input type="checkbox" class="circle" name="condition" id="cond5" />
-                    <i></i>
-                  </label>
-                  <div>
-                    <p>[필수]개인정보 제 3자 제공동의</p>
-                    <button type="button">약관동의<i class="ico-right-arrow-small"></i></button>
-                  </div>
-                </li>
-              </ul>
-            </article>
-            <button type="button" class="">결제하기</button>
-          </div>
+          <!-- 우측 정보 영역 끝 -->
         </div>
-        <!-- 우측 정보 영역 끝 -->
       </div>
-
-    </div>
-  </section>
-
-</body>
-
+    </section>
+  </body>
 </html>

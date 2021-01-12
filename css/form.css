@@ -27,6 +27,13 @@ button.bk {
   color: #ffffff;
   background-color: #282828;
 }
+.btn-large {
+  width: 100%;
+  height: 56px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
 .btn-620{
   width: 620px;
   height: 56px;
@@ -119,6 +126,23 @@ button.bk {
   background-color: #282828;
 }
 .btn-180.wh {
+  color: #262628;
+  background-color: #fff;
+  border: 1px solid #282828;
+}
+/* 버튼 118 */
+.btn-118 {
+  width: 118px;
+  height: 41px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn-118.bk {
+  color: #fff;
+  background-color: #282828;
+}
+.btn-118.wh {
   color: #262628;
   background-color: #fff;
   border: 1px solid #282828;
@@ -316,11 +340,15 @@ select.arrow {
   background-size: 28px 28px;
 }
 select.arrow-large {
+  width: 100%;
   padding: 11px 18px;
   border-bottom: 1px solid #e0e0e0;
   background: url(../images/ico_dropdown_off.svg)no-repeat;
   background-position: 95% center;
   background-size: 28px 28px;
+}
+select.arrow.w240 {
+  width: 240px;
 }
 option:disabled {
   color: #c6c6c6;
@@ -366,6 +394,7 @@ option:disabled {
   margin-right: 20px;
 }
 .input-area label div {
+  white-space: nowrap;
   width: 150px;
   margin-left: 20px;
   text-align: center;
@@ -389,10 +418,13 @@ option:disabled {
   white-space: nowrap;
 }
 
-/* 2021/01/11 input.normal 관련 추가 */
-input.w394 {
+/* 2021/01/11 input 관련 추가 */
+.form-394 li > div > label {
   width: 394px;
 }
-input.w610 {
-  width: 610px
+.form-500 li > div > label { 
+  width: 500px;
+}
+.form-610 li > div > label {
+  width: 610px;
 }

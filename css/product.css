@@ -621,10 +621,7 @@ button.soldout {
   line-height: 21px;
   color: #909090;
 }
-select.arrow-large {
-  width: 620px;
-  margin-bottom: 30px;
-}
+
 .nav-tab-menu.line > ul > li {
   position: relative;
   border: none;
@@ -982,4 +979,151 @@ select.arrow-large {
 .product-qa .accordion-list .accordion p {
   font-size: 15px;
   line-height: 22px;
+}
+
+/* 2021/01/11 황운하 product-qa-write */
+.product-qa-write .article-list-wrap {
+  margin-top: 40px;
+}
+.product-90 img {
+  width: 90px;
+  height: 112px;
+}
+.product-90 .text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 21px;
+}
+.product-90 .product-title {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.product-90 .option { 
+  line-height: 21px;
+  font-size: 15px;
+  color: #909090;
+}
+.product-90 .price {
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.product-90 .price span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.product-qa-write textarea {
+  padding: 14px 10px;
+  border: 1px solid #d2d2d2;
+}
+.product-qa-write textarea::placeholder {
+  font-size: 15px;
+  color: #c6c6c6;
+}
+.product-qa-write .qa-note {
+  font-size: 16px;
+  line-height: 24px;
+  color: #909090;
+}
+
+/* 2021/01/11 황운하 product-review-write */
+.product-review-write textarea::placeholder {
+  line-height: 24px;
+  color: #c6c6c6;
+}
+.product-review-write .title {
+  justify-content: flex-start;
+}
+.product-review-write .product-90 {
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.product-review-write .star-rating {
+  width: 128px;
+  height: 26px;
+  background-size:128px 26px;
+}
+.product-review-write .star-rating .rate {
+  width: 128px;
+  height: 26px;
+  background-size:  128px 26px;
+}
+.product-review-write .attach-wrap {
+  margin-top: 20px;
+}
+.product-review-write .attach-wrap ul {
+  display: flex;
+  align-items: center;
+}
+.product-review-write .attach-wrap li {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+.product-review-write .attach-wrap li:not(:last-child) {
+  margin-right: 16px;
+}
+.product-review-write .attach-wrap li img {
+  position: relative;
+  width: 100%;
+}
+.product-review-write .attach-wrap li::after{
+  content: url(../images/ico_close_bg_dk.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.product-review-write input[type=file] + i {
+  width: 118px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #282828;
+}
+.product-review-write .accordion {
+  line-height: 21px;
+  padding: 24px 20px;
+  color: #909090;
+  background-color: #f9f9f9;
+}
+.product-review-write .article-list li > div p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 13px;
+}
+
+/* 2021/01/11 황운하 product-list-main */
+.product-list-main .cs-selectbox {
+  margin: 0;
+}
+.price-hash-tag {
+  margin-top: 9px; 
+}
+.price-hash-tag span {
+  font-size: 13px;
+  color: #6bae7e;
+}
+.product-list-main .product-align {
+  margin-top: 20px;
+}
+.product-list-main .product-list-wrap {
+  margin-top: 20px;
+}
+.product-list-main .cs-selectbox ul {
+  z-index: 5;
+  background-color: #ffffff;
+}
+.product-list-main .cs-selectbox ul li:hover {
+  background-color: #f1f1f1;
+}
+.product-list-main .product-align .count {
+  line-height: 22px;
+  font-size: 16px;
+}
+.product-list-main .product-align .count span {
+  font-size: 18px;
+  font-weight: bold;
 }
