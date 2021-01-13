@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>주문결제</title>
     <link rel="stylesheet" href="../css/main.css" />
+<<<<<<< HEAD
     <script defer src="../js/orderpay-main.js"></script>
+=======
+    <script defer src="../js/accordion.js"></script>
+>>>>>>> 7e6a616edb5bf80b113832a9408853c0f8e9a412
   </head>
 
   <body>
@@ -376,7 +380,11 @@
                 <tbody>
                   <tr class="d-flex">
                     <td class="d-flex">
+<<<<<<< HEAD
                       <label for="check02">
+=======
+                      <label for="check02" class="fx-center">
+>>>>>>> 7e6a616edb5bf80b113832a9408853c0f8e9a412
                         <input type="checkbox" id="check02" />
                         <i class=""></i>
                       </label>
@@ -401,7 +409,11 @@
 
                   <tr class="d-flex">
                     <td class="d-flex">
+<<<<<<< HEAD
                       <label for="check03">
+=======
+                      <label for="check03" class="fx-center">
+>>>>>>> 7e6a616edb5bf80b113832a9408853c0f8e9a412
                         <input type="checkbox" id="check03" />
                         <i class=""></i>
                       </label>
@@ -424,6 +436,7 @@
                   </tr>
                 </tbody>
               </table>
+<<<<<<< HEAD
             </article>
             <!-- 사은품 정보 영역 끝 -->
 
@@ -837,6 +850,220 @@
               <button type="button" class="">결제하기</button>
             </div>
           </div>
+=======
+            </article>
+            <!-- 사은품 정보 영역 끝 -->
+
+            <!-- 구분선 -->
+            <div class="divider divider-h2"></div>
+            <!-- 구분선 끝 -->
+
+            <!-- 쿠폰 예치금 포인트 정보 -->
+            <article class="coupon-info">
+              <h3>쿠폰, 예치금, 포인트 정보</h3>
+              <div class="input-area-wrap">
+                <div class="input-area">
+                  <p>쿠폰 사용</p>
+                  <label for="">
+                    <input type="text" class="normal" placeholder="0 원" />
+                    <button type="button">쿠폰 사용</button>
+                  </label>
+                  <div class="coupon-wrap d-flex">
+                    <p>현재 적용된 쿠폰 <b>2</b><span>장</span></p>
+                    <span>|</span>
+                    <p>사용 가능한 쿠폰 <b>3</b><span>장</span></p>
+                  </div>
+                </div>
+                <div class="input-area">
+                  <p>예치금 사용</p>
+                  <label for="">
+                    <input type="text" placeholder="0 P" class="normal" />
+                    <p>30,000 P</p>
+                  </label>
+                  <label for="check2">
+                    <input type="checkbox" checke="checked" id="check2" />
+                    <i></i>
+                    <span>모두 사용</span>
+                  </label>
+                </div>
+                <div class="input-area">
+                  <p>포인트 사용</p>
+                  <label for="">
+                    <input type="text" value="1,000 P" class="normal" />
+                    <p>1,000 P</p>
+                  </label>
+                  <label for="chekc3">
+                    <input type="checkbox" id="check3" />
+                    <i></i>
+                    <span>모두 사용</span>
+                  </label>
+                </div>
+                <div class="input-area">
+                  <p></p>
+                  <ul class="marker-list">
+                    <li class="fc-red">포인트는 2,000P이상 사용 가능하며, 보유 포인트 이내에서 10P 단위로 사용 가능합니다</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <!-- 쿠폰 예치금 포인트 정보 끝 -->
+          </div>
+          <!-- 좌측 정보 영역 끝 -->
+
+          <!-- 우측 정보 영역 -->
+          <div class="right-info-wrap">
+            <div class="total-pay-info">
+              <h2>최종결제 정보</h2>
+
+              <ul>
+                <li class="mb-30">
+                  <p>총 상품금액</p>
+                  <span>380,300원</span>
+                </li>
+              </ul>
+              <article class="accordion-list-wrap">
+                <ul>
+                  <li class="d-flex fx-between">
+                    <p>배송비</p>
+                    <span>(+) 2,500원</span>
+                  </li>
+                  <li class="accordion-list">
+                    <div class="title">
+                      <p class="d-flex">총 할인금액<i></i></p>
+                      <span>(-) 10,000원</span>
+                    </div>
+
+                    <ul class="accordion">
+                      <li>
+                        <p>상품할인</p>
+                        <span>(-) 5,000원</span>
+                      </li>
+                      <li>
+                        <p>회원등급 할인</p>
+                        <span>(-) 2,500원</span>
+                      </li>
+                      <li>
+                        <p>쿠폰할인</p>
+                        <span>(-) 2,500원</span>
+                      </li>
+                      <li>
+                        <p>배송비 쿠폰</p>
+                        <span>(-) 2,000원</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="accordion-list">
+                    <div class="title">
+                      <p class="d-flex">예치금/포인트 사용<i></i></p>
+                      <span>(-)17,500원</span>
+                    </div>
+                    <ul class="accordion">
+                      <li>
+                        <p>상품할인</p>
+                        <span>(-) 5,000원</span>
+                      </li>
+                      <li>
+                        <p>회원등급 할인</p>
+                        <span>(-) 2,500원</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </article>
+
+              <!-- 구분선 -->
+              <div class="divider divider-gr mt-20 mb-20"></div>
+              <!-- 구분선 끝 -->
+              <article class="total-result">
+                <ul>
+                  <li>
+                    <p></p>
+                    <span>총 결제금액</span>
+                  </li>
+                  <li>
+                    <p></p>
+                    <span class="fz-22"><b class="fc-red">345,300</b>원</span>
+                  </li>
+                  <div class="divider light-gr mt-20 mb-20"></div>
+                  <li>
+                    <p>적립예정 포인트</p>
+                    <span>11,040P</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <div class="conditions">
+              <article class="conditions-item">
+                <h2>약관 동의</h2>
+                <ul>
+                  <li>
+                    <label for="check-all">
+                      <input type="checkbox" class="circle" id="check-all" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>모든 약관에 동의합니다.</p>
+                    </div>
+                  </li>
+                  <!-- 구분선 -->
+                  <div class="divider dark-gr mt-20 mb-20"></div>
+                  <!-- 구분선 끝 -->
+                  <li>
+                    <label for="cond1">
+                      <input type="checkbox" class="circle" name="condition" id="cond1" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]구매 동의</p>
+                      <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="cond2">
+                      <input type="checkbox" class="circle" name="condition" id="cond2" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]전자금융거래 이용약관</p>
+                      <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="cond3">
+                      <input type="checkbox" class="circle" name="condition" id="cond3" checked="checked" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]개인정보 수집 및 이용동의</p>
+                      <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="cond4">
+                      <input type="checkbox" class="circle" name="condition" id="cond4" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]개인정보 판매자 제공동의</p>
+                      <button type="button">약관보기<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="cond5">
+                      <input type="checkbox" class="circle" name="condition" id="cond5" />
+                      <i></i>
+                    </label>
+                    <div>
+                      <p>[필수]개인정보 제 3자 제공동의</p>
+                      <button type="button">약관동의<i class="ico-right-arrow-small"></i></button>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+              <button type="button" class="">결제하기</button>
+            </div>
+          </div>
+>>>>>>> 7e6a616edb5bf80b113832a9408853c0f8e9a412
           <!-- 우측 정보 영역 끝 -->
         </div>
       </div>

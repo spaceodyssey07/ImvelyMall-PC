@@ -937,9 +937,16 @@ i {
   font-size: 15px;
 }
 
+.article-list > li > div > div {
+  display: flex;
+  align-items: center;
+}
+
 .article-list > li > div ul > li {
   line-height: 1.4;
 }
+
+
 
 .article-title > button {
   font-size: 14px;
@@ -955,6 +962,7 @@ i {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .article-list .radio-wrap > label {
   margin-right: 36px;
@@ -986,7 +994,7 @@ i {
   display: block;
   height: 100%;
 }
-.accordion-list.on > .title i {
+.accordion-list.on > .title > i {
   background: url(../images/ico_dropdown_on.svg) no-repeat center;
   transition: all 0.3s ease;
 }

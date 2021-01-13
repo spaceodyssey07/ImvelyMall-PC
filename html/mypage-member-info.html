@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script defer src="../js/mypage.js"></script>
+    <title>마이페이지 - 회원정보 수정</title>
+  </head>
+
+  <body>
+    <div>
+      <!-- 헤더영역 -->
+      <header class="header-wrap fixed">
+        <!-- fixed class 추가 시 상단고정되고 흰색배경 추가됨 -->
+        <div class="header">
+          <article class="header-left">
+            <!-- .main-logo-image -->
+            <h1 class="main-logo">
+              <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span class="hide">임블리몰</span></a>
+            </h1>
+            <!-- .main-logo-image -->
+            <nav class="gnb">
+              <ul>
+                <li><a href="">신상품</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">브랜드</a></li>
+                <li><a href="">기획전</a></li>
+                <li><a href="">컬렉션</a></li>
+                <li><a href="">콜라보</a></li>
+                <li><a href="">이벤트</a></li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right">
+            <nav class="lnb">
+              <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li>
+                  <i class="ico-search"> </i>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right" style="display: none">
+            <nav>
+              <ul>
+                <li><a href="">로그아웃</a></li>
+                <li>
+                  <a href="product-search.html"><i class="ico-search"></i></a>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="icon-my"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </header>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+      <section class="main-nav-wrap">
+        <div class="main-nav">
+          <article class="exhibit-nav">
+            <ul>
+              <li><a href="">신상품</a></li>
+              <li><a href="">베스트</a></li>
+              <li><a href="">신상품 캘린더</a></li>
+              <li><a href="">입고 일정안내</a></li>
+              <li><a href="">고객행복센터</a></li>
+              <li><a href="">이벤트</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>패션</p>
+            <ul>
+              <li><a href="">원피스</a></li>
+              <li><a href="">상의</a></li>
+              <li><a href="">팬츠</a></li>
+              <li><a href="">스커트</a></li>
+              <li><a href="">아우터</a></li>
+              <li><a href="">슈즈•백</a></li>
+              <li><a href="">악세사리</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>브랜드</p>
+            <ul>
+              <li><a href="">IMVELY MADE</a></li>
+              <li><a href="">IMVELY COLLECT</a></li>
+              <li><a href="">LOVE ME MORE</a></li>
+              <li><a href="">VELY VELY</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>컬렉션</p>
+            <ul>
+              <li><a href="">임절미</a></li>
+              <li><a href="">주구장창</a></li>
+              <li><a href="">VERSE</a></li>
+              <li><a href="">THV.X</a></li>
+              <li><a href="">VELYSOME</a></li>
+              <li><a href="">V,COLLECT</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>기획전</p>
+            <ul>
+              <li><a href="">블리픽</a></li>
+              <li><a href="">다다익선</a></li>
+              <li><a href="">플러스사이즈+</a></li>
+              <li><a href="">라스트피스</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>콜라보</p>
+            <ul>
+              <li><a href="">DISNEY</a></li>
+              <li><a href="">JULIET</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- 메인페이지 상단 영역 -->
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+      <section class="mypage-wrap">
+        <!-- 마이페이지 개인정보 -->
+        <article class="mypage-header-wrap">
+          <div class="mypage-header container-1180">
+            <div class="hello">
+              <div class="icon-grade"><i>S</i></div>
+              <div class="text">
+                <h2>K블리님!</h2>
+                <p>안녕하세요</p>
+                <span><a href="">등급 혜택보기</a><i></i></span>
+              </div>
+            </div>
+            <div class="possession">
+              <div class="coupon">
+                <div><i></i><span>쿠폰</span></div>
+                <p><span>15</span>p</p>
+              </div>
+              <div class="point">
+                <div><i></i><span>포인트</span></div>
+                <p><span>8,200</span>원</p>
+              </div>
+              <div class="balance">
+                <div><i></i><span>예치금</span></div>
+                <p><span>12,300</span>원</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- 마이페이지 메인 메뉴 -->
+        <article class="mypage-menu container-1180">
+          <h3><a href="mypage.html">마이 페이지</a></h3>
+          <ul>
+            <li>쇼핑 내역</li>
+            <li>혜택 정보</li>
+            <li>활동 내역</li>
+            <li class="on">회원정보</li>
+          </ul>
+        </article>
+      </section>
+      <!-- 메인페이지 상단 영역 -->
+
+      <!-- mypage-content 마이페이지 컨텐츠 영역 -->
+      <section class="mypage--wrap container-1180">
+        <!-- 마이페이지 회원정보 탭 메뉴 -->
+        <nav class="mypage-tab-menu">
+          <ul>
+            <li class="on">회원정보 수정</li>
+            <li>비밀번호 변경</li>
+            <li>마이핏 정보</li>
+            <li>주문 배송지 관리</li>
+            <li>환불 계좌 관리</li>
+          </ul>
+        </nav>
+        <!-- 마이페이지 회원정보 수정 -->
+        <div class="mypage-content on">
+          <article class="article-upper-title-wrap mt-50 mb-50">
+            <div class="article-upper-title">
+              <p>회원정보 수정</p>
+            </div>
+          </article>
+          <!-- 회원 비밀번호 확인 -->
+          <div class="mypage-info-area container-620">
+            <article class="subtitle mb-50">
+              <p>
+                개인정보를 안전하게 보호하기 위하여 <br />
+                비밀번호를 한번 더 입력해주세요.
+              </p>
+            </article>
+            <article class="article-list-wrap">
+              <ul class="article-list list-mb-26">
+                <li>
+                  <p>비밀번호</p>
+                  <div>
+                    <label for="">
+                      <input type="password" class="normal" placeholder="비밀번호 입력" />
+                      <button type="button" class="view"><i></i></button>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p></p>
+                  <div class="d-flex">
+                    <i class="ico-alert rd"></i>
+                    <p class="fc-red fz-12">영문 대소문자/특수문자 중 2가지 이상 조합해야 하며, 10자~15자 입력</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <article class="mt-50 mb-70">
+              <button type="button" class="btn-620 bk">확인</button>
+            </article>
+          </div>
+          <!-- 정보 수정 화면 -->
+          <div class="mypage-info-modify">
+            <article class="article-list-wrap">
+              <ul class="article-list list-mb-26 form-394">
+                <li>
+                  <p>아이디</p>
+                  <div>honggildong2020</div>
+                </li>
+                <li>
+                  <p>이름</p>
+                  <div>홍길동</div>
+                </li>
+                <li>
+                  <p>생년월일</p>
+                  <div>1992년 10월 11일 (양력)</div>
+                </li>
+                <li>
+                  <p>성별</p>
+                  <div>여</div>
+                </li>
+                <li>
+                  <p>휴대폰 번호</p>
+                  <div class="input-area">
+                    <label for="">
+                      <input type="tel" class="normal" placeholder="휴대폰 번호 (숫자만 입력)" />
+                      <div>
+                        <button type="button">인증번호</button>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>인증번호 입력</p>
+                  <div class="input-area">
+                    <label for="">
+                      <input type="number" class="normal" placeholder="인증번호 입력" />
+                      <div>
+                        <p class="fz-15 fc-red">남은시간 : <span>02:57</span></p>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>이메일</p>
+                  <div class="input-area">
+                    <label for="">
+                      <input type="email" placeholder="아이디 입력" class="normal" />
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>결혼여부</p>
+                  <div>
+                    <div class="radio-wrap">
+                      <label for="radio001">
+                        <input type="radio" id="radio001" name="radio-001" />
+                        <i></i>
+                        <span>미혼</span>
+                      </label>
+                      <label for="radio002">
+                        <input type="radio" id="radio002" name="radio-001" />
+                        <i></i>
+                        <span>기혼</span>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p>직업</p>
+                  <div class="input-area">
+                    <label>
+                      <select name="" id="" class="arrow-large">
+                        <option value="">선택</option>
+                      </select>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>추천인 아이디</p>
+                  <div>nenijjang2020</div>
+                </li>
+                <li>
+                  <p>정보 수신 동의설정</p>
+                  <div>
+                    <div class="radio-wrap">
+                      <label for="radio003">
+                        <input type="radio" id="radio003" name="radio-002" />
+                        <i></i>
+                        <span>이메일</span>
+                      </label>
+                      <label for="radio004">
+                        <input type="radio" id="radio004" name="radio-002" />
+                        <i></i>
+                        <span>SMS</span>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li class="fx-start">
+                  <p>해시태그</p>
+                  <div>
+                    <div class="radio-wrap">
+                      <label for="radio-005">
+                        <input type="radio" id="radio-005" name="radio-003" />
+                        <i></i>
+                        <span>오버핏</span>
+                      </label>
+                      <label for="radio-006">
+                        <input type="radio" id="radio-006" name="radio-003" />
+                        <i></i>
+                        <span>전신샷</span>
+                      </label>
+                      <label for="radio-007">
+                        <input type="radio" id="radio-007" name="radio-003" />
+                        <i></i>
+                        <span>f-peopple</span>
+                      </label>
+                      <label for="radio-008">
+                        <input type="radio" id="radio-008" name="radio-003" />
+                        <i></i>
+                        <span>신상품</span>
+                      </label>
+                      <label for="radio-009">
+                        <input type="radio" id="radio-009" name="radio-003" />
+                        <i></i>
+                        <span>시선강탈</span>
+                      </label>
+                      <label for="radio-010">
+                        <input type="radio" id="radio-010" name="radio-003" />
+                        <i></i>
+                        <span>가을신상</span>
+                      </label>
+                      <label for="radio-011">
+                        <input type="radio" id="radio-011" name="radio-003" />
+                        <i></i>
+                        <span>20대 코디</span>
+                      </label>
+                      <label for="radio-012">
+                        <input type="radio" id="radio-012" name="radio-003" />
+                        <i></i>
+                        <span>20대 코디</span>
+                      </label>
+                      <label for="radio-013">
+                        <input type="radio" id="radio-013" name="radio-003" />
+                        <i></i>
+                        <span>femi</span>
+                      </label>
+                      <label for="radio-014">
+                        <input type="radio" id="radio-014" name="radio-003" />
+                        <i></i>
+                        <span>streetstyle</span>
+                      </label>
+                      <label for="radio-015">
+                        <input type="radio" id="radio-015" name="radio-003" />
+                        <i></i>
+                        <span>스타그램</span>
+                      </label>
+                      <label for="radio-016">
+                        <input type="radio" id="radio-016" name="radio-003" />
+                        <i></i>
+                        <span>인스타룩</span>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <article class="btn-wrap mt-80 mb-50">
+              <button type="button" class="btn-280 wh">취소</button>
+              <button type="button" class="btn-280 bk">저장</button>
+            </article>
+            <article class="text-center mb-100">
+              <p class="fz-15 fc-gr">
+                <a href=""><u>회원탈퇴</u></a>
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 마이페이지 회원 탈퇴 -->
+        <div class="mypage-content on">
+          <article class="article-title-wrap mt-50 mb-50">
+            <div class="article-title">
+              <p>회원탈퇴</p>
+            </div>
+          </article>
+          <!-- 마이페이지 회원 탈퇴 안내 -->
+          <div class="mypage-withdrawal-info">
+            <article class="list mt-50">
+              <h3>회원 탈퇴 신청 안내</h3>
+              <ul class="mt-25">
+                <li>회원 탈퇴는 본 서비스에 대한 이용 해지를 의미합니다.</li>
+                <li>자사가 제공하는 광고성 이메일 및 SMS의 경우 회원탈퇴 접수 후 24시간 이내 발송이 중지됩니다.</li>
+                <li><br /></li>
+                <li>다만 데이터처리상의 이유로, 탈퇴 처리가 지연될 수 있습니다.</li>
+                <li>탈퇴 신청 이후 48시간이 지난 후에도 이메일 및 SMS를 받으시는 경우 당사 고객센터(1688-6745)로 연락 주시기 바랍니다.</li>
+              </ul>
+            </article>
+            <article class="boxing mt-30">
+              <p>[회원 탈퇴 신청에 앞서 아래의 사항을 반드시 확인하여 주세요]</p>
+              <ul class="mt-16">
+                <li>1. 회원 탈퇴 시, 소유하고 있는 포인트/쿠폰 등은 자동으로 소멸되며, 재가입하더라도 복구되지 않습니다.</li>
+                <li>2. 주문내역, 좋아요 등 기타 서비스 이용 내용이 모두 삭제되며, 재가입하더라도 복구되지 않습니다.</li>
+                <li>3. 회원탈퇴 후 당사 사이트에 입력하신 게시물 및 댓글은 삭제되지 않으며, 회원정보 삭제로 인해 작성자 본인을 확인할 수 없으므로 게시물 편집 및 삭제 처리가 원천적으로 불가능 합니다. 게시물 삭제를 원하시는 경우에는 먼저 해당 게시물을 삭제 하신 후, 탈퇴를 신청하시기 바랍니다.</li>
+                <li>4. 상품 주문/배송 및 취소/교환/반품 처리가 진행중일 경우에는 모든 처리가 완료된 후에 탈퇴가 가능합니다.</li>
+                <li>5. 회원탈퇴 후 재가입시에는 신규가입으로 처리되며, 탈퇴 시점 후 로부터 30일 후 재 가입 가능합니다.\</li>
+              </ul>
+            </article>
+            <article class="list mt-50">
+              <h3>회원 정보 삭제 방법 안내</h3>
+              <ul class="mt-25">
+                <li>회원에 대하여 수집한 개인정보는 임블리 쇼핑몰 탈퇴 신청이 완료된 이후, 보관기간 및 이용기간에 따라 해당 정보를 지체없이 파기합니다.</li>
+                <li>파기 절차, 방법, 시점은 다음과 같습니다.</li>
+              </ul>
+            </article>
+            <article class="boxing mt-30">
+              <ul class="mt-16">
+                <li>1. 파기절차 및 시점 고객이 서비스 가입 등을 위해 기재한 개인정보는 서비스 해지 등 이용목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유(위 개인정보의 보유 및 이용기간 참조)에 따른 보유기간이 경과한 후에 삭제되거나 파기합니다.</li>
+                <li>주문정보는 교환/반품/환불 및 사후처리(A/S) 등을 위하여 ‘전자상거래등에서의 소비자보호에 관한 법률’에 의거한 개인정보보호정책에 따라 5년간 보관됩니다.</li>
+                <li>일반적으로 잔존하는 채권-채무 관계가 없는 경우 당사 회원가입시 수집되어 전자적 파일형태로 관리하는 개인정보는 회원 탈퇴 시점에 바로 삭제 됩니다.</li>
+                <li><br /></li>
+                <li>2. 파기방법 종이에 출력된 개인정보는 분쇄기로 분쇄 또는 소각하거나 화학약품 처리를 하여 용해하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다</li>
+              </ul>
+            </article>
+            <article class="article-title-wrap mt-50 mb-50">
+              <div class="article-title">
+                <p>회원 탈퇴 사유</p>
+              </div>
+            </article>
+            <article class="article-list-wrap">
+              <ul class="article-list">
+                <li>
+                  <div class="radio-wrap">
+                    <label for="radio021">
+                      <input type="radio" id="radio021" name="withdrawal" />
+                      <i></i>
+                      <span>상품 품질 저하</span>
+                    </label>
+                    <label for="radio022">
+                      <input type="radio" id="radio022" name="withdrawal" />
+                      <i></i>
+                      <span>교환/환불/품질 불만 지연</span>
+                    </label>
+                    <label for="radio023">
+                      <input type="radio" id="radio023" name="withdrawal" />
+                      <i></i>
+                      <span>서비스 불만족</span>
+                    </label>
+                    <label for="radio024">
+                      <input type="radio" id="radio024" name="withdrawal" />
+                      <i></i>
+                      <span>사이트 속도 느림</span>
+                    </label>
+                    <label for="radio024">
+                      <input type="radio" id="radio025" name="withdrawal" />
+                      <i></i>
+                      <span>이용 빈도 저조</span>
+                    </label>
+                    <label for="radio027">
+                      <input type="radio" id="radio027" name="withdrawal" />
+                      <i></i>
+                      <span>기타</span>
+                      <input type="text" placeholder="입력" class="normal w394 ml-10" />
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <article class="article-title-wrap mt-50 mb-50">
+              <div class="article-title fx-between">
+                <p>회원 보유 예치금/포인트/쿠폰</p>
+                <button type="button" class="btn-220 wh">예치금 환불신청</button>
+              </div>
+            </article>
+            <article class="article-list-wrap">
+              <ul class="article-list list-mb-26 form-394">
+                <li>
+                  <p>현재 보유 예치금</p>
+                  <div>
+                    <label for="">
+                      <input type="text" placeholder="0원" class="normal" />
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>현재 보유 포인트</p>
+                  <div>
+                    <label for="">
+                      <input type="text" placeholder="300P" class="normal" />
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>현재 보유 쿠폰</p>
+                  <div>
+                    <label for="">
+                      <input type="text" placeholder="2장" class="normal" />
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="fc-green">・ 예치금 잔액이 있을 경우 먼저 예치금 환불 신청을 진행해야 회원탈퇴가 가능합니다.</div>
+                </li>
+              </ul>
+            </article>
+            <article class="btn-wrap mt-80 mb-100">
+              <button type="button" class="btn-280 wh">취소</button>
+              <button type="button" class="btn-280 bk">회원탈퇴</button>
+            </article>
+          </div>
+          <!-- 마이페이지 회원 탈퇴 완료 -->
+          <div class="mypage-withdrawal-complete mt-50 mb-70">
+            <article class="withdrawal-complete-info">
+              <p><strong>IMVELY 회원탈퇴</strong>가 완료되었습니다</p>
+              <span>재가입은 30일(2020-08-22) 이후 가능합니다.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- mypage-content 마이페이지 컨텐츠 영역 -->
+    </div>
+  </body>
+</html>

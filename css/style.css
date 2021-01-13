@@ -114,9 +114,9 @@ header .header-right .lnb ul li {
   width: 100%;
   height: 0;
   overflow: hidden;
-  padding-top: 109px;
   background-color: #fff;
   transition: all 0.4s ease;
+  border-bottom: 1px solid #d8d8d8;
   opacity: 0;
 }
 
@@ -128,6 +128,7 @@ header .header-right .lnb ul li {
 
 .main-nav {
   display: flex;
+  margin-top: 109px;
   padding-top: 42px;
   padding-left: 416px;
   border-top: 1px solid #d8d8d8;
@@ -434,6 +435,7 @@ header .header-right .lnb ul li {
 .product-order .product-wrap {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 .product-order .product-wrap .text-area {
   position: relative;
@@ -476,8 +478,6 @@ header .header-right .lnb ul li {
 }
 .product-order .product-wrap .text-area .price-list {
   font-size: 18px;
-  font-weight: bold;
-  color: #282828;
 }
 
 /* product-272 */
@@ -590,7 +590,11 @@ header .header-right .lnb ul li {
   font-weight: 700;
   text-overflow: ellipsis;
 }
-
+.product-wrap .text-area .price-list em {
+  font-size: 16px;
+  font-weight: normal;
+  color: #262628;
+}
 .product-wrap .text-area .price-list .price-del {
   margin-left: 8px;
   font-size: 12px;
@@ -2613,6 +2617,7 @@ header .header-right .lnb ul li {
   align-items: center;
 }
 .product-table .btn-order button {
+  font-size: 14px;
   width: 80px;
   height: 30px;
   margin-bottom: 7px;

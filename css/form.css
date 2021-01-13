@@ -123,6 +123,23 @@ button.bk {
   background-color: #fff;
   border: 1px solid #282828;
 }
+/* 버튼 118 */
+.btn-118 {
+  width: 118px;
+  height: 41px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn-118.bk {
+  color: #fff;
+  background-color: #282828;
+}
+.btn-118.wh {
+  color: #262628;
+  background-color: #fff;
+  border: 1px solid #282828;
+}
 
 /* button group */
 /* =================================*/
@@ -387,4 +404,15 @@ option:disabled {
 }
 .input-area span {
   white-space: nowrap;
+}
+
+/* 2021/01/11 input 관련 추가 */
+.form-394 li > div > label {
+  width: 394px;
+}
+.form-500 li > div > label { 
+  width: 500px;
+}
+.form-610 li > div > label {
+  width: 610px;
 }
