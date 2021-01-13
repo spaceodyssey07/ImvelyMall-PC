@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script defer src="../js/mypage.js"></script>
+    <title>마이페이지-교환 신청</title>
+  </head>
+  <body>
+    <div>
+      <!-- 헤더영역 -->
+      <header class="header-wrap fixed">
+        <!-- fixed class 추가 시 상단고정되고 흰색배경 추가됨 -->
+        <div class="header">
+          <article class="header-left">
+            <!-- .main-logo-image -->
+            <h1 class="main-logo">
+              <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span class="hide">임블리몰</span></a>
+            </h1>
+            <!-- .main-logo-image -->
+            <nav class="gnb">
+              <ul>
+                <li><a href="">신상품</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">브랜드</a></li>
+                <li><a href="">기획전</a></li>
+                <li><a href="">컬렉션</a></li>
+                <li><a href="">콜라보</a></li>
+                <li><a href="">이벤트</a></li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right">
+            <nav class="lnb">
+              <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li>
+                  <i class="ico-search"> </i>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right" style="display: none">
+            <nav>
+              <ul>
+                <li><a href="">로그아웃</a></li>
+                <li>
+                  <a href="product-search.html"><i class="ico-search"></i></a>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="icon-my"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </header>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+      <section class="main-nav-wrap">
+        <div class="main-nav">
+          <article class="exhibit-nav">
+            <ul>
+              <li><a href="">신상품</a></li>
+              <li><a href="">베스트</a></li>
+              <li><a href="">신상품 캘린더</a></li>
+              <li><a href="">입고 일정안내</a></li>
+              <li><a href="">고객행복센터</a></li>
+              <li><a href="">이벤트</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>패션</p>
+            <ul>
+              <li><a href="">원피스</a></li>
+              <li><a href="">상의</a></li>
+              <li><a href="">팬츠</a></li>
+              <li><a href="">스커트</a></li>
+              <li><a href="">아우터</a></li>
+              <li><a href="">슈즈•백</a></li>
+              <li><a href="">악세사리</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>브랜드</p>
+            <ul>
+              <li><a href="">IMVELY MADE</a></li>
+              <li><a href="">IMVELY COLLECT</a></li>
+              <li><a href="">LOVE ME MORE</a></li>
+              <li><a href="">VELY VELY</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>컬렉션</p>
+            <ul>
+              <li><a href="">임절미</a></li>
+              <li><a href="">주구장창</a></li>
+              <li><a href="">VERSE</a></li>
+              <li><a href="">THV.X</a></li>
+              <li><a href="">VELYSOME</a></li>
+              <li><a href="">V,COLLECT</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>기획전</p>
+            <ul>
+              <li><a href="">블리픽</a></li>
+              <li><a href="">다다익선</a></li>
+              <li><a href="">플러스사이즈+</a></li>
+              <li><a href="">라스트피스</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>콜라보</p>
+            <ul>
+              <li><a href="">DISNEY</a></li>
+              <li><a href="">JULIET</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+
+      <!-- 주문 교환신청 -->
+      <section class="mypage-exchage-apply pb-106 container-1180">
+        <article class="section-title-wrap">
+          <div class="section-title">
+            <p>교환 신청</p>
+          </div>
+          <span>주문상품 정보</span>
+        </article>
+        <article class="my-order-info">
+          <div>
+            <div>
+              <p>주문일</p>
+              <span>2020.11.21</span>
+            </div>
+            <div>
+              <p>주문번호</p>
+              <span>12345678abc</span>
+            </div>
+          </div>
+          <div>
+            <button class="wh">전체 주문취소</button>
+          </div>
+        </article>
+        <!-- 교환 신청 테이블 -->
+        <article class="order-exchage-table">
+          <table class="product-table">
+            <colgroup>
+              <col width="48px" />
+              <col width="391px" />
+              <col width="178px" />
+              <col width="178px" />
+              <col width="178px" />
+              <col width="207px" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <label for="check01">
+                    <input type="checkbox" id="check01" />
+                    <i class=""></i>
+                  </label>
+                </th>
+                <th>상품정보</th>
+                <th>상품금액</th>
+                <th>배송비</th>
+                <th>상태</th>
+                <th>교환옵션</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <!-- 체크박스 -->
+                <td>
+                  <label for="check02">
+                    <input type="checkbox" id="check02" />
+                    <i class=""></i>
+                  </label>
+                </td>
+                <!-- 상품정보 -->
+                <td>
+                  <article class="product-order product">
+                    <a href="">
+                      <div class="product-wrap">
+                        <div class="img-area">
+                          <div class="img-box">
+                            <img src="../preview/img_main_best_seller_005.png" alt="w72_img" />
+                          </div>
+                        </div>
+                        <div class="text-area">
+                          <div class="text-area-wrap">
+                            <h2 class="brand-title">IMVELY MADE</h2>
+                            <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                            <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                          </div>
+                          <p class="price-list">
+                            <span class="price mr-8">64,000원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </td>
+                <!-- 상품금액 -->
+                <td>
+                  <article class="order-price">
+                    <span class="fz-14 fc-dark-beige"><del>42,000원</del></span>
+                    <p>38,000원</p>
+                    <div class="soldout-box">옵션품절</div>
+                  </article>
+                </td>
+                <!-- 배송비 -->
+                <td rowspan="2" class="shipping-charge-wrap">
+                  <article class="shipping-charge">
+                    <p>블리블리 대전</p>
+                    <div><span>무료배송</span><i></i></div>
+                  </article>
+                </td>
+                <!-- 상태 -->
+                <td>
+                  <article class="btn-order">
+                    <p class="orderfix">배송완료</p>
+                  </article>
+                </td>
+                <!-- 교환옵션 -->
+                <td>
+                  <article class="btn-order">
+                    <button class="wh">옵션 변경</button>
+                  </article>
+                </td>
+              </tr>
+              <tr class="">
+                <td>
+                  <label for="check02">
+                    <input type="checkbox" id="check02" />
+                    <i class=""></i>
+                  </label>
+                </td>
+                <!-- 상품정보 -->
+                <td>
+                  <article class="product-order product">
+                    <a href="">
+                      <div class="product-wrap">
+                        <div class="img-area">
+                          <div class="img-box">
+                            <img src="../preview/img_main_best_seller_005.png" alt="w72_img" />
+                          </div>
+                        </div>
+                        <div class="text-area">
+                          <div class="text-area-wrap">
+                            <h2 class="brand-title">IMVELY MADE</h2>
+                            <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                            <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                          </div>
+                          <p class="price-list">
+                            <span class="price mr-8">64,000원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </td>
+                <!-- 상품금액 -->
+                <td>
+                  <article class="order-price">
+                    <span class="fz-14 fc-dark-beige"><del>42,000원</del></span>
+                    <p>38,000원</p>
+                    <div class="soldout-box">옵션품절</div>
+                  </article>
+                </td>
+                <!-- 상태 -->
+                <td>
+                  <article class="btn-order">
+                    <p class="orderfix">배송완료</p>
+                  </article>
+                </td>
+                <!-- 교환옵션 -->
+                <td>
+                  <article class="btn-order">
+                    <button class="wh">옵션 변경</button>
+                  </article>
+                </td>
+              </tr>
+              <tr class="">
+                <td>
+                  <label for="check02">
+                    <input type="checkbox" id="check02" />
+                    <i class=""></i>
+                  </label>
+                </td>
+                <!-- 상품정보 -->
+                <td>
+                  <article class="product-order product">
+                    <a href="">
+                      <div class="product-wrap">
+                        <div class="img-area">
+                          <div class="img-box">
+                            <img src="../preview/img_main_best_seller_005.png" alt="w72_img" />
+                          </div>
+                        </div>
+                        <div class="text-area">
+                          <div class="text-area-wrap">
+                            <h2 class="brand-title">IMVELY MADE</h2>
+                            <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                            <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                          </div>
+                          <p class="price-list">
+                            <span class="price mr-8">64,000원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </td>
+                <!-- 상품금액 -->
+                <td>
+                  <article class="order-price">
+                    <span class="fz-14 fc-dark-beige"><del>42,000원</del></span>
+                    <p>38,000원</p>
+                    <div class="soldout-box">옵션품절</div>
+                  </article>
+                </td>
+                <!-- 배송비 -->
+                <td class="shipping-charge-wrap">
+                  <article class="shipping-charge">
+                    <div><span>무료배송</span></div>
+                  </article>
+                </td>
+                <!-- 상태 -->
+                <td>
+                  <article class="btn-order">
+                    <p class="orderfix">배송완료</p>
+                  </article>
+                </td>
+                <!-- 교환옵션 -->
+                <td>
+                  <article class="btn-order">
+                    <button class="wh">옵션 변경</button>
+                  </article>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- 교환사유 -->
+        <article class="article-title-wrap mt-90 mb-30">
+          <div class="article-title">
+            <p>교환 사유</p>
+          </div>
+        </article>
+        <article class="article-list-wrap">
+          <ul class="article-list list-mb-18 form-394">
+            <li>
+              <p>사유</p>
+              <div>
+                <select name="" id="" class="arrow-large">
+                  <option value="">교환 사유 선택</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <p>상세사유</p>
+              <div class="input-area">
+                <label for="">
+                  <input type="text" class="normal" placeholder="200자 이내로 입력하세요" />
+                </label>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <!-- 교환 상세 정보 -->
+        <article class="article-title-wrap mt-90 mb-30">
+          <div class="article-title">
+            <p>교환 상세 정보</p>
+          </div>
+        </article>
+        <article class="article-list-wrap">
+          <ul class="article-list list-mb-18 form-394">
+            <li>
+              <p>교환 방법</p>
+              <div class="radio-wrap">
+                <label for="radio01">
+                  <input type="radio" name="radio" id="radio01" checked="checked" />
+                  <i class=""></i>
+                  <span>자동수거</span>
+                </label>
+                <label for="radio02">
+                  <input type="radio" name="radio" id="radio02" />
+                  <i class=""></i>
+                  <span>직접 발송</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- 교환 - 자동수거 -->
+        <div class="exchange-method auto-pickup">
+          <!-- 반품 수거지 -->
+          <article class="article-title-wrap mt-90 mb-30">
+            <div class="article-title">
+              <p>반품 수거지</p>
+              <button>수거지 정보 변경</button>
+            </div>
+          </article>
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <p>받으시는 분</p>
+                <div>홍길동</div>
+              </li>
+              <li>
+                <p>휴대폰 번호</p>
+                <div>010-1234-5678</div>
+              </li>
+              <li>
+                <p>전화번호</p>
+                <div>02-123-4567</div>
+              </li>
+              <li>
+                <p>주소</p>
+                <div>[14093] 서울 광진구 강변북로 222, APT 1234-568</div>
+              </li>
+              <li>
+                <p>배송 유의사항</p>
+                <div>부재시 경비실에 맡겨주세요</div>
+              </li>
+            </ul>
+          </article>
+          <!-- 교환 배송지 -->
+          <article class="article-title-wrap mt-90 mb-30">
+            <div class="article-title">
+              <p>교환 배송지</p>
+              <button>배송지 정보 변경</button>
+            </div>
+          </article>
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <p>받으시는 분</p>
+                <div>홍길동</div>
+              </li>
+              <li>
+                <p>휴대폰 번호</p>
+                <div>010-1234-5678</div>
+              </li>
+              <li>
+                <p>전화번호</p>
+                <div>02-123-4567</div>
+              </li>
+              <li>
+                <p>주소</p>
+                <div>[14093] 서울 광진구 강변북로 222, APT 1234-568</div>
+              </li>
+              <li>
+                <p>배송 유의사항</p>
+                <div>부재시 경비실에 맡겨주세요</div>
+              </li>
+            </ul>
+          </article>
+          <!-- 교환 배송비 -->
+          <article class="article-title-wrap mt-90 mb-30">
+            <div class="article-title">
+              <p>교환 배송비</p>
+            </div>
+          </article>
+          <!-- 교환배송비 교환사유 미 선택 -->
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <div class="fc-red">교환 사유를 먼저 선택해주세요</div>
+              </li>
+            </ul>
+          </article>
+          <!-- 귀책사유 -->
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <p>귀책 사유</p>
+              </li>
+              <li>
+                <div class="radio-wrap">
+                  <label for="radio03">
+                    <input type="radio" name="radio-02" id="radio03" checked="checked" />
+                    <i class=""></i>
+                    <span>구매자 귀책</span>
+                  </label>
+                  <label for="radio04">
+                    <input type="radio" name="radio-02" id="radio04" />
+                    <i class=""></i>
+                    <span>판매자 귀책</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <ul class="marker-list fz-15 fc-gr">
+                  <li>귀책 사유에 따라 배송비가 부과됩니다.</li>
+                  <li>변심에 의한 교환 시 구매자 귀책을 선택해 주십시오.</li>
+                  <li>상품불량, 파손, 오배송에 의한 교환의 경우 판매자귀책을 선택해 주십시오.</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+          <article class="divider gr mt-30 mb-30"></article>
+          <!-- 배송비 부과 -->
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <p>배송비 부과</p>
+              </li>
+              <li>
+                <div>
+                  <p>
+                    구매자 귀책 <span class="fz-20 fw-bold fc-red mr-8 ml-30">5,000<b>원</b></span
+                    ><em class="fz-15 fc-gr">(반송배송비 2,500원 + 교환배송비 2,500원)</em>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="radio-wrap">
+                  <label for="radio05">
+                    <input type="radio" name="radio-03" id="radio05" checked="checked" />
+                    <i class=""></i>
+                    <span>즉시 결제</span>
+                  </label>
+                  <label for="radio06">
+                    <input type="radio" name="radio-03" id="radio06" />
+                    <i class=""></i>
+                    <span>예치금으로 결제</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="divider gr mt-30 mb-30"></article>
+
+          <!-- 결제 수단 -->
+          <article>
+            <!-- 즉시 결제 -->
+            <div>
+              <section class="container-1180">
+                <article class="payment-method-wrap">
+                  <p>결제 수단</p>
+                  <ul class="payment-method mypage-big">
+                    <li class="on">계좌 간편결제<span class="hide">계좌 간편결제</span></li>
+                    <li>신용/체크카드<span class="hide">신용/체크카드</span></li>
+                    <li class="payco"><span class="hide">페이코</span></li>
+                    <li class="kakaopay"><span class="hide">카카오페이</span></li>
+                    <li>휴대폰 결제<span class="hide">휴대폰 결제</span></li>
+                    <li>가상계좌<span class="hide">가상계좌</span></li>
+                    <li class="npay">N pay<span class="hide">네이버페이</span></li>
+                  </ul>
+                </article>
+                <article class="payment-method-info on simple-pay">
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="marker-list">
+                      <li>자주쓰는 내통장을 한 번만 등록하면, 비밀번호만으로 간편하게 결제가 가능합니다.</li>
+                      <li>휴대폰 번호 형식의 평생 계좌 번호는 등록 불가합니다.</li>
+                      <li>은행 점검시간인 경우 간편결제 서비스 이용이 불가합니다.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>간편계좌 결제 순서</p>
+                    <ul>
+                      <li>1. 결제하기 버튼 클릭 후 다음 단계로 이동</li>
+                      <li>2. 결제내역 확인 후 결제하기 버튼 클릭 시, 팝업창 노출</li>
+                      <li>3. 해당 팝업창을 통해 본인명의의 계좌 등록(최초 1회만 등록 필요)</li>
+                      <li>4. 계좌 등록 시, 비밀번호만으로 간편계좌결제 서비스 이용 가능</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info card-pay">
+                  <div>
+                    <p>신용카드</p>
+                    <ul class="card-pay-wrap">
+                      <select name="" id="" class="arrow">
+                        <option value="" disabled="disabled" selected="selected">비씨카드</option>
+                        <option value="v1">삼성카드</option>
+                        <option value="v2">국민카드</option>
+                        <option value="v3">신한카드</option>
+                        <option value="v4">농협카드</option>
+                        <option value="v5">하나카드</option>
+                      </select>
+                      <select name="" id="" class="arrow">
+                        <option value="" disabled="disabled" selected="selected">할부선택</option>
+                        <option value="v1">3개월</option>
+                        <option value="v2">6개월</option>
+                        <option value="v3">12개월</option>
+                      </select>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="marker-list">
+                      <li>최소 결제 가능 근액은 결제금액에서 배송비를 제외한 금액입니다</li>
+                      <li>소액 결제의 경우 PG사 정책에 띠리 결제금액 제한이 있을수 있습니다</li>
+                    </ul>
+                  </div>
+                  <div class="precaution-pay">
+                    <ul class="marker-list">
+                      <li>최소 결제 가능 근액은 결제금액에서 배송비를 제외한 금액입니다.</li>
+                      <li>소액 결제의 경우 PG사의 정책에 따라 결제 금액 제한이 있을 수 있습니다</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info payco-pay">
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="payco-pay-wrap">
+                      <li>
+                        <p>페이코 생애 첫 결제 시, 최대 6,500원 혜택</p>
+                      </li>
+                      <li>
+                        <ul class="marker-list">
+                          <li>대상 : 페이코 생애 첫 결제회원</li>
+                          <li>기간 : ~ 2020. 07. 31. 까지</li>
+                          <li>2만원 이상 결제 시 4,000원 즉시 할인(예산 소진 시, 자동 종료)</li>
+                          <li>만원 이상 결제 시 2,000원 즉시 할인</li>
+                          <li>결제 후, 2,500원 추가 지급 (쿠폰)</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>페이코 결제 리워드</p>
+                      </li>
+                      <li>
+                        <ul class="marker-list">
+                          <li>페이코(신용카드 등)로 결제 시, 구매 금액의 0.2% 할인쿠폰 또는 포인트 지급</li>
+                          <li>페이코 포인트(충전/선물)로 결제 시, 구매 금액의 2% 포인트 지급</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>본 프로모션은 페이코 사정에 따라 조기 종료될 수 있습니다.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info kakao-pay">
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="kakao-pay-wrap">
+                      <li>
+                        <ul class="marker-list">
+                          <li>간편결제는 임블리몰이 제공하는 무이자 할부와 무관하여, 서비스사 별도 기분이 적용되니, 자세한 내용은 해당 서비스사를 확인해주세요</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info mobile-pay">
+                  <div>
+                    <p>휴대폰</p>
+                    <ul class="mobile-pay-wrap">
+                      <div class="input-area">
+                        <label for="">
+                          <input type="tel" class="normal" placeholder="휴대폰 번호 (숫자만 입력)" />
+                          <div>
+                            <button type="button">인증번호</button>
+                          </div>
+                        </label>
+                      </div>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="marker-list">
+                      <li>최소 결제 가능 근액은 결제금액에서 배송비를 제외한 금액입니다</li>
+                      <li>소액 결제의 경우 PG사 정책에 띠리 결제금액 제한이 있을수 있습니다</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info virtual-pay">
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="marker-list">
+                      <li>자주쓰는 내통장을 한 번만 등록하면, 비밀번호만으로 간편하게 결제가 가능합니다.</li>
+                      <li>휴대폰 번호 형식의 평생 계좌 번호는 등록 불가합니다.</li>
+                      <li>은행 점검시간인 경우 간편결제 서비스 이용이 불가합니다.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>간편계좌 결제 순서</p>
+                    <ul>
+                      <li>1. 결제하기 버튼 클릭 후 다음 단계로 이동</li>
+                      <li>2. 결제내역 확인 후 결제하기 버튼 클릭 시, 팝업창 노출</li>
+                      <li>3. 해당 팝업창을 통해 본인명의의 계좌 등록(최초 1회만 등록 필요)</li>
+                      <li>4. 계좌 등록 시, 비밀번호만으로 간편계좌결제 서비스 이용 가능</li>
+                    </ul>
+                  </div>
+                  <div class="precaution-pay">
+                    <ul class="marker-list">
+                      <li>소액 결제의 경우 PG사의 정책에 따라 결제 금액 제한이 있을 수 있습니다</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info n-pay">
+                  <div>
+                    <p>결제정보</p>
+                    <ul class="n-pay-wrap">
+                      <label for="">
+                        <input type="tel" class="normal" placeholder="예금주명 입력" />
+                        <div>
+                          <label for="check1">
+                            <input type="checkbox" id="check1" />
+                            <i class=""></i>
+                            <span>에스크로(구매안전) 서비스를 적용합니다</span>
+                          </label>
+                        </div>
+                      </label>
+                    </ul>
+                  </div>
+                  <div class="precaution-pay">
+                    <ul class="marker-list">
+                      <li>소액 결제의 경우 PG사의 정책에 따라 결제 금액 제한이 있을 수 있습니다</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="check-payment">
+                  <p>확인해주세요 !</p>
+                  <ul class="marker-list">
+                    <li>정상 입금 연결 된 시점 기준으로 구매 차수가 결정되어 순차 배송 진행됩니다. [주문 순번은 결제순 입니다.]</li>
+                    <li>정상 입금확인은 입금 후 5분 이후 확인됩니다.</li>
+                    <li>미입금으로 인해 자동 취소된 주문서는 복구 불가합니다.</li>
+                    <li>무이자할부가 적용되지 않는 상품과 무이자할부가 가능한 상품을 동시에 구매할 경우, 전체 주문 상품 금액에 대해 무이자 할부가 적용되지 않습니다.</li>
+                    <li>무이자할부를 원하시는 경우, 장바구니에서 무이자할부 상품만 선택하여 주문하여 주시기 바랍니다.</li>
+                  </ul>
+                </article>
+              </section>
+            </div>
+            <!-- 예치금으로 결제 -->
+            <div>
+              <article class="article-list-wrap">
+                <ul class="article-list list-mb-18 form-394">
+                  <li>
+                    <p>결제 수단</p>
+                  </li>
+                  <li>
+                    <div>
+                      <p>
+                        예치금<span class="fz-20 fw-bold fc-red mr-8 ml-30">1,000<b>원</b></span
+                        ><em class="fz-15 fc-gr">(사용가능한 예치금 잔액)</em>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="" style="display: none">
+                    <div class="fz-15 fc-green">
+                      <p>현재 사용 가능한 예치금 잔액이 부족합니다. 다른 결제 수단으로 결제해 주세요.</p>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div class="fz-15 fc-green">
+                      <p>예치금으로 결제를 진행하시려면 결제하기 버튼을 눌러주세요.</p>
+                    </div>
+                    <button type="button" class="btn-220 wh">결제하기</button>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </article>
+        </div>
+        <!-- 교환 - 직접발송 -->
+        <div class="exchange-method direct-shpment">
+          <!-- 반품지 정보 -->
+          <article class="article-title-wrap mt-90 mb-30">
+            <div class="article-title">
+              <p>반품지 정보</p>
+            </div>
+          </article>
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <p>판매자 정보</p>
+                <div>임블리 / 서울 마포구 독막로 328(도화동) / 1661-2585</div>
+              </li>
+              <li>
+                <p>택배사</p>
+                <div>
+                  <select name="" id="" class="arrow-large">
+                    <option value="">택배사 선택</option>
+                    <option value="">우체국 택배</option>
+                    <option value="">한진 선택</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <p>송장번호</p>
+                <div class="input-area">
+                  <label for="">
+                    <input type="number" class="normal" placeholder="송장번호를 입력하세요" />
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <!-- 교환 배송지 -->
+          <article class="article-title-wrap mt-90 mb-30">
+            <div class="article-title">
+              <p>교환 배송지</p>
+              <span>배송지 정보 변경</span>
+            </div>
+          </article>
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <p>받으시는 분</p>
+                <div>홍길동</div>
+              </li>
+              <li>
+                <p>휴대폰 번호</p>
+                <div>010-1234-5678</div>
+              </li>
+              <li>
+                <p>전화번호</p>
+                <div>02-123-4567</div>
+              </li>
+              <li>
+                <p>주소</p>
+                <div>[14093] 서울 광진구 강변북로 222, APT 1234-568</div>
+              </li>
+              <li>
+                <p>배송 유의사항</p>
+                <div>부재시 경비실에 맡겨주세요</div>
+              </li>
+            </ul>
+          </article>
+          <!-- 교환 배송비 -->
+          <article class="article-title-wrap mt-90 mb-30">
+            <div class="article-title">
+              <p>교환 배송비</p>
+            </div>
+          </article>
+          <!-- 교환배송비 교환사유 미 선택 -->
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <div class="fc-red">교환 사유를 먼저 선택해주세요</div>
+              </li>
+            </ul>
+          </article>
+          <!-- 귀책사유 -->
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <p>귀책 사유</p>
+              </li>
+              <li>
+                <div class="radio-wrap">
+                  <label for="radio03">
+                    <input type="radio" name="radio-02" id="radio03" checked="checked" />
+                    <i class=""></i>
+                    <span>구매자 귀책</span>
+                  </label>
+                  <label for="radio04">
+                    <input type="radio" name="radio-02" id="radio04" />
+                    <i class=""></i>
+                    <span>판매자 귀책</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <ul class="marker-list fz-15 fc-gr">
+                  <li>귀책 사유에 따라 배송비가 부과됩니다.</li>
+                  <li>변심에 의한 교환 시 구매자 귀책을 선택해 주십시오.</li>
+                  <li>상품불량, 파손, 오배송에 의한 교환의 경우 판매자귀책을 선택해 주십시오.</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+          <article class="divider gr mt-30 mb-30"></article>
+
+          <!-- 배송비 부과 -->
+          <article class="article-list-wrap">
+            <ul class="article-list list-mb-18 form-394">
+              <li>
+                <p>배송비 부과</p>
+              </li>
+              <li>
+                <div>
+                  <p>구매자 귀책 <span class="fz-20 fw-bold fc-red mr-8 ml-30">5,000원</span><em class="fz-15 fc-gr">(반송배송비 2,500원 + 교환배송비 2,500원)</em></p>
+                </div>
+              </li>
+              <li>
+                <div class="radio-wrap shipping-impose">
+                  <label for="radio12">
+                    <input type="radio" name="radio-12" id="radio12" checked="checked" />
+                    <i class=""></i>
+                    <span>즉시 결제</span>
+                  </label>
+                  <label for="radio13">
+                    <input type="radio" name="radio-12" id="radio13" />
+                    <i class=""></i>
+                    <span>예치금으로 결제</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="divider gr mt-30 mb-30"></article>
+          <!-- 결제 수단 -->
+          <article>
+            <!-- 즉시 결제 -->
+            <div class="pay-right">
+              <section class="container-1180">
+                <article class="payment-method-wrap">
+                  <p>결제 수단</p>
+                  <ul class="payment-method mypage-big">
+                    <li class="on">계좌 간편결제<span class="hide">계좌 간편결제</span></li>
+                    <li>신용/체크카드<span class="hide">신용/체크카드</span></li>
+                    <li class="payco"><span class="hide">페이코</span></li>
+                    <li class="kakaopay"><span class="hide">카카오페이</span></li>
+                    <li>휴대폰 결제<span class="hide">휴대폰 결제</span></li>
+                    <li>가상계좌<span class="hide">가상계좌</span></li>
+                    <li class="npay">N pay<span class="hide">네이버페이</span></li>
+                  </ul>
+                </article>
+                <article class="payment-method-info on simple-pay">
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="marker-list">
+                      <li>자주쓰는 내통장을 한 번만 등록하면, 비밀번호만으로 간편하게 결제가 가능합니다.</li>
+                      <li>휴대폰 번호 형식의 평생 계좌 번호는 등록 불가합니다.</li>
+                      <li>은행 점검시간인 경우 간편결제 서비스 이용이 불가합니다.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>간편계좌 결제 순서</p>
+                    <ul>
+                      <li>1. 결제하기 버튼 클릭 후 다음 단계로 이동</li>
+                      <li>2. 결제내역 확인 후 결제하기 버튼 클릭 시, 팝업창 노출</li>
+                      <li>3. 해당 팝업창을 통해 본인명의의 계좌 등록(최초 1회만 등록 필요)</li>
+                      <li>4. 계좌 등록 시, 비밀번호만으로 간편계좌결제 서비스 이용 가능</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info card-pay">
+                  <div>
+                    <p>신용카드</p>
+                    <ul class="card-pay-wrap">
+                      <select name="" id="" class="arrow">
+                        <option value="" disabled="disabled" selected="selected">비씨카드</option>
+                        <option value="v1">삼성카드</option>
+                        <option value="v2">국민카드</option>
+                        <option value="v3">신한카드</option>
+                        <option value="v4">농협카드</option>
+                        <option value="v5">하나카드</option>
+                      </select>
+                      <select name="" id="" class="arrow">
+                        <option value="" disabled="disabled" selected="selected">할부선택</option>
+                        <option value="v1">3개월</option>
+                        <option value="v2">6개월</option>
+                        <option value="v3">12개월</option>
+                      </select>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="marker-list">
+                      <li>최소 결제 가능 근액은 결제금액에서 배송비를 제외한 금액입니다</li>
+                      <li>소액 결제의 경우 PG사 정책에 띠리 결제금액 제한이 있을수 있습니다</li>
+                    </ul>
+                  </div>
+                  <div class="precaution-pay">
+                    <ul class="marker-list">
+                      <li>최소 결제 가능 근액은 결제금액에서 배송비를 제외한 금액입니다.</li>
+                      <li>소액 결제의 경우 PG사의 정책에 따라 결제 금액 제한이 있을 수 있습니다</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info payco-pay">
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="payco-pay-wrap">
+                      <li>
+                        <p>페이코 생애 첫 결제 시, 최대 6,500원 혜택</p>
+                      </li>
+                      <li>
+                        <ul class="marker-list">
+                          <li>대상 : 페이코 생애 첫 결제회원</li>
+                          <li>기간 : ~ 2020. 07. 31. 까지</li>
+                          <li>2만원 이상 결제 시 4,000원 즉시 할인(예산 소진 시, 자동 종료)</li>
+                          <li>만원 이상 결제 시 2,000원 즉시 할인</li>
+                          <li>결제 후, 2,500원 추가 지급 (쿠폰)</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>페이코 결제 리워드</p>
+                      </li>
+                      <li>
+                        <ul class="marker-list">
+                          <li>페이코(신용카드 등)로 결제 시, 구매 금액의 0.2% 할인쿠폰 또는 포인트 지급</li>
+                          <li>페이코 포인트(충전/선물)로 결제 시, 구매 금액의 2% 포인트 지급</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>본 프로모션은 페이코 사정에 따라 조기 종료될 수 있습니다.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info kakao-pay">
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="kakao-pay-wrap">
+                      <li>
+                        <ul class="marker-list">
+                          <li>간편결제는 임블리몰이 제공하는 무이자 할부와 무관하여, 서비스사 별도 기분이 적용되니, 자세한 내용은 해당 서비스사를 확인해주세요</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info mobile-pay">
+                  <div>
+                    <p>휴대폰</p>
+                    <ul class="mobile-pay-wrap">
+                      <div class="input-area">
+                        <label for="">
+                          <input type="tel" class="normal" placeholder="휴대폰 번호 (숫자만 입력)" />
+                          <div>
+                            <button type="button">인증번호</button>
+                          </div>
+                        </label>
+                      </div>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="marker-list">
+                      <li>최소 결제 가능 근액은 결제금액에서 배송비를 제외한 금액입니다</li>
+                      <li>소액 결제의 경우 PG사 정책에 띠리 결제금액 제한이 있을수 있습니다</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info virtual-pay">
+                  <div>
+                    <p>결제안내</p>
+                    <ul class="marker-list">
+                      <li>자주쓰는 내통장을 한 번만 등록하면, 비밀번호만으로 간편하게 결제가 가능합니다.</li>
+                      <li>휴대폰 번호 형식의 평생 계좌 번호는 등록 불가합니다.</li>
+                      <li>은행 점검시간인 경우 간편결제 서비스 이용이 불가합니다.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>간편계좌 결제 순서</p>
+                    <ul>
+                      <li>1. 결제하기 버튼 클릭 후 다음 단계로 이동</li>
+                      <li>2. 결제내역 확인 후 결제하기 버튼 클릭 시, 팝업창 노출</li>
+                      <li>3. 해당 팝업창을 통해 본인명의의 계좌 등록(최초 1회만 등록 필요)</li>
+                      <li>4. 계좌 등록 시, 비밀번호만으로 간편계좌결제 서비스 이용 가능</li>
+                    </ul>
+                  </div>
+                  <div class="precaution-pay">
+                    <ul class="marker-list">
+                      <li>소액 결제의 경우 PG사의 정책에 따라 결제 금액 제한이 있을 수 있습니다</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="payment-method-info n-pay">
+                  <div>
+                    <p>결제정보</p>
+                    <ul class="n-pay-wrap">
+                      <label for="">
+                        <input type="tel" class="normal" placeholder="예금주명 입력" />
+                        <div>
+                          <label for="check1">
+                            <input type="checkbox" id="check1" />
+                            <i class=""></i>
+                            <span>에스크로(구매안전) 서비스를 적용합니다</span>
+                          </label>
+                        </div>
+                      </label>
+                    </ul>
+                  </div>
+                  <div class="precaution-pay">
+                    <ul class="marker-list">
+                      <li>소액 결제의 경우 PG사의 정책에 따라 결제 금액 제한이 있을 수 있습니다</li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="check-payment">
+                  <p>확인해주세요 !</p>
+                  <ul class="marker-list">
+                    <li>정상 입금 연결 된 시점 기준으로 구매 차수가 결정되어 순차 배송 진행됩니다. [주문 순번은 결제순 입니다.]</li>
+                    <li>정상 입금확인은 입금 후 5분 이후 확인됩니다.</li>
+                    <li>미입금으로 인해 자동 취소된 주문서는 복구 불가합니다.</li>
+                    <li>무이자할부가 적용되지 않는 상품과 무이자할부가 가능한 상품을 동시에 구매할 경우, 전체 주문 상품 금액에 대해 무이자 할부가 적용되지 않습니다.</li>
+                    <li>무이자할부를 원하시는 경우, 장바구니에서 무이자할부 상품만 선택하여 주문하여 주시기 바랍니다.</li>
+                  </ul>
+                </article>
+              </section>
+            </div>
+            <!-- 예치금으로 결제 -->
+            <div class="pay-deposit">
+              <article class="article-list-wrap">
+                <ul class="article-list list-mb-18 form-394">
+                  <li>
+                    <p>결제 수단</p>
+                  </li>
+                  <li>
+                    <div>
+                      <p>
+                        예치금<span class="fz-20 fw-bold fc-red mr-8 ml-30">1,000<b>원</b></span
+                        ><em class="fz-15 fc-gr">(사용가능한 예치금 잔액)</em>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="" style="display: none">
+                    <div class="fz-15 fc-green">
+                      <p>현재 사용 가능한 예치금 잔액이 부족합니다. 다른 결제 수단으로 결제해 주세요.</p>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div class="fz-15 fc-green">
+                      <p>예치금으로 결제를 진행하시려면 결제하기 버튼을 눌러주세요.</p>
+                    </div>
+                    <button type="button" class="btn-220 wh">결제하기</button>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </article>
+        </div>
+
+        <article class="btn-wrap mt-88 mb-60">
+          <button type="button" class="btn-220 bk">교환 신청</button>
+          <button type="button" class="btn-220 wh">취소</button>
+        </article>
+        <article class="check-payment">
+          <p>교환/반품이 불가능한 경우</p>
+          <ul class="marker-list">
+            <li>고객님의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우. 단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외</li>
+            <li>고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우(수선 등).</li>
+            <li>시간의 경과에 의하여 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우</li>
+            <li>복제가 가능한 상품 등의 포장을 훼손한 경우 (자세한 내용은 고객만족센터 1:1 E-MAIL상담을 이용해 주시기 바랍니다.)</li>
+          </ul>
+          <ul class="mt-16">
+            <li>※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 상품 반송 비용은 고객님께서 부담하셔야 합니다.(색상 교환, 사이즈 교환 등 포함) </li>
+          </ul>
+        </article>
+      </section>
+      <!-- 주문 교환신청 -->
+    </div>
+  </body>
+</html>

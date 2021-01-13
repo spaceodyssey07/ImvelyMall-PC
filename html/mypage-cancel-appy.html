@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ㅏㅐ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>마이페이지-취소신청</title>
+  </head>
+  <body>
+    <div>
+      <!-- 헤더영역 -->
+      <header class="header-wrap fixed">
+        <!-- fixed class 추가 시 상단고정되고 흰색배경 추가됨 -->
+        <div class="header">
+          <article class="header-left">
+            <!-- .main-logo-image -->
+            <h1 class="main-logo">
+              <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span class="hide">임블리몰</span></a>
+            </h1>
+            <!-- .main-logo-image -->
+            <nav class="gnb">
+              <ul>
+                <li><a href="">신상품</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">브랜드</a></li>
+                <li><a href="">기획전</a></li>
+                <li><a href="">컬렉션</a></li>
+                <li><a href="">콜라보</a></li>
+                <li><a href="">이벤트</a></li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right">
+            <nav class="lnb">
+              <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li>
+                  <i class="ico-search"> </i>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right" style="display: none">
+            <nav>
+              <ul>
+                <li><a href="">로그아웃</a></li>
+                <li>
+                  <a href="product-search.html"><i class="ico-search"></i></a>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="icon-my"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </header>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+      <section class="main-nav-wrap">
+        <div class="main-nav">
+          <article class="exhibit-nav">
+            <ul>
+              <li><a href="">신상품</a></li>
+              <li><a href="">베스트</a></li>
+              <li><a href="">신상품 캘린더</a></li>
+              <li><a href="">입고 일정안내</a></li>
+              <li><a href="">고객행복센터</a></li>
+              <li><a href="">이벤트</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>패션</p>
+            <ul>
+              <li><a href="">원피스</a></li>
+              <li><a href="">상의</a></li>
+              <li><a href="">팬츠</a></li>
+              <li><a href="">스커트</a></li>
+              <li><a href="">아우터</a></li>
+              <li><a href="">슈즈•백</a></li>
+              <li><a href="">악세사리</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>브랜드</p>
+            <ul>
+              <li><a href="">IMVELY MADE</a></li>
+              <li><a href="">IMVELY COLLECT</a></li>
+              <li><a href="">LOVE ME MORE</a></li>
+              <li><a href="">VELY VELY</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>컬렉션</p>
+            <ul>
+              <li><a href="">임절미</a></li>
+              <li><a href="">주구장창</a></li>
+              <li><a href="">VERSE</a></li>
+              <li><a href="">THV.X</a></li>
+              <li><a href="">VELYSOME</a></li>
+              <li><a href="">V,COLLECT</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>기획전</p>
+            <ul>
+              <li><a href="">블리픽</a></li>
+              <li><a href="">다다익선</a></li>
+              <li><a href="">플러스사이즈+</a></li>
+              <li><a href="">라스트피스</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>콜라보</p>
+            <ul>
+              <li><a href="">DISNEY</a></li>
+              <li><a href="">JULIET</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+
+      <!-- 주문 취소신청 -->
+      <section class="mypage-cancel-apply pb-106 container-1180">
+        <article class="section-title-wrap">
+          <div class="section-title">
+            <p>취소 신청</p>
+          </div>
+          <span>주문상품 정보</span>
+        </article>
+        <article class="my-order-info">
+          <div>
+            <div>
+              <p>주문일</p>
+              <span>2020.11.21</span>
+            </div>
+            <div>
+              <p>주문번호</p>
+              <span>12345678abc</span>
+            </div>
+          </div>
+          <div>
+            <button class="wh">전체 주문취소</button>
+          </div>
+        </article>
+        <article class="order-cancel-table">
+          <table class="product-table">
+            <colgroup>
+              <col width="48px" />
+              <col width="448px" />
+              <col width="164px" />
+              <col width="152px" />
+              <col width="118px" />
+              <col width="250px" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <label for="check02">
+                    <input type="checkbox" id="check02" />
+                    <i class=""></i>
+                  </label>
+                </th>
+                <th class="pd-info-title">상품정보</th>
+                <th>상품금액</th>
+                <th>취소수량</th>
+                <th>취소 사유 선택</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <!-- 체크박스 -->
+                <td>
+                  <label for="check02">
+                    <input type="checkbox" id="check02" />
+                    <i class=""></i>
+                  </label>
+                </td>
+                <!-- 상품정보 -->
+                <td>
+                  <article class="product-order product">
+                    <a href="">
+                      <div class="product-wrap">
+                        <div class="img-area">
+                          <div class="img-box">
+                            <img src="../preview/img-02-searchpage.png" alt="w72_img" />
+                          </div>
+                        </div>
+                        <div class="text-area">
+                          <div class="text-area-wrap">
+                            <h2 class="brand-title">IMVELY MADE</h2>
+                            <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                            <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                          </div>
+                          <p class="price-list">
+                            <span class="price mr-8">64,000원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </td>
+                <!-- 상품금액 -->
+                <td>
+                  <article class="order-price">
+                    <span class="fz-14 fc-dark-beige"><del>42,000원</del></span>
+                    <p>38,000원</p>
+                    <div class="soldout-box">옵션품절</div>
+                  </article>
+                </td>
+                <!-- 취소 수량 -->
+                <td>
+                  <article class="">
+                    <p>15개</p>
+                  </article>
+                </td>
+                <!-- 취소사유선택 -->
+                <td>
+                  <article class="btn-order">
+                    <select name="" id="" class="arrow">
+                      <option value="" disabled="disabled" selected="selected">취소 사유 선택</option>
+                      <option value="v1">주문서와 다른 상품배송</option>
+                      <option value="v2">주문서와 다른 상품배송</option>
+                      <option value="v5">메세지 직접입력</option>
+                    </select>
+                  </article>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="article-title-wrap mt-90 mb-30">
+          <div class="article-title">
+            <p>환불 정보</p>
+            <span>영수증 보기</span>
+          </div>
+        </article>
+        <article class="my-pay-info">
+          <div class="my-pay-info-detail">
+            <div>
+              <p>총 주문금액</p>
+              <ul>
+                <li>
+                  <p>총 상품금액</p>
+                  <span>97,500<em>원</em></span>
+                </li>
+                <li>
+                  <p>배송비</p>
+                  <span>2,500<em>원</em></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p>할인금액</p>
+              <ul>
+                <li>
+                  <p>상품할인</p>
+                  <span>13,000<em>원</em></span>
+                </li>
+                <li>
+                  <p>회원등급 할인</p>
+                  <span>2,500<em>원</em></span>
+                </li>
+                <li>
+                  <p>상품할인 쿠폰</p>
+                  <span>500<em>원</em></span>
+                </li>
+                <li>
+                  <p>배송비 쿠폰</p>
+                  <span>2,500<em>원</em></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p>예치금/포인트 사용</p>
+              <ul>
+                <li>
+                  <p>예치금 사용</p>
+                  <span>2,000<em>P</em></span>
+                </li>
+                <li>
+                  <p>포인트 사용</p>
+                  <span>10,000<em>P</em></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="my-approve-info">
+            <div class="detail">
+              <ul>
+                <li>
+                  <p>신용카드</p>
+                  <span>국민</span>
+                  <span>1234-5678-****-***</span>
+                </li>
+                <li>
+                  <p>무이자 할부</p>
+                  <span>3개월</span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p>승인번호</p>
+                  <span>12345678</span>
+                </li>
+                <li>
+                  <p>승인일시</p>
+                  <span>2020.11.21</span>
+                </li>
+              </ul>
+            </div>
+            <div class="total">
+              <ul>
+                <li><p>총 결제금액</p></li>
+                <li>
+                  <span>1,370,800<em>원</em></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="article-title-wrap mt-90 mb-30">
+          <div class="article-title">
+            <p>환불 계좌 정보</p>
+          </div>
+        </article>
+        <article class="article-list-wrap">
+          <ul class="article-list list-mb-18 form-394">
+            <li>
+              <p>은행명</p>
+              <div>
+                <select name="" id="" class="arrow-large">
+                  <option value="">국민은행</option>
+                  <option value="">신한은행</option>
+                  <option value="">하나은행</option>
+                  <option value="">우리은행</option>
+                  <option value="">기업은행</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <p>계좌번호</p>
+              <div class="input-area">
+                <label for="">
+                  <input type="text" class="normal" placeholder="123456778" />
+                  <button type="button" class="view"></button>
+                </label>
+              </div>
+            </li>
+            <li>
+              <p>예금주</p>
+              <div class="input-area">
+                <label for="">
+                  <input type="text" class="normal" placeholder="예금주 이름" />
+                  <div>
+                    <button type="button">계좌 변경</button>
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li>
+              <ul class="marker-list fz-15 fc-gr">
+                <li class="">등록된 환불 계좌 정보입니다. 다른 계좌로 받기를 원하시면 계좌변경 버튼을 누르고 새로운 계좌번호를 입력해주시기 바랍니다.</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <article class="btn-wrap mt-88 mb-60">
+          <button type="button" class="btn-220 bk">주문 취소</button>
+          <button type="button" class="btn-220 wh">취소</button>
+        </article>
+        <article class="payment-detail-info">
+          <h3>환불안내</h3>
+          <div>
+            <p>신용카드</p>
+            <ul class="marker-list">
+              <li>승인취소 : 신용카드 신용취소는 매입(카드사로 결제정보가 넘어가기 전)인 경우에는 취소 승인한 당일 취소됩니다.</li>
+              <li>매입취소 : 카드사로 결제정보가 넘어간 후에는 카드사에서 취소처리를 하는데 1~2주 정도 소요 됩니다. <br />(카드사별 취소 반영이 차이가 있습니다. 각 카드사 홈페이지에서 확인 가능합니다.).</li>
+            </ul>
+          </div>
+          <div>
+            <p>실시간 계좌이체</p>
+            <ul>
+              <li>취소 완료일 기준 익일에 실시간 계좌이체가 진행된 고객님의 계좌로 직접 환불됩니다.</li>
+            </ul>
+          </div>
+          <div>
+            <p>가상계좌(무통장입금)</p>
+            <ul>
+              <li>취소 완료일 기준 익일에 환불 계좌로 입금됩니다.</li>
+            </ul>
+          </div>
+          <div>
+            <p>포인트</p>
+            <ul>
+              <li>포인트 환불은 취소 완료일 기준 익일에 재적립 됩니다.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <!-- 주문 취소신청 -->
+    </div>
+  </body>
+</html>

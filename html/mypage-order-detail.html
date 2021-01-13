@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>마이페이지-주문/배송 상세내역</title>
+  </head>
+  <body>
+    <div>
+      <!-- 헤더영역 -->
+      <header class="header-wrap fixed">
+        <!-- fixed class 추가 시 상단고정되고 흰색배경 추가됨 -->
+        <div class="header">
+          <article class="header-left">
+            <!-- .main-logo-image -->
+            <h1 class="main-logo">
+              <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span class="hide">임블리몰</span></a>
+            </h1>
+            <!-- .main-logo-image -->
+            <nav class="gnb">
+              <ul>
+                <li><a href="">신상품</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">브랜드</a></li>
+                <li><a href="">기획전</a></li>
+                <li><a href="">컬렉션</a></li>
+                <li><a href="">콜라보</a></li>
+                <li><a href="">이벤트</a></li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right">
+            <nav class="lnb">
+              <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li>
+                  <i class="ico-search"> </i>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right" style="display: none">
+            <nav>
+              <ul>
+                <li><a href="">로그아웃</a></li>
+                <li>
+                  <a href="product-search.html"><i class="ico-search"></i></a>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="icon-my"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </header>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+      <section class="main-nav-wrap">
+        <div class="main-nav">
+          <article class="exhibit-nav">
+            <ul>
+              <li><a href="">신상품</a></li>
+              <li><a href="">베스트</a></li>
+              <li><a href="">신상품 캘린더</a></li>
+              <li><a href="">입고 일정안내</a></li>
+              <li><a href="">고객행복센터</a></li>
+              <li><a href="">이벤트</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>패션</p>
+            <ul>
+              <li><a href="">원피스</a></li>
+              <li><a href="">상의</a></li>
+              <li><a href="">팬츠</a></li>
+              <li><a href="">스커트</a></li>
+              <li><a href="">아우터</a></li>
+              <li><a href="">슈즈•백</a></li>
+              <li><a href="">악세사리</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>브랜드</p>
+            <ul>
+              <li><a href="">IMVELY MADE</a></li>
+              <li><a href="">IMVELY COLLECT</a></li>
+              <li><a href="">LOVE ME MORE</a></li>
+              <li><a href="">VELY VELY</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>컬렉션</p>
+            <ul>
+              <li><a href="">임절미</a></li>
+              <li><a href="">주구장창</a></li>
+              <li><a href="">VERSE</a></li>
+              <li><a href="">THV.X</a></li>
+              <li><a href="">VELYSOME</a></li>
+              <li><a href="">V,COLLECT</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>기획전</p>
+            <ul>
+              <li><a href="">블리픽</a></li>
+              <li><a href="">다다익선</a></li>
+              <li><a href="">플러스사이즈+</a></li>
+              <li><a href="">라스트피스</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>콜라보</p>
+            <ul>
+              <li><a href="">DISNEY</a></li>
+              <li><a href="">JULIET</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+
+      <!-- 주문/배송 상세 내역 -->
+      <section class="mypage-order-detail container-1180">
+        <article class="section-title-wrap">
+          <div class="section-title">
+            <p>주문/배송 상세 내역</p>
+          </div>
+          <span>주문상품 정보</span>
+        </article>
+        <article class="my-order-info">
+          <div>
+            <div>
+              <p>주문일</p>
+              <span>2020.11.21</span>
+            </div>
+            <div>
+              <p>주문번호</p>
+              <span>12345678abc</span>
+            </div>
+          </div>
+          <div>
+            <button class="wh">전체 주문취소</button>
+          </div>
+        </article>
+        <article class="order-detail-table">
+          <table class="product-table">
+            <colgroup>
+              <col width="784px" />
+              <col width="198px" />
+              <col width="198px" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="pd-info-title">상품정보</th>
+                <th>배송비</th>
+                <th>진행상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <!-- 상품정보 -->
+                <td>
+                  <article class="product-order product">
+                    <a href="">
+                      <div class="product-wrap">
+                        <div class="img-area">
+                          <div class="img-box">
+                            <img src="../preview/img-02-searchpage.png" alt="w72_img" />
+                          </div>
+                        </div>
+                        <div class="text-area">
+                          <div class="text-area-wrap">
+                            <h2 class="brand-title">IMVELY MADE</h2>
+                            <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                            <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                          </div>
+                          <p class="price-list">
+                            <span class="price mr-8">64,000원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </td>
+                <!-- 배송비 -->
+                <td class="shipping-charge-wrap">
+                  <article class="shipping-charge"><span>2,500원</span><i></i></article>
+                </td>
+                <!-- 진행상태 -->
+                <td>
+                  <article class="btn-order">
+                    <p class="fc-green">배송완료</p>
+                    <button class="wh">반품 신청</button>
+                    <button class="wh">교환 신청</button>
+                    <button class="bk">구매 확정</button>
+                  </article>
+                </td>
+              </tr>
+              <tr class="">
+                <!-- 상품정보 -->
+                <td>
+                  <article class="product-order product">
+                    <a href="">
+                      <div class="product-wrap">
+                        <div class="img-area">
+                          <div class="img-box">
+                            <img src="../preview/img_main_today_deal_001.png" alt="w72_img" />
+                          </div>
+                        </div>
+                        <div class="text-area">
+                          <div class="text-area-wrap">
+                            <h2 class="brand-title">IMVELY MADE</h2>
+                            <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                            <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                          </div>
+                          <p class="price-list">
+                            <span class="price mr-8">64,000원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </td>
+                <!-- 배송비 -->
+                <td class="shipping-charge-wrap">
+                  <article class="shipping-charge"><span>2,500원</span><i></i></article>
+                </td>
+                <!-- 진행상태 -->
+                <td>
+                  <article class="btn-order">
+                    <p class="fc-green">배송완료</p>
+                    <button class="wh">반품 신청</button>
+                    <button class="wh">교환 신청</button>
+                    <button class="bk">구매 확정</button>
+                  </article>
+                </td>
+              </tr>
+              <tr class="">
+                <!-- 상품정보 -->
+                <td>
+                  <article class="product-order product">
+                    <a href="">
+                      <div class="product-wrap">
+                        <div class="img-area">
+                          <div class="img-box">
+                            <img src="../preview/img_main_vely_pick_006.png" alt="w72_img" />
+                          </div>
+                        </div>
+                        <div class="text-area">
+                          <div class="text-area-wrap">
+                            <h2 class="brand-title">IMVELY MADE</h2>
+                            <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                            <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                          </div>
+                          <p class="price-list">
+                            <span class="price mr-8">64,000원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </td>
+                <!-- 배송비 -->
+                <td class="shipping-charge-wrap">
+                  <article class="shipping-charge"><span>2,500원</span><i></i></article>
+                </td>
+                <!-- 진행상태 -->
+                <td>
+                  <article class="btn-order">
+                    <p class="fc-green">배송완료</p>
+                    <button class="wh">반품 신청</button>
+                    <button class="wh">교환 신청</button>
+                    <button class="bk">구매 확정</button>
+                  </article>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="article-title-wrap mt-90 mb-30">
+          <div class="article-title">
+            <p>사은품 정보</p>
+          </div>
+        </article>
+        <article class="order-gift-table">
+          <table class="product-table">
+            <colgroup></colgroup>
+            <thead>
+              <tr>
+                <th class="pd-info-title">상품정보</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <!-- 상품정보 -->
+                <td>
+                  <article class="product-order product">
+                    <a href="">
+                      <div class="product-wrap">
+                        <div class="img-area">
+                          <div class="img-box">
+                            <img src="../preview/img_productdetail_matchcodi_003.png" alt="w72_img" />
+                          </div>
+                        </div>
+                        <div class="text-area">
+                          <div class="text-area-wrap">
+                            <h2 class="brand-title">VELY VELY</h2>
+                            <h3 class="product-title">블리블리 엑스트라 씬 롱-라스팅 브러쉬펜 라이너 (제트 블랙)</h3>
+                            <p class="option-list">옵션 <span class="color">Black</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="article-title-wrap mt-90 mb-30">
+          <div class="article-title">
+            <p>결제 정보</p>
+            <span>영수증 보기</span>
+          </div>
+        </article>
+        <article class="my-pay-info">
+          <div class="my-pay-info-detail">
+            <div>
+              <p>총 주문금액</p>
+              <ul>
+                <li>
+                  <p>총 상품금액</p>
+                  <span>97,500<em>원</em></span>
+                </li>
+                <li>
+                  <p>배송비</p>
+                  <span>2,500<em>원</em></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p>할인금액</p>
+              <ul>
+                <li>
+                  <p>상품할인</p>
+                  <span>13,000<em>원</em></span>
+                </li>
+                <li>
+                  <p>회원등급 할인</p>
+                  <span>2,500<em>원</em></span>
+                </li>
+                <li>
+                  <p>상품할인 쿠폰</p>
+                  <span>500<em>원</em></span>
+                </li>
+                <li>
+                  <p>배송비 쿠폰</p>
+                  <span>2,500<em>원</em></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p>예치금/포인트 사용</p>
+              <ul>
+                <li>
+                  <p>예치금 사용</p>
+                  <span>2,000<em>P</em></span>
+                </li>
+                <li>
+                  <p>포인트 사용</p>
+                  <span>10,000<em>P</em></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="my-approve-info">
+            <div class="detail">
+              <ul>
+                <li>
+                  <p>신용카드</p>
+                  <span>국민</span>
+                  <span>1234-5678-****-***</span>
+                </li>
+                <li>
+                  <p>무이자 할부</p>
+                  <span>3개월</span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p>승인번호</p>
+                  <span>12345678</span>
+                </li>
+                <li>
+                  <p>승인일시</p>
+                  <span>2020.11.21</span>
+                </li>
+              </ul>
+            </div>
+            <div class="total">
+              <ul>
+                <li><p>총 결제금액</p></li>
+                <li>
+                  <span>1,370,800<em>원</em></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="article-title-wrap mt-90 mb-30">
+          <div class="article-title">
+            <p>적립 혜택정보</p>
+          </div>
+        </article>
+        <article class="article-list-wrap container-1180">
+          <ul class="article-list list-mb-18">
+            <li>
+              <p>받으시는 분</p>
+              <div>홍길동</div>
+            </li>
+            <li>
+              <p>휴대폰 번호</p>
+              <div>010-1234-5678</div>
+            </li>
+            <li>
+              <p>전화번호</p>
+              <div>02-123-4567</div>
+            </li>
+            <li>
+              <p>주소</p>
+              <div>[14093] 서울 광진구 강변북로 222, APT 1234-568</div>
+            </li>
+            <li>
+              <p>배송 유의사항</p>
+              <div>부재시 경비실에 맡겨주세요</div>
+            </li>
+          </ul>
+        </article>
+        <article class="article-title-wrap mt-90 mb-30">
+          <div class="article-title">
+            <p>주문고객 정보</p>
+          </div>
+        </article>
+        <article class="article-list-wrap container-1180">
+          <ul class="article-list list-mb-18">
+            <li>
+              <p>주문자</p>
+              <div>홍길동</div>
+            </li>
+            <li>
+              <p>휴대폰 번호</p>
+              <div>010-1234-5678</div>
+            </li>
+            <li>
+              <p>전화번호</p>
+              <div>02-123-4567</div>
+            </li>
+            <li>
+              <p>이메일</p>
+              <div>imvely@velyvely.com</div>
+            </li>
+          </ul>
+        </article>
+        <article class="btn-wrap mt-100 mb-70">
+          <button class="btn-280 wh">목록으로</button>
+        </article>
+      </section>
+      <!-- 주문/배송 상세 내역 -->
+    </div>
+  </body>
+</html>

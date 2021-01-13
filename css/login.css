@@ -514,8 +514,12 @@
   text-align: center;
 }
 .register-guide-section .btn-area {
+  display: block;
   margin-top: 90px;
   text-align: center;
+}
+.register-guide-section .btn-area button:first-child {
+  margin: 0;
 }
 button.kakao {
   background: url(../images/ico_kakao_signin_big.svg)no-repeat #f6e24b;
@@ -795,41 +799,3 @@ textarea::-webkit-scrollbar-button {
   font-size: 22px;
 }
 
-.input-area {
-  display: flex;
-  align-items: center;
-  margin-bottom: 26px;
-}
-.input-area label {
-  width: 100%;
-}
-.input-area.check-area label {
-  width: inherit;
-}
-.input-area input.normal {
-  height: 56px;
-}
-.input-area > p {
-  max-width: 150px;
-  width: 100%;
-  margin-right: 20px;
-}
-.input-area label div {
-  width: 150px;
-  margin-left: 20px;
-  text-align: center;
-}
-.input-area.mb-0 {
-  margin-bottom: 0;
-}
-
-.input-area label div button {
-  width: 100%;
-  font-weight: bold;
-  color: #f5f5f5;
-  padding: 11px 0;
-  background-color: #bfbfbf;
-}
-.input-area span {
-  white-space: nowrap;
-}

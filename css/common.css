@@ -309,6 +309,10 @@ i {
 .mb-60 {
   margin-bottom: 60px;
 }
+.mb-70 {
+  margin-bottom: 70px;
+
+}
 .mb-75 {
   margin-bottom: 75px;
 }
@@ -613,6 +617,12 @@ i {
   height: 35px;
   background: url(../images/ico_popup_productdetail_close.svg) no-repeat center;
 }
+.ico-close-small {
+  width: 23px;
+  height: 23px;
+  vertical-align: middle;
+  background: url(../images/ico_del_filter_small.svg)no-repeat center;
+}
 .ico-view {
   width: 23px;
   height: 23px;
@@ -620,6 +630,11 @@ i {
 }
 .ico-view.on {
   background: url(../images/ico_view_on.svg) no-repeat center;
+}
+.ico-view-small {
+  width: 12px;
+  height: 12px;
+  background: url(../images/ico_view_off.svg)no-repeat center;
 }
 .ico-bookmark {
   width: 34px;
@@ -655,7 +670,82 @@ i {
   height: 26px;
   background: url(../images/ico_arrow_right_payment.svg) no-repeat center;
 }
-
+.star-rating {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  background: url(../images/star_rate_gl.svg)no-repeat left / 100px 20px;
+}
+.star-rating .rate {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 20px;
+  overflow: hidden;
+  background: url(../images/star_rate_on.svg)no-repeat left / 100px 20px;
+}
+.ico-download.rd {
+  width: 16px;
+  height: 16px;
+  background: url(../images/ico_productdetail_download.svg)no-repeat center;
+}
+.ico-alert.gr {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background: url(../images/ico_productdetail_share_comment.svg)no-repeat center;
+}
+.ico-heart {
+  width: 56px;
+  height: 56px;
+  background: url(../images/ico_productdetail_heart.svg)no-repeat center;
+}
+.ico-share {
+  width: 56px;
+  height: 56px;
+  background: url(../images/ico_productdetail_share.svg)no-repeat center;
+}
+.ico-alarm {
+  width: 27px;
+  height: 27px;
+  background: url(../images/ico_alarm_off.svg)no-repeat center;
+}
+.ico-benefit-point {
+  width: 58px;
+  height: 58px;
+  background: url(../images/ico_productdetail_coin.svg)no-repeat center;
+}
+.ico-benefit-coupon {
+  width: 58px;
+  height: 58px;
+  background: url(../images/ico_productdetail_coupon.svg)no-repeat center;
+}
+.ico-benefit-sale {
+  width: 58px;
+  height: 58px;
+  background: url(../images/ico_productdetail_diamond.svg)no-repeat center;
+}
+.ico-benefit-delivery {
+  width: 58px;
+  height: 58px;
+  background: url(../images/ico_productdetail_delivery.svg)no-repeat center;
+}
+.ico-arrow-left {
+  width: 34px;
+  height: 34px;
+  background: url(../images/ico_arrow_left.svg)no-repeat center;
+}
+.ico-arrow-right {
+  width: 34px;
+  height: 34px;
+  background: url(../images/ico_arrow_right.svg)no-repeat center;
+}
+.ico-secret {
+  width: 33px;
+  height: 33px;
+  background: url(../images/ico-secret.svg)no-repeat center;
+}
 /* 2020/12/15 황운하 추가 탭 메뉴 (2단) */
 .nav-tab-menu > ul {
   display: flex;
@@ -738,7 +828,6 @@ i {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  color: #262628;
 }
 
 .section-title-wrap > span {
@@ -782,6 +871,38 @@ i {
   color: #909090;
 }
 
+/* article-upper-title */
+/* =================================== */
+
+.article-upper-title {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+.article-upper-title > p {
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #353231;
+}
+
+.article-upper-title > span {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #424242;
+  padding: 7px 14px 6px 13px;
+  border: solid 0.8px #c7c7c7;
+}
+.article-upper-title > em {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #909090;
+}
+
 /* article-list */
 /* =================================== */
 
@@ -791,7 +912,9 @@ i {
   /* height: 41px; */
   line-height: 41px;
 }
-
+.article-list > li.fx-start {
+  align-items: flex-start;
+}
 .article-list.list-mb-18 > li {
   margin-bottom: 18px;
 }
@@ -800,22 +923,45 @@ i {
 }
 
 .article-list li:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .article-list > li > p {
   width: 150px;
   margin-right: 26px;
   font-size: 16px;
-  color: #262628;
 }
 
 .article-list > li > div {
   width: 100%;
   font-size: 15px;
-  color: #262628;
 }
 
+.article-list > li > div ul > li {
+  line-height: 1.4;
+}
+
+.article-title > button {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #424242;
+  padding: 7px 14px 6px 13px;
+  border: solid 0.8px #c7c7c7;
+}
+
+
+.article-list .radio-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.article-list .radio-wrap > label {
+  margin-right: 36px;
+}
+.article-list .radio-wrap > label > span {
+  padding-left: 6px;
+}
 /* 아코디언 */
 .accordion-list > .title {
   display: flex;
@@ -825,7 +971,7 @@ i {
   border-bottom: 1px solid #f0eeeb;
 }
 
-.accordion-list > .title i {
+.accordion-list > .title > i {
   width: 34px;
   height: 34px;
   background: url(../images/ico_dropdown_off.svg) no-repeat center;
@@ -844,6 +990,7 @@ i {
   background: url(../images/ico_dropdown_on.svg) no-repeat center;
   transition: all 0.3s ease;
 }
+
 
 /* 커스텀 셀렉트박스 */
 .cs-selectbox {

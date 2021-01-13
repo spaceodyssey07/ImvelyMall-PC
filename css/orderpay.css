@@ -139,12 +139,18 @@ li.address input:nth-child(2) {
 .orderpay-main .gift-info .option-list .color {
   padding-right: 32px;
 }
+.orderpay-main .coupon-info {
+  margin-bottom: 90px;
+}
 .orderpay-main .coupon-info button {
   width: 118px;
   height: 41px;
   color: #f5f5f5;
   margin: 0 20px;
   background-color: #bfbfbf;
+}
+.orderpay-main .coupon-info .input-area:last-child {
+  margin-bottom: 0;
 }
 .orderpay-main .input-area label {
   width: inherit;
