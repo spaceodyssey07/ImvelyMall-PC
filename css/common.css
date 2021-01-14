@@ -71,6 +71,9 @@ i {
 .fz-30 {
   font-size: 30px;
 }
+.fz-42 {
+  font-size: 42px;
+}
 
 /* font-weight */
 /* =================================*/
@@ -386,6 +389,9 @@ i {
 }
 .pt-20 {
   padding-top: 20px;
+}
+.pt-24 {
+  padding-top: 24px;
 }
 .pt-40 {
   padding-top: 40px;
@@ -736,10 +742,22 @@ i {
   height: 34px;
   background: url(../images/ico_arrow_left.svg)no-repeat center;
 }
+.ico-arrow-left-g {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  background: url(../images/ico_arrow_left_g.svg)no-repeat center;
+}
 .ico-arrow-right {
   width: 34px;
   height: 34px;
   background: url(../images/ico_arrow_right.svg)no-repeat center;
+}
+.ico-arrow-right-g {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  background: url(../images/ico_arrow_right_g.svg)no-repeat center;
 }
 .ico-secret {
   width: 33px;
@@ -770,6 +788,11 @@ i {
   width: 34px;
   height: 34px;
   background: url(../images/ico_faq_answer.svg)no-repeat;
+}
+.ico-shopping-cart {
+  width: 110px;
+  height: 110px;
+  background: url(../images/ico_shoppingcart_cart.svg)no-repeat center;
 }
 /* 2020/12/15 황운하 추가 탭 메뉴 (2단) */
 .nav-tab-menu > ul {
@@ -1084,4 +1107,123 @@ i {
 }
 .marker-list li::marker {
   content: "· ";
+}
+
+/* 2021/01/13 황운하 common */
+.ico-inspection {
+  width: 110px;
+  height: 110px;
+  background: url(../images/ico_inspection.svg)no-repeat center;
+}
+.inspection {
+  padding-top: 144px;
+}
+.inspection-contents {
+  text-align: center;
+  margin-top: 80px;
+}
+.inspection-contents p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #656565;
+  margin: 60px 0 20px;
+}
+.inspection-contents span {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+/* 2021/01/13 황운하 페이지 없음 */
+.ico-bell {
+  width: 110px;
+  height: 110px;
+  background: url(../images/ico_bell.svg)no-repeat center;
+}
+.nonepage {
+  padding-top: 250px;
+}
+.nonepage-contents h3 {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 60px 0 20px;
+}
+.nonepage-contents button {
+  margin-top: 50px;
+}
+.nonepage-contents p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #656565;
+}
+/* 2021/01/13 황운하 footer privacy */
+.privacy-contents {
+  padding: 32px 40px;
+  margin: 30px 0;
+  background-color: #f9f9f9;
+}
+.privacy-contents p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.privacy-note {
+  margin-bottom: 50px;
+}
+.privacy-note p {
+  line-height: 22px;
+  color: #656565;
+}
+.privacy-list p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.privacy-list ul {
+  height: 322px;
+  overflow: auto;
+  border-right: 2px solid #e6e6e6;
+}
+.privacy-list ul::-webkit-scrollbar {
+  width: 8px;
+}
+.privacy-list ul::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.privacy-list ul::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #6bae7e;
+}
+.privacy-list ul::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+.privacy-list li {
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+.privacy-list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.use-condition h2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 23px;
+  margin-top: 30px;
+  margin-bottom: 14px;
+  color: #000000;
+}
+.use-condition p {
+  line-height: 22px;
+  color: #000000;
+}
+.use-condition ul li {
+  line-height: 22px;
+  color: #000000;
+}
+.use-condition ul li:not(:last-child) {
+  margin-bottom: 14px;
 }

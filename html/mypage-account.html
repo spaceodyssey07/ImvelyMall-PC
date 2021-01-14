@@ -1,235 +1,234 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <script defer src="../js/mypage.js"></script>
-    <title>마이페이지 - 환불 계좌 관리</title>
-  </head>
 
-  <body>
-    <div>
-      <!-- 헤더영역 -->
-      <header class="header-wrap fixed">
-        <!-- fixed class 추가 시 상단고정되고 흰색배경 추가됨 -->
-        <div class="header">
-          <article class="header-left">
-            <!-- .main-logo-image -->
-            <h1 class="main-logo">
-              <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span class="hide">임블리몰</span></a>
-            </h1>
-            <!-- .main-logo-image -->
-            <nav class="gnb">
-              <ul>
-                <li><a href="">신상품</a></li>
-                <li><a href="">베스트</a></li>
-                <li><a href="">브랜드</a></li>
-                <li><a href="">기획전</a></li>
-                <li><a href="">컬렉션</a></li>
-                <li><a href="">콜라보</a></li>
-                <li><a href="">이벤트</a></li>
-              </ul>
-            </nav>
-          </article>
-          <article class="header-right">
-            <nav class="lnb">
-              <ul>
-                <li><a href="">로그인</a></li>
-                <li><a href="">회원가입</a></li>
-                <li>
-                  <i class="ico-search"> </i>
-                </li>
-                <li>
-                  <a href="shopping-cart.html"
-                    ><i class="ico-cart"> <span class="alram"></span> </i
-                  ></a>
-                </li>
-              </ul>
-            </nav>
-          </article>
-          <article class="header-right" style="display: none">
-            <nav>
-              <ul>
-                <li><a href="">로그아웃</a></li>
-                <li>
-                  <a href="product-search.html"><i class="ico-search"></i></a>
-                </li>
-                <li>
-                  <a href="shopping-cart.html"
-                    ><i class="ico-cart"> <span class="alram"></span> </i
-                  ></a>
-                </li>
-                <li>
-                  <a href=""><i class="icon-my"></i></a>
-                </li>
-              </ul>
-            </nav>
-          </article>
-        </div>
-      </header>
-      <!-- 메인 네비게이션 메뉴 메뉴 -->
-      <section class="main-nav-wrap">
-        <div class="main-nav">
-          <article class="exhibit-nav">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <script defer src="../js/mypage.js"></script>
+  <title>마이페이지 - 환불 계좌 관리</title>
+</head>
+
+<body>
+  <div>
+    <!-- 헤더영역 -->
+    <header class="header-wrap fixed">
+      <!-- fixed class 추가 시 상단고정되고 흰색배경 추가됨 -->
+      <div class="header">
+        <article class="header-left">
+          <!-- .main-logo-image -->
+          <h1 class="main-logo">
+            <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span
+                class="hide">임블리몰</span></a>
+          </h1>
+          <!-- .main-logo-image -->
+          <nav class="gnb">
             <ul>
               <li><a href="">신상품</a></li>
               <li><a href="">베스트</a></li>
-              <li><a href="">신상품 캘린더</a></li>
-              <li><a href="">입고 일정안내</a></li>
-              <li><a href="">고객행복센터</a></li>
+              <li><a href="">브랜드</a></li>
+              <li><a href="">기획전</a></li>
+              <li><a href="">컬렉션</a></li>
+              <li><a href="">콜라보</a></li>
               <li><a href="">이벤트</a></li>
             </ul>
-          </article>
-          <article class="category">
-            <p>패션</p>
+          </nav>
+        </article>
+        <article class="header-right">
+          <nav class="lnb">
             <ul>
-              <li><a href="">원피스</a></li>
-              <li><a href="">상의</a></li>
-              <li><a href="">팬츠</a></li>
-              <li><a href="">스커트</a></li>
-              <li><a href="">아우터</a></li>
-              <li><a href="">슈즈•백</a></li>
-              <li><a href="">악세사리</a></li>
+              <li><a href="">로그인</a></li>
+              <li><a href="">회원가입</a></li>
+              <li>
+                <i class="ico-search"> </i>
+              </li>
+              <li>
+                <a href="shopping-cart.html"><i class="ico-cart"> <span class="alram"></span> </i></a>
+              </li>
             </ul>
-          </article>
-          <article class="category">
-            <p>브랜드</p>
+          </nav>
+        </article>
+        <article class="header-right" style="display: none">
+          <nav>
             <ul>
-              <li><a href="">IMVELY MADE</a></li>
-              <li><a href="">IMVELY COLLECT</a></li>
-              <li><a href="">LOVE ME MORE</a></li>
-              <li><a href="">VELY VELY</a></li>
+              <li><a href="">로그아웃</a></li>
+              <li>
+                <a href="product-search.html"><i class="ico-search"></i></a>
+              </li>
+              <li>
+                <a href="shopping-cart.html"><i class="ico-cart"> <span class="alram"></span> </i></a>
+              </li>
+              <li>
+                <a href=""><i class="icon-my"></i></a>
+              </li>
             </ul>
-          </article>
-          <article class="category">
-            <p>컬렉션</p>
-            <ul>
-              <li><a href="">임절미</a></li>
-              <li><a href="">주구장창</a></li>
-              <li><a href="">VERSE</a></li>
-              <li><a href="">THV.X</a></li>
-              <li><a href="">VELYSOME</a></li>
-              <li><a href="">V,COLLECT</a></li>
-            </ul>
-          </article>
-          <article class="category">
-            <p>기획전</p>
-            <ul>
-              <li><a href="">블리픽</a></li>
-              <li><a href="">다다익선</a></li>
-              <li><a href="">플러스사이즈+</a></li>
-              <li><a href="">라스트피스</a></li>
-            </ul>
-          </article>
-          <article class="category">
-            <p>콜라보</p>
-            <ul>
-              <li><a href="">DISNEY</a></li>
-              <li><a href="">JULIET</a></li>
-            </ul>
-          </article>
-        </div>
-      </section>
+          </nav>
+        </article>
+      </div>
+    </header>
+    <!-- 메인 네비게이션 메뉴 메뉴 -->
+    <section class="main-nav-wrap">
+      <div class="main-nav">
+        <article class="exhibit-nav">
+          <ul>
+            <li><a href="">신상품</a></li>
+            <li><a href="">베스트</a></li>
+            <li><a href="">신상품 캘린더</a></li>
+            <li><a href="">입고 일정안내</a></li>
+            <li><a href="">고객행복센터</a></li>
+            <li><a href="">이벤트</a></li>
+          </ul>
+        </article>
+        <article class="category">
+          <p>패션</p>
+          <ul>
+            <li><a href="">원피스</a></li>
+            <li><a href="">상의</a></li>
+            <li><a href="">팬츠</a></li>
+            <li><a href="">스커트</a></li>
+            <li><a href="">아우터</a></li>
+            <li><a href="">슈즈•백</a></li>
+            <li><a href="">악세사리</a></li>
+          </ul>
+        </article>
+        <article class="category">
+          <p>브랜드</p>
+          <ul>
+            <li><a href="">IMVELY MADE</a></li>
+            <li><a href="">IMVELY COLLECT</a></li>
+            <li><a href="">LOVE ME MORE</a></li>
+            <li><a href="">VELY VELY</a></li>
+          </ul>
+        </article>
+        <article class="category">
+          <p>컬렉션</p>
+          <ul>
+            <li><a href="">임절미</a></li>
+            <li><a href="">주구장창</a></li>
+            <li><a href="">VERSE</a></li>
+            <li><a href="">THV.X</a></li>
+            <li><a href="">VELYSOME</a></li>
+            <li><a href="">V,COLLECT</a></li>
+          </ul>
+        </article>
+        <article class="category">
+          <p>기획전</p>
+          <ul>
+            <li><a href="">블리픽</a></li>
+            <li><a href="">다다익선</a></li>
+            <li><a href="">플러스사이즈+</a></li>
+            <li><a href="">라스트피스</a></li>
+          </ul>
+        </article>
+        <article class="category">
+          <p>콜라보</p>
+          <ul>
+            <li><a href="">DISNEY</a></li>
+            <li><a href="">JULIET</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-      <!-- 메인페이지 상단 영역 -->
-      <!-- 메인 네비게이션 메뉴 메뉴 -->
-      <section class="mypage-wrap">
-        <!-- 마이페이지 개인정보 -->
-        <article class="mypage-header-wrap">
-          <div class="mypage-header container-1180">
-            <div class="hello">
-              <div class="icon-grade"><i>S</i></div>
-              <div class="text">
-                <h2>K블리님!</h2>
-                <p>안녕하세요</p>
-                <span><a href="">등급 혜택보기</a><i></i></span>
-              </div>
-            </div>
-            <div class="possession">
-              <div class="coupon">
-                <div><i></i><span>쿠폰</span></div>
-                <p><span>15</span>p</p>
-              </div>
-              <div class="point">
-                <div><i></i><span>포인트</span></div>
-                <p><span>8,200</span>원</p>
-              </div>
-              <div class="balance">
-                <div><i></i><span>예치금</span></div>
-                <p><span>12,300</span>원</p>
-              </div>
+    <!-- 메인페이지 상단 영역 -->
+    <!-- 메인 네비게이션 메뉴 메뉴 -->
+    <section class="mypage-wrap">
+      <!-- 마이페이지 개인정보 -->
+      <article class="mypage-header-wrap">
+        <div class="mypage-header container-1180">
+          <div class="hello">
+            <div class="icon-grade"><i>S</i></div>
+            <div class="text">
+              <h2>K블리님!</h2>
+              <p>안녕하세요</p>
+              <span><a href="">등급 혜택보기</a><i></i></span>
             </div>
           </div>
-        </article>
-        <!-- 마이페이지 메인 메뉴 -->
-        <article class="mypage-menu container-1180">
-          <h3><a href="mypage.html">마이 페이지</a></h3>
-          <ul>
-            <li>쇼핑 내역</li>
-            <li>혜택 정보</li>
-            <li>활동 내역</li>
-            <li class="on">회원정보</li>
-          </ul>
-        </article>
-      </section>
-      <!-- 메인페이지 상단 영역 -->
-
-      <!-- mypage-content 마이페이지 컨텐츠 영역 -->
-      <section class="mypage--wrap container-1180">
-        <!-- 마이페이지 회원정보 탭 메뉴 -->
-        <nav class="mypage-tab-menu">
-          <ul>
-            <li>회원정보 수정</li>
-            <li>비밀번호 변경</li>
-            <li>마이핏 정보</li>
-            <li class="on">주문 배송지 관리</li>
-            <li>환불 계좌 관리</li>
-          </ul>
-        </nav>
-        <!-- 마이페이지 환불 계좌 관리 -->
-        <div class="mypage-content on">
-          <article class="article-upper-title-wrap mt-50">
-            <div class="article-upper-title">
-              <p>환불 계좌 관리</p>
+          <div class="possession">
+            <div class="coupon">
+              <div><i></i><span>쿠폰</span></div>
+              <p><span>15</span>p</p>
             </div>
-          </article>
-          <article class="article-list-wrap mt-30">
-            <ul class="article-list list-mb-26 form-394">
-              <li>
-                <p>은행명</p>
-                <div class="input-area">
-                  <label for="">
-                    <select name="" id="" class="arrow-large">
-                      <option value="">은행 선택</option>
-                    </select>
-                  </label>
-                </div>
-              </li>
-              <li class="input-area">
-                <p>계좌번호</p>
-                <div>
-                  <label for="">
-                    <input type="number" class="normal" placeholder="하이픈(-) 없이 입력" />
-                  </label>
-                </div>
-              </li>
-              <li class="input-area">
-                <p>예금주</p>
-                <div>
-                  <label for="">
-                    <input type="text" class="normal" placeholder="홍길동" />
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </article>
-          <article class="btn-wrap mt-80 mb-122">
-            <button type="button" class="btn-280 bk">저장</button>
-          </article>
+            <div class="point">
+              <div><i></i><span>포인트</span></div>
+              <p><span>8,200</span>원</p>
+            </div>
+            <div class="balance">
+              <div><i></i><span>예치금</span></div>
+              <p><span>12,300</span>원</p>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- mypage-content 마이페이지 컨텐츠 영역 -->
-    </div>
-  </body>
+      </article>
+      <!-- 마이페이지 메인 메뉴 -->
+      <article class="mypage-menu container-1180">
+        <h3><a href="mypage.html">마이 페이지</a></h3>
+        <ul>
+          <li>쇼핑 내역</li>
+          <li>혜택 정보</li>
+          <li>활동 내역</li>
+          <li class="on">회원정보</li>
+        </ul>
+      </article>
+    </section>
+    <!-- 메인페이지 상단 영역 -->
+
+    <!-- mypage-content 마이페이지 컨텐츠 영역 -->
+    <section class="mypage--wrap container-1180">
+      <!-- 마이페이지 회원정보 탭 메뉴 -->
+      <nav class="mypage-tab-menu">
+        <ul>
+          <li>회원정보 수정</li>
+          <li>비밀번호 변경</li>
+          <li>마이핏 정보</li>
+          <li>주문 배송지 관리</li>
+          <li class="on">환불 계좌 관리</li>
+        </ul>
+      </nav>
+      <!-- 마이페이지 환불 계좌 관리 -->
+      <div class="mypage-content on">
+        <article class="article-upper-title-wrap mt-50">
+          <div class="article-upper-title">
+            <p>환불 계좌 관리</p>
+          </div>
+        </article>
+        <article class="article-list-wrap mt-30">
+          <ul class="article-list list-mb-26 form-394">
+            <li>
+              <p>은행명</p>
+              <div class="input-area">
+                <label for="">
+                  <select name="" id="" class="arrow-large">
+                    <option value="">은행 선택</option>
+                  </select>
+                </label>
+              </div>
+            </li>
+            <li class="input-area">
+              <p>계좌번호</p>
+              <div>
+                <label for="">
+                  <input type="number" class="normal" placeholder="하이픈(-) 없이 입력" />
+                </label>
+              </div>
+            </li>
+            <li class="input-area">
+              <p>예금주</p>
+              <div>
+                <label for="">
+                  <input type="text" class="normal" placeholder="홍길동" />
+                </label>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="btn-wrap mt-80 mb-122">
+          <button type="button" class="btn-280 bk">저장</button>
+        </article>
+      </div>
+    </section>
+    <!-- mypage-content 마이페이지 컨텐츠 영역 -->
+  </div>
+</body>
+
 </html>

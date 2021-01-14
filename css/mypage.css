@@ -1350,7 +1350,9 @@
   font-size: 18px;
   font-weight: bold;
 }
-
+.shipping-table td.left {
+  text-align-last: left;
+}
 .shipping-table td button {
   width: 80px;
   height: 42px;
