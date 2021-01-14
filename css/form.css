@@ -27,6 +27,13 @@ button.bk {
   color: #ffffff;
   background-color: #282828;
 }
+.btn-large {
+  width: 100%;
+  height: 56px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
 .btn-620{
   width: 620px;
   height: 56px;
@@ -92,6 +99,7 @@ button.bk {
 .btn-220{
   width: 220px;
   height: 54px;
+  line-height: 54px;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -110,6 +118,7 @@ button.bk {
 .btn-180 {
   width: 180px;
   height: 54px;
+  line-height: 54px;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -333,11 +342,15 @@ select.arrow {
   background-size: 28px 28px;
 }
 select.arrow-large {
+  width: 100%;
   padding: 11px 18px;
   border-bottom: 1px solid #e0e0e0;
   background: url(../images/ico_dropdown_off.svg)no-repeat;
   background-position: 95% center;
   background-size: 28px 28px;
+}
+select.arrow.w240 {
+  width: 240px;
 }
 option:disabled {
   color: #c6c6c6;
@@ -383,6 +396,7 @@ option:disabled {
   margin-right: 20px;
 }
 .input-area label div {
+  white-space: nowrap;
   width: 150px;
   margin-left: 20px;
   text-align: center;

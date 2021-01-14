@@ -746,6 +746,31 @@ i {
   height: 33px;
   background: url(../images/ico-secret.svg)no-repeat center;
 }
+.ico-customer-counselling {
+  width: 72px;
+  height: 72px;
+  background: url(../images/ico_call_counseller.svg)no-repeat center;
+}
+.ico-talk-counselling {
+  width: 72px;
+  height: 72px;
+  background: url(../images/ico_kakao_customer.svg)no-repeat center;
+}
+.ico-search-small {
+  width: 40px;
+  height: 40px;
+  background: url(../images/ico-search-small.svg)no-repeat;
+}
+.ico-question {
+  width: 34px;
+  height: 34px;
+  background: url(../images/ico_faq_question.svg)no-repeat;
+}
+.ico-answer {
+  width: 34px;
+  height: 34px;
+  background: url(../images/ico_faq_answer.svg)no-repeat;
+}
 /* 2020/12/15 황운하 추가 탭 메뉴 (2단) */
 .nav-tab-menu > ul {
   display: flex;
@@ -945,8 +970,6 @@ i {
 .article-list > li > div ul > li {
   line-height: 1.4;
 }
-
-
 
 .article-title > button {
   font-size: 14px;

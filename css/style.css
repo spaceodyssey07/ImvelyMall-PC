@@ -2807,4 +2807,116 @@ header .header-right .lnb ul li {
 }
 
 
+/* 팝업 */
 
+.popup-wrap {
+  padding: 16px 24px 30px 24px;
+  border: 2px solid #d2d2d2;
+}
+
+/* 팝업 가로 사이즈 설정 */
+.popup-wrap.w500 {
+  width: 500px;
+}
+.popup-wrap.w700 {
+  width: 700px;
+}
+
+
+.popup-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+  border-bottom: 2px solid #000;
+}
+
+.popup-head > h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.popup-content {
+  overflow-y: auto ;
+  padding-top: 30px;
+}
+
+
+/* 배송지 팝업 */
+.shipping-adress {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+  padding: 24px 20px;
+  border: 2px solid #e3e3e3;
+}
+
+.shipping-adress.on {
+  border: 2px solid #6bae7e;
+}
+
+
+.adress-item > h3 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #353231;
+}
+
+.adress-item > strong {
+  padding-right: 6px;
+  font-weight: bold;
+  font-stretch: normal;
+  color: #6bae7e;
+} 
+.adress-item > div {
+  padding-top: 16px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.47;
+}
+.adress-item > span {
+  display: block;
+  padding-top: 14px;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #262628;
+}
+.ico-delete {
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/ico_delete_popup.svg);
+}
+.ico-modify {
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/ico_modify_popup.svg);
+}
+
+.popup-button > button {
+  width: 100%;
+  height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #282828;
+}
+
+.popup-button > button > span {
+  padding-left: 6px;
+}
+
+/* 우편번호 버튼 */
+.postal {}
+.postal button {
+  width: 118px;
+  height: 41px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #f5f5f5;
+  background-color: #bfbfbf;
+}
