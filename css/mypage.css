@@ -1672,3 +1672,86 @@
 .pay-deposit.on {
   display: none;
 }
+
+.mypage-calendar {
+  margin-top: 70px;
+}
+.mypage-calendar .calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.mypage-calendar .open-calendar {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.mypage-calendar ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mypage-calendar ul li {
+  width: 168px;
+  text-align: center;
+}
+.mypage-calendar .calendar-week ul li {
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #8d8d8d;
+}
+.mypage-calendar .calendar-week ul li.sun {
+  color: #c74c4c;
+}
+.mypage-calendar .calendar-week ul li.sat {
+  color: #57a0c4;
+}
+.mypage-calendar .calendar-date {
+  margin-top: 50px;
+}
+.mypage-calendar .calendar-date ul li {
+  position: relative;
+  height: 114px;
+  padding-top: 7px;
+  font-size: 20px;
+}
+.mypage-calendar .calendar-date ul li span {
+  display: inline-block;
+  padding: 9px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.mypage-calendar .calendar-date ul li:nth-child(7n),
+.mypage-calendar .calendar-date ul li:nth-child(7n + 1) {
+  color: #9b9b9b;
+}
+.mypage-calendar .calendar-date ul li.check span::after {
+  content: "IMVELY";
+  display: block;
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+  color: #fff;
+  font-size: 14px;
+  margin: 10px auto 0;
+  border-radius: 50%;
+  background-color:#df9cdf;
+}
+.mypage-calendar .calendar-date ul li.today span{
+  background-color: rgba(107, 174, 126, .28);
+}
+.mypage-calendar .calendar-date ul li.today span::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 63px;
+  content: "TODAY";
+  display: block;
+  color: #6bae7e;
+  font-weight: bold;
+  font-size: 20px;
+}
