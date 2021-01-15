@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script defer src="../js/mypage.js"></script>
+    <title>마이페이지 - 최근 본 상품</title>
+  </head>
+
+  <body>
+    <div>
+      <!-- 헤더영역 -->
+      <header class="header-wrap fixed">
+        <!-- fixed class 추가 시 상단고정되고 흰색배경 추가됨 -->
+        <div class="header">
+          <article class="header-left">
+            <!-- .main-logo-image -->
+            <h1 class="main-logo">
+              <a href="index.html"><img src="../images/img_logo_imvely.svg" alt="ImvelyMall" /><span class="hide">임블리몰</span></a>
+            </h1>
+            <!-- .main-logo-image -->
+            <nav class="gnb">
+              <ul>
+                <li><a href="">신상품</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">브랜드</a></li>
+                <li><a href="">기획전</a></li>
+                <li><a href="">컬렉션</a></li>
+                <li><a href="">콜라보</a></li>
+                <li><a href="">이벤트</a></li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right">
+            <nav class="lnb">
+              <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li>
+                  <i class="ico-search"> </i>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="header-right" style="display: none">
+            <nav>
+              <ul>
+                <li><a href="">로그아웃</a></li>
+                <li>
+                  <a href="product-search.html"><i class="ico-search"></i></a>
+                </li>
+                <li>
+                  <a href="shopping-cart.html"
+                    ><i class="ico-cart"> <span class="alram"></span> </i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="icon-my"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </header>
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+      <section class="main-nav-wrap">
+        <div class="main-nav">
+          <article class="exhibit-nav">
+            <ul>
+              <li><a href="">신상품</a></li>
+              <li><a href="">베스트</a></li>
+              <li><a href="">신상품 캘린더</a></li>
+              <li><a href="">입고 일정안내</a></li>
+              <li><a href="">고객행복센터</a></li>
+              <li><a href="">이벤트</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>패션</p>
+            <ul>
+              <li><a href="">원피스</a></li>
+              <li><a href="">상의</a></li>
+              <li><a href="">팬츠</a></li>
+              <li><a href="">스커트</a></li>
+              <li><a href="">아우터</a></li>
+              <li><a href="">슈즈•백</a></li>
+              <li><a href="">악세사리</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>브랜드</p>
+            <ul>
+              <li><a href="">IMVELY MADE</a></li>
+              <li><a href="">IMVELY COLLECT</a></li>
+              <li><a href="">LOVE ME MORE</a></li>
+              <li><a href="">VELY VELY</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>컬렉션</p>
+            <ul>
+              <li><a href="">임절미</a></li>
+              <li><a href="">주구장창</a></li>
+              <li><a href="">VERSE</a></li>
+              <li><a href="">THV.X</a></li>
+              <li><a href="">VELYSOME</a></li>
+              <li><a href="">V,COLLECT</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>기획전</p>
+            <ul>
+              <li><a href="">블리픽</a></li>
+              <li><a href="">다다익선</a></li>
+              <li><a href="">플러스사이즈+</a></li>
+              <li><a href="">라스트피스</a></li>
+            </ul>
+          </article>
+          <article class="category">
+            <p>콜라보</p>
+            <ul>
+              <li><a href="">DISNEY</a></li>
+              <li><a href="">JULIET</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- 메인페이지 상단 영역 -->
+      <!-- 메인 네비게이션 메뉴 메뉴 -->
+      <section class="mypage-wrap">
+        <!-- 마이페이지 개인정보 -->
+        <article class="mypage-header-wrap">
+          <div class="mypage-header container-1180">
+            <div class="hello">
+              <div class="icon-grade"><i>S</i></div>
+              <div class="text">
+                <h2>K블리님!</h2>
+                <p>안녕하세요</p>
+                <span><a href="">등급 혜택보기</a><i></i></span>
+              </div>
+            </div>
+            <div class="possession">
+              <div class="coupon">
+                <div><i></i><span>쿠폰</span></div>
+                <p><span>15</span>p</p>
+              </div>
+              <div class="point">
+                <div><i></i><span>포인트</span></div>
+                <p><span>8,200</span>원</p>
+              </div>
+              <div class="balance">
+                <div><i></i><span>예치금</span></div>
+                <p><span>12,300</span>원</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- 마이페이지 메인 메뉴 -->
+        <article class="mypage-menu container-1180">
+          <h3><a href="mypage.html">마이 페이지</a></h3>
+          <ul>
+            <li class="">쇼핑 내역</li>
+            <li>혜택 정보</li>
+            <li class="on">활동 내역</li>
+            <li>회원정보</li>
+          </ul>
+        </article>
+      </section>
+      <!-- 메인페이지 상단 영역 -->
+
+      <!-- mypage-content 마이페이지 컨텐츠 영역 -->
+      <section class="mypage--wrap container-1180">
+        <!-- 마이페이지 활동 내역 탭 메뉴 -->
+        <nav class="mypage-tab-menu">
+          <ul>
+            <li class="on">위시리스트</li>
+            <li>1:1 문의</li>
+            <li>상품 문의</li>
+            <li>상품 리뷰</li>
+            <li>재입고 알림</li>
+            <li>이벤트 참여 내역</li>
+            <li>출석 체크</li>
+          </ul>
+        </nav>
+        <!-- 마이페이지 활동 내역 -->
+        <div class="mypage-content on">
+          <!-- 마이페이지 위시리스트 내역 -->
+          <section class="personal-inqury mt-70">
+            <!-- 위시리스트  탭 메뉴  -->
+            <div class="mypage-review-tab mt-70">
+              <ul>
+                <li>좋아요<span>8</span></li>
+                <li class="on">최근 본 상품<span>0</span></li>
+                <li>즐겨찾기<span>6</span></li>
+              </ul>
+            </div>
+            <!-- 위시리스트 상품정렬 -->
+            <div class="product-align-wrap mt-30 mb-30">
+              <div></div>
+              <div>
+                <button class="btn-80 wh">전체 삭제</button>
+              </div>
+            </div>
+            <!-- 상품 리스트 -->
+            <div class="product-list product-5-column">
+              <article class="product">
+                <a href="../html/product-detail.html">
+                  <div class="product-wrap">
+                    <div class="img-area">
+                      <div class="img-box">
+                        <img src="../preview/img-01-matchcodi.png" alt="" />
+                      </div>
+                      <div class="badge-area">
+                        <div class="badge-wish"></div>
+                        <ul class="badge-position"></ul>
+                      </div>
+                    </div>
+                    <div class="text-area">
+                      <div class="public-info">
+                        <span class="view fc-pink"><i>REVEIW</i>84</span>
+                        <span class="divide"></span>
+                        <span class="review"><i>LIKE</i> 1,201</span>
+                      </div>
+                      <h2 class="brand-title">임블리메이드</h2>
+                      <h3 class="product-title">[디즈니정품] 러브미키모어 맨투맨롱원피스</h3>
+                      <div class="price-list">
+                        <div>
+                          <span class="price">26,000원</span>
+                          <span class="price-del"><del>52,000원</del></span>
+                        </div>
+                        <span class="sale">50%</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="product">
+                <a href="../html/product-detail.html">
+                  <div class="product-wrap">
+                    <div class="img-area">
+                      <div class="img-box">
+                        <img src="../preview/img-02-matchcodi.png" alt="" />
+                      </div>
+                      <div class="badge-area">
+                        <div class="badge-wish"></div>
+                        <ul class="badge-position"></ul>
+                      </div>
+                    </div>
+                    <div class="text-area">
+                      <div class="public-info">
+                        <span class="view"><i>REVEIW</i>100</span>
+                        <span class="divide"></span>
+                        <span class="review"><i>LIKE</i>1,320</span>
+                      </div>
+                      <h2 class="brand-title">임블리메이드</h2>
+                      <h3 class="product-title">THX,V NO.614 POCKET DENIM SHIRT</h3>
+                      <div class="price-list">
+                        <div>
+                          <span class="price">2,1000원</span>
+                          <span class="price-del"><del>42,000원</del></span>
+                        </div>
+                        <span class="sale">50%</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="product">
+                <a href="../html/product-detail.html">
+                  <div class="product-wrap">
+                    <div class="img-area">
+                      <div class="img-box">
+                        <img src="../preview/img-03-matchcodi.png" alt="" />
+                      </div>
+                      <div class="badge-area">
+                        <div class="badge-wish"></div>
+
+                        <ul class="badge-position"></ul>
+                      </div>
+                    </div>
+                    <div class="text-area">
+                      <div class="public-info">
+                        <span class="view"><i>REVEIW</i>84</span>
+                        <span class="divide"></span>
+                        <span class="review"><i>LIKE</i>1,201</span>
+                      </div>
+                      <h2 class="brand-title">임블리메이드</h2>
+                      <h3 class="product-title">지금까지이런핏은없었다 데님팬츠</h3>
+                      <div class="price-list">
+                        <div>
+                          <span class="price">29000원</span>
+                          <span class="price-del"><del>58,000원</del></span>
+                        </div>
+                        <span class="sale">50%</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="product">
+                <a href="../html/product-detail.html">
+                  <div class="product-wrap">
+                    <div class="img-area">
+                      <div class="img-box">
+                        <img src="../preview/img-04-matchcodi.png" alt="" />
+                      </div>
+                      <div class="badge-area">
+                        <div class="badge-wish"></div>
+                        <ul class="badge-position"></ul>
+                      </div>
+                    </div>
+                    <div class="text-area">
+                      <div class="public-info">
+                        <span class="view"><i>REVEIW</i>98</span>
+                        <span class="divide"></span>
+                        <span class="review"><i>LIKE</i>1,520</span>
+                      </div>
+                      <h2 class="brand-title">임블리메이드</h2>
+                      <h3 class="product-title">리미티드 에나멜 카드지갑</h3>
+                      <div class="price-list">
+                        <div>
+                          <span class="price">2,1500원</span>
+                          <span class="price-del"><del>4,3000원</del></span>
+                        </div>
+                        <span class="sale">50%</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="product">
+                <a href="../html/product-detail.html">
+                  <div class="product-wrap">
+                    <div class="img-area">
+                      <div class="img-box">
+                        <img src="../preview/img-01-matchcodi.png" alt="" />
+                      </div>
+                      <div class="badge-area">
+                        <div class="badge-wish"></div>
+                        <ul class="badge-position"></ul>
+                      </div>
+                    </div>
+                    <div class="text-area">
+                      <div class="public-info">
+                        <span class="view fc-pink"><i>REVEIW</i>84</span>
+                        <span class="divide"></span>
+                        <span class="review"><i>LIKE</i> 1,201</span>
+                      </div>
+                      <h2 class="brand-title">임블리메이드</h2>
+                      <h3 class="product-title">[디즈니정품] 러브미키모어 맨투맨롱원피스</h3>
+                      <div class="price-list">
+                        <div>
+                          <span class="price">26,000원</span>
+                          <span class="price-del"><del>52,000원</del></span>
+                        </div>
+                        <span class="sale">50%</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <!-- 등록된 상품이 없음 -->
+            <div class="wish-list-empty mb-202">
+              <p>등록한 상품이 없습니다.</p>
+              <div class="btn-wrap">
+                <button type="button" class="btn-220 wh">신상품 보러가기</button>
+                <button type="button" class="btn-220 bk">베스트 상품 보러가기</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- mypage-content 마이페이지 컨텐츠 영역 -->
+    </div>
+  </body>
+</html>

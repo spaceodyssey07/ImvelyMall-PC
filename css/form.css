@@ -27,6 +27,10 @@ button.bk {
   color: #ffffff;
   background-color: #282828;
 }
+button.gr {
+  color: #ffffff;
+  background-color: #bfbfbf;
+}
 .btn-large {
   width: 100%;
   height: 56px;
@@ -148,6 +152,14 @@ button.bk {
   color: #262628;
   background-color: #fff;
   border: 1px solid #282828;
+}
+/* 버튼 80 */
+.btn-80 {
+  width: 80px;
+  height: 34px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* button group */
@@ -309,6 +321,7 @@ label > input + button.view {
 label > input + button.view > i {
   width: 23px;
   height: 23px;
+  vertical-align: middle;
   background: url(../images/ico_view_off.svg)no-repeat center;
 }
 label > input + button.view.on > i {

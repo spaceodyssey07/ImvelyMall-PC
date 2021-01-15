@@ -480,6 +480,79 @@ header .header-right .lnb ul li {
   font-size: 18px;
 }
 
+
+
+/* product-2-column */
+.product-2-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-2-column .product {
+  flex-grow: 1;
+  flex-basis: 50%;
+  margin-bottom: 26px;
+}
+
+.product-2-column .product .product-wrap {
+  display: flex;
+}
+.product-2-column .product .product-wrap .img-area .img-box {
+  width: 216px;
+}
+
+.product-2-column .product .product-wrap .img-area .badge-wish {
+  right: -130%;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/ico_productdetail_heart.svg);
+}
+
+.product-2-column .product .product-wrap .text-area {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 20px 20px;
+}
+.product-2-column .product .product-wrap .text-area .public-info {
+  order: 2;
+  align-self: start;
+  padding-top: 116px;
+}
+.product-2-column .product .product-wrap .text-area .brand-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #909090;;
+}
+.product-2-column .product .product-wrap .text-area .product-title {
+  padding-top: 18px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.product-2-column .product .product-wrap .text-area .price-list {
+  padding-top: 36px;
+}
+
+/* product-216  5열 */ 
+.product-5-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.product-5-column .product .product-wrap {
+  padding-right: 25px;
+}
+
+.product-5-column .product:nth-of-type(5n) .product-wrap {
+  padding-right: 0;
+}
+
+.product-5-column .product .product-wrap .img-area .img-box {
+  width: 216px;
+}
+.product-5-column .product .product-wrap .text-area {
+  width: 216px;
+}
 /* product-272 */
 .product-272 .product .product-wrap {
   padding-right: 30px;
@@ -1796,35 +1869,35 @@ header .header-right .lnb ul li {
   display: block;
 }
 
-.footer .adress-wrap {
+.footer .address-wrap {
   padding: 27px 0 47px;
 }
 
-.footer .adress-wrap .adress {
+.footer .address-wrap .address {
   font-size: 15px;
   font-weight: normal;
   letter-spacing: -0.83px;
   color: #333333;
 }
 
-.footer .adress-wrap .adress li {
+.footer .address-wrap .address li {
   padding-bottom: 8px;
 }
 
-.footer .adress-wrap .adress li span {
+.footer .address-wrap .address li span {
   padding-right: 16px;
 }
 
-.footer .adress-wrap .adress li span strong {
+.footer .address-wrap .address li span strong {
   font-size: 16px;
   font-weight: 700;
 }
 
-.footer .adress-wrap .adress li span em {
+.footer .address-wrap .address li span em {
   font-weight: 600;
 }
 
-.footer .adress-wrap .footer-info {
+.footer .address-wrap .footer-info {
   margin-top: 38px;
   font-size: 14px;
   font-weight: normal;
@@ -1833,7 +1906,7 @@ header .header-right .lnb ul li {
   color: #333333;
 }
 
-.footer .adress-wrap .copyright {
+.footer .address-wrap .copyright {
   margin-top: 38px;
   font-size: 14px;
   font-weight: normal;
@@ -2866,7 +2939,7 @@ header .header-right .lnb ul li {
 }
 
 /* 배송지 팝업 */
-.shipping-adress {
+.shipping-address {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -2875,31 +2948,31 @@ header .header-right .lnb ul li {
   border: 2px solid #e3e3e3;
 }
 
-.shipping-adress.on {
+.shipping-address.on {
   border: 2px solid #6bae7e;
 }
 
 
-.adress-item > h3 {
+.address-item > h3 {
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
   color: #353231;
 }
 
-.adress-item > strong {
+.address-item > strong {
   padding-right: 6px;
   font-weight: bold;
   font-stretch: normal;
   color: #6bae7e;
 } 
-.adress-item > div {
+.address-item > div {
   padding-top: 16px;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.47;
 }
-.adress-item > span {
+.address-item > span {
   display: block;
   padding-top: 14px;
   font-size: 15px;
@@ -2958,7 +3031,7 @@ header .header-right .lnb ul li {
 }
 
 /* 우편번호 찾기 팝업 */
-.adress-serch-content {
+.address-serch-content {
   height: 452px;
   padding: 16px;
   border: 1px solid #e0e0e0;
@@ -2978,14 +3051,14 @@ header .header-right .lnb ul li {
   height: 52px;
   border-bottom: 2px solid #000;
 }
-.adress-search-item {
+.address-search-item {
   padding: 16px 0;
 }
-.adress-search-item > p {
+.address-search-item > p {
   font-size: 16px;
   
 }
-.adress-search-item > span {
+.address-search-item > span {
   display: block;
   padding-top: 15px;
   font-size: 16px;
@@ -2997,7 +3070,7 @@ header .header-right .lnb ul li {
   background: url(../images/ico_check.svg) no-repeat center;
 }
 
-.ico-search {
+.ico-search-popup {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -3072,8 +3145,11 @@ header .header-right .lnb ul li {
   vertical-align: middle;
   background: url(../images/ico_point_popup_gn.svg) no-repeat center;
 }
-
-.inquiry-contact-table tr {
+.inquiry-contact-table thead tr {
+  height: 75px;
+  border-bottom: 1px solid #000;
+}
+.inquiry-contact-table tbody tr {
   width: 100%;
   height: 148px;
   top: 15px;
@@ -3089,11 +3165,24 @@ header .header-right .lnb ul li {
   padding: 4px 0;
   text-align: left;
 }
-.inquiry-contact-table td > div > p >span {
+.inquiry-contact-table td > div > p > span {
 padding-left: 10px;
 }
 
 .inquiry-contact-table td > button {
   width: 110px;
   height: 38px;
+}
+
+.inquiry-contact-table td select {
+  width: 100%;
+}
+.inquiry-contact-table tbody tr.shipping-coupon {
+  height: 66px;
+}
+.shipping-coupon > .title {
+  background-color: #f4f4f4;
+}
+.inquiry-contact-table tbody tr.shipping-coupon .coupon-selc {
+  padding-left: 18px;
 }
