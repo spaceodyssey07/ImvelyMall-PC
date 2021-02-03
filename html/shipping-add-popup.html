@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>배송지 추가 - 팝업</title>
+</head>
+
+<body>
+  <section class="center-align">
+    <div class="popup-wrap w700">
+      <article class="popup-head">
+        <h2>배송지 추가</h2>
+        <i class="ico-close"></i>
+      </article>
+      <article class="popup-content">
+        <div class="article-list-wrap">
+          <ul class="article-list list-mb-26 form-394">
+            <li>
+              <div>
+                <label for="check1">
+                  <input type="checkbox" id="check1" />
+                  <i class=""></i>
+                  <span>기본 배송지로 설정</span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <p>수령인</p>
+              <div>
+                <label for="">
+                  <input type="text" placeholder="홍길동" class="normal" />
+                </label>
+              </div>
+            </li>
+            <li>
+              <p>휴대폰 번호</p>
+              <div class="input-area">
+                <label for="">
+                  <input type="tel" class="normal" placeholder="휴대폰 번호 (숫자만 입력)" />
+                </label>
+              </div>
+            </li>
+            <li class="address">
+              <p>주소</p>
+              <div>
+                <label for="">
+                  <div class="d-flex">
+                    <input type="text" class="normal" />
+                    <button type="button">우편번호 찾기</button>
+                  </div>
+                  <input type="text" placeholder="도로명 주소" class="normal" />
+                  <input type="text" placeholder="이하 주소" class="normal" />
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="btn-wrap mt-40">
+        <button type="button" class="btn-220 wh">취소</button>
+        <button type="button" class="btn-220 bk">완료</button>
+      </article>
+    </div>
+  </section>
+</body>
+
+</html>

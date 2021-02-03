@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Email - 배송 지연 안내</title>
+</head>
+
+<body>
+  <div class="container-800">
+    <section class="email-form-wrap">
+      <!-- 이메일 헤더 -->
+      <article class="email-header">
+        <h1><img src="../images/img_logo_imvely.svg" alt=""></h1>
+        <div>
+          <h3><span>배송 지연 안내</span><br />메일입니다.</h3>
+        </div>
+      </article>
+      <!-- 이메일 텍스트 안내 영역 -->
+      <article class="email-text">
+        <ul>
+          <li>안녕하세요. 임블리 입니다 :)</li>
+          <br />
+          <li>
+            저희 쇼핑몰을 방문해 주셔서 감사드립니다.</li>
+          <br />
+          <li><strong>홍길동(hong) 고객님</strong>께서 주문하신 상품의 배송이 지연되고 있습니다.</li>
+          <li>주문 내역은 아래와 같습니다.</li>
+        </ul>
+      </article>
+      <!-- 이메일 아티클 주문 정보 영역 -->
+      <article class="email-article">
+        <p>주문 정보 </p>
+        <table class="email-table">
+          <colgroup>
+            <col width="33.3333%">
+            <col width="33.3333%">
+            <col width="33.3333%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>주문자</th>
+              <th>주문번호</th>
+              <th>주문일자</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="fw-bold">
+              <td>홍길동</td>
+              <td>20180901-345678911023</td>
+              <td>2020-09-01 09:00:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <!-- 이메일 아티클 주문 상품정보 영역 -->
+      <article class="email-article">
+        <p>주문 상품정보</p>
+        <table class="product-table">
+          <colgroup>
+            <col width="50%" />
+            <col width="25%" />
+            <col width="25" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>상품정보</th>
+              <th>판매가</th>
+              <th>상품 구매금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td>
+                <article class="product-order product">
+                  <a href="">
+                    <div class="product-wrap">
+                      <div class="img-area">
+                        <div class="img-box">
+                          <img src="../preview/img_main_today_deal_003.png" alt="w72_img" />
+                        </div>
+                      </div>
+                      <div class="text-area">
+                        <div class="text-area-wrap">
+                          <h2 class="brand-title">IMVELY MADE</h2>
+                          <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                          <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span>
+                            수량<span class="amount">1</span>개</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </td>
+              <td>
+                <p><span>26,500</span>원</p>
+              </td>
+              <td>
+                <p><span>24,000</span>원</p>
+              </td>
+            </tr>
+            <tr class="">
+              <td>
+                <article class="product-order product">
+                  <a href="">
+                    <div class="product-wrap">
+                      <div class="img-area">
+                        <div class="img-box">
+                          <img src="../preview/img_brand_021.png" alt="w72_img" />
+                        </div>
+                      </div>
+                      <div class="text-area">
+                        <div class="text-area-wrap">
+                          <h2 class="brand-title">IMVELY MADE</h2>
+                          <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                          <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span>
+                            수량<span class="amount">1</span>개</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </td>
+              <td>
+                <p><span>31,000</span>원</p>
+              </td>
+              <td>
+                <p><span>31,000</span>원</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <!-- 이메일 텍스트 영역 -->
+      <article class="email-text">
+        <ul>
+          <li>해당 주문 상품의 재입고까지 다시 시간이 소요될 수 있습니다.</li>
+            <li>최대한 빠르게 상품을 받아보실 수 있도록 노력하겠습니다.</li>
+            <br />
+            <li>상품배송이 지연되고 있는 점, 진심으로 사과드립니다.</li>
+            <br />
+            <li>해당 상품에 대해 주문취소 혹은 교환을 원하시는 경우, 고객센터로 알려주시면<br />
+            최대한 빠른 도움을 드릴 수 있도록 하겠습니다.</li>
+            <br />
+            <li>항상 만족을 드리는 임블리가 되겠습니다.</li>
+            <br />
+            <li>감사합니다.</li>
+        </ul>
+      </article>
+      <article class="divider gr mt-50 mb-80"></article>
+      <article class="btn-wrap">
+        <button type="button" class="btn-240 pk">Imvely 바로가기</button>
+      </article>
+    </section>
+    <!-- 이메일 푸터 -->
+    <section class="email-footer">
+      <ul>
+        <li>Tel : 1688-6745 | Fax : 02-921-1766</li>
+        <li>주소: (우) 06173 서울특별시 강남구 영동대로96길 8-8, 3층~5층(삼성동, 영보2빌딩) | 사업자 등록번호 [204-86-18595]</li>
+        <li>대표이사 : 박준성 | 개인정보관리책임자 : 현기환 | 통신판매업 신고 : 제 2020-서울강남-02943 호(서울 강남구청)</li>
+        <br />
+        <li>COPYRIGHT ⒞ BY IMVELY.COM. ALL RIGHTS RESERVED.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>

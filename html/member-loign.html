@@ -28,86 +28,84 @@
       <!-- 탭 메뉴 끝 -->
 
       <!-- 로그인 입력 영역 -->
-      <article class="login-item" style="">
+      <article class="login-item" style="display: block;">
 
-        <div class="input-area">
-          <p>아이디</p>
-          <label for="">
-            <input type="text" placeholder="아이디 입력" class="normal" />
-          </label>
+        <div class="article-list-wrap">
+          <ul class="article-list list-mb-26">
+            <li>
+              <p>아이디</p>
+              <div>
+                <label for="">
+                  <input type="text" placeholder="아이디 입력" class="normal" />
+                </label>
+              </div>
+            </li>
+            <li>
+              <p>비밀번호</p>
+              <div>
+                <label for="">
+                  <input type="password" placeholder="비밀번호 입력" class="normal" />
+                </label>
+              </div>
+            </li>
+            <li>
+              <p></p>
+              <div>
+                <div class="d-flex">
+                  <label for="check1" class="mr-30">
+                    <input type="checkbox" id="check1" />
+                    <i class=""></i>
+                    <span>아이디 저장</span>
+                  </label>
+                  <label for="check2">
+                    <input type="checkbox" checked id="check2" />
+                    <i class=""></i>
+                    <span>자동 로그인</span>
+                  </label>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 로그인 버튼 영역 -->
+        <button type="button" class="btn-620 bk mt-30">로그인</button>
+        <div class="d-flex fx-between login-find-area mt-20">
+          <button type="button">아이디/비밀번호를 잊으셨나요?</button>
+          <div class="d-flex">
+            <button type="button">아이디 찾기</button>
+            <span></span>
+            <button type="button">비밀번호 찾기</button>
+          </div>
         </div>
 
-        <div class="input-area mb-0">
-          <p>비밀번호</p>
-          <label for="">
-            <input type="password" placeholder="비밀번호 입력" class="normal" />
-          </label>
-        </div>
+        <article class="kakao mt-30">
+          <button type="button" class="btn-620 d-flex fx-center">
+            <i class="ico-kakaotalk-single"></i>
+            <span>카카오로 5초 안에 시작하기</span>
+          </button>
+        </article>
 
-        <div class="input-area">
-          <p>휴대폰 번호</p>
-          <label for="">
-            <input type="tel" placeholder="휴대폰번호 입력" class="normal" />
-            <div>
-              <button type="button">
-                인증번호
-              </button>
-            </div>
-          </label>
+        <div class="d-flex login-social-area">
+          <button class="d-flex social-icon">
+            <i class="ico-naver"></i>
+            <span>네이버 로그인</span>
+          </button>
+          <span></span>
+          <button class="d-flex social-icon">
+            <i class="ico-apple"></i>
+            <span>애플 로그인</span>
+          </button>
+          <span></span>
+          <button class="d-flex social-icon">
+            <i class="ico-facebook"></i>
+            <span>페이스북 로그인</span>
+          </button>
         </div>
-
-        <div class="input-area check-area mt-20">
-          <p></p>
-          <label for="check1" class="mr-30">
-            <input type="checkbox" id="check1" />
-            <i class=""></i>
-            <span>아이디 저장</span>
-          </label>
-          <label for="check2">
-            <input type="checkbox" checked id="check2" />
-            <i class=""></i>
-            <span>자동 로그인</span>
-          </label>
-        </div>
-
+        <!-- 로그인 버튼 영역 끝 -->
       </article>
       <!-- 로그인 입력 영역 끝 -->
 
-      <!-- 로그인 버튼 영역 -->
-      <button type="button" class="btn-620 bk">로그인</button>
-      <div class="d-flex fx-between login-find-area mt-20">
-        <button type="button">아이디/비밀번호를 잊으셨나요?</button>
-        <div class="d-flex">
-          <button type="button">아이디 찾기</button>
-          <span></span>
-          <button type="button">비밀번호 찾기</button>
-        </div>
-      </div>
 
-      <article class="single-btn kakao mt-30">
-        <button type="button" class="btn-620 d-flex fx-center">
-          <i class="ico-kakaotalk-single"></i>
-          <span>카카오로 5초 안에 시작하기</span>
-        </button>
-      </article>
-
-      <div class="d-flex login-social-area">
-        <button class="d-flex social-icon">
-          <i class="ico-naver"></i>
-          <span>네이버 로그인</span>
-        </button>
-        <span></span>
-        <button class="d-flex social-icon">
-          <i class="ico-apple"></i>
-          <span>애플 로그인</span>
-        </button>
-        <span></span>
-        <button class="d-flex social-icon">
-          <i class="ico-facebook"></i>
-          <span>페이스북 로그인</span>
-        </button>
-      </div>
-      <!-- 로그인 버튼 영역 끝 -->
 
       <!-- 비회원 입력 영역 -->
       <article class="nonmember-item" style="display: none;">
@@ -132,7 +130,7 @@
         <button type="button" class="btn-620 bk">비회원 주문조회</button>
         <div class="remember-ordercount">
           <p>주문번호를 잊으셨나요?</p>
-          <ul>
+          <ul class="marker-list">
             <li>알림톡(SMS) 또는 이메일의 주문번호를 확인해 주세요.</li>
             <li>고객센터(1688-6745)로 문의해 주세요.</li>
           </ul>
@@ -142,47 +140,46 @@
       <!-- 비회원 입력 영역 끝 -->
 
       <!-- 구분선 -->
-      <div class="divider gr mt-50 mb-50"></div>
+      <div class="divider gr mt-30 mb-30"></div>
       <!-- 구분선 끝 -->
 
       <!-- 회원가입 영역 -->
       <article class="register-item text-center">
-        <h1 class="main-title">회원가입</h1>
         <h3>아직 회원이 아니세요?</h3>
         <p>회원가입을 하시면 회원에게만 제공되는 다양한 혜택과 이벤트에 참여하실 수 있습니다.<br>
           임블리 회원만의 혜택을 누려보세요!</p>
-        <button type="button" class="btn-620 dk-pink">IMVELY & VELY VELY 통합 회원가입</button>
-        <ul class="d-flex fx-between register-benefit" style="">
+        <button type="button" class="btn-620 dk-pink">통합 회원가입</button>
+        <ul class="d-flex fx-between register-benefit" style="display:none">
           <li>
-            <span>보너스팩</span>
-            <h2>10<span>만원</span></h2>
+            <h2>15%</h2>
+            <span>할인쿠폰</span>
           </li>
           <li>
-            <span>적립금</span>
-            <h2>2,000<span>원</span></h2>
+            <h2>2,000원</h2>
+            <span>할인쿠폰</span>
           </li>
           <li>
-            <span>등급별 할인</span>
-            <h2><b>최대</b>10<span>%</span></h2>
+            <h2>무료 배송</h2>
+            <span>1 회</span>
           </li>
           <li>
-            <span>5만원 이상</span>
-            <h3>무료배송</h3>
+            <h2>포인트</h2>
+            <span>멤버십 포인트 적립</span>
           </li>
         </ul>
         <!-- 비회원일 경우 활성화되는 영역 -->
-        <ul class="d-flex fx-between non-register-benefit" style="display: none;">
+        <ul class="d-flex fx-between non-register-benefit" style="display: flex;">
           <li>
+            <h2>2,000원</h2>
             <span>할인쿠폰</span>
-            <h2>2,000<span>원</span></h2>
           </li>
           <li>
-            <span>할인쿠폰</span>
-            <h2>15<span>%</span></h2>
+            <h2>무료 배송</h2>
+            <span>1 회</span>
           </li>
           <li>
-            <span>배송비 쿠폰</span>
-            <h3>무료배송</h3>
+            <h2>포인트</h2>
+            <span>멤버십 포인트 적립</span>
           </li>
         </ul>
         <!-- 비회원일 경우 활성화되는 영역 끝 -->

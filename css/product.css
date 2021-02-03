@@ -226,7 +226,7 @@
   height: 27px;
   padding: 0 10px 0 4px;
   color: #ffffff;
-  font-weight: bold;
+  font-size: 15px;
   background-color: #df9cdf;
 }
 .restock i {
@@ -402,9 +402,6 @@ button.soldout {
   align-items: flex-start;
   justify-content: space-between;
 }
-.product-detail-wrap .product-224 .product {
-  width: 224px;
-}
 
 .benefit-area {
   width: 100%;
@@ -447,7 +444,7 @@ button.soldout {
   color: #7e7e7e;
 }
 .product-detail .nav-tab-menu {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .product-detail .nav-tab-menu > ul > li {
   width: 394px;
@@ -525,6 +522,9 @@ button.soldout {
   font-size: 15px;
   line-height: 21px;
   color: #909090;
+}
+.product-detail-washing .washing-item {
+  margin: 0 10px;
 }
 .product-detail-washing .img-area {
   width: 176px;
@@ -912,6 +912,9 @@ button.soldout {
   font-size: 14px;
 }
 .page-number {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 60px;
 }
 .page-number ul {
@@ -982,50 +985,48 @@ button.soldout {
 }
 
 /* 2021/01/11 황운하 product-qa-write */
-.product-qa-write .article-list-wrap {
-  margin-top: 40px;
+.product-qa-write .article-list {
+  padding: 0 10px;
 }
-.product-90 img {
-  width: 90px;
-  height: 112px;
-}
-.product-90 .text-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 21px;
-}
-.product-90 .product-title {
-  line-height: 22px;
-  font-size: 16px;
-}
-
-.product-90 .option { 
-  line-height: 21px;
+.product-qa-write .article-list div span {
   font-size: 15px;
+  line-height: 21px;
   color: #909090;
-}
-.product-90 .price {
-  line-height: 22px;
-  font-size: 16px;
-  font-weight: normal;
-}
-.product-90 .price span {
-  font-size: 18px;
-  font-weight: bold;
+  margin-left: 20px;
 }
 .product-qa-write textarea {
+  font-size: 15px;
+  line-height: 22px;
+  font-size: 15px;
   padding: 14px 10px;
   border: 1px solid #d2d2d2;
 }
-.product-qa-write textarea::placeholder {
-  font-size: 15px;
-  color: #c6c6c6;
-}
+
 .product-qa-write .qa-note {
   font-size: 16px;
   line-height: 24px;
   color: #909090;
+  padding: 24px 20px;
+  background-color: #f9f9f9;
+}
+
+.product-qa-answer .qa-answer .article-list {
+  padding: 20px 10px;
+  background-color: #f9f9f9;
+}
+.product-qa-answer .qa-answer li >  p {
+  font-weight: bold;
+}
+.product-qa-answer .article-list div button {
+  font-size: 15px;
+  line-height: 21px;
+  color: #909090;
+}
+.product-qa-answer .marker-list {
+  font-size: 16px;
+  line-height: 24px;
+  color: #909090;
+  margin-top: 30px;
 }
 
 /* 2021/01/11 황운하 product-review-write */
@@ -1036,9 +1037,8 @@ button.soldout {
 .product-review-write .title {
   justify-content: flex-start;
 }
-.product-review-write .product-90 {
-  margin-top: 30px;
-  padding: 0 10px;
+.product-review-write .article-list > li.fx-start > div > div {
+  display: block;
 }
 .product-review-write .star-rating {
   width: 128px;
@@ -1126,4 +1126,20 @@ button.soldout {
 .product-list-main .product-align .count span {
   font-size: 18px;
   font-weight: bold;
+}
+
+/* 2021/01/13 황운하 shopping-cart-none */
+.shopping-cart-none .none-wrap {
+  margin-top: 130px;
+}
+.shopping-cart-none .none-wrap p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #353231;
+  margin: 50px 0 40px;
+}
+
+/* 2021/01/29 황운하 product-list-category */
+.product-list-category .intro-image {
+  margin-top: 58px;
 }

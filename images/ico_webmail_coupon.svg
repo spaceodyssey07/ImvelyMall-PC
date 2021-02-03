@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
     <g fill="none" fill-rule="evenodd">
         <g>
-            <g transform="translate(-575 -672) translate(575 672)">
+            <g transform="translate(-555 -772) translate(555 772)">
                 <circle cx="46" cy="46" r="46"/>
                 <g>
                     <path fill="#FAC0FA" d="M31.44 5.986l20.802 18.656v32.797H10.679V24.642l.01-.008c.284-.257 7.202-6.473 20.75-18.648z" transform="translate(18 11) rotate(-20 31.46 31.713)"/>

@@ -14,6 +14,54 @@
 
 <body>
   <section class="product-detail">
+
+    <!-- 프로모션 상세 추가영역 -->
+    <div class="promotion-count-wrap single" style="display: none;">
+      <div class="container-1180">
+        <!-- 타임세일 띠 영역 -->
+        <div class="time-sale-area d-flex fx-between">
+          <!-- 카운트다운 -->
+          <div class="countdown-area">
+            <div class="countdown">
+              <h3 class="time"><span class="days">3</span>:<span class="hours">12</span>:<span
+                  class="minutes">25</span>:<span class="seconds">07</span></h3>
+              <div class="progress-wrap">
+                <div class="progress">
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 카운트다운 끝 -->
+        </div>
+        <!-- 타임세일 띠 영역 끝 -->
+      </div>
+    </div>
+    <!-- 프로모션 상세 추가영역 끝 -->
+
+    <!-- 공동구매 상세 추가영역 -->
+    <div class="promotion-count-wrap" style="display: none;">
+      <div class="container-1180">
+        <div class="time-sale-area d-flex fx-between">
+          <div class="text-area">
+            <h2>TIME SALE</h2>
+            <p>11-04 11:00 ~ 11-10 13:00</p>
+          </div>
+          <div class="countdown-area">
+            <div class="countdown">
+              <h3 class="time"><span class="days">3</span>:<span class="hours">12</span>:<span
+                  class="minutes">25</span>:<span class="seconds">07</span></h3>
+              <div class="progress-wrap">
+                <div class="progress">
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 공동구매 상세 추가영역 끝 -->
     <div class="container-1180">
       <!-- 상품 상단 영역 -->
       <article class="product-area">
@@ -388,7 +436,7 @@
         <div class="product-list-title">
           <h2 class="">함께 코디한 상품</h2>
         </div>
-        <div class="product-list product-224">
+        <div class="product-list product-5-column">
           <article class="product">
             <a href="../html/product-detail.html">
               <div class="product-wrap">
@@ -742,10 +790,8 @@
             <h1 class="fz-16 fw-bold">Notice</h1>
             <ul class="marker-list">
               <li>관련 상품에 표기되지 않은 상품들은 품절 또는 개인 소장이오니 참고 바랍니다.</li>
-              <li>위의 실측사이즈는 '단면의 길이'입니다.</li>
-              <li>제품색상은 사용자의 모니터의 해상도에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>
-              <li>제품컷의 색상이 실제 제품 색상과 가장 비슷합니다.</li>
-              <li>사이즈는 측정방법에 따라 1~3cm 정도 오차가 있을 수 있습니다.</li>
+              <li>밝은 컬러의 특성상 약간의 비침이 있을 수 있으니, 이너 제품에 신경 써 주시기 바랍니다.</li>
+              <li>린넨 소재 특성상, 실 뭉침이나 잡사가 발견될 수 있으니 참고 바랍니다.</li>
             </ul>
           </div>
         </article>
@@ -758,7 +804,7 @@
         <!-- 제품 상세 세탁표기 -->
         <article class="product-detail-washing container-10">
           <h1 class="fz-16 fw-bold">Washing &amp; care</h1>
-          <div class="horizontal fx-between mt-16">
+          <div class="horizontal fx-center mt-16">
             <div class="washing-item">
               <div class="img-area">
                 <div class="img-box">
@@ -1522,7 +1568,7 @@
         <div class="page-number">
           <ul>
             <li>
-              <button>
+              <button type="button">
                 <i class="ico-arrow-left"></i>
               </button>
             </li>
@@ -1554,7 +1600,7 @@
               <a href="">9</a>
             </li>
             <li>
-              <a href="">10<a>
+              <a href="">10</a>
             </li>
             <li>
               <button type="button">
@@ -1692,7 +1738,7 @@
         <div class="product-list-title">
           <h2 class="">함께 코디한 상품</h2>
         </div>
-        <div class="product-list product-224">
+        <div class="product-list product-5-column">
           <article class="product">
             <a href="../html/product-detail.html">
               <div class="product-wrap">
@@ -1873,12 +1919,6 @@
     </article>
 
   </section>
-
-  <script type="text/javascript">
-    let btnSelect = document.querySelector(".cs-selectbox > button")
-    let selectList = document.querySelector(".cs-selectbox > ul")
-    btnSelect.addEventListener("click", (e) => btnSelect.classList.toggle("on"))
-  </script>
 </body>
 
 </html>

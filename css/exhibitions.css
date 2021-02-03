@@ -1,0 +1,310 @@
+@charset 'utf-8';
+.exhibition-list .intro-banner-wrap {
+  width: 100%;
+  height: 440px;
+  background-color: #dedddb;
+}
+.exhibition-list .cs-selectbox {
+  margin: 0;
+}
+.exhibition-list .product-align {
+  margin: 50px 0 20px;
+}
+.exhibition-list .product-list {
+  flex-wrap: wrap;
+}
+.exhibition-list .product-list .product:nth-child(4n) .product-wrap {
+  padding: 0;
+}
+
+.intro-comment .intro-title{
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.intro-comment .intro-sub {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.table-area .table-list {
+  border: 1px solid #e0e0e0;
+}
+.table-area .table-list div {
+  display: flex;
+  align-items: center;
+  min-height: 54px;
+  height: 100%;
+}
+.table-area .table-list div > p {
+  display: inline-block;
+  width: 12.5%;
+  min-height: 54px;
+  line-height: 54px;
+  font-size: 16px;
+  color: #262628;
+  padding: 16px 20px;
+  background-color: #f4f4f4;
+}
+.table-area .table-list div > span {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 21px;
+  color: #909090;
+  padding: 16px 30px;
+}
+.table-area .table-list div.fx-normal {
+  align-items: normal;
+}
+.exhibition-content-wrap .exhibition-info {
+  display: flex;
+  align-items: center;
+  height: 480px;
+  background-color: #fdf6e9;
+}
+.exhibition-info .text-area {
+  margin-left: 100px;
+}
+.ex-guide-wrap h3 {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.ex-guide-wrap .text-area .marker-list li {
+  font-size: 16px;
+  line-height: 23px;
+}
+.ex-guide-wrap .marker-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.exhibition-brand {
+  position: relative;
+}
+.exhibition-brand .text-area{
+  margin-left: 370px;
+}
+.exhibition-brand .img-area {
+  width: 750px;
+  height: 640px;
+  background-color: #e8bf5e;
+}
+.exhibition-brand img{
+  position: absolute;
+  top: 124px;
+  right: 480px;
+  width: 1423px;
+  height: 542px;
+}
+
+.exhibition-brand-info {
+  margin-top: 140px;
+}
+.exhibition-brand-info {
+  position: relative;
+}
+.exhibition-brand-info .img-area {
+  position: relative;
+}
+.exhibition-brand-info .text-area {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.exhibition-brand-info h4 {
+  font-size: 28px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.exhibition-brand-info .text-area img {
+  width: 400px;
+}
+.mt-110 {
+  margin-top: 110px;
+}
+.mt-150 {
+  margin-top: 150px;
+}
+.pb-140 {
+  padding-bottom: 140px;
+}
+.exhibition-influencer .text-area {
+  margin-left: 370px;
+}
+.exhibition-influencer .text-area p {
+  font-size: 15px;
+  line-height: 23px;
+}
+.exhibition-influencer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.exhibition-influencer .img-area .img-box {
+  display: flex;
+}
+.exhibition-influencer .img-area .img-box img:not(:last-child) {
+  width: 340px;
+  height: 416px;
+  margin-right: 20px;
+}
+.exhibition-influencer .img-area .img-box img:nth-child(2) {
+  margin-top: 93px;
+}
+.exhibition-influencer .img-area .img-box img:last-child {
+  width: 272px;
+  height: 336px;
+}
+.exhibition-graph {
+  width: 100%;
+  height: 700px;
+  background-color: #524e4b;
+}
+.circle-area {
+  width: 538px;
+  margin-right: 130px;
+}
+.circle-area ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.circle-area li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 142px;
+  height: 142px;
+  margin: 0 -5px;
+  border-radius: 50%;
+  background-color: rgba(187, 179, 171, .28);
+}
+.circle-area li > p {
+  font-size: 16px;
+  color: #524e4b;
+}
+.circle-area li > p span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.circle-area li > span {
+  font-size: 14px;
+  line-height: 16px;
+  color: #858585;
+  margin-top: 12px;
+}
+.exhibition-brand-power .marker-list li {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+.exhibition-brand-power .marker-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.ex-guide-wrap .exhibition-influence h3 {
+  margin-bottom: 20px;
+}
+.ex-guide-wrap .exhibition-influence .text-center p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000;
+}
+
+.double-column {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.exhibition-influence .double-column > .large {
+  width: 780px;
+  height: 440px;
+  overflow: hidden;
+  background-color: #d8d8d8;
+}
+.exhibition-influence .double-column > .small {
+  width: 390px;
+  height: 440px;
+  overflow: hidden;
+  margin-left: 10px;
+  background-color: #d8d8d8;
+}
+
+.exhibition-buyer {
+  height: 590px;
+  overflow: hidden;
+  background-color: #efeeea;
+}
+.exhibition-buyer h3 {
+  line-height: 38px;
+}
+.exhibition-buyer p {
+  line-height: 23px;
+}
+.exhibition-buyer .img-area {
+  width: 659px;
+  height: 527px;
+  margin-top: 63px;
+  margin-left: 50px;
+}
+
+.exhibition-partner {
+  margin-top: 136px;
+}
+.exhibition-partner .text-center p {
+  line-height: 23px;
+}
+.exhibition-partner .img-area {
+  width: 100%;
+  height: 400px;
+  margin: 50px 0 36px;
+  background-color: #d8d8d8;
+}
+.exhibition-partner .text-area p {
+  line-height: 23px;
+  text-align: center;
+}
+
+.exhibition-step {
+  margin-top: 170px;
+  margin-bottom: 114px;
+  text-align: center;
+}
+
+.exhibition-step ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 238px;
+  margin: 50px 0 60px;
+  background-color: #f9f9f9;
+}
+.exhibition-step ul li {
+  width: 138px;
+  height: 138px;
+  margin: 0 10px;
+  border-radius: 50%;
+  /* background: url(../); 이미지 주어지면 여기다 작업하면 돼요! */
+}
+.exhibition-step ul li p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 34px;
+  margin-bottom: 12px;
+}
+.exhibition-step ul li span {
+  font-size: 18px;
+  line-height: normal;
+}

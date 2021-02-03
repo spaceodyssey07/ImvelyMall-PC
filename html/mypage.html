@@ -146,7 +146,7 @@
             <div class="possession">
               <div class="coupon">
                 <div><i></i><span>쿠폰</span></div>
-                <p><span>15</span>p</p>
+                <p><span>15</span>P</p>
               </div>
               <div class="point">
                 <div><i></i><span>포인트</span></div>
@@ -268,7 +268,7 @@
                     </td>
                     <td class="shipping-check-wrap">
                       <article class="shipping-check">
-                        <p>배송중</p>
+                        <p>주문취소</p>
                         <div>
                           <span>우체국택배</span>
                           <span><u>1234567890</u></span>
@@ -411,11 +411,15 @@
                       </article>
                     </td>
                   </tr>
+                  <!-- 최근 주문내역 검색결과 없는 경우 -->
+                  <tr class="table-empty" style="display: table-row">
+                    <td colspan="4">
+                      <p>최근 주문내역이 없습니다</p>
+                    </td>
+                  </tr>
                 </tbody>
+                <tbody></tbody>
               </table>
-              <div class="order-recently-empty container-1180" style="display: none">
-                <p>최근 주문내역이 없습니다</p>
-              </div>
             </article>
           </div>
 
@@ -455,11 +459,15 @@
                     <td>2020.11.23</td>
                     <td>처리중</td>
                   </tr>
+
+                  <!-- 최근 문의 내역 검색결과가 없는 경우 -->
+                  <tr class="table-empty" style="display: table-row">
+                    <td colspan="4">
+                      <p>최근 문의내역이 없습니다</p>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
-              <div class="my-inquiry-empty container-1180" style="display: flex">
-                <p>최근 주문내역이 없습니다</p>
-              </div>
             </article>
           </div>
         </div>
@@ -566,7 +574,7 @@
                     </td>
                   </tr>
                   <tr class="">
-                    <td>
+                    <td rowspan="2">
                       <article class="order-date">
                         <p>2020.11.21</p>
                         <p><u>ABC123456890</u></p>
@@ -611,12 +619,6 @@
                     </td>
                   </tr>
                   <tr class="">
-                    <td>
-                      <article class="order-date">
-                        <p>2020.11.21</p>
-                        <p><u>ABC123456890</u></p>
-                      </article>
-                    </td>
                     <td>
                       <article class="product-order product">
                         <a href="">
@@ -789,7 +791,85 @@
                           <div class="product-wrap">
                             <div class="img-area">
                               <div class="img-box">
-                                <img src="../preview/img-02-searchpage.png" alt="w72_img" />
+                                <img src="../preview/img_brand_006.png" alt="w72_img" />
+                              </div>
+                            </div>
+                            <div class="text-area">
+                              <div class="text-area-wrap">
+                                <h2 class="brand-title">IMVELY MADE</h2>
+                                <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                                <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                              </div>
+                              <p class="price-list">
+                                <span class="price mr-8">64,000원</span>
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </article>
+                    </td>
+                    <!-- 배송여부 -->
+                    <!-- 진행상태 -->
+                    <td>
+                      <article class="return-progress">
+                        <p>주문취소</p>
+                      </article>
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <!-- 신청일 -->
+                    <td rowspan="2">
+                      <article class="request-date">
+                        <p>2020.11.21</p>
+                      </article>
+                    </td>
+                    <td rowspan="2">
+                      <article class="order-date">
+                        <p>2020.11.21</p>
+                        <p><u>ABC123456890</u></p>
+                      </article>
+                    </td>
+                    <!-- 상품정보 -->
+                    <td>
+                      <article class="product-order product">
+                        <a href="">
+                          <div class="product-wrap">
+                            <div class="img-area">
+                              <div class="img-box">
+                                <img src="../preview/img_brand_024.png" alt="w72_img" />
+                              </div>
+                            </div>
+                            <div class="text-area">
+                              <div class="text-area-wrap">
+                                <h2 class="brand-title">IMVELY MADE</h2>
+                                <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                                <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                              </div>
+                              <p class="price-list">
+                                <span class="price mr-8">64,000원</span>
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </article>
+                    </td>
+                    <!-- 진행상태 -->
+                    <td>
+                      <article class="return-progress">
+                        <p class="fc-green">취소완료</p>
+                      </article>
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <!-- 신청일 -->
+                    <!-- 상품정보 -->
+                    <td>
+                      <article class="product-order product">
+                        <a href="">
+                          <div class="product-wrap">
+                            <div class="img-area">
+                              <div class="img-box">
+                                <img src="../preview/img_brand_021.png" alt="w72_img" />
                               </div>
                             </div>
                             <div class="text-area">
@@ -812,17 +892,58 @@
                       <article class="return-progress">
                         <p class="fc-green">교환 배송중</p>
                         <div>
-                          <span>우체국</span>
+                          <span><u>우체국</u></span>
                           <span><u>1234567890</u></span>
                         </div>
                       </article>
                     </td>
                   </tr>
+                  <tr class="">
+                    <!-- 신청일 -->
+                    <td>
+                      <article class="request-date">
+                        <p>2020.11.21</p>
+                      </article>
+                    </td>
+                    <td>
+                      <article class="order-date">
+                        <p>2020.11.21</p>
+                        <p><u>ABC123456890</u></p>
+                      </article>
+                    </td>
+                    <!-- 상품정보 -->
+                    <td>
+                      <article class="product-order product">
+                        <a href="">
+                          <div class="product-wrap">
+                            <div class="img-area">
+                              <div class="img-box">
+                                <img src="../preview/img_brand_024.png" alt="w72_img" />
+                              </div>
+                            </div>
+                            <div class="text-area">
+                              <div class="text-area-wrap">
+                                <h2 class="brand-title">IMVELY MADE</h2>
+                                <h3 class="product-title">메가히트 루즈핏 롱원피스</h3>
+                                <p class="option-list">옵션 <span class="color">레드브라운</span>/<span class="size">FREE</span> 수량<span class="amount">1</span>개</p>
+                              </div>
+                              <p class="price-list">
+                                <span class="price mr-8">64,000원</span>
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </article>
+                    </td>
+                    <!-- 진행상태 -->
+                    <td>
+                      <article class="return-progress">
+                        <p>교환접수</p>
+                      </article>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
-              <div class="order-recently-empty container-1180" style="display: none">
-                <p>최근 주문내역이 없습니다</p>
-              </div>
             </div>
             <div class="bottom-pagination">
               <ul>

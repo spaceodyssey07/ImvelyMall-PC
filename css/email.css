@@ -1,0 +1,227 @@
+
+/* 이메일 폼 */
+.email-form-wrap {
+  padding: 40px;
+}
+
+
+/* 이메일 폼 헤더 */
+.email-header > h1 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #282828;
+}
+.email-header > h1 > img {
+  width: 150px;
+}
+.email-header > div {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.email-header > div > h3 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.33;
+}
+
+.email-header > div > h3 > span {
+  color: #df9cdf;
+  font-weight: bold;
+}
+.email-header > div > p {
+  padding-top: 10px;
+  line-height: 1.38;
+}
+
+/* 이메일 텍스트 영역 */
+.email-text {
+  padding-top: 30px;
+}
+
+.email-text > p {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.47;
+}
+
+.email-text > ul > li {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.38;
+}
+
+.email-text > ul > li > span {
+  color: #757575;
+}
+
+.email-text > ul > li > strong {
+  font-weight: bold;
+}
+
+.email-text > ul > li > button {
+  margin-bottom: 20px;
+}
+
+/* 이메일 아티클 영역 */
+
+.email-article {
+  padding-top: 40px;
+}
+
+.email-article > p {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.47;
+}
+.email-article > span {
+  display: block;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #757575;
+}
+.email-article > ul {
+  display: flex;
+  padding-top: 20px;
+}
+.email-article > ul > li {
+  line-height: 2;
+}
+
+.email-article > h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.email-article > h3 > span {
+  color: #6bae7e;
+}
+/* 이메일 폼 테이블 */
+.email-table {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+}
+
+.email-table th {
+  background-color: #f4f4f4;
+}
+
+.email-table th,
+.email-table td {
+  padding: 18px;
+  text-align: center;
+  line-height: 1.4;
+  vertical-align: middle;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+}
+
+/* 이메일 테이블 텍스트 왼쪽 정렬 */
+.email-table th.align-left ,
+.email-table td.align-left {
+  text-align: left;
+}
+
+/* 이메일 가로 테이블 */
+.email-horizontal-table {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #d9d9d9;
+  
+}
+.email-horizontal-table th {
+  padding: 18px 22px;
+  vertical-align: middle;
+  line-height: 1.4;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #d9d9d9;
+
+}
+.email-horizontal-table td {
+  padding: 18px 20px;
+  line-height: 1.4;
+  vertical-align: middle;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+}
+
+.email-horizontal-table th.align-center,
+.email-horizontal-table td.align-center {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* 이메일 폼 푸터 */
+.email-footer {
+  width: 100%;
+  padding: 40px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  color: #ffffff;
+  background-color: #bbb3ab;
+}
+
+
+
+/* 이메일 회원가입 */
+.email-benefit-info {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.email-benefit-info > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 33.3333%;
+  padding-bottom: 40px;
+}
+.email-benefit-info > li > i {
+  display: block;
+  width: 92px;
+  height: 92px;
+}
+
+.email-benefit-info > li:nth-of-type(1) > i {
+  background: url(../images/ico_webmail_coupon.svg) no-repeat;
+}
+.email-benefit-info > li:nth-of-type(2) > i {
+  background: url(../images/ico_webmail_calender.svg) no-repeat;
+}
+.email-benefit-info > li:nth-of-type(3) > i {
+  background: url(../images/ico_webmail_birthday.svg) no-repeat;
+}
+.email-benefit-info > li:nth-of-type(4) > i {
+  background: url(../images/ico_webmail_review.svg) no-repeat;
+}
+.email-benefit-info > li:nth-of-type(5) > i {
+  background: url(../images/ico_webmail_downloadl.svg) no-repeat;
+}
+.email-benefit-info > li:nth-of-type(6) > i {
+  background: url(../images/ico_webmail_recommend.svg) no-repeat;
+}
+
+.email-benefit-info > li > p {
+  padding-top: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.17;
+}
+.email-benefit-info > li > span {
+  padding-top: 4px;
+  font-size: 15px;
+  line-height: 1.4;
+}

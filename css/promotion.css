@@ -9,15 +9,28 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.countdown-area .countdown {
+.time-promotion .promotion-content:not(:first-child) {
+  margin-top: 30px;
+}
+.promotion-content {
+  display: flex;
+  align-items: center;
+}
+.promotion-content .img-area {
+  width: 721px;
+  height: 400px;
+  margin-right: 20px;
+}
+.countdown-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 439px;
+  height: 400px;
   text-align: center;
-  padding: 40px 0 20px;
-  background-color: #282828;
+  background-color: #f4f4f4;
 }
-.countdown-area .countdown p,
-.countdown-area .countdown h3{
-  color: #fff;
-}
+
 .countdown-area .countdown p {
   font-size: 34px;
   line-height: 42px;
@@ -62,7 +75,7 @@
   height: 3px;
   margin: 15px auto 0;
   border-radius: 2px;
-  background-color: #686868;
+  background-color: #ffffff;
 }
 .progress-wrap .progress .bar {
   position: absolute;
@@ -82,24 +95,11 @@
   height: 9px;
   border: 3px solid #df9cdf;
   border-radius: 50%;
-  background-color: #282828;
+  background-color: #ffffff;
   box-sizing: border-box;
 }
 
-.time-promotion .intro-image {
-  margin-top: 10px;
-}
-.time-promotion .intro-image .img-area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 490px;
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
-  background-color: #686868;
-}
+
 .content-title h2{
   font-size: 42px;
   font-weight: bold;
@@ -107,191 +107,177 @@
   margin-top: 50px;
   margin-bottom: 30px;
 }
-.content .product-area {
+.promotion-content-list ul {
   display: flex;
-  align-items: center;
 }
-.content .product-area .product {
+.promotion-content-list ul > li {
   width: 272px;
+  height: 340px;
+  background-color: #df9cdf;
+  overflow: hidden;
 }
-.content .product-area .product:not(:last-child) {
+.promotion-content-list ul > li:not(:last-child) {
   margin-right: 31px;
 }
-
 /* 공동구매 */
-.purchase-intro .countdown-area .countdown {
-  padding: 0 0 20px;
-  background-color: transparent;
-}
-.purchase-intro .img-wrap {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.purchase-intro .time-sale-area {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 112px;
-  padding: 0 40px 0 30px;
-  background-color: rgba(255,255,255, 0.72);
-}
-.purchase-intro .img-box {
-  height: 500px;
-}
-.purchase-intro .img-side {
-  width: 290px;
-}
-.purchase-intro .img-center {
-  width: 580px;
-}
-.purchase-intro .time-sale-area > div > h2 {
-  font-size: 32px;
-  line-height: 44px;
-  margin-bottom: 3px;
-}
-.purchase-intro .time-sale-area > div > p {
-  font-size: 16px;
-}
-.purchase-intro .countdown h3 {
-  font-size: 26px;
-  color: #000000;
-}
-.purchase-intro .progress-wrap .progress {
-  background-color: #ffffff;
-}
-.purchase-intro .progress-wrap .progress .bar::after {
-  background-color: #ffffff;
-}
 
 .purchase-product-area .product-area {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 50px;
 }
-.purchase-product-area .product-area .product {
+.purchase-product-area .product-area .product:nth-child(odd) {
+  margin-right: 40px;
+}
+.purchase-product-area .product {
   display: flex;
   align-items: flex-end;
   width: 570px;
-  margin-top: 41px;
 }
-.purchase-product-area .product-area .img-box {
+.purchase-product-area .text-area {
+  width: 330px;
+}
+.purchase-product-area .product-area .product:not(:nth-child(-n+2)) {
+  margin-top: 46px
+}
+.purchase-product-area .product .img-area {
+  margin-right: 20px;
+}
+.purchase-product-area .product .img-area .img-box {
   width: 220px;
+  height: 275px;
 }
-.purchase-product-area .product-area .text-area {
-  margin-left: 20px;
+.purchase-product-area a {
+  display: block;
 }
 .purchase-product-area .brand-title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   color: #909090;
   text-decoration: underline;
 }
 .purchase-product-area .product-title {
-  font-size: 16px;
-  line-height: 23px;
-  font-weight: bold;
-  margin: 12px 0 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  margin: 12px 0 26px;
 }
 .purchase-product-area .price p {
-  font-size: 18px;
-  font-weight: bold;
-}
-.purchase-product-area .price del {
-  color: #909090;
-  margin-left: 8px;
-}
-.purchase-product-area .price span {
-  font-size: 16px;
-  font-weight: bold;
-  color: #c74c4c;
-}
-.purchase-product-area .remainder {
-  position: relative;
-  width: 330px;
-  height: 134px;
-  padding: 0 10px;
-  margin-top: 21px;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-}
-.purchase-product-area .remainder .progress {
-  position: relative;
-  width: 100%;
-  height: 6px;
-  border-radius: 6px;
-  background-color: #e0e0e0;
-}
-.purchase-product-area .remainder .progress::before {
-  z-index: 5;
-  content: "";
-  position: absolute;
-  top: -100%;
-  width: 6px;
-  height: 6px;
-  border: 5px solid #6bae7e;
-  border-radius: 50%;
-  background-color: #fff;
-}
-.purchase-product-area .remainder .progress::after {
-  z-index: 5;
-  content: "";
-  position: absolute;
-  top: -100%;
-  right: 0;
-  width: 6px;
-  height: 6px;
-  border: 5px solid #6bae7e;
-  border-radius: 50%;
-  background-color: #fff;
-}
-.purchase-product-area .remainder .progress .bar {
-  position: absolute;
-  width: 210px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #6bae7e;
-}
-.purchase-product-area .remainder .count {
-  position: relative;
-  left: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 74px;
-  height: 45px;
-  color: #ffffff;
-  border-radius: 6px;
-  background-color: #6bae7e;
-  margin: 18px 0 20px;
-}
-.purchase-product-area .remainder .count::after {
-  content: "";
-  position: absolute;
-  bottom: -7px;
-  border-top: 7px solid #6bae7e;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 0px solid transparent;
-}
-.purchase-product-area .text-area .remainder .d-flex p {
   font-size: 15px;
-  line-height: 21px;
-  color: #909090;
-}
-.purchase-product-area .text-area .remainder .d-flex p span { 
   font-weight: bold;
+}
+.purchase-product-area .price p span {
+  font-size: 14px;
+  color: #909090;
   margin-left: 6px;
 }
-.purchase-product-area .text-area .remainder .d-flex > span {
+
+.purchase-product-area .price > span {
+  font-size: 14px;
+  color: #df9cdf;
+}
+.purchase-product-area .countdown-area {
+  width: 330px;
+  height: 145px;
+}
+.purchase-product-area .countdown-area {
+  display: block;
+  padding: 0 14px;
+  margin-top: 25px;
+}
+.purchase-product-area .countdown h3 {
+  font-size: 20px;
+}
+.purchase-product-area .countdown-area .time span::after {
+  top: 50px;
   font-size: 13px;
+  line-height: 15px;
+  color: #858585;
 }
-.promotion-count-wrap {
+.purchase-product-area .count-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 26px 0 15px;
+}
+.purchase-product-area .count-area p {
+  font-size: 14px;
+  color: #858585;
+}
+.purchase-product-area .count-area p span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6bae7e;
+}
+.purchase-product-area .progress {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.purchase-product-area .progress .bar {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #6bae7e;
+}
+.purchase-product-area .progress .bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateY(-35%);
+  right: 0;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border: 4px solid #6bae7e;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* 프로모션 - 프리오더 */
+.freeorder-product-area .progress .bar {
+  background-color: #f4ab5b;
+}
+.freeorder-product-area .progress .bar::after {
+  border-color: #f4ab5b;
+}
+.freeorder-product-area .count-area p span {
+  color: #f4ab5b;
+}
+
+/* 상품상세 Time Sale CountDown */
+.promotion-count-wrap .time-sale-area {
+  width: 100%;
+  height: 109px;
   margin-bottom: 50px;
-  background-color: #e7e0da;
+  padding: 0 0 0 40px;
+  background-color: #f4f4f4;
 }
+.promotion-count-wrap h2 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #524e4b;
+}
+.promotion-count-wrap p {
+  font-size: 16px;
+  color: #524e4b;
+  margin-top: 12px;
+}
+.promotion-count-wrap .time-sale-area .countdown-area {
+  height: 109px;
+}
+.promotion-count-wrap.single .progress-wrap .progress .bar::after {
+  width: 9px;
+  height: 9px;
+}
+/*  */
+
 .product-detail .countdown {
   padding: 0 0 20px;
   background-color: transparent;
@@ -330,3 +316,4 @@
   font-size: 18px;
   font-weight: bold;
 }
+

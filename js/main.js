@@ -1,29 +1,29 @@
-// // 메인 네비게이션
-// var mainNav = document.querySelector(".main-nav-wrap")
-// var hoverGnb = document.querySelector(".header .header-left .gnb")
-// var navFlag = false
-// hoverGnb.addEventListener("mouseover", () => mainNav.classList.add("on"))
+// 메인 네비게이션
+var mainNav = document.querySelector(".main-nav-wrap");
+var hoverGnb = document.querySelector(".header .header-left .gnb");
+var navFlag = false;
+hoverGnb.addEventListener("mouseover", () => mainNav.classList.add("on"));
 
-// mainNav.addEventListener("mouseover", () => (navFlag = true))
-// mainNav.addEventListener("mouseleave", () => {
-//   if (navFlag) {
-//     navFlag = false
-//     mainNav.classList.remove("on")
-//   }
-// })
+mainNav.addEventListener("mouseover", () => (navFlag = true));
+mainNav.addEventListener("mouseleave", () => {
+  if (navFlag) {
+    navFlag = false;
+    mainNav.classList.remove("on");
+  }
+});
 
-// // 메인 검색팝업
-// var searchPopup = document.querySelector(".search-popup-wrap")
-// var searchIcon = document.querySelector(".header-right .ico-search")
-// var searchFlag = false
-// searchIcon.addEventListener("mouseover", () => searchPopup.classList.add("on"))
-// searchPopup.addEventListener("mouseover", () => (searchFlag = true))
-// searchPopup.addEventListener("mouseleave", () => {
-//   if (searchFlag) {
-//     searchFlag = false
-//     searchPopup.classList.remove("on")
-//   }
-// })
+// 메인 검색팝업
+var searchPopup = document.querySelector(".search-popup-wrap");
+var searchIcon = document.querySelector(".header-right .ico-search");
+var searchFlag = false;
+searchIcon.addEventListener("mouseover", () => searchPopup.classList.add("on"));
+searchPopup.addEventListener("mouseover", () => (searchFlag = true));
+searchPopup.addEventListener("mouseleave", () => {
+  if (searchFlag) {
+    searchFlag = false;
+    searchPopup.classList.remove("on");
+  }
+});
 
 // js-main-visual
 var swiper = new Swiper(".js-main-visual", {
@@ -43,11 +43,11 @@ var swiper = new Swiper(".js-main-visual", {
     el: ".main-visual .swiper-pagination",
   },
   keyboard: true,
-})
+});
 
 // live-commerce
 var swiper = new Swiper(".js-live-commerce", {
-  slidesPerView: 2.5,
+  slidesPerView: 2.6,
   centeredSlides: true,
   loop: true,
   spaceBetween: 0,
@@ -59,7 +59,7 @@ var swiper = new Swiper(".js-live-commerce", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-})
+});
 
 // js - influencer
 var swiper = new Swiper(".js-influencer", {
@@ -71,7 +71,7 @@ var swiper = new Swiper(".js-influencer", {
     el: ".influencer-bUtton.swiper-pagination",
     clickable: true,
   },
-})
+});
 
 // group-buying
 var swiper = new Swiper(".js-group-buying", {
@@ -84,7 +84,7 @@ var swiper = new Swiper(".js-group-buying", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-})
+});
 
 // js-best-brand
 var swiper = new Swiper(".js-best-brand", {
@@ -97,7 +97,7 @@ var swiper = new Swiper(".js-best-brand", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-})
+});
 
 // event-banner
 var swiper = new Swiper(".js-evenet-banner", {
@@ -106,7 +106,7 @@ var swiper = new Swiper(".js-evenet-banner", {
   paginationClickable: true,
   loop: true,
   slideToClickedSlide: true,
-})
+});
 
 var swiper = new Swiper(".js-velypic", {
   slidesPerView: 1,
@@ -116,4 +116,4 @@ var swiper = new Swiper(".js-velypic", {
     el: ".swiper-scrollbar",
     hide: false,
   },
-})
+});

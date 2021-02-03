@@ -2,10 +2,12 @@
     <g fill="none" fill-rule="evenodd">
         <g>
             <g>
-                <path d="M0 0H42V42H0z" transform="translate(-1118 -415) translate(1118 415)"/>
                 <g>
-                    <path stroke="#8D8682" stroke-width="1.4" d="M.055.938C.055.45.45.055.938.055h31.77c.487 0 .882.395.882.883v4.034H.055V.938zm0 7.312H33.59v13.868c0 .487-.395.882-.883.882H.937c-.487 0-.882-.395-.882-.882V8.25z" transform="translate(-1118 -415) translate(1118 415) translate(4 10)"/>
-                    <path fill="#8D8682" d="M5.13 12.347c-.488 0-.883.395-.883.883v4.79c0 .488.395.883.882.883h4.942c.488 0 .883-.395.883-.883v-4.79c0-.488-.395-.883-.883-.883H5.13z" transform="translate(-1118 -415) translate(1118 415) translate(4 10)"/>
+                    <path d="M0 0H42V42H0z" transform="translate(-585 -748) translate(370 633) translate(215 115)"/>
+                    <g>
+                        <path fill="#8D8682" d="M.058.993c0-.516.419-.935.935-.935H34.63c.516 0 .935.419.935.935v4.271H.058V.993zm0 7.742h35.508v14.684c0 .516-.419.934-.935.934H.993c-.516 0-.935-.418-.935-.934V8.735z" transform="translate(-585 -748) translate(370 633) translate(215 115) translate(3 9)"/>
+                        <path fill="#FFF" d="M5.431 13.073c-.516 0-.934.419-.934.935v5.072c0 .516.418.935.934.935h5.233c.516 0 .934-.419.934-.935v-5.072c0-.516-.418-.935-.934-.935H5.43z" transform="translate(-585 -748) translate(370 633) translate(215 115) translate(3 9)"/>
+                    </g>
                 </g>
             </g>
         </g>

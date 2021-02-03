@@ -43,7 +43,8 @@
 .login-social-area{
   margin-top: 30px;
 }
-.single-btn.kakao {
+.kakao button {
+  width: 100%;
   background-color: #f6e24b;
 }
 .single-btn.kakao button {
@@ -61,7 +62,8 @@
 
 .login-section .login-social-area .social-icon span {
   font-size: 15px;
-  color: #909090;
+  line-height: 23px;
+  color: #656565;
   margin-left: 10px;
 }
 
@@ -100,20 +102,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 147px;
-  height: 90px;
-  border: 1px solid #e0e0e0;
+  width: 137px;
+  height: 84px;
+  background: url(../images/coupon-img-login.svg)no-repeat center;
+  background-size: 135px 84px;
 }
 
 .login-section .register-benefit li > span{
   line-height: 18px;
   display: block;
   font-size: 14px;
-  margin-bottom: 4px;
+  margin-top: 6px;
 }
 
 .login-section .register-benefit li h2 {
-  font-size: 30px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
 }
 
@@ -163,16 +167,12 @@
 }
 
 .login-section .remember-ordercount ul {
-  padding-left: 8px;
   margin-top: 18px;
   font-size: 15px;
   line-height: 22px;
   color: #909090;
 }
 
-.login-section .remember-ordercount ul > li::marker{
-  content: "· ";
-}
 
 .login-section .nonmember-item > button.wh{
   margin: 0;
@@ -183,28 +183,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 194px;
-  height: 98px;
-  border: 1px solid #e0e0e0;
+  width: 190px;
+  height: 84px;
+  background: url(../images/coupon-img-login.svg)no-repeat center;
+  background-size: 190px 84px;
 }
 
 .login-section .non-register-benefit li > span { 
   display: block;
   font-size: 14px;
-  margin-bottom: 4px;
+  line-height: 18px;
+  margin-top: 6px;
 }
 
 .login-section .non-register-benefit li > h2 {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.login-section .non-register-benefit li > h2 span{
-  font-size: 24px;
-}
-
-.login-section .non-register-benefit li > h3 {
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
 }
 
@@ -308,9 +302,12 @@
 .condition-item textarea{
   display: block;
   width: 569px;
-  height: 288px;
+  height: 280px;
+  font-size: 14px;
+  line-height: 20px;
   padding: 20px 14px 0;
   margin-top: 20px;
+  color: #656565;
   border: 1px solid #e0e0e0;
   background-color: #f5f5f5;
 }
@@ -323,24 +320,15 @@
   margin-bottom: 50px;
 }
 
-.register-section .register-certification .d-flex{
-  align-items: flex-start;
+.register-section .register-certification button {
+  width: 320px;
+  height: 70px;
+  margin-bottom: 20px;
 }
-.register-section .register-certification h2{
-  font-size: 22px;
-  font-weight: bold;
-}
-.register-section .register-certification ul{
-  padding-left: 8px;
-  margin-left: 30px;
-}
-.register-section .register-certification li::marker{
-  content: "· ";
-}
-.register-section .register-certification li{
-  line-height: 22px;
-  font-size: 15px;
-  color: #909090;
+.register-section .register-certification ul li {
+  font-size: 12px;
+  line-height: 20px;
+  color: #656565;
 }
 
 
@@ -406,9 +394,9 @@
   font-size: 15px;
 }
 .register-info-write ul:last-child p {
-  line-height: 22px;
-  font-size: 15px;
-  color: #909090;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000000;
 }
 .register-info-write ul.receive span {
   line-height: 22px;
@@ -461,13 +449,13 @@
 /* 2020/12/29 황운하 main-password-change */
 .change-password-section .password-wrap > h2 {
   line-height: normal;
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 26px;
 }
 .change-password-section .password-wrap > p {
-  line-height: 22px;
-  font-size: 15px;
-  color: #909090;
+  line-height: 20px;
+  font-size: 14px;
+  color: #656565;
 }
 .change-password-section .password-wrap ul {
   line-height: 22px;
@@ -475,20 +463,23 @@
   padding-left: 8px;
   color: #909090;
 }
-.change-password-section .password-wrap ul > li::marker {
-  content: "· ";
-}
-.change-password-section .password-area > div > p {
-  width: 150px;
-}
-.change-password-section .password-area p + * {
+.change-password-section .password-area {
   width: 100%;
+  height: 344px;
+  padding: 40px;
+  border: 1px solid #d2d2d2;
 }
-.change-password-section  .password-area > div:first-child {
-  margin-bottom: 12px;
+.change-password-section .article-list li > p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+.change-password-section .article-list li > div > div p {
+  font-size: 12px;
+  line-height: 20px;
 }
 .change-password-section .btn-wrap {
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 /* 2020/12/30 황운하 main-register-guide */
@@ -509,39 +500,35 @@
   text-align: center;
 }
 .register-guide-section h3 {
-  font-size: 22px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
+  color: #000000;
 }
 .register-guide-section .btn-area {
   display: block;
-  margin-top: 90px;
+  margin-top: 50px;
   text-align: center;
 }
 .register-guide-section .btn-area button:first-child {
   margin: 0;
 }
 button.kakao {
-  background: url(../images/ico_kakao_signin_big.svg)no-repeat #f6e24b;
-  background-position:  27px center;
-}
-button.naver {
-  color: #f5f5f5;
-  background: url(../images/ico_naver_signin_big.svg)no-repeat #2db400;
-  background-position: 54px center;
-}
-button.facebook {
-  color: #f5f5f5;
-  background: url(../images/ico_facebook_signin_big.svg)no-repeat #3c5a99;
-  background-position: 44px center;
-}
-button.apple {
-  color: #f5f5f5;
-  background: url(../images/ico_apple_signin_big.svg)no-repeat #909090;
-  background-position: 58px center;
+  background-color: #f6e24b;
 }
 .register-guide-section > div >  .btn-wrap {
   margin-top: 90px;
+}
+.register-guide-section .login-social-area i {
+  margin-right: 10px;
+}
+.register-guide-section .login-social-area > span {
+  color: #e0e0e0;
+}
+.register-guide-section .login-social-area button span {
+  font-size: 16px;
+  line-height: 23px;
+  color: #656565;
 }
 
 /* 2020/12/30 황운하 main-combine-register */
@@ -603,7 +590,7 @@ textarea::-webkit-scrollbar-track {
 }
 textarea::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #909090;
+  background-color: #6abe7e;
 }
 textarea::-webkit-scrollbar-button {
   width: 0;
@@ -622,10 +609,13 @@ textarea::-webkit-scrollbar-button {
   margin-right: 10px;
 }
 .check-area span {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 23px;
 }
-
+.check-area > p {
+  font-size: 12px;
+  line-height: 20px;
+}
 /* 2020/12/30 황운하 main-combine-success */
 .combine-success {
   padding-top: 147px;
@@ -662,8 +652,9 @@ textarea::-webkit-scrollbar-button {
 }
 .combine-coupon-area > ul > li > p {
   font-size: 15px;
-  margin-top: 19px;
-  line-height: normal;
+  margin-top: 16px;
+  line-height: 22px;
+  color: #656565;
 }
 .combine-coupon-area .coupon-area {
   display: flex;
@@ -671,18 +662,23 @@ textarea::-webkit-scrollbar-button {
   justify-content: center;
   align-items: center;
   width:170px;
-  height: 100px;
-  color: #fff;
-  background: url(../images/img_rank_coupon_bk.svg)no-repeat center;
+  height: 84px;
+  color: #000000;
+  background: url(../images/coupon-img-login.svg)no-repeat center;
 }
 .combine-coupon-area li:not(:last-child) {
   margin-right: 42px;
 }
 .combine-coupon-area .coupon-area b {
   line-height: normal;
-  font-size: 22px;
-  margin-bottom: 6px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
+}
+.combine-coupon-area .coupon-area p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 6px;
 }
 
 /* 2020/12/30 황운하 main-find-id */
@@ -690,10 +686,24 @@ textarea::-webkit-scrollbar-button {
   padding: 50px 0 249px;
   background-color: #f9f9f9;
 }
-.find-area {
-  padding: 70px 0 170px;
+.find-info-wrap .find-conts {
+  text-align: center;
+  margin: 30px 0;
 }
+.find-info-wrap .find-conts p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #656565;
+}
+.content-wrapper {
+  padding: 20px 40px 40px;
+  border: 1px solid #d2d2d2;
+}
+
 .radio-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 41px;
 }
 .radio-area label input[type=radio] + i {
@@ -706,16 +716,18 @@ textarea::-webkit-scrollbar-button {
 .radio-area label:first-child {
   margin-right: 36px;
 }
-.find-info-wrap .container-620 > p {
-  line-height: 22px;
+
+.find-info-wrap .change-note > p {
   font-size: 15px;
-  color: #909090;
+  line-height: 22px;
+  margin: 0 0 10px;
+  text-align: center;
 }
-.find-info-wrap .container-620 .d-flex > p {
-  width: 100px;
-  white-space: nowrap;
-  margin-right: 20px;
-  font-size: 16px;
+.find-info-wrap .change-note > ul {
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  color: #656565;
 }
 
 /* 2021/01/04 황운하 find-id-result */
@@ -731,47 +743,22 @@ textarea::-webkit-scrollbar-button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 136px;
-  margin-bottom: 50px;
+  height: 198px;
+  margin-bottom: 30px;
+  background-color: #f5f5f5;
 }
 .result-area p {
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 3px;
 }
 .result-area span {
   line-height: 30px;
   font-size: 22px;
   font-weight: bold;
+  margin: 30px 0 10px;
 }
 .find-id-result nav {
   margin: 75px 0 50px;
-}
-
-/* 2020/01/04 황운하 change-password */
-.member-password-section {
-  padding: 50px 0 180px;
-}
-.member-password-section .change-note p {
-  font-size: 16px;
-  line-height: 23px;
-  margin-bottom: 6px;
-}
-
-.member-password-section .change-note ul li {
-  line-height: 22px;
-  font-size: 15px;
-  color: #656565;
-}
-
-.member-password-section .article-list-wrap {
-  margin-top: 30px;
-}
-.member-password-section .article-list input + button {
-  bottom: 0;
-}
-.member-password-section .btn-wrap{
-  margin-top: 50px;
 }
 
 /* 2021/01/04 황운하 member-reset-password */
